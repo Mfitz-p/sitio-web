@@ -1,10 +1,12 @@
-
-import Button from 'react-bootstrap/Button';
+import 'bootstrap/dist/css/bootstrap.min.css'; 
+import Navbar from './Components/Navbar';
+// import Button from 'react-bootstrap/Button';
 
 function App() {
   return (
     <>
-   <Button variant="success">Success</Button>
+   <Navbar/>
+   {/* <Button variant="success">Success</Button> */}
     </>
   );
 }
