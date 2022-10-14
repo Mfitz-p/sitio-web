@@ -4,9 +4,9 @@
  */
 import { Container, Row, Col, Button, Image } from 'react-bootstrap/';
 import logo from '../images/logo.png';
+
 function Footer() {
     return (
-
         <Container fluid className="bg-dark text-baseline text-white">
             <Row>
                 <Col md={3} >
@@ -34,7 +34,6 @@ function Footer() {
                 <Col> © • Todos los derechos reservados • 2022</Col>
             </Row>
         </Container>
- 
   )
 }
 
