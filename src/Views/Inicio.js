@@ -11,7 +11,7 @@ const Inicio = () => {
         {/* <Card.Img src="frontpage.jpg" alt="image-page" /> */}
         <Image fluid src={page} alt='img-page' style={{ width: "", height:'18rem', position: "relative" }} />
         <Card.ImgOverlay>
-            <Card.Title className='mt-5'>
+            <Card.Title className='mt-5' style={{fontFamily: "Lora", fontSize: "2rem", textAlign: "justify"}}>
                 Soluciones tecnológicas en inteligencia de negocios y el
                 manejo de datos.
             </Card.Title>
@@ -22,8 +22,8 @@ const Inicio = () => {
     <Col> 
     <Card className='m-5' border='info' style={{ width:'35rem', height:'15rem' }}>
     <Card.Body>
-        <Card.Title className="mb-2 mt-5">¿Qué hacemos por ti?</Card.Title>
-        <Card.Text>
+        <Card.Title className="mb-2 mt-5"  style={{fontFamily: "Lora", fontSize: "2rem", textAlign: "justify"}}>¿Qué hacemos por ti?</Card.Title>
+        <Card.Text style={{fontFamily: 'Lora', fontSize: '20px'}}>
         Te ofrecemos nuestros siguientes servicios.
         </Card.Text>
     </Card.Body>
@@ -33,8 +33,8 @@ const Inicio = () => {
     <Col>
     <Card className='m-5' border='info' style={{ width:'35rem', height:'15rem' }}>
       <Card.Body>
-        <Card.Title className="mb-2 mt-5">Salud</Card.Title>
-        <Card.Text>
+        <Card.Title className="mb-2 mt-5" style={{fontFamily: 'Lora', fontSize: '25px'}}>Salud</Card.Title>
+        <Card.Text style={{fontFamily: 'Lora', fontSize: '18px', textAlign: 'justify'}}>
             Desarrollo de sistemas de diagnóstico asistido por
             computadora y observatorios de salud, a partir de
             herramientas de visión por computadora e inteligencia
@@ -49,8 +49,8 @@ const Inicio = () => {
     <Col>
     <Card className='m-5' border='info' style={{ width:'35rem', height:'15rem' }}>
       <Card.Body>
-        <Card.Title className="mb-2 mt-5">Retail & B2B</Card.Title>
-        <Card.Text>
+        <Card.Title className="mb-2 mt-5" style={{fontFamily: 'Lora', fontSize: '25px'}}>Retail & B2B</Card.Title>
+        <Card.Text style={{fontFamily: 'Lora', fontSize: '18px', textAlign: 'justify'}}>
             Desarrollo de sistemas de gestión de datos e
             información para la optimización de estrategias de venta,
             seguimiento de insumos clave y monitoreo del
@@ -63,8 +63,8 @@ const Inicio = () => {
     <Col>
     <Card className='m-5' border='info' style={{ width:'35rem', height:'15rem' }}>
       <Card.Body>
-        <Card.Title className="mb-2 mt-5">Infraestructura</Card.Title>
-        <Card.Text>
+        <Card.Title className="mb-2 mt-5" style={{fontFamily: 'Lora', fontSize: '25px'}}>Infraestructura</Card.Title>
+        <Card.Text style={{fontFamily: 'Lora', fontSize: '18px', textAlign: 'justify'}}>
             Implementación de modelos de IA y
             percepción remota para estandarizar los procesos de
             adquisición de datos y métricas cuantitativas aplicables a la
