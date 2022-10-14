@@ -7,7 +7,7 @@ import logo from '../images/logo.png';
 
 function Footer() {
     return (
-        <Container fluid className="bg-dark text-baseline text-white">
+        <Container fluid className="bg-dark text-baseline text-white" style={{position: "fixed", bottom: 0}}>
             <Row>
                 <Col md={3} >
                     <div className="d-flex aligns-items-center justify-content-center"><Image fluid src={logo} alt='logo' style={{ width: "100px", position: "relative", top: "30px" }} /></div>
