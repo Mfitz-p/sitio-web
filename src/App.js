@@ -1,5 +1,7 @@
 import Navbar from './Components/Navbar';
-import Footer from './Components/Footer';
+// import Footer from './Components/Footer';
+import Inicio from './Views/Inicio';
+
 //import Nosotros from './Views/Nosotros';
 //import Pagina404 from './Views/Pagina404';
 //import Contacto from './Views/Contacto';
@@ -10,8 +12,8 @@ function App() {
   return (
     <>
    <Navbar/>
-
-   <Footer/>
+   <Inicio/>  
+   {/* <Footer/> */}
     </>
   );
 }
