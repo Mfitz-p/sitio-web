@@ -1,4 +1,4 @@
-import lupa from '../images/lupa404.png';
+//import lupa from '../images/lupaCompleta404.png';
 import "../App.css";
 function Pagina404() {
   return (
