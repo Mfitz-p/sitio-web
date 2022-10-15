@@ -20,7 +20,7 @@ function Footer() {
                 </Col>
                 <Col md={3} > </Col>
             </Row>
-            <Row >
+            <Row>
                 <Col md={3}></Col>
                 <Col md={3} style={{ fontSize: "30px" }}>Horario
                     <div style={{ fontSize: "10px" }}><i class="bi bi-clock"></i>  Lunes-Viernes 09:00 - 19:00 </div>
@@ -30,7 +30,7 @@ function Footer() {
                 </Col>
                 <Col md={3} ><Button variant="success" >Contáctanos</Button></Col>
             </Row>
-            <Row >
+            <Row>
                 <Col> © • Todos los derechos reservados • 2022</Col>
             </Row>
         </Container>

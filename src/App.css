@@ -4,3 +4,7 @@
     position: relative;
     left: 155px; 
   }
+.graficos {
+    background-image: url("/src/images/graficos.png");
+    background-repeat: no-repeat;
+  }
