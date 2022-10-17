@@ -10,7 +10,8 @@ function Footer() {
         <Container fluid className="bg-dark text-baseline text-white" style={{position: "fixed", bottom: 0, width:"100%"}}>
             <Row>
                 <Col md={3} >
-                    <div className="d-flex aligns-items-center justify-content-center"><Image fluid src={logo} alt='logo' style={{ width: "100px", position: "relative", top: "30px" }} /></div>
+                    <div className="d-flex aligns-items-center justify-content-center">
+                <Image fluid src={logo} alt='logo' style={{ width: "100px", position: "relative", top: "30px" }} /></div>
                 </Col>
                 <Col md={3} style={{ fontSize: "30px", padding: "20px" }}>Oficinas
                     <div style={{ fontSize: "10px" }}><i class="bi bi-geo-alt"></i> Berlín 43, piso 2, Coyoacán, CDMX</div>

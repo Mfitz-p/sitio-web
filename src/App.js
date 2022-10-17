@@ -11,11 +11,11 @@ function App() {
   <BrowserRouter>
     <Container fluid>
       <Routes>
-        <Route path='/Inicio' element={<Inicio/>}/> 
+        <Route path='/' element={<Inicio/>}/> 
         <Route path='/Contacto' element={<Contacto/>}/> 
         <Route path='/Nosotros' element={<Nosotros/>}/> 
         <Route path='/Productos' element={<Productos/>}/> 
-        <Route path='/' element={<Navigate to='/Inicio'/>}/> 
+        <Route path='/Inicio' element={<Navigate to='/'/>}/> 
         <Route path='*' element={<Pagina404/>}/> 
       </Routes>
     </Container>

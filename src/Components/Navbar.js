@@ -15,10 +15,10 @@ const Navbar = () => {
         <Container>
             <Image fluid src={logo} alt='logo' style={{ width: "100px", position: "relative" }} />
             <Nav >
-            <Nav.Link> <NavLink  className='asd' to="/Inicio">Inicio</NavLink> </Nav.Link>
-            <Nav.Link> <NavLink className='asd' to="/Nosotros">Nosotros</NavLink> </Nav.Link>
-            <Nav.Link> <NavLink className='asd' to="/Productos">Productos</NavLink></Nav.Link>
-            <Nav.Link> <NavLink className='asd' to="/Contacto">Contacto</NavLink></Nav.Link>
+            <Nav.Link> <NavLink  className='Navtexto' to="/Inicio">Inicio</NavLink> </Nav.Link>
+            <Nav.Link> <NavLink className='Navtexto' to="/Nosotros">Nosotros</NavLink> </Nav.Link>
+            <Nav.Link> <NavLink className='Navtexto' to="/Productos">Productos</NavLink></Nav.Link>
+            <Nav.Link> <NavLink className='Navtexto' to="/Contacto">Contacto</NavLink></Nav.Link>
             </Nav>
         </Container>
       </NavbarRB> 
