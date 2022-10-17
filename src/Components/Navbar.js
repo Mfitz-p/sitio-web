@@ -1,4 +1,5 @@
 import React from 'react';
+import { Row } from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
 import Nav from 'react-bootstrap/Nav';
@@ -11,6 +12,7 @@ import "../App.css";
 const Navbar = () => {
   return (
     <>
+        <Row>
         <NavbarRB bg="dark" variant="dark">
         <Container>
             <Image fluid src={logo} alt='logo' style={{ width: "100px", position: "relative" }} />
@@ -21,7 +23,8 @@ const Navbar = () => {
             <Nav.Link> <NavLink className='Navtexto' to="/Contacto">Contacto</NavLink></Nav.Link>
             </Nav>
         </Container>
-      </NavbarRB> 
+      </NavbarRB>
+      </Row> 
     </>
   );
 }
