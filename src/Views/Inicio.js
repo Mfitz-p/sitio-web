@@ -3,10 +3,12 @@ import { Col, Row } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
 import Image from 'react-bootstrap/Image';
 import page from '../images/frontpage.jpg';
+import Navbar from '../Components/Navbar';
 
 const Inicio = () => {
   return (
     <>
+    <Navbar />
         <Card className="bg-dark text-white">
         {/* <Card.Img src="frontpage.jpg" alt="image-page" /> */}
         <Image fluid src={page} alt='img-page' style={{ width: "", height:'18rem', position: "relative" }} />

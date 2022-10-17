@@ -8,3 +8,8 @@
     background-image: url("/src/images/graficos.png");
     background-repeat: no-repeat;
   }
+ 
+  .asd {
+    text-decoration: none;
+    color: white;
+  }

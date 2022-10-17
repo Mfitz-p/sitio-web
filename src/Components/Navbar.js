@@ -4,7 +4,8 @@ import Image from 'react-bootstrap/Image';
 import Nav from 'react-bootstrap/Nav';
 import NavbarRB from 'react-bootstrap/Navbar';
 import logo from '../images/logo-navbar.png';
-
+import { NavLink } from  'react-router-dom'
+import "../App.css";
 // Componente Navbar contiene la barra de navegacion de la pagina y el logotipo de Kaminoittech
 
 const Navbar = () => {
@@ -12,15 +13,13 @@ const Navbar = () => {
     <>
         <NavbarRB bg="dark" variant="dark">
         <Container>
-          <NavbarRB.Brand href="#inicio">
             <Image fluid src={logo} alt='logo' style={{ width: "100px", position: "relative" }} />
-          </NavbarRB.Brand>
-          <Nav className="ml-auto">
-            <Nav.Link href="#inicio">Inicio</Nav.Link>
-            <Nav.Link href="#nosotros">Nosotros</Nav.Link>
-            <Nav.Link href="#productos">Productos</Nav.Link>
-            <Nav.Link href="#contacto">Contacto</Nav.Link>
-          </Nav>
+            <Nav >
+            <Nav.Link> <NavLink  className='asd' to="/Inicio">Inicio</NavLink> </Nav.Link>
+            <Nav.Link> <NavLink className='asd' to="/Nosotros">Nosotros</NavLink> </Nav.Link>
+            <Nav.Link> <NavLink className='asd' to="/Productos">Productos</NavLink></Nav.Link>
+            <Nav.Link> <NavLink className='asd' to="/Contacto">Contacto</NavLink></Nav.Link>
+            </Nav>
         </Container>
       </NavbarRB> 
     </>

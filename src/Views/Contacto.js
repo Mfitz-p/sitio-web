@@ -2,9 +2,13 @@
  * Página de formulario 
  */
 import { Form, Button, Col, Row, Container } from 'react-bootstrap/'
+import Navbar from '../Components/Navbar';
+
 import "../App.css";
 function Contacto() {
     return (
+       <>
+        <Navbar />
             <Container className="graficos">
                 <div className="m-4" style={{ fontFamily: "Lora" }}>
                     <h1 >Contáctanos</h1>
@@ -15,21 +19,21 @@ function Contacto() {
                     <Row   >
                         <Form.Group className="mb-3" as={Col} md="2" controlId="formName">
                             <Form.Label>Nombre</Form.Label>
-                            <Form.Control type="text" placeholder="Nombre completo" />
+                            <Form.Control type="text" placeholder="" />
                         </Form.Group>
                         <Form.Group className="mb-3" as={Col} md="2" controlId="formLastName">
                             <Form.Label>Apellido</Form.Label>
-                            <Form.Control type="text" placeholder="Apellidos" />
+                            <Form.Control type="text" placeholder="" />
                         </Form.Group>
                     </Row>
                     <Row className="mb-5">
                         <Form.Group className="mb-3" as={Col} md="2" controlId="formEmail">
                             <Form.Label>Correo Electrónico</Form.Label>
-                            <Form.Control type="email" placeholder="Correo Electrónico" />
+                            <Form.Control type="email" placeholder="" />
                         </Form.Group>
                         <Form.Group className="mb-3" as={Col} md="2" controlId="formPhone">
                             <Form.Label>Teléfono</Form.Label>
-                            <Form.Control type="number" placeholder="Teléfono" />
+                            <Form.Control type="number" placeholder="" />
                         </Form.Group>
                     </Row>
 
@@ -39,13 +43,14 @@ function Contacto() {
                             type="text"
                             id="inputTextArea"
                             style={{ height: '100px', width: '50%' }}
-                        />
+                            />
                     </Form.Group>
                     <Button variant="success" type="submit">
                         Enviar
                     </Button>
                 </Form>
             </Container>
+        </>
     )
 }
 
