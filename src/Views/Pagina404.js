@@ -1,3 +1,6 @@
+/**
+ * Página de error 404
+ */
 //import lupa from '../images/lupaCompleta404.png';
 import "../App.css";
 function Pagina404() {
