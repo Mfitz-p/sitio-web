@@ -19,10 +19,10 @@ const Navbar = () => {
         <NavbarRB.Toggle aria-controls="responsive-navbar-nav" />
         <NavbarRB.Collapse className='flex-grow-0' id="responsive-navbar-nav">
           <Nav >
-            <NavLink> <Nav.Link to="/Inicio">Inicio</Nav.Link> </NavLink>
-            <NavLink> <Nav.Link to="/Nosotros">Nosotros</Nav.Link> </NavLink>
-            <NavLink> <Nav.Link to="/Productos">Productos</Nav.Link> </NavLink>
-            <NavLink> <Nav.Link to="/Contacto">Contacto</Nav.Link> </NavLink>
+            <Nav.Link as={NavLink} to="/Inicio" className='text-white text-decoration-none'>Inicio </Nav.Link>
+            <Nav.Link as={NavLink} to="/Nosotros" className='text-white text-decoration-none'>Nosotros</Nav.Link>
+            <Nav.Link as={NavLink} to="/Productos" className='text-white text-decoration-none'> Productos </Nav.Link>
+            <Nav.Link as={NavLink} to="/Contacto" className='text-white text-decoration-none'>Contacto</Nav.Link>
           </Nav>
         </NavbarRB.Collapse>
       </Container>

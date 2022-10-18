@@ -4,30 +4,22 @@ import Nosotros from './Views/Nosotros';
 import Productos from './Views/Productos/Productos';
 import Pagina404 from './Views/Pagina404';
 import Contacto from './Views/Contacto'; 
-import { Container, Navbar} from 'react-bootstrap/';
-import Footer from './Components/Footer';
-
-// import Footer from './Components/Footer';
-// import Navbar from './Components/Navbar';
-
+import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
 function App() {
   return (
-    <>
-  <BrowserRouter>
-  <Navbar/>
-    <Container fluid>
+  <BrowserRouter> 
+      <Navbar/>
       <Routes>
-        <Route path='/Inicio' element={<Inicio/>}/> 
+        <Route path='/' element={<Inicio/>}/> 
         <Route path='/Contacto' element={<Contacto/>}/> 
         <Route path='/Nosotros' element={<Nosotros/>}/> 
         <Route path='/Productos' element={<Productos/>}/> 
         <Route path='/Inicio' element={<Navigate to='/'/>}/> 
         <Route path='*' element={<Pagina404/>}/> 
       </Routes>
-      <Footer />
-    </Container>
+      <Footer/>
   </BrowserRouter>
-  </>
   );
 }
 
