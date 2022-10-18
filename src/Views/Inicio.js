@@ -3,18 +3,17 @@ import { Col, Container, Row } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
 import Image from 'react-bootstrap/Image';
 import page from '../images/frontpage.jpg';
-import Navbar from '../Components/Navbar';
 
 const Inicio = () => {
   return (
     <>
     <Container fluid>
         <Row>
-    <Navbar />
+    
         <Card className="bg-dark text-white">
         <Row>
         {/* <Card.Img src="frontpage.jpg" alt="image-page" /> */}
-        <Image fluid src={page} alt='img-page' style={{ width: "", height:'18rem', position: "relative" }} />
+        <Image fluid src={page} alt='img-page' style={{ width: "", height:'18rem'}} />
         </Row>
         <Card.ImgOverlay>
           <Col>
@@ -26,7 +25,9 @@ const Inicio = () => {
         </Card.ImgOverlay>
         </Card>
         </Row>
+      </Container>  
 {/* Comienzan las cards de servicios */}
+<Container fluid>
     <Row>
     <Col> 
     <Card className='m-3' style={{ width:'35rem', height:'15rem' }}>
@@ -57,6 +58,11 @@ const Inicio = () => {
       </Card.Body>
     </Card>
     </Col>
+
+    {/* División linea horizontal  */}
+    <div class="text-success">
+      <hr />
+    </div>
     
     <Col>
     <Card className='m-3' style={{ width:'35rem', height:'15rem' }}>
@@ -74,6 +80,8 @@ const Inicio = () => {
       </Card.Body>
     </Card>
     </Col>
+
+    
 
     <Col>
     <Card className='m-3' style={{ width:'35rem', height:'15rem' }}>
@@ -95,6 +103,6 @@ const Inicio = () => {
     </Row>
     </Container>
     </>
-  )
+  );
 }
 export default Inicio;

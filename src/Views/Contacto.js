@@ -8,7 +8,7 @@ import "../App.css";
 function Contacto() {
     return (
        <>
-        <Navbar />
+        
             <Container className="graficos">
                 <div className="m-4" style={{ fontFamily: "Lora" }}>
                     <h1 >Contáctanos</h1>

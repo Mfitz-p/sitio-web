@@ -7,7 +7,6 @@ import Navbar from '../Components/Navbar';
 function Nosotros() {
   return (
     <>
-    <Navbar />
       <Container fluid className='bg-dark p-3'>
         <div className='d-flex justify-content-center mb-4' style={{ fontFamily: "Lora", fontSize: "64px", color: "#6BBBAE" }}>KAMINOITTECH</div>
         <p className='d-flex justify-content-center text-white' style={{ fontFamily: "Lora", fontSize: "20px" }}>Nos enfocamos en crear soluciones en tecnologías
