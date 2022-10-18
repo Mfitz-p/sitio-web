@@ -15,7 +15,7 @@ const Navbar = () => {
         <Row>
         <NavbarRB bg="dark" variant="dark">
         <Container>
-            <Image fluid src={logo} alt='logo' style={{ width: "100px", position: "relative" }} />
+            <Image fluid src={logo} alt='logo' style={{ width: "100px" }} />
             <Nav >
             <Nav.Link> <NavLink  className='Navtexto' to="/Inicio">Inicio</NavLink> </Nav.Link>
             <Nav.Link> <NavLink className='Navtexto' to="/Nosotros">Nosotros</NavLink> </Nav.Link>

@@ -2,13 +2,11 @@
  * Página de formulario 
  */
 import { Form, Button, Col, Row, Container } from 'react-bootstrap/'
-import Navbar from '../Components/Navbar';
 
 import "../App.css";
 function Contacto() {
     return (
        <>
-        <Navbar />
             <Container className="graficos">
                 <div className="m-4" style={{ fontFamily: "Lora" }}>
                     <h1 >Contáctanos</h1>

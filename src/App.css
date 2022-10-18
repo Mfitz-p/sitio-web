@@ -1,14 +1,14 @@
+* {
+  font-family: sans-serif;
+}
+
 .fondo {
     background-image: url("/src/images/lupaExtendidaAgrandada404.png");
     background-repeat: no-repeat;
     position: relative;
     left: 155px; 
   }
-<<<<<<< HEAD
-* {
-    font-family: sans-serif;
-  }
-=======
+
 .graficos {
     background-image: url("/src/images/graficos.png");
     background-repeat: no-repeat;
@@ -18,4 +18,3 @@
     text-decoration: none;
     color: white;
   }
->>>>>>> e434eea25eb8c29c7e2d089619ebfdfb59820076

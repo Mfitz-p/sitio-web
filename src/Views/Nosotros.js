@@ -1,41 +1,46 @@
 /**
  * Vista de página Nosotros. 
  */
-import { Container, Card } from 'react-bootstrap/';
-import Navbar from '../Components/Navbar';
+import { Container, Card, Row, Col } from 'react-bootstrap/';
 
 function Nosotros() {
   return (
     <>
-    <Navbar />
-      <Container fluid className='bg-dark p-3'>
-        <div className='d-flex justify-content-center mb-4' style={{ fontFamily: "Lora", fontSize: "64px", color: "#6BBBAE" }}>KAMINOITTECH</div>
-        <p className='d-flex justify-content-center text-white' style={{ fontFamily: "Lora", fontSize: "20px" }}>Nos enfocamos en crear soluciones en tecnologías
+      <Container fluid className='bg-dark p-3 m-0'>
+        <div className='d-flex justify-content-center mb-4' style={{ fontSize: "3vw", color: "#6BBBAE" }}>KAMINOITTECH</div>
+        <p className='d-flex justify-content-center text-white' style={{  fontSize: "20px" }}>Nos enfocamos en crear soluciones en tecnologías
           de la información aplicadas a la consultoría y a la inteligencia de negocios.</p>
-        <p className='d-flex justify-content-center text-white' style={{ fontFamily: "Lora", fontSize: "20px" }}>Realizamos vínculos a través de proyectos colaborativos con la academia para un mayor desarrollo científico en el país.</p>
+        <p className='d-flex justify-content-center text-white' style={{  fontSize: "20px" }}>Realizamos vínculos a través de proyectos colaborativos con la academia para un mayor desarrollo científico en el país.</p>
       </Container>
-      <Container fluid className='d-flex aligns-items-center justify-content-evenly'>
-        <Card style={{ width: '20rem', border: 'none', marginTop: '2rem' }}>
+      <Container fluid >
+     {/*  className="d-flex justify-content-around" */}
+      <Row >
+        <Col >
+        <Card className="mx-auto " style={{ width: '23rem' , marginTop: '2rem', border: 'none' }}>
           <Card.Body>
-            <Card.Title style={{ fontFamily: "Lora", fontSize: "32px" }}>Misión</Card.Title>
-            <Card.Text style={{ borderTop: "solid #6BBBAE 3px", fontFamily: "Lora", fontSize: "15px", textAlign: "justify" }}>
+            <Card.Title style={{ fontSize: "32px" }}>Misión</Card.Title>
+            <Card.Text style={{ borderTop: "solid #6BBBAE 3px", fontSize: "20px", textAlign: "justify" }}>
               Construir soluciones para la automatización de procesos
               que generen valor y una mejor experiencia para nuestros
               clientes.
             </Card.Text>
           </Card.Body>
         </Card>
-        <Card style={{ width: '20rem', border: 'none', marginTop: '2rem' }}>
+        </Col>
+        <Col>
+        <Card className="mx-auto" style={{ width: '23rem', marginTop: '2rem', border: 'none'}}>
           <Card.Body>
-            <Card.Title style={{ fontFamily: "Lora", fontSize: "32px" }} >Vision</Card.Title>
-            <Card.Text style={{ borderTop: "solid #6BBBAE 3px", fontFamily: "Lora", fontSize: "15px", textAlign: "justify" }}>
+            <Card.Title style={{ fontSize: "32px" }} >Vision</Card.Title>
+            <Card.Text style={{ borderTop: "solid #6BBBAE 3px", fontSize: "20px", textAlign: "justify" }}>
               Buscamos dotar a nuestros socios un panorama más
               amplio sobre las ventajas del uso de las tecnologías de la
               información en proyectos de infraestructura.
             </Card.Text>
           </Card.Body>
         </Card>
-      </Container>
+        </Col>
+      </Row>
+        </Container>
     </>
   )
 }
