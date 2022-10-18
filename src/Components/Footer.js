@@ -11,7 +11,7 @@ function Footer() {
             <Row>
                 <Col md={3} >
                     <div className="d-flex aligns-items-center justify-content-center">
-                        <Image fluid src={logo} alt='logo' style={{ width: "100px", position: "relative", top: "30px" }} /></div>
+                    <Image fluid src={logo} alt='logo' style={{ width: "100px", position: "relative", top: "30px" }} /></div>
                 </Col>
                 <Col md={3} style={{ fontSize: "30px", padding: "20px" }}>Oficinas
                     <div style={{ fontSize: "10px" }}><i class="bi bi-geo-alt"></i> Berlín 43, piso 2, Coyoacán, CDMX</div>
