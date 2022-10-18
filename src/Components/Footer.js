@@ -7,11 +7,11 @@ import logo from '../images/logo.png';
 
 function Footer() {
     return (
-        <Container fluid className="bg-dark text-baseline text-white" style={{position: "fixed", bottom: 0, width:"100%"}}>
+        <Container fluid className="bg-dark text-baseline text-white" style={{ position: "fixed", bottom: 0, width: "100%" }}>
             <Row>
                 <Col md={3} >
                     <div className="d-flex aligns-items-center justify-content-center">
-                <Image fluid src={logo} alt='logo' style={{ width: "100px", position: "relative", top: "30px" }} /></div>
+                        <Image fluid src={logo} alt='logo' style={{ width: "100px", position: "relative", top: "30px" }} /></div>
                 </Col>
                 <Col md={3} style={{ fontSize: "30px", padding: "20px" }}>Oficinas
                     <div style={{ fontSize: "10px" }}><i class="bi bi-geo-alt"></i> Berlín 43, piso 2, Coyoacán, CDMX</div>
@@ -19,9 +19,7 @@ function Footer() {
                 <Col md={3} style={{ fontSize: "30px", padding: "20px" }}>Información
                     <div style={{ fontSize: "10px" }}><i class="bi bi-telephone"></i> 55 9039 1301</div>
                 </Col>
-                <Col md={3} > </Col>
-            </Row>
-            <Row>
+                <Col md={3}></Col>
                 <Col md={3}></Col>
                 <Col md={3} style={{ fontSize: "30px" }}>Horario
                     <div style={{ fontSize: "10px" }}><i class="bi bi-clock"></i>  Lunes-Viernes 09:00 - 19:00 </div>
@@ -35,10 +33,9 @@ function Footer() {
                 <Col> © • Todos los derechos reservados • 2022</Col>
             </Row>
         </Container>
-  )
+    )
 }
 
 export default Footer
 
 
- 
