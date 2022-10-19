@@ -38,7 +38,7 @@ function Footer() {
                             </Col>
                         </Row> 
                     </Col>
-                    <Col>
+                    <Col className=''>
                     <Nav.Link as={NavLink} to="/Contacto">
                         <Button className='justify-content-center' variant="success" >Contáctanos</Button>
                     </Nav.Link>
