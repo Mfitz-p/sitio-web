@@ -3,16 +3,29 @@
 }
 
 .fondo {
-    background-image: url("/src/images/lupaExtendidaAgrandada404.png");
+    background-image: url("/src/images/lupa404.png");
     background-repeat: no-repeat;
- 
+    background-size: clamp(300px, 27vw, 800px);
+    background-position: 53vw 5vw;
+  }
+  @media screen and (max-width: 697px) {
+    .fondo {
+      background-image: none
+    }
   }
 .graficos {
-    background-image: url("/src/images/graficos.png");
+    background-image: url("/src/images/graficosContacto.png");
     background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: 56vw ;
   }
  
   .Navtexto {
     text-decoration: none;
     color: white;
+  }
+  @media screen and (max-width: 768px) {
+    .graficos {
+      background-image: none
+    }
   }
