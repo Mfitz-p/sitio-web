@@ -14,7 +14,9 @@ const Navbar = () => {
     <NavbarRB collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
         <NavbarRB.Brand className='mr-auto' to="/Inicio">
-          <Image fluid src={logo} alt='logo' style={{ width: "100px" }} />
+          <Nav.Link as={NavLink} to="/Inicio">
+          <Image  fluid src={logo} alt='logo' style={{ width: "100px" }} />
+          </Nav.Link>
         </NavbarRB.Brand>
         <NavbarRB.Toggle aria-controls="responsive-navbar-nav" />
         <NavbarRB.Collapse className='flex-grow-0' id="responsive-navbar-nav">

@@ -22,7 +22,6 @@ const Productos = () => {
       <Row className='align-items-center'>
             <Col style={{  borderRight: 'solid #6BBBAE 1px' }}>
               <Card className="p-5" style={{  border:'none' }}>
-                {/* className='m-3' style={{ width:'35rem', height:'15rem' }} */}
                 <Card.Body>
                   <Card.Title  style={{ fontSize: '25px', border:'none' }}>
                     <i class="bi bi-clipboard2-check m-3" style={{ color: '#6BBBAE' }}></i>
@@ -38,7 +37,6 @@ const Productos = () => {
             </Col>
             <Col>
               <Card className="p-5" style={{  border:'none' }}>
-                {/* className='m-3' style={{ width:'35rem', height:'15rem' }} */}
                 <Card.Body>
                     <Image fluid src={imgSistemasGestion} alt='imgSistemasGestion' style={{ width: "400px" }} />
                 </Card.Body>
