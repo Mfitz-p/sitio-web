@@ -9,7 +9,7 @@ import logo from '../images/logo-navbar.png';
 function Footer() {
     return (
         <>
-            <Container fluid className='bg-dark text-white p-3'>
+            <Container fluid className='bg-dark text-white pt-3'>
                 {/* Este Row contiene todos los elementos del footer, sin los derechos reservados */}
                 <Row className='align-items-center'>
                     <Col xs={12} md={3} className="d-flex aligns-items-center justify-content-center">
@@ -38,7 +38,7 @@ function Footer() {
                             </Col>
                         </Row> 
                     </Col>
-                    <Col xs={12} md={3} className="d-flex aligns-items-center justify-content-center">
+                    <Col xs={12} md={2} className="d-flex aligns-items-center justify-content-center">
                     <Nav.Link as={NavLink} to="/Contacto">
                         <Button className='mx-auto' variant="success" >Contáctanos</Button>
                     </Nav.Link>
@@ -53,6 +53,6 @@ function Footer() {
   );
 }
 
-export default Footer
+export default Footer;
 
 

@@ -28,7 +28,7 @@ function Contacto() {
 
   return (
     <>
-      <Container fluid className="graficos">
+      <Container fluid className="graficos p-0">
         <div className="m-4">
           <div style={{ fontSize: "clamp(36px, 4vw, 48px)", color: "#6BBBAE" }}>
             {" "}
@@ -118,7 +118,7 @@ function Contacto() {
           </Button>
         </Form>
       </Container>
-      {state.succeeded ? <p>Gracias por contactarse con nosotros</p> : ""}
+      {state.succeeded ? <p>Gracias por contactarse con nosotros</p>: ""}
     </>
   );
 }
