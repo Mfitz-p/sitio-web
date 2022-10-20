@@ -23,7 +23,6 @@ const Inicio = () => {
         <Row>
           <Col style={{ borderRight: 'solid #6BBBAE 1px', borderBottom: 'solid #6BBBAE 1px' }}>
             <Card className="p-5" style={{  border:'none' }}>
-              {/* className='m-3' style={{ width:'35rem', height:'15rem' }} */}
               <Card.Body>
                 <Card.Title  style={{ fontSize: "2rem", textAlign: "justify" }}>
                   ¿Qué hacemos por ti?
@@ -70,6 +69,7 @@ const Inicio = () => {
                 </Card.Body>
               </Card>
             </Col>
+
             <Col>
               <Card className="p-5" style={{  border:'none' }}>
                 {/* className='m-3' style={{ width:'35rem', height:'15rem' }} */}
