@@ -8,11 +8,37 @@
     background-size: clamp(300px, 27vw, 800px);
     background-position: 53vw 5vw;
   }
-  @media screen and (max-width: 697px) {
+
+  .lupa {
+    visibility: hidden
+  }
+  @media screen and (max-width: 850px) {
     .fondo {
-      background-image: none
+      background-image: none;
+    }
+    .tache {visibility: hidden;
+    }
+    .lupa {
+      visibility: visible;
+      position: absolute;
+      right: 30%;
     }
   }
+  @media screen and (max-width: 611px) {
+    .lupa {
+      visibility: visible;
+      position: absolute;
+      font-size: 30vw;
+      right: 5%;
+      
+    }
+  }
+  @media screen and (max-width: 420px) {
+    .lupa {
+      visibility: hidden;
+    }
+  }
+  
 .graficos {
     background-image: url("/src/images/graficosContacto.png");
     background-repeat: no-repeat;

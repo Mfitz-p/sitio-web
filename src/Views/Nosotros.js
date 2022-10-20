@@ -7,7 +7,7 @@ function Nosotros() {
   return (
     <>
       <Container fluid className='bg-dark p-3 m-0'>
-        <div className='d-flex justify-content-center mb-4' style={{ fontSize: "clamp(32px, 4vw, 48px)", color: "#6BBBAE" }}>KAMINOITTECH</div>
+        <div className='d-flex justify-content-center mb-4' style={{ fontSize: "clamp(43px, 4vw, 48px)", color: "#6BBBAE" }}>KAMINOITTECH</div>
         <p className='d-flex justify-content-center text-white' style={{ fontSize: "20px" }}>Nos enfocamos en crear soluciones en tecnologías
           de la información aplicadas a la consultoría y a la inteligencia de negocios.</p>
         <p className='d-flex justify-content-center text-white' style={{ fontSize: "20px" }}>Realizamos vínculos a través de proyectos colaborativos con la academia para un mayor desarrollo científico en el país.</p>
