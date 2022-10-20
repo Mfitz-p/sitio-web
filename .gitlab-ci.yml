@@ -1,0 +1,27 @@
+stages:
+    - build
+    - deploy
+    
+build:
+    image: node:latest
+    stage: build
+    script:
+        - npm install
+        - npm build
+    artifacts:
+        paths:
+            - build/
+
+pages:
+    image: f:lastest
+    stage: deploy
+    variables:
+        GIT_STRATEGY: none
+        NODE_ENV: production
+        PUBLIC_URL: http://jyreh.kaminoittech.io/sitio_web_kaminoittech
+    script:
+        - mv build public
+        - cp public/index.html public/404.html
+    artifacts:
+        paths:
+            - public
