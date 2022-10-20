@@ -4,10 +4,14 @@ image: node:alpine3.15
 before_script:
   - npm install
   - npm run build
+  - npm install -g serve
+  - npm install -g serve
+  - serve -s build
 pages:
   script:
     - mv build public
     - cp public/index.html public/404.html
+    - serve -s build -l 4000
   artifacts:
     paths:
       # The folder that contains the files to be exposed at the Page URL
