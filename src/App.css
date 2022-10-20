@@ -5,26 +5,31 @@
 .fondo {
     background-image: url("/src/images/lupa404.png");
     background-repeat: no-repeat;
-    background-size: clamp(300px, 27vw, 800px);
-    background-position: 53vw 5vw;
+    background-size: clamp(270px, 27vw, 800px);
+    background-position: 60vw 2vw;
   }
 
-  .lupa {
+/*   .lupa {
     visibility: hidden
-  }
-  @media screen and (max-width: 850px) {
+  } */
+  @media screen and (max-width: 768px) {
     .fondo {
       background-image: none;
     }
-    .tache {visibility: hidden;
-    }
-    .lupa {
+ /*    .tache {visibility: hidden;
+    } */
+/*     .lupa {
       visibility: visible;
       position: absolute;
       right: 30%;
+    } */
+  }
+  @media screen and (max-width: 768px) {
+    .text404 {
+      text-align: center;
     }
   }
-  @media screen and (max-width: 611px) {
+ /*  @media screen and (max-width: 611px) {
     .lupa {
       visibility: visible;
       position: absolute;
@@ -37,7 +42,7 @@
     .lupa {
       visibility: hidden;
     }
-  }
+  } */
   
 .graficos {
     background-image: url("/src/images/graficosContacto.png");
