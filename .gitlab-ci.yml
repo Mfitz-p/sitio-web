@@ -1,27 +1,18 @@
-stages:
-    - build
-    - deploy
-    
-build:
-    image: node:latest
-    stage: build
-    script:
-        - npm install
-        - npm build
-    artifacts:
-        paths:
-            - build/
-
+# The Docker image that will be used to build your app
+image: node:lastest
+# Functions that should be executed before the build script is run
+before_script:
+  - npm install
+  - npm build
 pages:
-    image: f:lastest
-    stage: deploy
-    variables:
-        GIT_STRATEGY: none
-        NODE_ENV: production
-        PUBLIC_URL: http://jyreh.kaminoittech.io/sitio_web_kaminoittech
-    script:
-        - mv build public
-        - cp public/index.html public/404.html
-    artifacts:
-        paths:
-            - public
+  script:
+    - mv build public
+    - cp public/index.html public/404.html
+  artifacts:
+    paths:
+      # The folder that contains the files to be exposed at the Page URL
+      - public
+  rules:
+    # This ensures that only pushes to the default branch will trigger
+    # a pages deploy
+    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
