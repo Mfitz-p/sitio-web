@@ -1,22 +1,42 @@
-# The Docker image that will be used to build your app
-image: node:alpine3.15
-# Functions that should be executed before the build script is run
-before_script:
-  - npm install
-  - npm run build
-  - npm install -g serve
-  - npm install -g serve
-  - serve -s build
-pages:
-  script:
-    - mv build public
-    - cp public/index.html public/404.html
-    - serve -s build -l 4000
-  artifacts:
-    paths:
-      # The folder that contains the files to be exposed at the Page URL
-      - public
+image: docker:19.03.10
+
+services:
+  - docker:dind
+
+workflow:
   rules:
-    # This ensures that only pushes to the default branch will trigger
-    # a pages deploy
-    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
+    - if: '$CI_COMMIT_BRANCH == "main"'
+      variables:
+        REPOSITORY_URL: 662670350062.dkr.ecr.us-west-2.amazonaws.com/kaminoittech-web
+        CLUSTER_NAME: kaminoittech-web
+        SERVICE_NAME: service_kaminoittech-web
+        TASK_DEFINITION_NAME: task_kaminoittech-web
+before_script:
+  - apk add --no-cache curl jq python py-pip
+  - pip install awscli
+  - aws configure set aws_access_key_id $AWS_ACCESS_KEY_ID --profile default
+  - aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY
+  - aws configure set region $AWS_DEFAULT_REGION
+  - $(aws ecr get-login --no-include-email --region "${AWS_DEFAULT_REGION}")
+  - IMAGE_TAG="$(echo $CI_COMMIT_SHA | head -c 8)"
+
+stages:
+  - build
+  - deploy
+
+build:
+  stage: build
+  script:
+    - echo "Building image..."
+    - docker build -t $REPOSITORY_URL:latest .
+    - echo "Tagging image..."
+    - docker tag $REPOSITORY_URL:latest $REPOSITORY_URL:$IMAGE_TAG
+    - echo "Pushing image..."
+    - docker push $REPOSITORY_URL:latest
+    - docker push $REPOSITORY_URL:$IMAGE_TAG
+
+deploy:
+  stage: deploy
+  script:
+    - echo "Updating the service..."
+    - aws ecs update-service --region "${AWS_DEFAULT_REGION}" --cluster "${CLUSTER_NAME}" --service "${SERVICE_NAME}"  --task-definition "${TASK_DEFINITION_NAME}" --force-new-deployment
