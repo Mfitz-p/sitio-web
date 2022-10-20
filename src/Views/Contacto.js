@@ -38,22 +38,22 @@ function Contacto() {
                     <Row > 
                         <Form.Group className="mb-3" as={Col} md="3" >
                             <Form.Label>Nombre</Form.Label>
-                            <Form.Control type="text" value={datosForm.Nombre} onChange={handleChange} name='Nombre'/>
+                            <Form.Control type="text" value={datosForm.Nombre} onChange={handleChange} name='Nombre' required/>
                         </Form.Group>
                         <Form.Group className="mb-3" as={Col} md="3" >
                             <Form.Label>Apellido</Form.Label>
-                            <Form.Control type="text" value={datosForm.Apellido} onChange={handleChange} name='Apellido'/>
+                            <Form.Control type="text" value={datosForm.Apellido} onChange={handleChange} name='Apellido' required/>
                         </Form.Group>
                         <Col className="md-6"></Col>
                     </Row>
                     <Row className="mb-4">
                         <Form.Group  as={Col} md="3" >
                             <Form.Label>Correo </Form.Label>
-                            <Form.Control type="email" value={datosForm.Correo} onChange={handleChange} name='Correo'/>
+                            <Form.Control type="email" value={datosForm.Correo} onChange={handleChange} name='Correo' required/>
                         </Form.Group>
                         <Form.Group  as={Col} md="3" >
                             <Form.Label>Teléfono</Form.Label>
-                            <Form.Control type="number" value={datosForm.Telefono} onChange={handleChange} name='Telefono'/>
+                            <Form.Control type="number" value={datosForm.Telefono} onChange={handleChange} name='Telefono' required/>
                         </Form.Group>
                        <Col className="md-6"></Col>
                     </Row>    
@@ -66,6 +66,7 @@ function Contacto() {
                             value={datosForm.Mensaje} 
                             onChange={handleChange} 
                             name='Mensaje'
+                            required
                             />
                     </Form.Group>
                     <Button variant="success" type="submit">
