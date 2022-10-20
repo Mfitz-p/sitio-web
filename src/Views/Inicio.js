@@ -61,7 +61,7 @@ const Inicio = () => {
                     <i className="bi bi-graph-up-arrow m-3" style={{ fontSize: '45px', color: '#6BBBAE' }}></i>
                     Retail & B2B
                   </Card.Title>
-                  <Card.Text style={{ fontSize: '18px', textAlign: 'justify' }}>
+                  <Card.Text className='pt-1' style={{ fontSize: '18px', textAlign: 'justify' }}>
                     Desarrollo de sistemas de gestión de datos e
                     información para la optimización de estrategias de venta,
                     seguimiento de insumos clave y monitoreo del

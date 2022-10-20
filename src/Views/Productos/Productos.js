@@ -20,7 +20,7 @@ const Productos = () => {
         </Row>
         {/* Inician las cards de productos con su respectiva imagen */}
       <Row className='align-items-center'>
-            <Col style={{  borderRight: 'solid #6BBBAE 1px' }}>
+            <Col>
               <Card className="p-5" style={{  border:'none' }}>
                 <Card.Body>
                   <Card.Title  style={{ fontSize: '25px', border:'none' }}>
@@ -28,9 +28,9 @@ const Productos = () => {
                     Desarrollo de sistemas de gestión
                   </Card.Title>
                   <Card.Text style={{ fontSize: '18px', textAlign: 'justify' }}>
-                    <p>▸ Solución conceptual del problema</p>
-                    <p>▸ Elaboración y creación de módulos</p>
-                    <p>▸ Implementación y seguimiento del sistema</p>
+                    <p className='mb-0'>▸ Solución conceptual del problema</p>
+                    <p className='mb-0'>▸ Elaboración y creación de módulos</p>
+                    <p className='mb-0'>▸ Implementación y seguimiento del sistema</p>
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -38,7 +38,7 @@ const Productos = () => {
             <Col>
               <Card className="p-5" style={{  border:'none' }}>
                 <Card.Body>
-                    <Image fluid src={imgSistemasGestion} alt='imgSistemasGestion' style={{ width: "400px" }} />
+                    <Image fluid src={imgSistemasGestion} alt='imgSistemasGestion' />
                 </Card.Body>
               </Card>
             </Col>
@@ -46,10 +46,10 @@ const Productos = () => {
 
           
           <Row className='align-items-center' style={{  borderTop: 'solid #6BBBAE 1px'}}>
-          <Col style={{  borderRight: 'solid #6BBBAE 1px' }}>
+          <Col>
               <Card className="p-5" style={{  border:'none' }}>
                 <Card.Body>
-                    <Image fluid src={imgModelosML} alt='imgModelosML' style={{ width: "400px" }} />
+                    <Image fluid src={imgModelosML} alt='imgModelosML' />
                 </Card.Body>
               </Card>
             </Col>
@@ -61,9 +61,9 @@ const Productos = () => {
                     Modelos de Machine Learning
                   </Card.Title>
                   <Card.Text style={{ fontSize: '18px', textAlign: 'justify' }}>
-                    <p>▸ Redes Neuronales</p>
-                    <p>▸ Agrupación y clasificación</p>
-                    <p>▸ Análisis y predicción del comportamiento</p>
+                    <p className='mb-0'>▸ Redes Neuronales</p>
+                    <p className='mb-0'>▸ Agrupación y clasificación</p>
+                    <p className='mb-0'>▸ Análisis y predicción del comportamiento</p>
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -71,18 +71,18 @@ const Productos = () => {
           </Row>
 
           <Row className='align-items-center' style={{  borderTop: 'solid #6BBBAE 1px'}}>
-            <Col style={{  borderRight: 'solid #6BBBAE 1px' }}>
+            <Col>
               <Card className="p-5" style={{  border:'none' }}>
                 {/* className='m-3' style={{ width:'35rem', height:'15rem' }} */}
                 <Card.Body>
                   <Card.Title  style={{ fontSize: '25px', border:'none' }}>
-                    <i class="bi bi-bounding-box m-3" style={{ color: '#6BBBAE' }}></i>
+                    <i class="bi bi-bounding-box m-3" style={{ color: '#6BBBAE'}}></i>
                     Business Intelligence
                   </Card.Title>
                   <Card.Text style={{ fontSize: '18px', textAlign: 'justify' }}>
-                    <p>▸ Construcción, mantenimiento y operación de páginas web</p>
-                    <p>▸ Desarrollo de tableros analíticos y de visualización</p>
-                    <p>▸ Optimización SEO</p>
+                    <p className='mb-0'>▸ Construcción, mantenimiento y operación de páginas web</p>
+                    <p className='mb-0'>▸ Desarrollo de tableros analíticos y de visualización</p>
+                    <p className='mb-0'>▸ Optimización SEO</p>
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -91,17 +91,17 @@ const Productos = () => {
               <Card className="p-5" style={{  border:'none' }}>
                 {/* className='m-3' style={{ width:'35rem', height:'15rem' }} */}
                 <Card.Body>
-                    <Image fluid src={imgBusinessInte} alt='imgBusinessInte' style={{ width: "400px" }} />
+                    <Image fluid src={imgBusinessInte} alt='imgBusinessInte'/>
                 </Card.Body>
               </Card>
             </Col>
           </Row>
 
           <Row className='align-items-center' style={{  borderTop: 'solid #6BBBAE 1px'}}>
-          <Col style={{  borderRight: 'solid #6BBBAE 1px' }}>
+          <Col>
               <Card className="p-5" style={{  border:'none' }}>
                 <Card.Body>
-                    <Image fluid src={imgVisionComputadora} alt='imgVisionComputadora' style={{ width: "400px" }} />
+                    <Image fluid src={imgVisionComputadora} alt='imgVisionComputadora'/>
                 </Card.Body>
               </Card>
             </Col>
@@ -113,9 +113,9 @@ const Productos = () => {
                     Percepción remota y visión de computadora
                   </Card.Title>
                   <Card.Text style={{ fontSize: '18px', textAlign: 'justify' }}>
-                    <p>▸ Base de datos de imágenes</p>
-                    <p>▸ Reconocimiento de objetos  en imágenes y videos</p>
-                    <p>▸ Análisis de diferentes canales del espectro electromagnético</p>
+                    <p className='mb-0'>▸ Base de datos de imágenes</p>
+                    <p className='mb-0'>▸ Reconocimiento de objetos  en imágenes y videos</p>
+                    <p className='mb-0'>▸ Análisis de diferentes canales del espectro electromagnético</p>
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -123,7 +123,7 @@ const Productos = () => {
           </Row>
 
           <Row className='align-items-center' style={{  borderTop: 'solid #6BBBAE 1px'}}>
-            <Col style={{  borderRight: 'solid #6BBBAE 1px' }}>
+            <Col>
               <Card className="p-5" style={{  border:'none' }}>
                 <Card.Body>
                   <Card.Title  style={{ fontSize: '25px', border:'none' }}>
@@ -131,9 +131,9 @@ const Productos = () => {
                     Análisis y visualización de Big Data
                   </Card.Title>
                   <Card.Text style={{ fontSize: '18px', textAlign: 'justify' }}>
-                    <p>▸ Soluciones analíticas basadas en grafos</p>
-                    <p>▸ Analítica predictiva</p>
-                    <p>▸ Ingeniería de datos</p>
+                    <p className='mb-0'>▸ Soluciones analíticas basadas en grafos</p>
+                    <p className='mb-0'>▸ Analítica predictiva</p>
+                    <p className='mb-0'>▸ Ingeniería de datos</p>
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -141,7 +141,7 @@ const Productos = () => {
             <Col>
               <Card className="p-5" style={{  border:'none' }}>
                 <Card.Body>
-                    <Image fluid src={imgBigData} alt='imgBigData' style={{ width: "400px" }} />
+                    <Image fluid src={imgBigData} alt='imgBigData'/>
                 </Card.Body>
               </Card>
             </Col>
