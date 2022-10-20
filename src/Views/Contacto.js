@@ -101,7 +101,7 @@ function Contacto() {
             <Form.Control
               type="text"
               id="Mensaje"
-              style={{ height: "100px", width: "50%" }}
+              className="inputSpace" 
               value={datosForm.Mensaje}
               onChange={handleChange}
               name="Mensaje"
