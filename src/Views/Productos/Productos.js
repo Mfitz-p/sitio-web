@@ -15,12 +15,13 @@ const Productos = () => {
       <Container>
         <Row className='p-5'>
           <Col>
-              <h3>Nuestro modelo de negocios nos permite facilitarte los siguientes productos.</h3>
+              <h2 style={{ fontWeight: 'bold' }}>Nuestro modelo de negocios nos permite facilitarte los siguientes productos</h2>
+              <hr/>
           </Col>
         </Row>
         {/* Inician las cards de productos con su respectiva imagen */}
       <Row className='align-items-center'>
-            <Col>
+            <Col >
               <Card className="p-5" style={{  border:'none' }}>
                 <Card.Body>
                   <Card.Title  style={{ fontSize: '25px', border:'none' }}>
@@ -35,7 +36,7 @@ const Productos = () => {
                 </Card.Body>
               </Card>
             </Col>
-            <Col>
+            <Col >
               <Card className="p-5" style={{  border:'none' }}>
                 <Card.Body>
                     <Image fluid src={imgSistemasGestion} alt='imgSistemasGestion' />

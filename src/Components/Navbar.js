@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <>
     <NavbarRB collapseOnSelect expand="lg" bg="dark" variant="dark">
-      <Container>
+      <Container className='p-0'>
         <NavbarRB.Brand className='mr-auto' to="/Inicio">
           <Nav.Link as={NavLink} to="/Inicio">
           <Image  fluid src={logo} alt='logo' style={{ width: "100px" }} />

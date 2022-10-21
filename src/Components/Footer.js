@@ -9,50 +9,50 @@ import logo from '../images/logo-navbar.png';
 function Footer() {
     return (
         <>
-            <Container fluid className='bg-dark text-white p-3'>
+            <Container fluid className='bg-dark text-white pt-3'>
                 {/* Este Row contiene todos los elementos del footer, sin los derechos reservados */}
                 <Row className='align-items-center'>
-                    <Col className="d-flex aligns-items-center justify-content-center">
+                    <Col xs={12} md={3} className="d-flex aligns-items-center justify-content-center">
                         <Nav.Link as={NavLink} to="/Inicio">
                             <Image fluid src={logo} alt='logo' style={{ width: "100px" }} />
                         </Nav.Link>
                         
                     </Col>
-                    <Col>
+                    <Col xs={6} md={3}>
                         <div>Oficinas</div>
-                        <div style={{ fontSize: "10px" }}><i className="bi bi-geo-alt"></i> Berlín 43, piso 2, Coyoacán, CDMX</div>
+                        <div style={{ fontSize: "13px" }}><i class="bi bi-geo-alt"></i> Berlín 43, piso 2, Coyoacán, CDMX</div>
                         <Row>
                             <Col className='mt-3'>
                                 <div>Horario</div>
-                                <div style={{ fontSize: "10px" }}><i className="bi bi-clock"></i>  Lunes-Viernes 09:00 - 19:00 </div>
+                                <div style={{ fontSize: "13px" }}><i class="bi bi-clock"></i>  Lunes-Viernes 09:00 - 19:00 </div>
                             </Col>
                         </Row>
                     </Col>
-                    <Col>
+                    <Col xs={6} md={3}>
                         <div>Información</div>
-                        <div style={{ fontSize: "10px" }}><i className="bi bi-telephone"></i> 55 9039 1301</div>
+                        <div style={{ fontSize: "13px" }}><i class="bi bi-telephone"></i> 55 9039 1301</div>
                         <Row>
                             <Col className='mt-3'>
                                 <div>Correo</div>
-                                <div style={{ fontSize: "10px" }}><i className="bi bi-envelope-paper"></i> contacto@kaminoit.tech</div>
+                                <div style={{ fontSize: "13px" }}><i class="bi bi-envelope-paper"></i> contacto@kaminoit.tech</div>
                             </Col>
                         </Row> 
                     </Col>
-                    <Col className=''>
+                    <Col xs={12} md={2} className="d-flex aligns-items-center justify-content-center">
                     <Nav.Link as={NavLink} to="/Contacto">
-                        <Button className='justify-content-center' variant="success" >Contáctanos</Button>
+                        <Button className='mx-auto' variant="success" >Contáctanos</Button>
                     </Nav.Link>
                     </Col>
                 </Row>
                 {/* Row que contiene los derechos reservados */}
-                <Row >
-                    <p className='mb-0 mt-2'> © • Todos los derechos reservados • 2022</p>
+                <Row xs={12}>
+                    <p className='mb-0 mt-3'> © • Todos los derechos reservados • 2022</p>
                 </Row>
             </Container>
         </>
   );
 }
 
-export default Footer
+export default Footer;
 
 

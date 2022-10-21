@@ -5,13 +5,11 @@ const Inicio = () => {
   return (
     <>
       <Container fluid className="p-0">
-
-        <Card className="bg-dark text-white" style={{ borderRadius: "0" }}>
-          <Row>
-            <Image fluid src={page} alt='img-page' style={{ objectFit: 'cover', height: '20rem' }} />
-          </Row>
-          <Card.ImgOverlay className='d-flex align-items-center m-4'>
-            <Col  >
+        
+        <Card className="bg-dark text-white" style={{ borderRadius: "0" }} >
+            <Image src={page} alt='img-page' style={{ objectFit: 'cover', height: '22rem' }} className='p-0' />
+          <Card.ImgOverlay className='d-flex align-items-center p-5'>
+            <Col className="p-0" >
               <Card.Title style={{ fontSize: "2rem" }}>
                 Soluciones tecnológicas en inteligencia de negocios y el
                 manejo de datos.
@@ -19,11 +17,11 @@ const Inicio = () => {
             </Col>
           </Card.ImgOverlay>
         </Card>
+        
         {/* Comienzan las cards de servicios */}
         <Row>
-          <Col style={{ borderRight: 'solid #6BBBAE 1px', borderBottom: 'solid #6BBBAE 1px' }}>
+          <Col style={{ borderRight: 'solid #6BBBAE 1px', borderBottom: 'solid #6BBBAE 1px' }} className="p-0">
             <Card className="p-5" style={{  border:'none' }}>
-              {/* className='m-3' style={{ width:'35rem', height:'15rem' }} */}
               <Card.Body>
                 <Card.Title  style={{ fontSize: "2rem", textAlign: "justify" }}>
                   ¿Qué hacemos por ti?
@@ -34,9 +32,8 @@ const Inicio = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col style={{  borderBottom: 'solid #6BBBAE 1px' }}>
+          <Col style={{  borderBottom: 'solid #6BBBAE 1px' }} className="p-0">
             <Card className="p-5" style={{  border:'none' }}>
-              {/* className='m-3' style={{ width:'35rem', height:'15rem' }} */}
               <Card.Body>
                 <Card.Title  style={{ fontSize: '25px' }}>
                   <i className="bi bi-heart-pulse m-3" style={{ fontSize: '45px', color: '#6BBBAE' }}></i>
@@ -53,9 +50,8 @@ const Inicio = () => {
           </Col>
         </Row>
           <Row>
-            <Col style={{  borderRight: 'solid #6BBBAE 1px' }}>
+            <Col style={{  borderRight: 'solid #6BBBAE 1px' }} className="p-0">
               <Card className="p-5" style={{  border:'none' }}>
-                {/* className='m-3' style={{ width:'35rem', height:'15rem' }} */}
                 <Card.Body>
                   <Card.Title  style={{ fontSize: '25px', border:'none' }}>
                     <i className="bi bi-graph-up-arrow m-3" style={{ fontSize: '45px', color: '#6BBBAE' }}></i>
@@ -70,9 +66,9 @@ const Inicio = () => {
                 </Card.Body>
               </Card>
             </Col>
-            <Col>
+
+            <Col className="p-0">
               <Card className="p-5" style={{  border:'none' }}>
-                {/* className='m-3' style={{ width:'35rem', height:'15rem' }} */}
                 <Card.Body>
                   <Card.Title className="mb-2" style={{ fontSize: '25px' }}>
                     <i className="bi bi-building m-3" aria-hidden="true" style={{ fontSize: '45px', color: '#6BBBAE' }}></i>

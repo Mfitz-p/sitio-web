@@ -28,7 +28,7 @@ function Contacto() {
 
   return (
     <>
-      <Container fluid className="graficos">
+      <Container fluid className="graficos p-0">
         <div className="m-4">
           <div style={{ fontSize: "clamp(36px, 4vw, 48px)", color: "#6BBBAE" }}>
             {" "}
@@ -101,7 +101,7 @@ function Contacto() {
             <Form.Control
               type="text"
               id="Mensaje"
-              style={{ height: "100px", width: "50%" }}
+              className="inputSpace" 
               value={datosForm.Mensaje}
               onChange={handleChange}
               name="Mensaje"
@@ -118,7 +118,7 @@ function Contacto() {
           </Button>
         </Form>
       </Container>
-      {state.succeeded ? <p>Gracias por contactarse con nosotros</p> : ""}
+      {state.succeeded ? <p>Gracias por contactarse con nosotros</p>: ""}
     </>
   );
 }
