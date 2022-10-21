@@ -1,17 +1,17 @@
 import { Col, Container, Row, Card, Image } from 'react-bootstrap';
 import page from '../images/frontpage.jpg';
 
+
 const Inicio = () => {
   return (
     <>
       <Container fluid className="p-0">
-
         <Card className="bg-dark text-white" style={{ borderRadius: "0" }}>
           <Row>
             <Image fluid src={page} alt='img-page' style={{ objectFit: 'cover', height: '20rem' }} />
           </Row>
           <Card.ImgOverlay className='d-flex align-items-center m-4'>
-            <Col  >
+            <Col>
               <Card.Title style={{ fontSize: "2rem" }}>
                 Soluciones tecnológicas en inteligencia de negocios y el
                 manejo de datos.
