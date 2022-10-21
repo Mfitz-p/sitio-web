@@ -34,7 +34,6 @@ const Inicio = () => {
           </Col>
           <Col style={{  borderBottom: 'solid #6BBBAE 1px' }} className="p-0">
             <Card className="p-5" style={{  border:'none' }}>
-              {/* className='m-3' style={{ width:'35rem', height:'15rem' }} */}
               <Card.Body>
                 <Card.Title  style={{ fontSize: '25px' }}>
                   <i className="bi bi-heart-pulse m-3" style={{ fontSize: '45px', color: '#6BBBAE' }}></i>
@@ -53,7 +52,6 @@ const Inicio = () => {
           <Row>
             <Col style={{  borderRight: 'solid #6BBBAE 1px' }} className="p-0">
               <Card className="p-5" style={{  border:'none' }}>
-                {/* className='m-3' style={{ width:'35rem', height:'15rem' }} */}
                 <Card.Body>
                   <Card.Title  style={{ fontSize: '25px', border:'none' }}>
                     <i className="bi bi-graph-up-arrow m-3" style={{ fontSize: '45px', color: '#6BBBAE' }}></i>
@@ -71,7 +69,6 @@ const Inicio = () => {
 
             <Col className="p-0">
               <Card className="p-5" style={{  border:'none' }}>
-                {/* className='m-3' style={{ width:'35rem', height:'15rem' }} */}
                 <Card.Body>
                   <Card.Title className="mb-2" style={{ fontSize: '25px' }}>
                     <i className="bi bi-building m-3" aria-hidden="true" style={{ fontSize: '45px', color: '#6BBBAE' }}></i>

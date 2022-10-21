@@ -30,7 +30,7 @@ function Nosotros() {
           <Col md={{ span: 4, offset: 2 }}>
             <Card className="mx-auto" style={{ marginTop: '4rem', border: 'none' }}>
               <Card.Body>
-                <Card.Title className='mb-0 pb-3' style={{ fontSize: "32px" }} >Vision</Card.Title>
+                <Card.Title className='mb-0 pb-3' style={{ fontSize: "32px" }} >Visión</Card.Title>
                 <Card.Text style={{ borderTop: "solid #6BBBAE 3px", fontSize: "20px", textAlign: "justify" }}>
                   Buscamos dotar a nuestros socios un panorama más
                   amplio sobre las ventajas del uso de las tecnologías de la
