@@ -6,13 +6,13 @@ const Inicio = () => {
   return (
     <>
       <Container fluid className="p-0">
-        <Card className="bg-dark text-white" style={{ borderRadius: "0" }}>
+        <Card className="bg-dark text-white " style={{ borderRadius: "0" }}>
           <Row>
             <Image fluid src={page} alt='img-page' style={{ objectFit: 'cover', height: '20rem' }} />
           </Row>
-          <Card.ImgOverlay className='d-flex align-items-center m-4'>
+          <Card.ImgOverlay className='d-flex align-items-center m-4 animate__animated animate__fadeInUp'> 
             <Col>
-              <Card.Title style={{ fontSize: "2rem" }}>
+              <Card.Title style={{ fontSize: "2rem" }}> 
                 Soluciones tecnológicas en inteligencia de negocios y el
                 manejo de datos.
               </Card.Title>
@@ -21,10 +21,10 @@ const Inicio = () => {
         </Card>
         {/* Comienzan las cards de servicios */}
         <Row>
-          <Col style={{ borderRight: 'solid #6BBBAE 1px', borderBottom: 'solid #6BBBAE 1px' }}>
-            <Card className="p-5" style={{  border:'none' }}>
-              <Card.Body>
-                <Card.Title  style={{ fontSize: "2rem", textAlign: "justify" }}>
+          <Col className="p-0 " style={{ borderRight: 'solid #6BBBAE 1px', borderBottom: 'solid #6BBBAE 1px' }} >
+            <Card className="p-5 " style={{  border:'none' }}>
+              <Card.Body className='change-Color'>
+                <Card.Title   style={{ fontSize: "2rem", textAlign: "justify" }}>
                   ¿Qué hacemos por ti?
                 </Card.Title>
                 <Card.Text style={{ fontSize: '20px' }}>
@@ -33,12 +33,11 @@ const Inicio = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col style={{  borderBottom: 'solid #6BBBAE 1px' }}>
+          <Col style={{  borderBottom: 'solid #6BBBAE 1px' }} className="p-0">
             <Card className="p-5" style={{  border:'none' }}>
-              {/* className='m-3' style={{ width:'35rem', height:'15rem' }} */}
               <Card.Body>
                 <Card.Title  style={{ fontSize: '25px' }}>
-                  <i className="bi bi-heart-pulse m-3" style={{ fontSize: '45px', color: '#6BBBAE' }}></i>
+                  <i className="bi bi-heart-pulse m-3 hvr-pulse" style={{ fontSize: '45px', color: '#6BBBAE' }}></i>
                   Salud
                 </Card.Title>
                 <Card.Text style={{ fontSize: '18px', textAlign: 'justify' }}>
@@ -52,12 +51,11 @@ const Inicio = () => {
           </Col>
         </Row>
           <Row>
-            <Col style={{  borderRight: 'solid #6BBBAE 1px' }}>
+            <Col style={{  borderRight: 'solid #6BBBAE 1px' }} className="p-0">
               <Card className="p-5" style={{  border:'none' }}>
-                {/* className='m-3' style={{ width:'35rem', height:'15rem' }} */}
                 <Card.Body>
                   <Card.Title  style={{ fontSize: '25px', border:'none' }}>
-                    <i className="bi bi-graph-up-arrow m-3" style={{ fontSize: '45px', color: '#6BBBAE' }}></i>
+                    <i className="bi bi-graph-up-arrow m-3 hvr-float" style={{ fontSize: '45px', color: '#6BBBAE' }}></i>
                     Retail & B2B
                   </Card.Title>
                   <Card.Text className='pt-1' style={{ fontSize: '18px', textAlign: 'justify' }}>
@@ -70,12 +68,11 @@ const Inicio = () => {
               </Card>
             </Col>
 
-            <Col>
+            <Col className="p-0">
               <Card className="p-5" style={{  border:'none' }}>
-                {/* className='m-3' style={{ width:'35rem', height:'15rem' }} */}
                 <Card.Body>
                   <Card.Title className="mb-2" style={{ fontSize: '25px' }}>
-                    <i className="bi bi-building m-3" aria-hidden="true" style={{ fontSize: '45px', color: '#6BBBAE' }}></i>
+                    <i className="bi bi-building m-3 hvr-grow" aria-hidden="true" style={{ fontSize: '45px', color: '#6BBBAE' }}></i>
                     Infraestructura
                   </Card.Title>
                   <Card.Text style={{ fontSize: '18px', textAlign: 'justify' }}>

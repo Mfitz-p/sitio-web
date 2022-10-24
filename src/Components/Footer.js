@@ -9,7 +9,7 @@ import logo from '../images/logo-navbar.png';
 function Footer() {
     return (
         <>
-            <Container fluid className='bg-dark text-white p-3'>
+            <Container fluid className='bg-dark text-white pt-3'>
                 {/* Este Row contiene todos los elementos del footer, sin los derechos reservados */}
                 <Row className='align-items-center'>
                     <Col xs={12} md={3} className="d-flex aligns-items-center justify-content-center">
@@ -20,25 +20,25 @@ function Footer() {
                     </Col>
                     <Col xs={6} md={3}>
                         <div>Oficinas</div>
-                        <div style={{ fontSize: "13px" }}><i class="bi bi-geo-alt"></i> Berlín 43, piso 2, Coyoacán, CDMX</div>
+                        <div style={{ fontSize: "13px" }}><i className="bi bi-geo-alt hvr-push"></i> Berlín 43, piso 2, Coyoacán, CDMX</div>
                         <Row>
                             <Col className='mt-3'>
                                 <div>Horario</div>
-                                <div style={{ fontSize: "13px" }}><i class="bi bi-clock"></i>  Lunes-Viernes 09:00 - 19:00 </div>
+                                <div style={{ fontSize: "13px" }}><i className="bi bi-clock hvr-push"></i>  Lunes-Viernes 09:00 - 19:00 </div>
                             </Col>
                         </Row>
                     </Col>
                     <Col xs={6} md={3}>
                         <div>Información</div>
-                        <div style={{ fontSize: "13px" }}><i class="bi bi-telephone"></i> 55 9039 1301</div>
+                        <div style={{ fontSize: "13px" }}><i className="bi bi-telephone hvr-push"></i> 55 9039 1301</div>
                         <Row>
                             <Col className='mt-3'>
                                 <div>Correo</div>
-                                <div style={{ fontSize: "13px" }}><i class="bi bi-envelope-paper"></i> contacto@kaminoit.tech</div>
+                                <div style={{ fontSize: "13px" }}><i className="bi bi-envelope-paper hvr-push"></i> contacto@kaminoit.tech</div>
                             </Col>
                         </Row> 
                     </Col>
-                    <Col xs={12} md={3} className="d-flex aligns-items-center justify-content-center">
+                    <Col xs={12} md={2} className="d-flex aligns-items-center justify-content-center">
                     <Nav.Link as={NavLink} to="/Contacto">
                         <Button className='mx-auto' variant="success" >Contáctanos</Button>
                     </Nav.Link>
@@ -53,6 +53,6 @@ function Footer() {
   );
 }
 
-export default Footer
+export default Footer;
 
 
