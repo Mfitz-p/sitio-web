@@ -20,21 +20,21 @@ function Footer() {
                     </Col>
                     <Col xs={6} md={3}>
                         <div>Oficinas</div>
-                        <div style={{ fontSize: "13px" }}><i class="bi bi-geo-alt"></i> Berlín 43, piso 2, Coyoacán, CDMX</div>
+                        <div style={{ fontSize: "13px" }}><i className="bi bi-geo-alt hvr-push"></i> Berlín 43, piso 2, Coyoacán, CDMX</div>
                         <Row>
                             <Col className='mt-3'>
                                 <div>Horario</div>
-                                <div style={{ fontSize: "13px" }}><i class="bi bi-clock"></i>  Lunes-Viernes 09:00 - 19:00 </div>
+                                <div style={{ fontSize: "13px" }}><i className="bi bi-clock hvr-push"></i>  Lunes-Viernes 09:00 - 19:00 </div>
                             </Col>
                         </Row>
                     </Col>
                     <Col xs={6} md={3}>
                         <div>Información</div>
-                        <div style={{ fontSize: "13px" }}><i class="bi bi-telephone"></i> 55 9039 1301</div>
+                        <div style={{ fontSize: "13px" }}><i className="bi bi-telephone hvr-push"></i> 55 9039 1301</div>
                         <Row>
                             <Col className='mt-3'>
                                 <div>Correo</div>
-                                <div style={{ fontSize: "13px" }}><i class="bi bi-envelope-paper"></i> contacto@kaminoit.tech</div>
+                                <div style={{ fontSize: "13px" }}><i className="bi bi-envelope-paper hvr-push"></i> contacto@kaminoit.tech</div>
                             </Col>
                         </Row> 
                     </Col>

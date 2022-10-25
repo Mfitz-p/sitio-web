@@ -28,16 +28,16 @@ function Contacto() {
 
   return (
     <>
-      <Container fluid className="graficos p-0">
-        <div className=" animate__fadeInUp m-4">
-          <div style={{ fontSize: "clamp(36px, 4vw, 48px)", color: "#6BBBAE" }}>
+      <Container fluid className="graficos p-0 ">
+        <div className="m-4 ">
+          <div className='animate__animated animate__fadeInUp'style={{ fontSize: "clamp(36px, 4vw, 48px)", color: "#6BBBAE" }}>
             {" "}
             Para dudas o preguntas{" "}
           </div>
           <h1>Contáctanos</h1>
           <p>Por favor, usa el formulario o llámanos al 55 5335 1691</p>
         </div>
-        <Form className="animate__animated animate__fadeIn m-4" onSubmit={handleSubmit}>
+        <Form className="m-4 animate__animated animate__fadeIn" onSubmit={handleSubmit}>
           <Row>
             <Form.Group className="mb-3" as={Col} md="3">
               <Form.Label>Nombre</Form.Label>

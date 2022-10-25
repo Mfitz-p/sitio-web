@@ -1,6 +1,7 @@
 import { Col, Container, Row, Card, Image } from 'react-bootstrap';
 import page from '../images/frontpage.jpg';
 
+
 const Inicio = () => {
   return (
     <>
@@ -17,7 +18,6 @@ const Inicio = () => {
             </Col>
           </Card.ImgOverlay>
         </Card>
-        
         {/* Comienzan las cards de servicios */}
         <Row>
           <Col style={{ borderRight: 'solid #6BBBAE 1px', borderBottom: 'solid #6BBBAE 1px' }} >
@@ -54,7 +54,7 @@ const Inicio = () => {
               <Card className="p-5" style={{  border:'none' }}>
                 <Card.Body className='animate__animated animate__fadeInUp'>
                   <Card.Title  style={{ fontSize: '25px', border:'none' }}>
-                    <i className="bi bi-graph-up-arrow m-3" style={{ fontSize: '45px', color: '#6BBBAE' }}></i>
+                    <i className="bi bi-graph-up-arrow m-3 hvr-float" style={{ fontSize: '45px', color: '#6BBBAE' }}></i>
                     Retail & B2B
                   </Card.Title>
                   <Card.Text className='pt-1' style={{ fontSize: '18px', textAlign: 'justify' }}>
@@ -71,7 +71,7 @@ const Inicio = () => {
               <Card className="p-5 m-0" style={{  border:'none' }}>
                 <Card.Body className='animate__animated animate__fadeInUp'>
                   <Card.Title className="mb-2" style={{ fontSize: '25px' }}>
-                    <i className="bi bi-building m-3" aria-hidden="true" style={{ fontSize: '45px', color: '#6BBBAE' }}></i>
+                    <i className="bi bi-building m-3 hvr-grow" aria-hidden="true" style={{ fontSize: '45px', color: '#6BBBAE' }}></i>
                     Infraestructura
                   </Card.Title>
                   <Card.Text style={{ fontSize: '18px', textAlign: 'justify' }}>
