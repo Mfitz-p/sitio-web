@@ -1,6 +1,11 @@
 * {
+  margin: 0;
+  padding: 0;
   font-family: sans-serif;
   box-sizing: border-box;
+} 
+html {
+  scroll-behavior: smooth;
 }
 
 .fondo {
@@ -37,5 +42,23 @@
     #Mensaje{
       width: 100% !important
         }
+  } 
+
+  .change-Color {
+    /* background-color: rgb(175, 72, 72); */
+    /* border: none; */
+    /* color: rgb(82, 33, 135); */
+     /* text-align: center; */
+    /* font-size: 16px; */
+    /* margin: 4px 2px; */
+    transition: 0.8s;
+  }
+  .change-Color:hover{
+    color: rgb(41, 197, 182);
+    opacity: 0.6;
+  }
+  .box {
+    /* box-shadow: 2px 2px 10px; */
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
   }
  

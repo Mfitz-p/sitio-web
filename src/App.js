@@ -6,6 +6,9 @@ import Pagina404 from './Views/Pagina404';
 import Contacto from './Views/Contacto'; 
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
+
+
+import 'animate.css';
 function App() {
   return (
   <BrowserRouter> 
