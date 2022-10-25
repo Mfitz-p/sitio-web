@@ -15,7 +15,7 @@ const Productos = () => {
       <Container>
         <Row className='p-5'>
           <Col>
-              <h2 className='change-Color animate__animated animate__fadeInUp' style={{ fontWeight: 'bold' }}>Nuestro modelo de negocios nos permite facilitarte los siguientes productos</h2>
+              <h2 className='animate__animated animate__fadeInUp' style={{ fontWeight: 'bold' }}>Nuestro modelo de negocios nos permite facilitarte los siguientes productos</h2>
               <hr/>
           </Col>
         </Row>
