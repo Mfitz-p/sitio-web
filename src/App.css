@@ -1,8 +1,9 @@
 * {
+  margin: 0;
+  padding: 0;
   font-family: sans-serif;
-  
+  box-sizing: border-box;
 }
-
 .fondo {
     background-image: url("/src/images/lupa404.png");
     background-repeat: no-repeat;
@@ -37,6 +38,54 @@
     #Mensaje{
       width: 100% !important
         }
+  } 
+
+  .subrayado {
+    text-decoration: none;
+    background-image: linear-gradient(rgb(73, 163, 157), #6BBBAE);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+.subrayado:hover, .subrayado:focus {
+    background-size: 51% 4px;
+}
+
+
+  .change-Color {
+    /* background-color: rgb(175, 72, 72); */
+    /* border: none; */
+    /* color: rgb(82, 33, 135); */
+     /* text-align: center; */
+    /* font-size: 16px; */
+    /* margin: 4px 2px; */
+    transition: 0.8s;
+  }
+  .change-Color:hover{
+    color: rgb(41, 197, 182);
+    opacity: 0.6;
+  }
+  .change-Size {
+    transition: 0.8s;
+    font-size: 20px;
+  }
+  .change-Size:hover{
+    font-size: 25px;
+  }
+
+  .change-SizeTitle {
+    transition: 0.8s;
+    font-size: 32px;
+  }
+  .change-SizeTitle:hover{
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+  .box {
+    /* box-shadow: 2px 2px 10px; */
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
   }
   
   .change-Color:hover {opacity: .80;}
@@ -253,3 +302,4 @@
     background-color: #000000;
     color: white;
   }
+

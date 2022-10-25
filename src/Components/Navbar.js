@@ -15,7 +15,7 @@ const Navbar = () => {
       <Container className='p-0'>
         <NavbarRB.Brand className='mr-auto' to="/Inicio">
           <Nav.Link as={NavLink} to="/Inicio">
-          <Image  fluid src={logo} alt='logo' style={{ width: "100px" }} />
+          <Image fluid src={logo} alt='logo' style={{ width: "100px" }} />
           </Nav.Link>
         </NavbarRB.Brand>
         <NavbarRB.Toggle aria-controls="responsive-navbar-nav" />

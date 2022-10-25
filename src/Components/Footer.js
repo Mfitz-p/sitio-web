@@ -7,6 +7,7 @@ import { NavLink } from  'react-router-dom';
 import logo from '../images/logo-navbar.png';
 
 function Footer() {
+  
     return (
         <>
             <Container fluid className='bg-dark text-white pt-3'>
@@ -20,7 +21,7 @@ function Footer() {
                     </Col>
                     <Col xs={6} md={3}>
                         <div>Oficinas</div>
-                        <div style={{ fontSize: "13px" }}><i className="bi bi-geo-alt hvr-push"></i> Berlín 43, piso 2, Coyoacán, CDMX</div>
+                        <div style={{ fontSize: "13px", cursor: "pointer" }} onClick={() => window.open('https://www.google.com.mx/maps/place/Berl%C3%ADn+43,+Del+Carmen,+Coyoac%C3%A1n,+04100+Ciudad+de+M%C3%A9xico,+CDMX/@19.3572997,-99.1579865,17z/data=!3m1!4b1!4m5!3m4!1s0x85d1ffc8965675bb:0xc3b0e470fdb7c5a5!8m2!3d19.3572997!4d-99.1557978', '_blank')}><i className="bi bi-geo-alt hvr-push" ></i> Berlín 43, piso 2, Coyoacán, CDMX</div>
                         <Row>
                             <Col className='mt-3'>
                                 <div>Horario</div>
@@ -34,13 +35,13 @@ function Footer() {
                         <Row>
                             <Col className='mt-3'>
                                 <div>Correo</div>
-                                <div style={{ fontSize: "13px" }}><i className="bi bi-envelope-paper hvr-push"></i> contacto@kaminoit.tech</div>
+                                <Nav.Link as={NavLink} to="/Contacto"> <div style={{ fontSize: "13px" }}><i className="bi bi-envelope-paper hvr-push"></i> contacto@kaminoit.tech</div>  </Nav.Link>
                             </Col>
                         </Row> 
                     </Col>
-                    <Col xs={12} md={2} className="d-flex aligns-items-center justify-content-center">
+                    <Col xs={12} md={2} className="d-flex aligns-items-center justify-content-center"> 
                     <Nav.Link as={NavLink} to="/Contacto">
-                        <Button className='mx-auto' variant="success" >Contáctanos</Button>
+                        <Button className='mx-auto hvr-pulse' variant="success">Contáctanos</Button>
                     </Nav.Link>
                     </Col>
                 </Row>

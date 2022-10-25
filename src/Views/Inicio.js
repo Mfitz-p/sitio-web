@@ -6,7 +6,7 @@ const Inicio = () => {
   return (
     <>
       <Container fluid className="p-0">
-        <Card className="bg-dark text-white " style={{ borderRadius: "0" }}>
+        <Card className="bg-dark text-white" style={{ borderRadius: "0" }}>
           <Row>
             <Image fluid src={page} alt='img-page' style={{ objectFit: 'cover', height: '39.3rem' }} />
           </Row>
@@ -21,10 +21,10 @@ const Inicio = () => {
         </Card>
         {/* Comienzan las cards de servicios */}
         <Row>
-          <Col className="p-0 " style={{ borderRight: 'solid #6BBBAE 1px', borderBottom: 'solid #6BBBAE 1px' }} >
-            <Card className="p-5 " style={{  border:'none' }}>
-              <Card.Body className='change-Color'>
-                <Card.Title   style={{ fontSize: "2rem", textAlign: "justify" }}>
+          <Col style={{ borderRight: 'solid #6BBBAE 1px', borderBottom: 'solid #6BBBAE 1px' }} >
+            <Card className="p-5" style={{  border:'none' }}>
+              <Card.Body className='animate__animated animate__pulse'>
+                <Card.Title  className='subrayado'style={{ fontSize: "2rem", textAlign: "justify" }}>
                   ¿Qué hacemos por ti?
                 </Card.Title>
                 <Card.Text style={{ fontSize: '20px' }}>
@@ -33,11 +33,11 @@ const Inicio = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col style={{  borderBottom: 'solid #6BBBAE 1px' }} className="p-0">
-            <Card className="p-5" style={{  border:'none' }}>
-              <Card.Body>
-                <Card.Title  style={{ fontSize: '25px' }}>
-                  <i className="bi bi-heart-pulse m-3 hvr-pulse" style={{ fontSize: '45px', color: '#6BBBAE' }}></i>
+          <Col style={{  borderBottom: 'solid #6BBBAE 1px' }} >
+            <Card className=" p-5" style={{  border:'none' }}>
+              <Card.Body className='animate__animated animate__fadeInUp'>
+                <Card.Title style={{ fontSize: '25px' }}>
+                  <i className="bi bi-heart-pulse m-3 hvr-pulse " style={{ fontSize: '45px', color: '#6BBBAE' }}></i>
                   Salud
                 </Card.Title>
                 <Card.Text style={{ fontSize: '18px', textAlign: 'justify' }}>
@@ -51,9 +51,9 @@ const Inicio = () => {
           </Col>
         </Row>
           <Row>
-            <Col style={{  borderRight: 'solid #6BBBAE 1px' }} className="p-0">
+            <Col style={{  borderRight: 'solid #6BBBAE 1px' }}>
               <Card className="p-5" style={{  border:'none' }}>
-                <Card.Body>
+                <Card.Body className='animate__animated animate__fadeInUp'>
                   <Card.Title  style={{ fontSize: '25px', border:'none' }}>
                     <i className="bi bi-graph-up-arrow m-3 hvr-float" style={{ fontSize: '45px', color: '#6BBBAE' }}></i>
                     Retail & B2B
@@ -68,9 +68,9 @@ const Inicio = () => {
               </Card>
             </Col>
 
-            <Col className="p-0">
-              <Card className="p-5" style={{  border:'none' }}>
-                <Card.Body>
+            <Col>
+              <Card className="p-5 m-0" style={{  border:'none' }}>
+                <Card.Body className='animate__animated animate__fadeInUp'>
                   <Card.Title className="mb-2" style={{ fontSize: '25px' }}>
                     <i className="bi bi-building m-3 hvr-grow" aria-hidden="true" style={{ fontSize: '45px', color: '#6BBBAE' }}></i>
                     Infraestructura

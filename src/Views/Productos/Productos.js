@@ -15,15 +15,15 @@ const Productos = () => {
       <Container>
         <Row className='p-5'>
           <Col>
-              <h2 className='animate__animated animate__fadeInUp' Fadeinup style={{ fontWeight: 'bold' }}>Nuestro modelo de negocios nos permite facilitarte los siguientes productos</h2>
+              <h2 className='change-Color animate__animated animate__fadeInUp' style={{ fontWeight: 'bold' }}>Nuestro modelo de negocios nos permite facilitarte los siguientes productos</h2>
               <hr/>
           </Col>
         </Row>
         {/* Inician las cards de productos con su respectiva imagen */}
-      <Row className='align-items-center'>
+      <Row  className='align-items-center'>
             <Col >
               <Card className="p-5" style={{  border:'none' }}>
-                <Card.Body>
+                <Card.Body className='animate__animated animate__zoomIn'>
                   <Card.Title  style={{ fontSize: '25px', border:'none' }}>
                     <i class="bi bi-clipboard2-check m-3" style={{ color: '#6BBBAE' }}></i>
                     Desarrollo de sistemas de gestión
@@ -37,26 +37,25 @@ const Productos = () => {
               </Card>
             </Col>
             <Col >
-              <Card className="p-5" style={{  border:'none' }}>
-                <Card.Body>
-                    <Image fluid src={imgSistemasGestion} alt='imgSistemasGestion' />
+              <Card className="p-5" style={{  border:'none'}}>
+                <Card.Body >
+                    <Image className='box' fluid src={imgSistemasGestion} alt='imgSistemasGestion' />
                 </Card.Body>
               </Card>
             </Col>
           </Row>
 
-          
-          <Row className='align-items-center' style={{  borderTop: 'solid #6BBBAE 1px'}}>
+          <Row className='align-items-center' style={{ borderTop: 'solid #6BBBAE 1px'}}>
           <Col>
-              <Card className="p-5" style={{  border:'none' }}>
+              <Card className="p-5" style={{  border:'none'}}>
                 <Card.Body>
-                    <Image fluid src={imgModelosML} alt='imgModelosML' />
+                    <Image className='box' fluid src={imgModelosML} alt='imgModelosML' />
                 </Card.Body>
               </Card>
             </Col>
             <Col >
               <Card className="p-5" style={{  border:'none' }}>
-                <Card.Body>
+                <Card.Body className='animate__animated animate__zoomIn'>
                   <Card.Title  style={{ fontSize: '25px', border:'none' }}>
                     <i class="bi bi-cpu m-3" style={{ color: '#6BBBAE' }}></i>
                     Modelos de Machine Learning
@@ -74,8 +73,7 @@ const Productos = () => {
           <Row className='align-items-center' style={{  borderTop: 'solid #6BBBAE 1px'}}>
             <Col>
               <Card className="p-5" style={{  border:'none' }}>
-                {/* className='m-3' style={{ width:'35rem', height:'15rem' }} */}
-                <Card.Body>
+                <Card.Body className='animate__animated animate__zoomIn'>
                   <Card.Title  style={{ fontSize: '25px', border:'none' }}>
                     <i class="bi bi-bounding-box m-3" style={{ color: '#6BBBAE'}}></i>
                     Business Intelligence
@@ -90,9 +88,8 @@ const Productos = () => {
             </Col>
             <Col>
               <Card className="p-5" style={{  border:'none' }}>
-                {/* className='m-3' style={{ width:'35rem', height:'15rem' }} */}
                 <Card.Body>
-                    <Image fluid src={imgBusinessInte} alt='imgBusinessInte'/>
+                    <Image className='box' fluid src={imgBusinessInte} alt='imgBusinessInte'/>
                 </Card.Body>
               </Card>
             </Col>
@@ -102,13 +99,13 @@ const Productos = () => {
           <Col>
               <Card className="p-5" style={{  border:'none' }}>
                 <Card.Body>
-                    <Image fluid src={imgVisionComputadora} alt='imgVisionComputadora'/>
+                    <Image className='box' fluid src={imgVisionComputadora} alt='imgVisionComputadora'/>
                 </Card.Body>
               </Card>
             </Col>
             <Col >
               <Card className="p-5" style={{  border:'none' }}>
-                <Card.Body>
+                <Card.Body className='animate__animated animate__zoomIn'>
                   <Card.Title  style={{ fontSize: '25px', border:'none' }}>
                     <i class="bi bi-intersect m-3" style={{ color: '#6BBBAE' }}></i>
                     Percepción remota y visión de computadora
@@ -126,7 +123,7 @@ const Productos = () => {
           <Row className='align-items-center' style={{  borderTop: 'solid #6BBBAE 1px'}}>
             <Col>
               <Card className="p-5" style={{  border:'none' }}>
-                <Card.Body>
+                <Card.Body className='animate__animated animate__zoomIn'>
                   <Card.Title  style={{ fontSize: '25px', border:'none' }}>
                     <i class="bi bi-bounding-box m-3" style={{ color: '#6BBBAE' }}></i>
                     Análisis y visualización de Big Data
@@ -142,7 +139,7 @@ const Productos = () => {
             <Col>
               <Card className="p-5" style={{  border:'none' }}>
                 <Card.Body>
-                    <Image fluid src={imgBigData} alt='imgBigData'/>
+                    <Image className='box' fluid src={imgBigData} alt='imgBigData'/>
                 </Card.Body>
               </Card>
             </Col>
