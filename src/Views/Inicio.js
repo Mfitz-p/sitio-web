@@ -8,7 +8,7 @@ const Inicio = () => {
       <Container fluid className="p-0">
         <Card className="bg-dark text-white " style={{ borderRadius: "0" }}>
           <Row>
-            <Image fluid src={page} alt='img-page' style={{ objectFit: 'cover', height: '20rem' }} />
+            <Image fluid src={page} alt='img-page' style={{ objectFit: 'cover', height: '39.3rem' }} />
           </Row>
           <Card.ImgOverlay className='d-flex align-items-center m-4 animate__animated animate__fadeInUp'> 
             <Col>
