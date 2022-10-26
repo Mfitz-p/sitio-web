@@ -10,7 +10,7 @@
     background-size: clamp(270px, 27vw, 800px);
     background-position: 60vw 2vw;
   }
-
+  
 .graficos {
     background-image: url("/src/images/graficosContacto.png");
     background-repeat: no-repeat;
@@ -302,4 +302,5 @@
     background-color: #000000;
     color: white;
   }
-
+  
+ 

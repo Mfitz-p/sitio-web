@@ -22,7 +22,7 @@ const Productos = () => {
         {/* Inician las cards de productos con su respectiva imagen */}
       <Row  className='align-items-center'>
             <Col >
-              <Card className="p-5" style={{  border:'none' }}>
+              <Card className="p-5" style={{ border:'none' }}>
                 <Card.Body className='animate__animated animate__zoomIn'>
                   <Card.Title  style={{ fontSize: '25px', border:'none' }}>
                     <i class="bi bi-clipboard2-check m-3" style={{ color: '#6BBBAE' }}></i>
@@ -39,7 +39,7 @@ const Productos = () => {
             <Col >
               <Card className="p-5" style={{  border:'none'}}>
                 <Card.Body >
-                    <Image className='box' fluid src={imgSistemasGestion} alt='imgSistemasGestion' />
+                    <Image className='shadow p-3 mb-5 bg-body rounded' fluid src={imgSistemasGestion} alt='imgSistemasGestion' />
                 </Card.Body>
               </Card>
             </Col>
