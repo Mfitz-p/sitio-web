@@ -16,7 +16,7 @@ const Inicio = () => {
                   Soluciones tecnológicas en inteligencia de negocios y el
                   manejo de datos.
                 </Card.Title>
-                <Link className='d-flex  justify-content-center text-white' to='cards-servicios' smooth={true} duration={0}> <i className="bi bi-caret-down hvr-hang" style={{ fontSize: '45px' }}></i></Link>
+              <Link className='d-flex  justify-content-center text-white' to='cards-servicios' smooth={true} duration={0}> <i className="bi bi-caret-down hvr-hang" style={{ fontSize: '45px' }}></i></Link>
               </Col>
             </Card.ImgOverlay>
           </Card>
@@ -64,7 +64,7 @@ const Inicio = () => {
               <Card className="p-5" style={{ border: 'none' }}>
                 <Card.Body className='animate__animated animate__fadeInUp'>
                   <Card.Title style={{ fontSize: '25px', border: 'none' }}>
-                    <i className="bi bi-graph-up-arrow m-3 hvr-bob" style={{ fontSize: '45px', color: '#6BBBAE' }}></i>
+                    <i className="bi bi-graph-up-arrow m-3 hvr-float" style={{ fontSize: '45px', color: '#6BBBAE' }}></i>
                     Retail & B2B
                   </Card.Title>
                   <Card.Text className='pt-1' style={{ fontSize: '18px', textAlign: 'justify' }}>
