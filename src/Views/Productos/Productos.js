@@ -1,14 +1,12 @@
-import React from 'react';
-import { Container, Image } from 'react-bootstrap';
-import Card from 'react-bootstrap/Card';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
+
+import { Container, Image, Card, Col, Row } from 'react-bootstrap';
 import imgSistemasGestion from '../../images/imgDSG.png';
 import imgModelosML from '../../images/imgModelosML.png';
 import imgBusinessInte from '../../images/imgBusinessInte.png';
 import imgVisionComputadora from '../../images/img-VisionComputadora.png';
 import imgBigData from '../../images/img-BigData.png';
-
+//import { Link } from 'react-scroll'
+import "../../App.css";
 const Productos = () => {
   return (
     <>
@@ -19,8 +17,8 @@ const Productos = () => {
               <hr/>
           </Col>
         </Row>
-        {/* Inician las cards de productos con su respectiva imagen */}
-      <Row  className='align-items-center'>
+        {/* Inician las cards de productos con su respectiva imagen */} 
+      <Row  className='align-items-center'> 
             <Col >
               <Card className="p-5" style={{  border:'none' }}>
                 <Card.Body className='animate__animated animate__zoomIn'>
@@ -144,6 +142,7 @@ const Productos = () => {
               </Card>
             </Col>
           </Row>
+
       </Container>
     </>
   );
