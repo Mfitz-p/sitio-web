@@ -67,6 +67,7 @@ const Productos = () => {
       <Container>
         <Row className='p-5'> 
           <Col>
+<<<<<<< HEAD
             <h2 className='animate__animated animate__fadeInUp' style={{ fontWeight: 'bold' }}>Nuestro modelo de negocios nos permite facilitarte los siguientes productos</h2>
             <hr />
           </Col>
@@ -96,6 +97,37 @@ const Productos = () => {
             </Card>
           </Col>
         </Row>
+=======
+              <h2 className='animate__animated animate__fadeInUp' style={{ fontWeight: 'bold' }}>Nuestro modelo de negocios nos permite facilitarte los siguientes productos: </h2>
+              <hr/>
+          </Col>
+        </Row>
+        {/* Inician las cards de productos con su respectiva imagen */} 
+      <Row  className='align-items-center'> 
+            <Col >
+              <Card className="p-5" style={{ border:'none' }}>
+                <Card.Body className='animate__animated animate__zoomIn'>
+                  <Card.Title  style={{ fontSize: '25px', border:'none' }}>
+                    <i class="bi bi-clipboard2-check m-3" style={{ color: '#6BBBAE' }}></i>
+                    Desarrollo de sistemas de gestión
+                  </Card.Title>
+                  <Card.Text style={{ fontSize: '18px', textAlign: 'justify' }}>
+                    <p className='mb-0'>▸ Solución conceptual del problema</p>
+                    <p className='mb-0'>▸ Elaboración y creación de módulos</p>
+                    <p className='mb-0'>▸ Implementación y seguimiento del sistema</p>
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col >
+              <Card className="p-5" style={{  border:'none'}}>
+                <Card.Body >
+                    <Image className='shadow p-3 mb-5 bg-body rounded' fluid src={imgSistemasGestion} alt='imgSistemasGestion' />
+                </Card.Body>
+              </Card>
+            </Col>
+          </Row>
+>>>>>>> 2c9c466773a6806ef20bd037bf70c39935210237
 
         <Row className='align-items-center' style={{ borderTop: 'solid #6BBBAE 1px' }}>
           <Col >
