@@ -1,7 +1,7 @@
 import { Container, Image, Card, Col, Row } from 'react-bootstrap';
 
 /* Imagenes de Productos */
-import imgSistemasGestion from '../../images/imgDSG.png';
+import imgSistemasGestion from '../../images/imgSistemasGestion.png';
 import imgModelosML from '../../images/imgModelosML.png';
 import imgBusinessInte from '../../images/imgBusinessInte.png';
 import imgVisionComputadora from '../../images/img-VisionComputadora.png';
@@ -82,19 +82,21 @@ const Productos = () => {
           </Col>
         </Row>
         {/* Inician las cards de productos con su respectiva imagen */}
-        <Row className='align-items-center'>
+        <Row className='align-items-center' >
           <Col ref={effectRef} className={`${effectScroll ? 'animate__animated animate__fadeInLeft': null}`}>
             <Card className="p-5" style={{ border: 'none' }}>
-              <Card.Body className='animate__animated animate__zoomIn'>
+              <Card.Body className='animate__animated animate__fadeInLeft'>
                 <Card.Title style={{ fontSize: '25px', border: 'none' }}>
-                <Image height={50} style={{ color: '#6BBBAE'}} className='m-2' src={computerSvg} alt='computerSvg'/>
+                <Image height={50} className='m-2' src={computerSvg} alt='computerSvg'/>
                   {/* <i className="bi bi-clipboard2-check m-3" style={{ color: '#6BBBAE' }}></i> */}
                   Desarrollo de sistemas de gestión.
                 </Card.Title>
                 <Card.Text style={{ fontSize: '18px', textAlign: 'justify' }}>
-                  <p className='mb-0'>▸ Solución conceptual del problema</p>
-                  <p className='mb-0'>▸ Elaboración y creación de módulos</p>
-                  <p className='mb-0'>▸ Implementación y seguimiento del sistema</p>
+                  <ul>
+                  <li className='mb-0'>Solución conceptual del problema</li>
+                  <li className='mb-0'>Elaboración y creación de módulos</li>
+                  <li className='mb-0'>Implementación y seguimiento del sistema</li>
+                  </ul>
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -108,26 +110,28 @@ const Productos = () => {
           </Col>
         </Row>
 
-        <Row className='align-items-center' style={{ borderTop: 'solid #6BBBAE 1px' }}>
+        <Row className='align-items-center' style={{ borderTop: 'solid #6BBBAE 1px', background: '#ECF2F8' }}>
           <Col >
-            <Card className="p-5" style={{ border: 'none' }}>
+            <Card className="p-5" style={{ border: 'none', backgroundColor: '#ECF2F8'  }}>
               <Card.Body ref={effectRef3} className={`${effectScroll3 ? 'animate__animated animate__fadeInLeft': null}`}>
                 <Image className='box' fluid src={imgModelosML} alt='imgModelosML' />
               </Card.Body>
             </Card>
           </Col>
           <Col >
-            <Card className="p-5" style={{ border: 'none' }}>
+            <Card className="p-5" style={{ border: 'none', backgroundColor: '#ECF2F8' }}>
               <Card.Body ref={effectRef4} className={`${effectScroll4 ? 'animate__animated animate__fadeInRight': null}`}>
                 <Card.Title style={{ fontSize: '25px', border: 'none' }}>
-                <Image height={50} style={{ color: '#6BBBAE'}} className='m-2' src={modelosML} alt='modelosML'/>
+                <Image height={50} className='m-2' src={modelosML} alt='modelosML'/>
                   {/* <i className="bi bi-cpu m-3" style={{ color: '#6BBBAE' }}></i> */}
                   Modelos de Machine Learning
                 </Card.Title>
                 <Card.Text style={{ fontSize: '18px', textAlign: 'justify' }}>
-                  <p className='mb-0'>▸ Redes Neuronales</p>
-                  <p className='mb-0'>▸ Agrupación y clasificación</p>
-                  <p className='mb-0'>▸ Análisis y predicción del comportamiento</p>
+                  <ul>
+                  <li className='mb-0'>Redes Neuronales</li>
+                  <li className='mb-0'>Agrupación y clasificación</li>
+                  <li className='mb-0'>Análisis y predicción del comportamiento</li>
+                  </ul>
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -139,14 +143,16 @@ const Productos = () => {
             <Card className="p-5" style={{ border: 'none' }}>
               <Card.Body ref={effectRef5} className={`${effectScroll5 ? 'animate__animated animate__fadeInLeft': null}`}>
                 <Card.Title style={{ fontSize: '25px', border: 'none' }}>
-                <Image height={50} style={{ color: '#6BBBAE'}} className='m-2' src={businessInt} alt='businessInt'/>
+                <Image height={50} className='m-2' src={businessInt} alt='businessInt'/>
                   {/* <i className="bi bi-bounding-box m-3" style={{ color: '#6BBBAE' }}></i> */}
                   Business Intelligence
                 </Card.Title>
                 <Card.Text style={{ fontSize: '18px', textAlign: 'justify' }}>
-                  <p className='mb-0'>▸ Construcción, mantenimiento y operación de páginas web</p>
-                  <p className='mb-0'>▸ Desarrollo de tableros analíticos y de visualización</p>
-                  <p className='mb-0'>▸ Optimización SEO</p>
+                  <ul>
+                  <li className='mb-0'>Construcción, mantenimiento y operación de páginas web</li>
+                  <li className='mb-0'>Desarrollo de tableros analíticos y de visualización</li>
+                  <li className='mb-0'>Optimización SEO</li>
+                  </ul>
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -160,26 +166,28 @@ const Productos = () => {
           </Col>
         </Row>
 
-        <Row className='align-items-center' style={{ borderTop: 'solid #6BBBAE 1px' }}>
+        <Row className='align-items-center' style={{ borderTop: 'solid #6BBBAE 1px', backgroundColor: '#ECF2F8'  }}>
           <Col >
-            <Card className="p-5" style={{ border: 'none' }}>
+            <Card className="p-5" style={{ border: 'none', backgroundColor: '#ECF2F8'  }}>
               <Card.Body ref={effectRef7} className={`${effectScroll7 ? 'animate__animated animate__fadeInLeft': null}`} >
                 <Image className='box' fluid src={imgVisionComputadora} alt='imgVisionComputadora' />
               </Card.Body>
             </Card>
           </Col>
           <Col >
-            <Card  className="p-5" style={{ border: 'none' }}>
+            <Card  className="p-5" style={{ border: 'none', backgroundColor: '#ECF2F8'  }}>
               <Card.Body ref={effectRef8} className={`${effectScroll8 ? 'animate__animated animate__fadeInRight': null}`}>
                 <Card.Title style={{ fontSize: '25px', border: 'none' }}>
-                <Image height={50} style={{ color: '#6BBBAE'}} className='m-2' src={visionCompu} alt='visionCompu'/>
+                <Image height={50} className='m-2' src={visionCompu} alt='visionCompu'/>
                   {/* <i className="bi bi-intersect m-3" style={{ color: '#6BBBAE' }}></i> */}
                   Percepción remota y visión de computadora
                 </Card.Title>
                 <Card.Text style={{ fontSize: '18px', textAlign: 'justify' }}>
-                  <p className='mb-0'>▸ Base de datos de imágenes</p>
-                  <p className='mb-0'>▸ Reconocimiento de objetos  en imágenes y videos</p>
-                  <p className='mb-0'>▸ Análisis de diferentes canales del espectro electromagnético</p>
+                  <ul>
+                  <li className='mb-0'>Base de datos de imágenes</li>
+                  <li className='mb-0'>Reconocimiento de objetos  en imágenes y videos</li>
+                  <li className='mb-0'>Análisis de diferentes canales del espectro electromagnético</li>
+                  </ul>
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -191,14 +199,16 @@ const Productos = () => {
             <Card className='p-5' style={{ border: 'none' }}>
               <Card.Body ref={effectRef9} className={`${effectScroll9 ? 'animate__animated animate__fadeInLeft': null}`}>
                 <Card.Title style={{ fontSize: '25px', border: 'none' }}>
-                <Image height={50} style={{ color: '#6BBBAE'}} className='m-2' src={vBigData} alt='vBigData'/>
+                <Image height={50} className='m-2' src={vBigData} alt='vBigData'/>
                   {/* <i className="bi bi-bounding-box m-3" style={{ color: '#6BBBAE' }}></i> */}
                   Análisis y visualización de Big Data
                 </Card.Title>
                 <Card.Text style={{ fontSize: '18px', textAlign: 'justify' }}>
-                  <p className='mb-0'>▸ Soluciones analíticas basadas en grafos</p>
-                  <p className='mb-0'>▸ Analítica predictiva</p>
-                  <p className='mb-0'>▸ Ingeniería de datos</p>
+                  <ul>
+                  <li className='mb-0'>Soluciones analíticas basadas en grafos</li>
+                  <li className='mb-0'>Analítica predictiva</li>
+                  <li className='mb-0'>Ingeniería de datos</li>
+                  </ul>
                 </Card.Text>
               </Card.Body >
             </Card>
