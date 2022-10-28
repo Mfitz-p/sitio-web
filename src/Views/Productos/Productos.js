@@ -1,10 +1,20 @@
 
 import { Container, Image, Card, Col, Row } from 'react-bootstrap';
+
+/* Imagenes de Productos */
 import imgSistemasGestion from '../../images/imgDSG.png';
 import imgModelosML from '../../images/imgModelosML.png';
 import imgBusinessInte from '../../images/imgBusinessInte.png';
 import imgVisionComputadora from '../../images/img-VisionComputadora.png';
 import imgBigData from '../../images/img-BigData.png';
+
+/* Iconos en SVG */
+import computerSvg from '../../icons/computer.svg';
+import modelosML from '../../icons/modelosML.svg';
+import businessInt from '../../icons/businessInt.svg';
+import visionCompu from '../../icons/visionCompu.svg';
+import vBigData from '../../icons/vBigData.svg';
+
 //import { Link } from 'react-scroll'
 import "../../App.css";
 const Productos = () => {
@@ -23,7 +33,8 @@ const Productos = () => {
               <Card className="p-5" style={{ border:'none' }}>
                 <Card.Body className='animate__animated animate__zoomIn'>
                   <Card.Title  style={{ fontSize: '25px', border:'none' }}>
-                    <i class="bi bi-clipboard2-check m-3" style={{ color: '#6BBBAE' }}></i>
+                  <Image height={50} style={{ color: '#6BBBAE'}} className='m-2' src={computerSvg} alt='computerSvg'/>
+                    {/* <i class="bi bi-clipboard2-check m-3" style={{ color: '#6BBBAE', fontSize: '45px' }}></i> */}
                     Desarrollo de sistemas de gestión
                   </Card.Title>
                   <Card.Text style={{ fontSize: '18px', textAlign: 'justify' }}>
@@ -55,7 +66,8 @@ const Productos = () => {
               <Card className="p-5" style={{  border:'none' }}>
                 <Card.Body className='animate__animated animate__zoomIn'>
                   <Card.Title  style={{ fontSize: '25px', border:'none' }}>
-                    <i class="bi bi-cpu m-3" style={{ color: '#6BBBAE' }}></i>
+                  <Image height={50} style={{ color: '#6BBBAE'}} className='m-2' src={modelosML} alt='modelosML'/>
+                    {/* <i class="bi bi-cpu m-3" style={{ color: '#6BBBAE' }}></i> */}
                     Modelos de Machine Learning
                   </Card.Title>
                   <Card.Text style={{ fontSize: '18px', textAlign: 'justify' }}>
@@ -73,7 +85,8 @@ const Productos = () => {
               <Card className="p-5" style={{  border:'none' }}>
                 <Card.Body className='animate__animated animate__zoomIn'>
                   <Card.Title  style={{ fontSize: '25px', border:'none' }}>
-                    <i class="bi bi-bounding-box m-3" style={{ color: '#6BBBAE'}}></i>
+                  <Image height={50} style={{ color: '#6BBBAE'}} className='m-2' src={businessInt} alt='businessInt'/>
+                    {/* <i class="bi bi-bounding-box m-3" style={{ color: '#6BBBAE'}}></i> */}
                     Business Intelligence
                   </Card.Title>
                   <Card.Text style={{ fontSize: '18px', textAlign: 'justify' }}>
@@ -105,7 +118,8 @@ const Productos = () => {
               <Card className="p-5" style={{  border:'none' }}>
                 <Card.Body className='animate__animated animate__zoomIn'>
                   <Card.Title  style={{ fontSize: '25px', border:'none' }}>
-                    <i class="bi bi-intersect m-3" style={{ color: '#6BBBAE' }}></i>
+                  <Image height={50} style={{ color: '#6BBBAE'}} className='m-2' src={visionCompu} alt='visionCompu'/>
+                    {/* <i class="bi bi-intersect m-3" style={{ color: '#6BBBAE' }}></i> */}
                     Percepción remota y visión de computadora
                   </Card.Title>
                   <Card.Text style={{ fontSize: '18px', textAlign: 'justify' }}>
@@ -123,7 +137,8 @@ const Productos = () => {
               <Card className="p-5" style={{  border:'none' }}>
                 <Card.Body className='animate__animated animate__zoomIn'>
                   <Card.Title  style={{ fontSize: '25px', border:'none' }}>
-                    <i class="bi bi-bounding-box m-3" style={{ color: '#6BBBAE' }}></i>
+                  <Image height={50} style={{ color: '#6BBBAE'}} className='m-2' src={vBigData} alt='vBigData'/>
+                    {/* <i class="bi bi-bounding-box m-3" style={{ color: '#6BBBAE' }}></i> */}
                     Análisis y visualización de Big Data
                   </Card.Title>
                   <Card.Text style={{ fontSize: '18px', textAlign: 'justify' }}>
