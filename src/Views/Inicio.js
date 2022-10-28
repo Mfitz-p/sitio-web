@@ -6,6 +6,9 @@ import retail from '../images/retail.jpg';
 import { Link } from 'react-scroll';
 import { NavLink } from 'react-router-dom';
 import { useInView } from 'react-intersection-observer';
+import basket from '../icons/basket.svg';
+import city from '../icons/city.svg';
+import health from '../icons/health.svg';
 import "../App.css";
 
 const Inicio = () => {
@@ -29,8 +32,8 @@ const Inicio = () => {
 
   return (
     <>
-      <Container fluid> 
-           
+      <Container fluid>
+
         <section id='portada-principal'>
           <Row>
             <Card className="bg-dark text-white" style={{ borderRadius: "0" }}>
@@ -41,7 +44,6 @@ const Inicio = () => {
                     Soluciones tecnológicas en inteligencia de negocios y el
                     manejo de datos.
                   </Card.Title>
-
                   {/* Botón contáctanos que redirige al inicio de la página */}
                   <Col xs={12} md={2} >
                     <Nav.Link as={NavLink} to="/Contacto">
@@ -61,10 +63,9 @@ const Inicio = () => {
           </Row>
         </section>
       </Container>
-      
+
       <Container fluid>
-        <section id='cards-servicios'> 
-        
+        <section id='cards-servicios'>
           <Row>
             <Col>
               <Card className="p-5" style={{ border: 'none' }}>
@@ -84,11 +85,10 @@ const Inicio = () => {
               </Card>
             </Col>
           </Row>
-          <Row  style={{ background: '#6BBBAE' }}>
-            <div  className=' d-flex justify-content-center' style={{ fontSize: "3rem", textAlign: "justify" }}>Servicios</div> 
-          </Row> 
-          <div ref={btn} className='d-flex justify-content-end sticky-sm-top' style={{ fontSize: '45px', top: '50%' }}> <Link  to='portada-principal' smooth={true} duration={0}> <i className={`${up ? 'bi bi-arrow-up-circle animate__animated animate__fadeInUp': null}  hvr-bob`} ></i></Link></div> 
-          
+          <Row style={{ background: '#6BBBAE' }}>
+            <div className=' d-flex justify-content-center' style={{ fontSize: "3rem", textAlign: "justify" }}>Servicios</div>
+          </Row>
+          <div ref={btn} className='d-flex justify-content-end sticky-sm-top' style={{ fontSize: '45px', top: '50%', opacity: '.5' }}> <Link to='portada-principal' smooth={true} duration={0}> <i className={`${up ? 'bi bi-arrow-up-circle animate__animated animate__fadeInUp' : null}  hvr-bob`} ></i></Link></div>
 
           {/* Comienzan las cards de servicios */}
           <Row className='mx-5' >
@@ -96,7 +96,8 @@ const Inicio = () => {
               <Card className="p-5 g-0" style={{ border: 'none' }}>
                 <Card.Body ref={card1} className={`${effectScroll ? 'animate__animated animate__fadeInLeft' : null}`}>
                   <Card.Title className="mb-2" style={{ fontSize: '25px' }}>
-                    <i className="bi bi-building m-3 hvr-grow" aria-hidden="true" style={{ fontSize: '45px', color: '#6BBBAE' }}></i>
+                    <Image height={70} className='m-3 hvr-grow' src={city} alt='city' />
+                    {/* <i className="bi bi-building m-3 hvr-grow" aria-hidden="true" style={{ fontSize: '45px', color: '#6BBBAE' }}></i> */}
                     Infraestructura
                   </Card.Title>
                   <Card.Text style={{ fontSize: '18px', textAlign: 'justify' }}>
@@ -118,7 +119,7 @@ const Inicio = () => {
               <Card className="p-5" style={{ border: 'none' }}>
                 <Card.Body ref={card2} className={`${effectScroll2 ? 'animate__animated animate__fadeInRight' : null}`}>
                   <Card.Title style={{ fontSize: '25px', border: 'none' }}>
-                    <i className="bi bi-graph-up-arrow m-3 hvr-float" style={{ fontSize: '45px', color: '#6BBBAE' }}></i>
+                    <Image height={70} className='m-3 hvr-float' src={basket} alt='basket' />
                     Retail & B2B
                   </Card.Title>
                   <Card.Text className='pt-1' style={{ fontSize: '18px', textAlign: 'justify' }}>
@@ -135,10 +136,10 @@ const Inicio = () => {
           </Row>
           <Row className='mx-5 mb-5'>
             <Col className="d-flex align-items-center g-0">
-              <Card  style={{ border: 'none' }}>
+              <Card style={{ border: 'none' }}>
                 <Card.Body ref={card3} className={`${effectScroll3 ? 'animate__animated animate__fadeInLeft' : null}`}>
                   <Card.Title style={{ fontSize: '25px' }}>
-                    <i className="bi bi-heart-pulse m-3 hvr-pulse" style={{ fontSize: '45px', color: '#6BBBAE' }}></i>
+                    <Image height={70} className='m-3 hvr-pulse' src={health} alt='health' />
                     Salud
                   </Card.Title>
                   <Card.Text style={{ fontSize: '18px', textAlign: 'justify' }}>
