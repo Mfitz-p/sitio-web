@@ -24,6 +24,13 @@
   height: 100px
 }
 
+/*Estilos a los Iconos de productos*/
+
+.compu {
+  color: #6BBBAE;
+
+}
+
 /* Este mediaQuery de 767px es debido a que el renderizado no se actualiza exactamente en los 768px
     por ende se queda un pixel adicional (que es el tamaño de algunos dispositivos como Ipad-Mini) antes de desapacerer */
 @media all and (max-width: 767px) {
