@@ -116,12 +116,13 @@
 }
 
 .change-Size {
-  transition: 0.3s;
-  font-size: 20px;
+  
+  size: 20px;
 }
 
 .change-Size:hover {
-  font-size: 25px;
+  transition: .8s;
+  transform: scale(1.35);
 }
 
 .change-SizeTitle {

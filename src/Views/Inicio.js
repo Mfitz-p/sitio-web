@@ -1,15 +1,17 @@
 import { Col, Container, Row, Card, Image, Button, Nav } from 'react-bootstrap';
+import { Link } from 'react-scroll';
+import { NavLink } from 'react-router-dom';
+import { useInView } from 'react-intersection-observer';
+import "../App.css";
+//Imágenes
 import page from '../images/frontpage.jpg';
 import infraestructura from '../images/infraestructura.jpg';
 import medicaIA from '../images/medicaIA.jpg';
 import retail from '../images/retail.jpg';
-import { Link } from 'react-scroll';
-import { NavLink } from 'react-router-dom';
-import { useInView } from 'react-intersection-observer';
+//Íconos
 import basket from '../icons/basket.svg';
 import city from '../icons/city.svg';
 import health from '../icons/health.svg';
-import "../App.css";
 
 const Inicio = () => {
   const { ref: card1, inView: effectScroll } = useInView({

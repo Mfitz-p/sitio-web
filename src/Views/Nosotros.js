@@ -34,7 +34,7 @@ function Nosotros() {
             </Row>
           </Col>
           <Col md={{ span: 4, offset: 2 }}>
-            <Card className="mx-auto animate__animated animate__fadeInRight" style={{ marginTop: '4rem', border: 'none' }}>
+            <Card className="mx-auto animate__animated animate__fadeInRight change-Size" style={{ marginTop: '4rem', border: 'none' }}>
               <Card.Body className='change-Size'>
                 <Card.Title className='mb-0 pb-3' style={{ fontSize: "32px" }} >Visión</Card.Title>
                 <Card.Text style={{ borderTop: "solid #6BBBAE 3px", textAlign: "justify" }} >
