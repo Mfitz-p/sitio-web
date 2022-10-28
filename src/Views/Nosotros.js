@@ -25,7 +25,7 @@ function Nosotros() {
                   que generen valor y una mejor experiencia para nuestros
                   clientes.
                 </Card.Text>
-              </Card.Body> 
+              </Card.Body>
             </Card>
             <Row>
               <Col style={{ display: 'flex', justifyContent: 'flex-end' }}  >
