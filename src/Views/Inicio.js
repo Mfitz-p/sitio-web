@@ -1,72 +1,100 @@
 import { Col, Container, Row, Card, Image, Button, Nav } from 'react-bootstrap';
 import page from '../images/frontpage.jpg';
+import infraestructura from '../images/infraestructura.jpg';
+import medicaIA from '../images/medicaIA.jpg';
+import retail from '../images/retail.jpg';
 import { Link } from 'react-scroll';
-import { NavLink } from  'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import { useInView } from 'react-intersection-observer';
+import "../App.css";
 
 const Inicio = () => {
+  const { ref: card1, inView: effectScroll } = useInView({
+    threshold: 0,
+    triggerOnce: true
+  });
+  const { ref: card2, inView: effectScroll2 } = useInView({
+    threshold: 0,
+    triggerOnce: true
+  });
+  const { ref: card3, inView: effectScroll3 } = useInView({
+    threshold: 0,
+    triggerOnce: true
+  });
+  const { ref: btn, inView: up } = useInView({
+    threshold: 1,
+    triggerOnce: true,
+    delay: 3000
+  });
+
   return (
     <>
-      <Container fluid>
-          <section id='portada-principal'>
-        <Row>
-          <Card className="bg-dark text-white" style={{ borderRadius: "0" }}>
+      <Container fluid> 
+           
+        <section id='portada-principal'>
+          <Row>
+            <Card className="bg-dark text-white" style={{ borderRadius: "0" }}>
               <Image fluid src={page} alt='img-page' style={{ objectFit: 'cover', height: '39.3rem' }} />
-            <Card.ImgOverlay className='d-flex align-items-center m-4 animate__animated animate__fadeInUp'>
-              <Col>
-                <Card.Title style={{ fontSize: "2rem" }}>
-                  Soluciones tecnológicas en inteligencia de negocios y el
-                  manejo de datos.
-                </Card.Title>
+              <Card.ImgOverlay className='d-flex flex-column  m-4 animate__animated animate__fadeInUp'>
+                <Col className='d-flex justify-content-center flex-column'>
+                  <Card.Title style={{ fontSize: "2.3rem" }}>
+                    Soluciones tecnológicas en inteligencia de negocios y el
+                    manejo de datos.
+                  </Card.Title>
 
-                {/* Se agrego el boton contactanos para que aparezca al inicio de la pagina para menjor interaccion con el usuario */}
-                <Col xs={12} md={2} >
+                  {/* Botón contáctanos que redirige al inicio de la página */}
+                  <Col xs={12} md={2} >
                     <Nav.Link as={NavLink} to="/Contacto">
-                        <Button className='mx-auto hvr-pulse' variant="success">Contáctanos</Button>
+                      <Button className='mx-auto hvr-pulse' variant="success">Contáctanos</Button>
                     </Nav.Link>
+                  </Col>
+
                 </Col>
-                {/* Se agrego el icono de flecha que despliega hacia abajo para cambiar a la siguientes secciones */}
-                  <Link className='d-flex  justify-content-center text-white' to='cards-servicios' 
-                        smooth={true} 
-                        duration={0}> 
-                        <i className="bi bi-arrow-down-circle hvr-hang change-Color" style={{ fontSize: '45px' }}></i>
-                  </Link>
-              </Col>
-            </Card.ImgOverlay>
-          </Card>
-        </Row>
+                {/* Ícono de flecha que despliega hacia abajo para cambiar a la siguientes secciones */}
+                <Link className=' d-flex justify-content-center text-white' to='cards-servicios'
+                  smooth={true}
+                  duration={0}>
+                  <i className="bi bi-arrow-down-circle hvr-hang change-Color" style={{ fontSize: '45px' }}></i>
+                </Link>
+              </Card.ImgOverlay>
+            </Card>
+          </Row>
         </section>
-        </Container>
-        <Container>
-        <section id='cards-servicios'>
+      </Container>
+      
+      <Container fluid>
+        <section id='cards-servicios'> 
+        
           <Row>
             <Col>
               <Card className="p-5" style={{ border: 'none' }}>
                 <Card.Body className='animate__animated animate__pulse'>
-                  <Card.Title className='subrayado d-flex  justify-content-center' style={{ fontSize: "3rem", textAlign: "justify" }}>
+                  <Card.Title className='subrayado d-flex justify-content-center' style={{ fontSize: "3rem", textAlign: "justify" }}>
                     ¿Qué hacemos por ti?
                   </Card.Title>
                   <Card.Text style={{ fontSize: '20px', textAlign: "justify" }}>
-                       Ofrecemos soluciones tecnológicas enfocadas en el
-                      manejo de datos para optimizar el proceso de la toma de
-                      decisiones mediante la obtención de información,
-                      identificación de problemas y detección de tendencias para
-                      encontrar nuevas oportunidades en el modelo de negocio de
-                      sus clientes.
+                    Ofrecemos soluciones tecnológicas enfocadas en el
+                    manejo de datos para optimizar el proceso de la toma de
+                    decisiones mediante la obtención de información,
+                    identificación de problemas y detección de tendencias para
+                    encontrar nuevas oportunidades en el modelo de negocio de
+                    sus clientes.
                   </Card.Text>
                 </Card.Body>
               </Card>
             </Col>
-            </Row>
+          </Row>
+          <Row  style={{ background: '#6BBBAE' }}>
+            <div  className=' d-flex justify-content-center' style={{ fontSize: "3rem", textAlign: "justify" }}>Servicios</div> 
+          </Row> 
+          <div ref={btn} className='d-flex justify-content-end sticky-sm-top' style={{ fontSize: '45px', top: '50%' }}> <Link  to='portada-principal' smooth={true} duration={0}> <i className={`${up ? 'bi bi-arrow-up-circle animate__animated animate__fadeInUp': null}  hvr-bob`} ></i></Link></div> 
+          
 
-            <Row style={{ background: '#6BBBAE' }}>
-              <div className='d-flex  justify-content-center' style={{ fontSize: "3rem", textAlign: "justify"}}>Servicios</div>
-            </Row>
-
-        {/* Comienzan las cards de servicios */}
-            <Row>
-            <Col>
-              <Card className="p-5 m-0" style={{ border: 'none' }}>
-                <Card.Body className='animate__animated animate__fadeInUp'>
+          {/* Comienzan las cards de servicios */}
+          <Row className='mx-5' >
+            <Col className="d-flex align-items-center g-0 ">
+              <Card className="p-5 g-0" style={{ border: 'none' }}>
+                <Card.Body ref={card1} className={`${effectScroll ? 'animate__animated animate__fadeInLeft' : null}`}>
                   <Card.Title className="mb-2" style={{ fontSize: '25px' }}>
                     <i className="bi bi-building m-3 hvr-grow" aria-hidden="true" style={{ fontSize: '45px', color: '#6BBBAE' }}></i>
                     Infraestructura
@@ -81,12 +109,14 @@ const Inicio = () => {
                 </Card.Body>
               </Card>
             </Col>
+            <Col id="imagenInicio"><Image fluid src={infraestructura} alt='img-page' style={{ objectFit: 'cover', height: '39.3rem' }} /></Col>
 
           </Row>
-          <Row>
-            <Col>
+          <Row className='mx-5'>
+            <Col id="imagenInicio"><Image fluid src={retail} alt='img-page' style={{ objectFit: 'cover', height: '39.3rem' }} /></Col>
+            <Col className="d-flex align-items-center g-0">
               <Card className="p-5" style={{ border: 'none' }}>
-                <Card.Body className='animate__animated animate__fadeInUp'>
+                <Card.Body ref={card2} className={`${effectScroll2 ? 'animate__animated animate__fadeInRight' : null}`}>
                   <Card.Title style={{ fontSize: '25px', border: 'none' }}>
                     <i className="bi bi-graph-up-arrow m-3 hvr-float" style={{ fontSize: '45px', color: '#6BBBAE' }}></i>
                     Retail & B2B
@@ -102,12 +132,11 @@ const Inicio = () => {
                 </Card.Body>
               </Card>
             </Col>
-            </Row>
-
-            <Row>
-            <Col>
-              <Card className=" p-5" style={{ border: 'none' }}>
-                <Card.Body className='animate__animated animate__fadeInUp'>
+          </Row>
+          <Row className='mx-5 mb-5'>
+            <Col className="d-flex align-items-center g-0">
+              <Card  style={{ border: 'none' }}>
+                <Card.Body ref={card3} className={`${effectScroll3 ? 'animate__animated animate__fadeInLeft' : null}`}>
                   <Card.Title style={{ fontSize: '25px' }}>
                     <i className="bi bi-heart-pulse m-3 hvr-pulse" style={{ fontSize: '45px', color: '#6BBBAE' }}></i>
                     Salud
@@ -124,7 +153,7 @@ const Inicio = () => {
                 </Card.Body>
               </Card>
             </Col>
-            {/* <Link to='portada-principal' smooth={true} duration={0}> <i className="bi bi-caret-up hvr-bob " style={{ fontSize: '45px' }}></i></Link> */}
+            <Col id="imagenInicio"><Image fluid src={medicaIA} alt='img-page' style={{ objectFit: 'cover', height: '39.3rem' }} /></Col>
           </Row>
         </section>
       </Container>

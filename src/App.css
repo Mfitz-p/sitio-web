@@ -24,7 +24,6 @@
   height: 100px
 }
 
-
 /* Este mediaQuery de 767px es debido a que el renderizado no se actualiza exactamente en los 768px
     por ende se queda un pixel adicional (que es el tamaño de algunos dispositivos como Ipad-Mini) antes de desapacerer */
 @media all and (max-width: 767px) {
@@ -39,6 +38,10 @@
   .text404 {
     text-align: center;
   }
+
+#imagenInicio {
+  display: none
+}
 
   #Mensaje {
     width: 100% !important
@@ -60,7 +63,7 @@
 
   .subrayado:hover,
   .subrayado:focus {
-    background-size: 51% 4px;
+    background-size: 100% 4px;
   }
 
   .hvr-underline-from-left-modificado {
@@ -237,6 +240,7 @@
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+ 
 }
 
 .hvr-pulse:hover,
@@ -428,8 +432,8 @@
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-}
-.hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
+/* }
+.hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active { */
   -webkit-animation-name: hvr-bob-float, hvr-bob;
   animation-name: hvr-bob-float, hvr-bob;
   -webkit-animation-duration: .3s, .5s;
@@ -492,8 +496,8 @@
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-}
-.hvr-hang:hover, .hvr-hang:focus, .hvr-hang:active {
+/* }
+.hvr-hang:hover, .hvr-hang:focus, .hvr-hang:active { */
   -webkit-animation-name: hvr-hang-sink, hvr-hang;
   animation-name: hvr-hang-sink, hvr-hang;
   -webkit-animation-duration: .1s, .5s;
