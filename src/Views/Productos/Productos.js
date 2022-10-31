@@ -74,7 +74,7 @@ const Productos = () => {
 
   return (
     <>
-      <Container>
+      <Container fluid>
         <Row className='p-5'> 
           <Col>
             <h2 className='animate__animated animate__fadeInUp' style={{ fontWeight: 'bold' }}>Nuestro modelo de negocios nos permite facilitarte los siguientes productos</h2>
