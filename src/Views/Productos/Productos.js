@@ -87,7 +87,7 @@ const Productos = () => {
             <Card className="p-5" style={{ border: 'none' }}>
               <Card.Body className='animate__animated animate__fadeInLeft'>
                 <Card.Title style={{ fontSize: '25px', border: 'none' }}>
-                <Image height={50} className='m-2' src={computerSvg} alt='computerSvg'/>
+                <Image height={70} className='m-3 hvr-float' src={computerSvg} alt='computerSvg'/>
                   {/* <i className="bi bi-clipboard2-check m-3" style={{ color: '#6BBBAE' }}></i> */}
                   Desarrollo de sistemas de gestión.
                 </Card.Title>
@@ -122,7 +122,7 @@ const Productos = () => {
             <Card className="p-5" style={{ border: 'none', backgroundColor: '#ECF2F8' }}>
               <Card.Body ref={effectRef4} className={`${effectScroll4 ? 'animate__animated animate__fadeInRight': null}`}>
                 <Card.Title style={{ fontSize: '25px', border: 'none' }}>
-                <Image height={50} className='m-2' src={modelosML} alt='modelosML'/>
+                <Image height={70} className='m-3 hvr-float' src={modelosML} alt='modelosML'/>
                   {/* <i className="bi bi-cpu m-3" style={{ color: '#6BBBAE' }}></i> */}
                   Modelos de Machine Learning
                 </Card.Title>
@@ -143,7 +143,7 @@ const Productos = () => {
             <Card className="p-5" style={{ border: 'none' }}>
               <Card.Body ref={effectRef5} className={`${effectScroll5 ? 'animate__animated animate__fadeInLeft': null}`}>
                 <Card.Title style={{ fontSize: '25px', border: 'none' }}>
-                <Image height={50} className='m-2' src={businessInt} alt='businessInt'/>
+                <Image height={70} className='m-3 hvr-float' src={businessInt} alt='businessInt'/>
                   {/* <i className="bi bi-bounding-box m-3" style={{ color: '#6BBBAE' }}></i> */}
                   Business Intelligence
                 </Card.Title>
@@ -178,7 +178,7 @@ const Productos = () => {
             <Card  className="p-5" style={{ border: 'none', backgroundColor: '#ECF2F8'  }}>
               <Card.Body ref={effectRef8} className={`${effectScroll8 ? 'animate__animated animate__fadeInRight': null}`}>
                 <Card.Title style={{ fontSize: '25px', border: 'none' }}>
-                <Image height={50} className='m-2' src={visionCompu} alt='visionCompu'/>
+                <Image height={70} className='m-3 hvr-float' src={visionCompu} alt='visionCompu'/>
                   {/* <i className="bi bi-intersect m-3" style={{ color: '#6BBBAE' }}></i> */}
                    Visión de computadora y percepción remota 
                 </Card.Title>
@@ -199,7 +199,7 @@ const Productos = () => {
             <Card className='p-5' style={{ border: 'none' }}>
               <Card.Body ref={effectRef9} className={`${effectScroll9 ? 'animate__animated animate__fadeInLeft': null}`}>
                 <Card.Title style={{ fontSize: '25px', border: 'none' }}>
-                <Image height={50} className='m-2' src={vBigData} alt='vBigData'/>
+                <Image height={70} className='m-3 hvr-float' src={vBigData} alt='vBigData'/>
                   {/* <i className="bi bi-bounding-box m-3" style={{ color: '#6BBBAE' }}></i> */}
                   Análisis y visualización de Big Data
                 </Card.Title>
