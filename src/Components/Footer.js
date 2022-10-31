@@ -7,10 +7,10 @@ import { NavLink } from  'react-router-dom';
 import logo from '../images/logo-navbar.png';
 
 function Footer() {
-  
+    
     return (
         <>
-            <Container fluid className='bg-dark text-white pt-3'>
+            <Container fluid  className='bg-dark text-white pt-3' >
                 {/* Este Row contiene todos los elementos del footer, sin los derechos reservados */}
                 <Row className='align-items-center'>
                     <Col xs={12} md={3} className="d-flex aligns-items-center justify-content-center">

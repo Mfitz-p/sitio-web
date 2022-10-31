@@ -30,7 +30,7 @@ function Contacto() {
     <>
       <Container fluid className="graficos p-0 ">
         <div className="m-4 ">
-          <div className='animate__animated animate__fadeInUp'style={{ fontSize: "clamp(36px, 4vw, 48px)", color: "#6BBBAE" }}>
+          <div className='animate__animated animate__fadeInUp' style={{ fontSize: "clamp(36px, 4vw, 48px)", color: "#6BBBAE" }}>
             {" "}
             Para dudas o preguntas{" "}
           </div>
