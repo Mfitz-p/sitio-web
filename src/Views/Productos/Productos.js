@@ -110,7 +110,7 @@ const Productos = () => {
           </Col>
         </Row>
 
-        <Row className='align-items-center' style={{ borderTop: 'solid #6BBBAE 1px', background: '#ECF2F8' }}>
+        <Row className='align-items-center' style={{  backgroundColor: '#ECF2F8' }}>
           <Col >
             <Card className="p-5" style={{ border: 'none', backgroundColor: '#ECF2F8'  }}>
               <Card.Body ref={effectRef3} className={`${effectScroll3 ? 'animate__animated animate__fadeInLeft': null}`}>
@@ -138,7 +138,7 @@ const Productos = () => {
           </Col>
         </Row>
 
-        <Row className='align-items-center' style={{ borderTop: 'solid #6BBBAE 1px' }}>
+        <Row className='align-items-center' >
           <Col >
             <Card className="p-5" style={{ border: 'none' }}>
               <Card.Body ref={effectRef5} className={`${effectScroll5 ? 'animate__animated animate__fadeInLeft': null}`}>
@@ -166,7 +166,7 @@ const Productos = () => {
           </Col>
         </Row>
 
-        <Row className='align-items-center' style={{ borderTop: 'solid #6BBBAE 1px', backgroundColor: '#ECF2F8'  }}>
+        <Row className='align-items-center' style={{  backgroundColor: '#ECF2F8'  }}>
           <Col >
             <Card className="p-5" style={{ border: 'none', backgroundColor: '#ECF2F8'  }}>
               <Card.Body ref={effectRef7} className={`${effectScroll7 ? 'animate__animated animate__fadeInLeft': null}`} >
@@ -180,7 +180,7 @@ const Productos = () => {
                 <Card.Title style={{ fontSize: '25px', border: 'none' }}>
                 <Image height={50} className='m-2' src={visionCompu} alt='visionCompu'/>
                   {/* <i className="bi bi-intersect m-3" style={{ color: '#6BBBAE' }}></i> */}
-                  Percepción remota y visión de computadora
+                   Visión de computadora y percepción remota 
                 </Card.Title>
                 <Card.Text style={{ fontSize: '18px', textAlign: 'justify' }}>
                   <ul>
@@ -194,7 +194,7 @@ const Productos = () => {
           </Col>
         </Row>
 
-        <Row className='align-items-center' style={{ borderTop: 'solid #6BBBAE 1px' }}>
+        <Row className='align-items-center' >
           <Col > 
             <Card className='p-5' style={{ border: 'none' }}>
               <Card.Body ref={effectRef9} className={`${effectScroll9 ? 'animate__animated animate__fadeInLeft': null}`}>
