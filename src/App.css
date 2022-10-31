@@ -5,10 +5,6 @@
   box-sizing: border-box; 
 }
 
- .app{
-  /* min-height: 100vh; */
-} 
-
 .fondo {
   background-image: url("/src/images/lupa404.png");
   background-repeat: no-repeat;
@@ -61,7 +57,10 @@
 
 }
 
+.reverseObserver {
+  visibility: hidden
 
+}
 
 @media (hover: hover)and (pointer: fine) {
   .subrayado {

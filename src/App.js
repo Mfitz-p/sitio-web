@@ -11,7 +11,6 @@ import 'animate.css';
 function App() {
   return (
   <BrowserRouter> 
-      <div className="app">
       <Navbar/>
       <Routes>
         <Route path='/' element={<Inicio/>}/> 
@@ -22,7 +21,6 @@ function App() {
         <Route path='*' element={<Pagina404/>}/> 
       </Routes>
       <Footer/>
-      </div>
   </BrowserRouter>
   );
 }
