@@ -12,6 +12,7 @@ function App() {
   return (
   <BrowserRouter> 
       <Navbar/>
+      <div className="app">
       <Routes>
         <Route path='/' element={<Inicio/>}/> 
         <Route path='/Inicio' element={<Navigate to='/'/>}/> 
@@ -21,6 +22,7 @@ function App() {
         <Route path='*' element={<Pagina404/>}/> 
       </Routes>
       <Footer/>
+      </div>
   </BrowserRouter>
   );
 }

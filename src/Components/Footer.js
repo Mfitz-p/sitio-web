@@ -10,7 +10,7 @@ function Footer() {
     
     return (
         <>
-            <Container fluid  className='bg-dark text-white pt-3' style={{ fontSize: "13px", cursor: "pointer", marginTop: 'auto'}} >
+            <Container fluid  className='bg-dark text-white pt-3 mt-auto' style={{ fontSize: "13px", cursor: "pointer"}} >
                 {/* Este Row contiene todos los elementos del footer, sin los derechos reservados */}
                 <Row className='align-items-center'>
                     <Col xs={12} md={3} className="d-flex aligns-items-center justify-content-center">

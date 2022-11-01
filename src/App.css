@@ -1,9 +1,30 @@
+/* Solucion inconclusa al footer. */
+/* html {
+  height: 100% !important
+}
+
+#root {
+  display: flex !important;
+  flex-direction: column !important;
+  min-height: 100% !important
+}
+
+.body {
+  height: 100% !important;
+}
+
+.app {
+  height: 100% !important;
+} */
+
 * {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  box-sizing: border-box; 
-} 
+  box-sizing: border-box;
+}
+
+
 
 .fondo {
   background-image: url("/src/images/lupa404.png");
@@ -17,7 +38,7 @@
   background-repeat: no-repeat;
   background-size: clamp(350px, 40%, 900px);
   background-position: 56vw;
- 
+
 }
 
 #Mensaje {
@@ -47,9 +68,9 @@
     text-align: center;
   }
 
-#imagenInicio {
-  display: none
-}
+  #imagenInicio {
+    display: none
+  }
 
   #Mensaje {
     width: 100% !important
@@ -59,7 +80,6 @@
 
 .reverseObserver {
   visibility: hidden
-
 }
 
 @media (hover: hover)and (pointer: fine) {
@@ -102,16 +122,18 @@
   .hvr-underline-from-left-modificado:active:before {
     right: 0;
   }
+
   .change-Size {
     size: 20px;
   }
-  
+
   .change-Size:hover {
     transition: .8s;
     transform: scale(1.35);
   }
 
 }
+
 .change-Color {
   /* background-color: rgb(175, 72, 72); */
   /* border: none; */
@@ -242,7 +264,7 @@
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
- 
+
 }
 
 .hvr-pulse:hover,
@@ -393,48 +415,56 @@
     -webkit-transform: translateY(-8px);
     transform: translateY(-8px);
   }
+
   50% {
     -webkit-transform: translateY(-4px);
     transform: translateY(-4px);
   }
+
   100% {
     -webkit-transform: translateY(-8px);
     transform: translateY(-8px);
   }
 }
+
 @keyframes hvr-bob {
   0% {
     -webkit-transform: translateY(-8px);
     transform: translateY(-8px);
   }
+
   50% {
     -webkit-transform: translateY(-4px);
     transform: translateY(-4px);
   }
+
   100% {
     -webkit-transform: translateY(-8px);
     transform: translateY(-8px);
   }
 }
+
 @-webkit-keyframes hvr-bob-float {
   100% {
     -webkit-transform: translateY(-8px);
     transform: translateY(-8px);
   }
 }
+
 @keyframes hvr-bob-float {
   100% {
     -webkit-transform: translateY(-8px);
     transform: translateY(-8px);
   }
 }
+
 .hvr-bob {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-/* }
+  /* }
 .hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active { */
   -webkit-animation-name: hvr-bob-float, hvr-bob;
   animation-name: hvr-bob-float, hvr-bob;
@@ -457,48 +487,56 @@
     -webkit-transform: translateY(8px);
     transform: translateY(8px);
   }
+
   50% {
     -webkit-transform: translateY(4px);
     transform: translateY(4px);
   }
+
   100% {
     -webkit-transform: translateY(8px);
     transform: translateY(8px);
   }
 }
+
 @keyframes hvr-hang {
   0% {
     -webkit-transform: translateY(8px);
     transform: translateY(8px);
   }
+
   50% {
     -webkit-transform: translateY(4px);
     transform: translateY(4px);
   }
+
   100% {
     -webkit-transform: translateY(8px);
     transform: translateY(8px);
   }
 }
+
 @-webkit-keyframes hvr-hang-sink {
   100% {
     -webkit-transform: translateY(8px);
     transform: translateY(8px);
   }
 }
+
 @keyframes hvr-hang-sink {
   100% {
     -webkit-transform: translateY(8px);
     transform: translateY(8px);
   }
 }
+
 .hvr-hang {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-/* }
+  /* }
 .hvr-hang:hover, .hvr-hang:focus, .hvr-hang:active { */
   -webkit-animation-name: hvr-hang-sink, hvr-hang;
   animation-name: hvr-hang-sink, hvr-hang;
@@ -515,4 +553,3 @@
   -webkit-animation-direction: normal, alternate;
   animation-direction: normal, alternate;
 }
-

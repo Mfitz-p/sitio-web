@@ -14,18 +14,32 @@ import city from '../icons/city.svg';
 import health from '../icons/health.svg';
 
 const Inicio = () => {
-  const { ref: card1, inView: effectScroll } = useInView({
+  
+  const { ref: textcard1, inView: effectScroll } = useInView({
     threshold: 0,
-    
+
   });
-  const { ref: card2, inView: effectScroll2 } = useInView({
+  const { ref: textcard2, inView: effectScroll2 } = useInView({
     threshold: 0,
-   
+
   });
-  const { ref: card3, inView: effectScroll3 } = useInView({
+  const { ref: textcard3, inView: effectScroll3 } = useInView({
     threshold: 0,
-    
+
   });
+  const { ref: imgcard1, inView: effectImgScroll } = useInView({
+    threshold: 0,
+
+  });
+  const { ref: imgcard2, inView: effectImgScroll2 } = useInView({
+    threshold: 0,
+
+  });
+  const { ref: imgcard3, inView: effectImgScroll3 } = useInView({
+    threshold: 0,
+
+  });
+
   const { ref: btn, inView: up } = useInView({
     threshold: 1,
     triggerOnce: true,
@@ -35,7 +49,6 @@ const Inicio = () => {
   return (
     <>
       <Container fluid>
-
         <section id='portada-principal'>
           <Row>
             <Card className="bg-dark text-white" style={{ borderRadius: "0" }}>
@@ -58,7 +71,7 @@ const Inicio = () => {
                 <Link className=' d-flex justify-content-center text-white' to='cards-servicios'
                   smooth={true}
                   duration={0}>
-                  <i className="bi bi-arrow-down-circle hvr-hang change-Color" style={{ fontSize: '45px', cursor:'pointer' }}></i>
+                  <i className="bi bi-arrow-down-circle hvr-hang change-Color" style={{ fontSize: '45px', cursor: 'pointer' }}></i>
                 </Link>
               </Card.ImgOverlay>
             </Card>
@@ -90,16 +103,19 @@ const Inicio = () => {
           <Row style={{ background: '#6BBBAE' }}>
             <div className=' d-flex justify-content-center' style={{ fontSize: "3rem", textAlign: "justify" }}>Servicios</div>
           </Row>
-          <div ref={btn} className='d-flex justify-content-end sticky-sm-top' style={{ fontSize: '45px', top: '50%', opacity: '.5', cursor:'pointer' }}> <Link to='portada-principal' smooth={true} duration={0}> <i className={`${up ? 'bi bi-arrow-up-circle animate__animated animate__fadeInUp' : null}  hvr-bob`} ></i></Link></div>
+          <div ref={btn} className='d-flex justify-content-end sticky-sm-top' style={{ fontSize: '45px', top: '50%', opacity: '.5', cursor: 'pointer' }}>
+            <Link to='portada-principal' smooth={true} duration={0}>
+              <i className={`${up ? 'bi bi-arrow-up-circle animate__animated animate__fadeInUp' : null}  hvr-bob`} ></i>
+            </Link>
+          </div>
 
           {/* Comienzan las cards de servicios */}
           <Row className='mx-5' >
             <Col className="d-flex align-items-center g-0 ">
               <Card className="p-5 g-0" style={{ border: 'none' }}>
-                <Card.Body ref={card1} className={`${effectScroll ? 'animate__animated animate__fadeInLeft' : 'reverseObserver'}`}>
+                <Card.Body ref={textcard1} className={`${effectScroll ? 'animate__animated animate__fadeInLeft' : 'reverseObserver'}`}>
                   <Card.Title className="mb-2" style={{ fontSize: '25px' }}>
                     <Image height={70} className='m-3 hvr-grow' src={city} alt='city' />
-                    {/* <i className="bi bi-building m-3 hvr-grow" aria-hidden="true" style={{ fontSize: '45px', color: '#6BBBAE' }}></i> */}
                     Infraestructura
                   </Card.Title>
                   <Card.Text style={{ fontSize: '18px', textAlign: 'justify' }}>
@@ -112,14 +128,17 @@ const Inicio = () => {
                 </Card.Body>
               </Card>
             </Col>
-            <Col id="imagenInicio"><Image fluid src={infraestructura} alt='img-page' style={{ objectFit: 'cover', height: '39.3rem' }} /></Col>
-
+            <Col id="imagenInicio">
+              <Image fluid src={infraestructura} ref={imgcard1} className={`${effectImgScroll ? 'animate__animated animate__fadeInRight' : 'reverseObserver'}`} alt='img-page' style={{ objectFit: 'cover', height: '39.3rem' }} />
+            </Col>
           </Row>
+
           <Row className='mx-5'>
-            <Col id="imagenInicio"><Image fluid src={retail} alt='img-page' style={{ objectFit: 'cover', height: '39.3rem' }} /></Col>
+            <Col id="imagenInicio">
+              <Image fluid src={retail} alt='img-page' ref={imgcard2} className={`${effectImgScroll2 ? 'animate__animated animate__fadeInLeft' : 'reverseObserver'}`} style={{ objectFit: 'cover', height: '39.3rem' }} /></Col>
             <Col className="d-flex align-items-center g-0">
               <Card className="p-5" style={{ border: 'none' }}>
-                <Card.Body ref={card2} className={`${effectScroll2 ? 'animate__animated animate__fadeInRight' : 'reverseObserver'}`}>
+                <Card.Body ref={textcard2} className={`${effectScroll2 ? 'animate__animated animate__fadeInRight' : 'reverseObserver'}`}>
                   <Card.Title style={{ fontSize: '25px', border: 'none' }}>
                     <Image height={70} className='m-3 hvr-float' src={basket} alt='basket' />
                     Retail & B2B
@@ -136,10 +155,11 @@ const Inicio = () => {
               </Card>
             </Col>
           </Row>
+
           <Row className='mx-5 mb-5'>
             <Col className="d-flex align-items-center g-0">
               <Card style={{ border: 'none' }}>
-                <Card.Body ref={card3} className={`${effectScroll3 ? 'animate__animated animate__fadeInLeft' : 'reverseObserver'}`}>
+                <Card.Body ref={textcard3} className={`${effectScroll3 ? 'animate__animated animate__fadeInLeft' : 'reverseObserver'}`}>
                   <Card.Title style={{ fontSize: '25px' }}>
                     <Image height={70} className='m-3 hvr-pulse' src={health} alt='health' />
                     Salud
@@ -156,7 +176,8 @@ const Inicio = () => {
                 </Card.Body>
               </Card>
             </Col>
-            <Col id="imagenInicio"><Image fluid src={medicaIA} alt='img-page' style={{ objectFit: 'cover', height: '39.3rem' }} /></Col>
+            <Col id="imagenInicio">
+              <Image fluid src={medicaIA} ref={imgcard3} className={`${effectImgScroll3 ? 'animate__animated animate__fadeInRight' : 'reverseObserver'}`} alt='img-page' style={{ objectFit: 'cover', height: '39.3rem' }} /></Col>
           </Row>
         </section>
       </Container>
