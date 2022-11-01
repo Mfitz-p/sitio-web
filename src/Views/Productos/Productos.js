@@ -1,4 +1,5 @@
 import { Container, Image, Card, Col, Row } from 'react-bootstrap';
+import { Link } from 'react-scroll';
 
 /* Imagenes de Productos */
 import imgSistemasGestion from '../../images/imgSistemasGestion.png';
@@ -71,18 +72,30 @@ const Productos = () => {
     threshold: 0,
     triggerOnce: true
   });
+  const { ref: btn, inView: up } = useInView({
+    threshold: 1,
+    triggerOnce: true,
+    delay: 3000
+  });
 
   return (
     <>
       <Container fluid>
+      <section id='card-desarrollo'>
         <Row className='p-5'> 
           <Col>
             <h2 className='animate__animated animate__fadeInUp' style={{ fontWeight: 'bold' }}>Nuestro modelo de negocios nos permite facilitarte los siguientes productos</h2>
             <hr />
           </Col>
+          {/* Ícono de flecha que despliega hacia abajo para cambiar a la siguientes secciones */}
+          <Link className=' d-flex justify-content-end text-black' to='card-modelosML'
+                  smooth={true}
+                  duration={0}>
+                  <i className="bi bi-arrow-down-circle hvr-hang " style={{ fontSize: '45px' }}></i>
+          </Link>
         </Row>
         {/* Inician las cards de productos con su respectiva imagen */}
-        <Row className='align-items-center' >
+        <Row className='align-items-center vh-100' >
           <Col ref={effectRef} className={`${effectScroll ? 'animate__animated animate__fadeInLeft': null}`}>
             <Card className="p-5" style={{ border: 'none' }}>
               <Card.Body className='animate__animated animate__fadeInLeft'>
@@ -109,8 +122,10 @@ const Productos = () => {
             </Card>
           </Col>
         </Row>
+      </section>
 
-        <Row className='align-items-center' style={{  backgroundColor: '#ECF2F8' }}>
+      <section id='card-modelosML' className='vh-100'>
+        <Row className='align-items-center vh-100' style={{  backgroundColor: '#ECF2F8' }}>
           <Col >
             <Card className="p-5" style={{ border: 'none', backgroundColor: '#ECF2F8'  }}>
               <Card.Body ref={effectRef3} className={`${effectScroll3 ? 'animate__animated animate__fadeInLeft': null}`}>
@@ -137,8 +152,17 @@ const Productos = () => {
             </Card>
           </Col>
         </Row>
+      </section>
 
-        <Row className='align-items-center' >
+      {/* Este div contiene la flecha que aparece a mitad de las secciones y te regresa a la primera seccion de productos donde esta el titulo */}
+      <div ref={btn} className='d-flex justify-content-end sticky-sm-top' style={{ fontSize: '45px', top: '50%', opacity: '.5' }}> 
+        <Link to='card-desarrollo' smooth={true} duration={0}> 
+          <i className={`${up ? 'bi bi-arrow-up-circle animate__animated animate__fadeInUp' : null}  hvr-bob`} ></i>
+        </Link>
+      </div>
+
+      <section id='card-businessInt' className='vh-100'>
+        <Row className='align-items-center vh-100' >
           <Col >
             <Card className="p-5" style={{ border: 'none' }}>
               <Card.Body ref={effectRef5} className={`${effectScroll5 ? 'animate__animated animate__fadeInLeft': null}`}>
@@ -165,8 +189,10 @@ const Productos = () => {
             </Card>
           </Col>
         </Row>
+      </section>
 
-        <Row className='align-items-center' style={{  backgroundColor: '#ECF2F8'  }}>
+        <section id='card-visionComp' className='vh-100'>
+        <Row className='align-items-center vh-100' style={{  backgroundColor: '#ECF2F8'  }}>
           <Col >
             <Card className="p-5" style={{ border: 'none', backgroundColor: '#ECF2F8'  }}>
               <Card.Body ref={effectRef7} className={`${effectScroll7 ? 'animate__animated animate__fadeInLeft': null}`} >
@@ -193,8 +219,10 @@ const Productos = () => {
             </Card>
           </Col>
         </Row>
+        </section>
 
-        <Row className='align-items-center' >
+        <section id='card-bigData' className='vh-100'>
+        <Row className='align-items-center vh-100' >
           <Col > 
             <Card className='p-5' style={{ border: 'none' }}>
               <Card.Body ref={effectRef9} className={`${effectScroll9 ? 'animate__animated animate__fadeInLeft': null}`}>
@@ -221,7 +249,7 @@ const Productos = () => {
             </Card>
           </Col>
         </Row>
-
+        </section>
       </Container>
     </>
   );
