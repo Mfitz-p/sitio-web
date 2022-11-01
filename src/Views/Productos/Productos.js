@@ -95,7 +95,7 @@ const Productos = () => {
           </Link>
         </Row>
         {/* Inician las cards de productos con su respectiva imagen */}
-        <Row className='align-items-center vh-100' >
+        <Row className='align-items-center' >
           <Col ref={effectRef} className={`${effectScroll ? 'animate__animated animate__fadeInLeft': 'reverseObserver'}`}>
             <Card className="p-5" style={{ border: 'none' }}>
               <Card.Body className='animate__animated animate__fadeInLeft'>
