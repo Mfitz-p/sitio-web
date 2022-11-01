@@ -11,8 +11,8 @@ import 'animate.css';
 function App() {
   return (
   <BrowserRouter> 
-      <div className="app">
       <Navbar/>
+      <div className="app">
       <Routes>
         <Route path='/' element={<Inicio/>}/> 
         <Route path='/Inicio' element={<Navigate to='/'/>}/> 

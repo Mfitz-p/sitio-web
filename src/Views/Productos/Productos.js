@@ -34,43 +34,43 @@ const Productos = () => {
 
   const { ref: effectRef, inView:effectScroll} = useInView({
     threshold: 0,
-    triggerOnce: true
+    
   });
   const { ref: effectRef2, inView:effectScroll2} = useInView({
     threshold: 0,
-    triggerOnce: true
+    
   });
   const { ref: effectRef3, inView:effectScroll3} = useInView({
     threshold: 0,
-    triggerOnce: true
+   
   });
   const { ref: effectRef4, inView:effectScroll4} = useInView({
     threshold: 0,
-    triggerOnce: true
+   
   });
   const { ref: effectRef5, inView:effectScroll5} = useInView({
     threshold: 0,
-    triggerOnce: true
+    
   });
   const { ref: effectRef6, inView:effectScroll6} = useInView({
     threshold: 0,
-    triggerOnce: true
+   
   });
   const { ref: effectRef7, inView:effectScroll7} = useInView({
     threshold: 0,
-    triggerOnce: true
+   
   });
   const { ref: effectRef8, inView:effectScroll8} = useInView({
     threshold: 0,
-    triggerOnce: true
+    
   });
   const { ref: effectRef9, inView:effectScroll9} = useInView({
     threshold: 0,
-    triggerOnce: true
+  
   });
   const { ref: effectRef10, inView:effectScroll10} = useInView({
     threshold: 0,
-    triggerOnce: true
+    
   });
   const { ref: btn, inView: up } = useInView({
     threshold: 1,
@@ -81,7 +81,7 @@ const Productos = () => {
   return (
     <>
       <Container fluid>
-      <section id='card-desarrollo'>
+      <section id='card-desarrollo' className='vh-100'>
         <Row className='p-5'> 
           <Col>
             <h2 className='animate__animated animate__fadeInUp' style={{ fontWeight: 'bold' }}>Nuestro modelo de negocios nos permite facilitarte los siguientes productos</h2>
@@ -96,7 +96,7 @@ const Productos = () => {
         </Row>
         {/* Inician las cards de productos con su respectiva imagen */}
         <Row className='align-items-center vh-100' >
-          <Col ref={effectRef} className={`${effectScroll ? 'animate__animated animate__fadeInLeft': null}`}>
+          <Col ref={effectRef} className={`${effectScroll ? 'animate__animated animate__fadeInLeft': 'reverseObserver'}`}>
             <Card className="p-5" style={{ border: 'none' }}>
               <Card.Body className='animate__animated animate__fadeInLeft'>
                 <Card.Title style={{ fontSize: '25px', border: 'none' }}>
@@ -116,7 +116,7 @@ const Productos = () => {
           </Col>
           <Col >
             <Card className="p-5" style={{ border: 'none' }}>
-              <Card.Body ref={effectRef2} className={`${effectScroll2 ? 'animate__animated animate__fadeInRight': null}`}>
+              <Card.Body ref={effectRef2} className={`${effectScroll2 ? 'animate__animated animate__fadeInRight': 'reverseObserver'}`}>
                 <Image className='box' fluid src={imgSistemasGestion} alt='imgSistemasGestion' />
               </Card.Body>
             </Card>
@@ -128,14 +128,14 @@ const Productos = () => {
         <Row className='align-items-center vh-100' style={{  backgroundColor: '#ECF2F8' }}>
           <Col >
             <Card className="p-5" style={{ border: 'none', backgroundColor: '#ECF2F8'  }}>
-              <Card.Body ref={effectRef3} className={`${effectScroll3 ? 'animate__animated animate__fadeInLeft': null}`}>
+              <Card.Body ref={effectRef3} className={`${effectScroll3 ? 'animate__animated animate__fadeInLeft': 'reverseObserver'}`}>
                 <Image className='box' fluid src={imgModelosML} alt='imgModelosML' />
               </Card.Body>
             </Card>
           </Col>
           <Col >
             <Card className="p-5" style={{ border: 'none', backgroundColor: '#ECF2F8' }}>
-              <Card.Body ref={effectRef4} className={`${effectScroll4 ? 'animate__animated animate__fadeInRight': null}`}>
+              <Card.Body ref={effectRef4} className={`${effectScroll4 ? 'animate__animated animate__fadeInRight': 'reverseObserver'}`}>
                 <Card.Title style={{ fontSize: '25px', border: 'none' }}>
                 <Image height={70} className='m-3 hvr-float' src={modelosML} alt='modelosML'/>
                   {/* <i className="bi bi-cpu m-3" style={{ color: '#6BBBAE' }}></i> */}
@@ -165,7 +165,7 @@ const Productos = () => {
         <Row className='align-items-center vh-100' >
           <Col >
             <Card className="p-5" style={{ border: 'none' }}>
-              <Card.Body ref={effectRef5} className={`${effectScroll5 ? 'animate__animated animate__fadeInLeft': null}`}>
+              <Card.Body ref={effectRef5} className={`${effectScroll5 ? 'animate__animated animate__fadeInLeft': 'reverseObserver'}`}>
                 <Card.Title style={{ fontSize: '25px', border: 'none' }}>
                 <Image height={70} className='m-3 hvr-float' src={businessInt} alt='businessInt'/>
                   {/* <i className="bi bi-bounding-box m-3" style={{ color: '#6BBBAE' }}></i> */}
@@ -183,7 +183,7 @@ const Productos = () => {
           </Col>
           <Col >
             <Card  style={{ border: 'none' }}>
-              <Card.Body ref={effectRef6} className={`${effectScroll6 ? 'animate__animated animate__fadeInRight': null}`}>
+              <Card.Body ref={effectRef6} className={`${effectScroll6 ? 'animate__animated animate__fadeInRight': 'reverseObserver'}`}>
                 <Image className='box' fluid src={imgBusinessInte} alt='imgBusinessInte' />
               </Card.Body>
             </Card>
@@ -195,14 +195,14 @@ const Productos = () => {
         <Row className='align-items-center vh-100' style={{  backgroundColor: '#ECF2F8'  }}>
           <Col >
             <Card className="p-5" style={{ border: 'none', backgroundColor: '#ECF2F8'  }}>
-              <Card.Body ref={effectRef7} className={`${effectScroll7 ? 'animate__animated animate__fadeInLeft': null}`} >
+              <Card.Body ref={effectRef7} className={`${effectScroll7 ? 'animate__animated animate__fadeInLeft': 'reverseObserver'}`} >
                 <Image className='box' fluid src={imgVisionComputadora} alt='imgVisionComputadora' />
               </Card.Body>
             </Card>
           </Col>
           <Col >
             <Card  className="p-5" style={{ border: 'none', backgroundColor: '#ECF2F8'  }}>
-              <Card.Body ref={effectRef8} className={`${effectScroll8 ? 'animate__animated animate__fadeInRight': null}`}>
+              <Card.Body ref={effectRef8} className={`${effectScroll8 ? 'animate__animated animate__fadeInRight': 'reverseObserver'}`}>
                 <Card.Title style={{ fontSize: '25px', border: 'none' }}>
                 <Image height={70} className='m-3 hvr-float' src={visionCompu} alt='visionCompu'/>
                   {/* <i className="bi bi-intersect m-3" style={{ color: '#6BBBAE' }}></i> */}
@@ -225,7 +225,7 @@ const Productos = () => {
         <Row className='align-items-center vh-100' >
           <Col > 
             <Card className='p-5' style={{ border: 'none' }}>
-              <Card.Body ref={effectRef9} className={`${effectScroll9 ? 'animate__animated animate__fadeInLeft': null}`}>
+              <Card.Body ref={effectRef9} className={`${effectScroll9 ? 'animate__animated animate__fadeInLeft': 'reverseObserver'}`}>
                 <Card.Title style={{ fontSize: '25px', border: 'none' }}>
                 <Image height={70} className='m-3 hvr-float' src={vBigData} alt='vBigData'/>
                   {/* <i className="bi bi-bounding-box m-3" style={{ color: '#6BBBAE' }}></i> */}
@@ -243,7 +243,7 @@ const Productos = () => {
           </Col>
           <Col >
             <Card className="p-5" style={{ border: 'none' }}>
-              <Card.Body ref={effectRef10} className={`${effectScroll10 ? 'animate__animated animate__fadeInRight': null}`}>
+              <Card.Body ref={effectRef10} className={`${effectScroll10 ? 'animate__animated animate__fadeInRight': 'reverseObserver'}`}>
                 <Image className='box' fluid src={imgBigData} alt='imgBigData' />
               </Card.Body>
             </Card>
