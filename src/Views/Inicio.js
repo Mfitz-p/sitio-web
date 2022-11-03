@@ -15,6 +15,7 @@ import health from '../icons/health.svg';
 
 const Inicio = () => {
   
+  //Hook que se recibe desde la librería react-intersection-observer para cada elemento a modificar con el efecto de intersection observer.
   const { ref: textcard1, inView: effectScroll } = useInView({
     threshold: 0,
 

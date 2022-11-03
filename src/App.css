@@ -1,21 +1,3 @@
-/* Solucion inconclusa al footer. */
-/* html {
-  height: 100% !important
-}
-
-#root {
-  display: flex !important;
-  flex-direction: column !important;
-  min-height: 100% !important
-}
-
-.body {
-  height: 100% !important;
-}
-
-.app {
-  height: 100% !important;
-} */
 
 * {
   margin: 0;
@@ -23,8 +5,6 @@
   font-family: sans-serif;
   box-sizing: border-box;
 }
-
-
 
 .fondo {
   background-image: url("/src/images/lupa404.png");
@@ -40,6 +20,76 @@
   background-position: 56vw;
 
 }
+
+.vision{
+  background-image: linear-gradient(to bottom, rgba(45, 75, 100, .7), rgba(38, 63, 84, 0.5)), url("/src/images/vision.jpg");
+  display: flex;
+  flex-direction: column;
+  background-size: cover;  
+  background-position: center;
+  height: 400px;
+  opacity: 1 !important
+}
+
+.vision > .textVision{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 1;
+}
+
+.tituloVision{
+  font-size: 56px;
+  border-bottom: solid #6BBBAE 3px;
+  opacity: 1;
+}
+
+.mision{
+  background-image: linear-gradient(to bottom, rgba(57, 95, 126, 0.8), rgba(38, 63, 84,  0.6)), url("/src/images/mision.jpg");
+  display: flex;
+  flex-direction: column;
+  background-size: cover;  
+  background-position: center;
+  height: 400px;
+}
+
+.mision > .textMision{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 1 !important;
+}
+
+.tituloMision{
+  font-size: 56px;
+  border-bottom: solid #6BBBAE 3px;
+  opacity: 1;
+}
+
+.nuestroEquipo {
+  background-image: linear-gradient(to bottom, rgba(57, 95, 126, 0.7), rgba(38, 63, 84, 0.3)), url("/src/images/nuestroEquipo.jpg");
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-size: cover;  
+  background-position: center;
+  height: 450px;
+}
+
+.nuestroEquipo > .textNuestroEquipo{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.tituloNuestroEquipo{
+  text-align: center;
+  font-size: 56px;
+} 
 
 #Mensaje {
   width: 50% !important;
