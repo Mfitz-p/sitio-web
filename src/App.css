@@ -70,6 +70,24 @@
   }
 
 }
+/* MediaQuerys que indican el max-height de las pantallas del body de forma responsiva */
+@media screen and (max-height: 480px) {
+  .container-product{
+    height: auto;
+  }  
+}
+
+@media screen and (max-height: 690px) {
+  .container-product{
+    height: auto;
+  }  
+}
+
+@media screen and (max-height: 1280px) {
+  .container-product{
+    height: 100vh;
+  }  
+}
 
 .reverseObserver {
   visibility: hidden
