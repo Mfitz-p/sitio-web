@@ -1,13 +1,18 @@
 /**
  * Página de formulario
  */
-import { Form, Button, Col, Row, Container } from "react-bootstrap/";
+import { Form, Button, Col, Row, Container, OverlayTrigger, Tooltip } from "react-bootstrap/";
 import { useState } from "react";
 import "../App.css";
 //@formspree/react es una libreria para mandar formularios sin necesidad de un bbackend
 import { useForm, ValidationError } from "@formspree/react";
 
 function Contacto() {
+
+  // Se le asigna al hook el id del formulario, este sale desde la pagina de formspree.io
+  const [state, handleSubmit] = useForm("xknevvvg");
+
+  //State hook que almacena los inputs del formulario a través de la función de handleChange
   const [datosForm, setDatosForm] = useState({
     Nombre: "",
     Apellido: "",
@@ -16,15 +21,32 @@ function Contacto() {
     Mensaje: "",
   });
 
-  // Se le asigna al hook el id del formulario, este sale desde la pagina de formspree.io
-  const [state, handleSubmit] = useForm("xknevvvg");
-
+  //Función que permite interactuar con el nombre y valor de los datos contenidos en el objeto del hook de datosForm.
   const handleChange = (e) => {
     setDatosForm({
       ...datosForm,
       [e.target.name]: e.target.value,
     });
   };
+
+  //State Hook que manda un mensaje en caso de que no se cumplan los requisitos para el llenado del input Teléfono
+  // a través de la función handleValidatePhone que es contenida en el JSX del Form.Control deL Teléfono.
+  const [mensajeError, setMensajeError] = useState()
+
+  //Función recibe la información contenido en el input de teléfono y testea una expresión regular 
+  // que devuelve un mensaje de error en caso de no cumplir con sus requisitos. 
+  //Adicionalmente se ejecuta un renderizado condicional con esta función en el JSX para negar el submit en el botón
+  // al momento de enviar la información en caso de que no se cumplan los requisitos.
+  const handleValidatePhone = (e) => {
+    setDatosForm({
+      ...datosForm,
+      [e.target.name]: e.target.value,
+    });
+    const regex = /^\d{7,9}$/;
+    if (regex.test(e.target.value)) {
+      setMensajeError(() => '')
+    } else { setMensajeError(() => 'Tu teléfono solo puede tener entre 7 y 10 caracteres') }
+  }
 
   return (
     <>
@@ -73,26 +95,26 @@ function Contacto() {
                 required
               />
               <ValidationError
-              prefix="Correo"
-              field="Correo"
-              errors={state.errors}
-            />
+                prefix="Correo"
+                field="Correo"
+                errors={state.errors}
+              />
             </Form.Group>
             <Form.Group as={Col} md="3">
               <Form.Label>Teléfono</Form.Label>
               <Form.Control
                 id="Telefono"
-                type="tel"
                 value={datosForm.Telefono}
-                onChange={handleChange}
+                onChange={handleValidatePhone}
                 name="Telefono"
                 required
               />
-               <ValidationError
-              prefix="Telefono"
-              field="Telefono"
-              errors={state.errors}
-            />
+              <p style={{ color: 'red', fontSize: '.9em' }}>{mensajeError}</p>
+              <ValidationError
+                prefix="Telefono"
+                field="Telefono"
+                errors={state.errors}
+              />
             </Form.Group>
             <Col className="md-6"></Col>
           </Row>
@@ -101,7 +123,7 @@ function Contacto() {
             <Form.Control
               type="text"
               id="Mensaje"
-              className="inputSpace" 
+              className="inputSpace"
               value={datosForm.Mensaje}
               onChange={handleChange}
               name="Mensaje"
@@ -113,12 +135,22 @@ function Contacto() {
               errors={state.errors}
             />
           </Form.Group>
-          <Button variant="success" type="submit" disabled={state.submitting}>
-            Enviar
-          </Button>
+
+          {mensajeError === '' ?
+            <Button variant="success" type="submit" disabled={state.submitting}>
+              Enviar
+            </Button> :
+            <OverlayTrigger overlay={<Tooltip id="tooltip-disabled"> Llena correctamente cada apartado!</Tooltip>}>
+              <span className="d-inline-block">
+                <Button variant="success" type="submit" disabled style={{ pointerEvents: 'none' }}>
+                  Enviar
+                </Button>
+              </span>
+            </OverlayTrigger>
+          }
         </Form>
       </Container>
-      {state.succeeded ? <p>Gracias por contactarse con nosotros</p>: ""}
+      {state.succeeded ? <p>Gracias por contactarse con nosotros</p> : ""}
     </>
   );
 }
