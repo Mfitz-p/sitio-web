@@ -59,22 +59,22 @@ const imgs = [
   {
     id: 5,
     src: machineLearning1,
-    alt: "aforos"
+    alt: "machineLearning1"
   },
   {
     id: 6,
     src: machineLearning2,
-    alt: "hallazgoz"
+    alt: "machineLearning2"
   },
   {
     id: 7,
     src: machineLearning3,
-    alt: "mapa"
+    alt: "machineLearning3"
   },
   {
     id: 8,
     src: machineLearning4,
-    alt: "ingresos"
+    alt: "machineLearning4"
   }
  ]
  const imgs3 = [

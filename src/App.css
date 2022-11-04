@@ -1,11 +1,10 @@
-
+/* Estilos globales para la pag */
 * {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
   box-sizing: border-box;
 }
-
 
 #body-wrapper {
     width: 100%;
@@ -224,6 +223,7 @@
 
 }
 
+/* Estilo hover cuando pasa el cursor */
 .change-Color {
   /* background-color: rgb(175, 72, 72); */
   /* border: none; */
@@ -234,20 +234,19 @@
   transition: 0.8s;
 }
 
+/* Estilo hover cuando pasa el cursor */
 .change-Color:hover {
   color: rgb(225, 243, 28);
   opacity: 0.6;
 }
+.change-Color:hover {
+  opacity: .80;
+}
 
-
-
+/* Estilo de sombras se añadio para las images de productos */
 .box {
   /* box-shadow: 2px 2px 10px; */
   filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
-}
-
-.change-Color:hover {
-  opacity: .80;
 }
 
 .animate__animated.animate__fadeIn {
