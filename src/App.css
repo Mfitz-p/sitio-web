@@ -6,6 +6,20 @@
   box-sizing: border-box;
 }
 
+
+#body-wrapper {
+    width: 100%;
+    min-height: 83.1vh;
+}
+
+
+.footer{
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
 .fondo {
   background-image: url("/src/images/lupa404.png");
   background-repeat: no-repeat;
@@ -18,7 +32,6 @@
   background-repeat: no-repeat;
   background-size: clamp(350px, 40%, 900px);
   background-position: 56vw;
-
 }
 
 .vision{
@@ -91,6 +104,14 @@
   font-size: 56px;
 } 
 
+.btn-arriba{
+  font-size: 45px; 
+  top: 50%; 
+  opacity: .5; 
+  cursor: pointer; 
+  transform:translate(0px, 450%)
+}
+
 #Mensaje {
   width: 50% !important;
   height: 100px
@@ -119,7 +140,11 @@
     width: 100% !important
   }
 
+  .btn-arriba{
+    visibility: hidden
+  }
 }
+
 /* MediaQuerys que indican el max-height de las pantallas del body de forma responsiva */
 @media screen and (max-height: 480px) {
   .container-product{
@@ -147,15 +172,15 @@
   .subrayado {
     text-decoration: none;
     background-image: linear-gradient(rgb(73, 163, 157), #6BBBAE);
-    background-position: 0% 100%;
+    background-position: 50% 100%;
     background-repeat: no-repeat;
     background-size: 0% 2px;
-    transition: background-size .3s;
+    transition: background-size .2s;
   }
 
   .subrayado:hover,
   .subrayado:focus {
-    background-size: 100% 4px;
+    background-size: 35% 4px;
   }
 
   .hvr-underline-from-left-modificado {
@@ -189,6 +214,10 @@
   }
 
   .change-Size:hover {
+    transition: .8s;
+    transform: scale(1.35);
+  }
+  #change-Size:hover {
     transition: .8s;
     transform: scale(1.35);
   }
