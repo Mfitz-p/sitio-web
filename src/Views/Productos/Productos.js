@@ -1,12 +1,27 @@
 import { Container, Image, Card, Col, Row } from 'react-bootstrap';
 import { Link } from 'react-scroll';
+import CarruselImgs from '../../Components/CarruselImgs';
+
 
 /* Imagenes de Productos */
-import imgSistemasGestion from '../../images/imgSistemasGestion.png';
-import imgModelosML from '../../images/imgModelosML.png';
-import imgBusinessInte from '../../images/imgBusinessInte.png';
 import imgVisionComputadora from '../../images/img-VisionComputadora.png';
 import imgBigData from '../../images/img-BigData.png';
+
+// IMGS DE CARRUSEL SIGA 
+import aforosSIGA from '../../images/aforosSIGA.png';
+import hallazgozSIGA from '../../images/hallazgozSIGA.png';
+import mapaSIGA from '../../images/mapaSIGA.png';
+import ingresoSIGA from '../../images/ingresoSIGA.png';
+
+import machineLearning1 from '../../images/machineLearning1.PNG';
+import machineLearning2 from '../../images/machineLearning2.PNG';
+import machineLearning3 from '../../images/machineLearning3.jpg';
+import machineLearning4 from '../../images/machineLearning4.jpg';
+
+import businessInt1 from '../../images/businessInt1.png';
+import businessInt2 from '../../images/businessInt2.png';
+import businessInt3 from '../../images/businessInt3.png';
+import businessInt4 from '../../images/businessInt4.png';
 
 /* Iconos de productos en svg */
 import computerSvg from '../../icons/computer.svg';
@@ -17,6 +32,74 @@ import vBigData from '../../icons/vBigData.svg';
 
 import { useInView } from 'react-intersection-observer';
 import "../../App.css";
+
+const imgs = [
+  {
+    id: 1,
+    src: aforosSIGA,
+    alt: "aforos"
+  },
+  {
+    id: 2,
+    src: hallazgozSIGA,
+    alt: "hallazgoz"
+  },
+  {
+    id: 3,
+    src: mapaSIGA,
+    alt: "mapa"
+  },
+  {
+    id: 4,
+    src: ingresoSIGA,
+    alt: "ingresos"
+  }
+  
+]
+ const imgs2 =[
+  {
+    id: 5,
+    src: machineLearning1,
+    alt: "aforos"
+  },
+  {
+    id: 6,
+    src: machineLearning2,
+    alt: "hallazgoz"
+  },
+  {
+    id: 7,
+    src: machineLearning3,
+    alt: "mapa"
+  },
+  {
+    id: 8,
+    src: machineLearning4,
+    alt: "ingresos"
+  }
+ ]
+ const imgs3 = [
+  {
+    id: 9,
+    src: businessInt1,
+    alt: "businessInt1"
+  },
+  {
+    id: 10,
+    src: businessInt2,
+    alt: "businessInt2"
+  },
+  {
+    id:11,
+    src: businessInt3,
+    alt: "businessInt3"
+  },
+  {
+    id: 12,
+    src: businessInt4,
+    alt: "businessInt4"
+  }
+ ]
 
 const Productos = () => {
  /**
@@ -37,14 +120,14 @@ const Productos = () => {
     threshold: 0,
     
   });
-  const { ref: effectRef2, inView:effectScroll2} = useInView({
-    threshold: 0,
+  // const { ref: effectRef2, inView:effectScroll2} = useInView({
+  //   threshold: 0,
     
-  });
-  const { ref: effectRef3, inView:effectScroll3} = useInView({
-    threshold: 0,
+  // });
+  // const { ref: effectRef3, inView:effectScroll3} = useInView({
+  //   threshold: 0,
    
-  });
+  // });
   const { ref: effectRef4, inView:effectScroll4} = useInView({
     threshold: 0,
    
@@ -118,9 +201,8 @@ const Productos = () => {
           </Col>
           <Col sm={12} md={6}>
             <Card style={{ border: 'none' }}>
-              <Card.Body ref={effectRef2} className={`${effectScroll2 ? 'animate__animated animate__fadeInRight': 'reverseObserver'}`}>
-                <Image className='box' fluid src={imgSistemasGestion} alt='imgSistemasGestion' />
-              </Card.Body>
+              {/* Comienza carrucel de imagenes */}
+              <CarruselImgs imgs={imgs} />
             </Card>
           </Col>
         </Row>
@@ -130,9 +212,8 @@ const Productos = () => {
         <Row className='align-items-center container-product' style={{  backgroundColor: 'rgba(5, 44, 101, 0.8)' }}>
           <Col sm={12} md={6}>
             <Card style={{ border: 'none', backgroundColor: 'transparent'  }}>
-              <Card.Body ref={effectRef3} className={`${effectScroll3 ? 'animate__animated animate__fadeInLeft': 'reverseObserver'}`}>
-                <Image className='box' fluid src={imgModelosML} alt='imgModelosML' />
-              </Card.Body>
+              {/* Comienza carrusel de imagenes */}
+              <CarruselImgs imgs={imgs2} />
             </Card>
           </Col>
           <Col sm={12} md={6}>
@@ -155,7 +236,6 @@ const Productos = () => {
           </Col>
         </Row>
       </section>
-
       <section id='card-businessInt' className='container-product'>
         {/* Ícono de flecha que despliega hacia abajo para cambiar a la siguientes secciones */}
         <Link className=' d-flex justify-content-end text-black' to='card-visionComp'
@@ -184,9 +264,7 @@ const Productos = () => {
           </Col>
           <Col sm={12} md={6}>
             <Card style={{ border: 'none' }}>
-              <Card.Body ref={effectRef6} className={`${effectScroll6 ? 'animate__animated animate__fadeInRight': 'reverseObserver'}`}>
-                <Image className='box' fluid src={imgBusinessInte} alt='imgBusinessInte' />
-              </Card.Body>
+            <CarruselImgs imgs={imgs3} />
             </Card>
           </Col>
         </Row>
