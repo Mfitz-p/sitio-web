@@ -83,7 +83,7 @@ const Inicio = () => {
       <Container fluid>
         <section id='cards-servicios'>
           <Row>
-            <Col className='d-flex' >
+            <Col className='d-flex flex-row' >
               <Card className="p-5 " style={{ border: 'none' }}>
                 <Card.Body className='animate__animated animate__pulse'>
                   <Card.Title className='subrayado d-flex justify-content-center' style={{ fontSize: "3rem", textAlign: "justify" }}>
@@ -100,7 +100,9 @@ const Inicio = () => {
                 </Card.Body>
               </Card>
             </Col>
+            {/* <Col>Aquí va ua posible imagen</Col> */}
           </Row>
+        
           <Row style={{ background: '#6BBBAE' }}>
             <div className=' d-flex justify-content-center' style={{ fontSize: "3rem", textAlign: "justify" }}>Servicios</div>
           </Row>

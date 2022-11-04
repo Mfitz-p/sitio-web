@@ -45,7 +45,7 @@ function Contacto() {
     const regex = /^\d{7,9}$/;
     if (regex.test(e.target.value)) {
       setMensajeError(() => '')
-    } else { setMensajeError(() => 'Tu teléfono solo puede tener entre 7 y 10 caracteres') }
+    } else { setMensajeError(() => 'Tu teléfono solo puede tener entre 7 y 10 números') }
   }
 
   return (

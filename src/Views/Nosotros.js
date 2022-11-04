@@ -17,7 +17,7 @@ function Nosotros() {
       </Container>
       <Container fluid >
         <Row>
-          <Col md={{ span: 4, offset: 1 }}>
+          <Col md={{ span: 4, offset: 1 }} className='change-Size'>
           <div className='mision mx-auto animate__animated animate__fadeInLeft mt-5 p-3'>
                 <h1 className='tituloMision m-4 text-white'>Misión </h1>
                 <h4 className='textMision m-2 text-white'>  Construir soluciones para la automatización de procesos
@@ -25,8 +25,8 @@ function Nosotros() {
                   clientes. </h4>
             </div>
           </Col>
-          <Col md={{ span: 4, offset: 2 }}>
-            <div className='vision mx-auto animate__animated animate__fadeInRight mt-5 p-3'>
+          <Col md={{ span: 4, offset: 2 }} className='change-Size'>
+            <div className='vision mx-auto animate__animated animate__fadeInRight mt-5 p-3' >
                 <h1 className='tituloVision m-4 text-white'>Visión </h1>
                 <h4 className='textVision m-2 text-white'> Buscamos dotar a nuestros socios un panorama más
                       amplio sobre las ventajas del uso de las tecnologías de la
@@ -36,7 +36,7 @@ function Nosotros() {
         </Row>
         <Row>
           <Col className='g-0'>
-          <div className='nuestroEquipo mt-5 mb-5 p-4 text-white'> 
+          <div className='nuestroEquipo mt-5 p-4 text-white'> 
             <h1 className='tituloNuestroEquipo m-4'>Nuestro Equipo </h1>
             <h2 className='textNuestroEquipo m-2'>Lorem ipsum dolor sit amet consectetur adipiscing elit fermentum pulvinar urna, cras scelerisque tristique litora dictumst ultricies auctor per erat, gravida congue eu eget ligula lacus hendrerit cursus interdum. </h2>
           </div>
