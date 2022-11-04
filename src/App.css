@@ -25,6 +25,9 @@
 }
 
 
+#body-wrapper {
+    width: 100%;
+}
 
 .fondo {
   background-image: url("/src/images/lupa404.png");
