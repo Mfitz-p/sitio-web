@@ -1,8 +1,8 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
+//Este componente contiene el carrusel de imagenes de la vista productos, por props recibe las imagenes de un arreglo de objetos declarado en productos y renderiza esas imagenes con ayuda de .map() que itera sobre el dicho arreglo, las imagenes salen mostradas en Carrusel.Item que va obteniendo del los objetos su id, src, alt. 
 
 const CarruselImgs = ({imgs}) => {
-  
   return (
     <>
     <Carousel variant='dark' className='box'>
