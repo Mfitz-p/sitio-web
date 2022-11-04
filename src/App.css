@@ -27,6 +27,15 @@
 
 #body-wrapper {
     width: 100%;
+    min-height: 83.1vh;
+}
+
+
+.footer{
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 .fondo {
