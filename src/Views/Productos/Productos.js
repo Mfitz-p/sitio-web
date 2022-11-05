@@ -195,7 +195,7 @@ const Productos = () => {
       {/* Este div contiene la flecha que aparece a mitad de las secciones y te regresa a la primera seccion de productos donde esta el titulo */}
       <div ref={btn} className='d-flex justify-content-end sticky-sm-top' style={{ fontSize: '45px', top: '50%', opacity: '.5', cursor: 'pointer' }}> 
         <Link to='card-desarrollo' smooth={true} duration={0}> 
-          <i className={`${up ? 'bi bi-arrow-up-circle animate__animated animate__fadeInUp' : null}  hvr-bob`} ></i>
+          <i className={`${up ? 'bi bi-arrow-up-circle animate__animated animate__fadeInUp' : null} `} ></i>
         </Link>
       </div>
 
