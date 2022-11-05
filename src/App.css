@@ -183,6 +183,7 @@
   }  
 }
 
+/* Media Query que la activación de efectos para pantallas que no posean un mouse*/
 @media (hover: hover)and (pointer: fine) {
   .subrayado {
     text-decoration: none;
