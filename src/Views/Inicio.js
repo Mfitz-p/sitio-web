@@ -15,7 +15,8 @@ import health from '../icons/health.svg';
 
 const Inicio = () => {
 
-  //Hook que se recibe desde la librería react-intersection-observer para cada elemento a modificar con el efecto de intersection observer.
+  //Hook que se recibe desde la librería react-intersection-observer para cada elemento a modificar con el efecto de intersection observer 
+  //para más información de su uso consultar la página Productos o la documentación de la librería https://github.com/thebuilder/react-intersection-observer.
   const { ref: textcard1, inView: effectScroll } = useInView({
     threshold: 0,
 
@@ -66,7 +67,6 @@ const Inicio = () => {
                       <Button className='mx-auto hvr-pulse' variant="success">Contáctanos</Button>
                     </Nav.Link>
                   </Col>
-
                 </Col>
                 {/* Ícono de flecha que despliega hacia abajo para cambiar a la siguientes secciones */}
                 <Link className=' d-flex justify-content-center text-white' to='cards-servicios'
@@ -83,7 +83,7 @@ const Inicio = () => {
       <Container fluid>
         <section id='cards-servicios'>
           <Row>
-            <Col className='d-flex' >
+            <Col className='d-flex flex-row' >
               <Card className="p-5 " style={{ border: 'none' }}>
                 <Card.Body className='animate__animated animate__pulse'>
                   <Card.Title className='subrayado d-flex justify-content-center' style={{ fontSize: "3rem", textAlign: "justify" }}>
@@ -94,22 +94,23 @@ const Inicio = () => {
                     manejo de datos para optimizar el proceso de la toma de
                     decisiones mediante la obtención de información,
                     identificación de problemas y detección de tendencias para
-                    encontrar nuevas oportunidades en el modelo de negocio de
-                    sus clientes.
+                    encontrar nuevas oportunidades en tu modelo de negocios.
                   </Card.Text>
                 </Card.Body>
               </Card>
             </Col>
+            {/* <Col>Aquí va ua posible imagen</Col> */}
           </Row>
+        
           <Row style={{ background: '#6BBBAE' }}>
             <div className=' d-flex justify-content-center' style={{ fontSize: "3rem", textAlign: "justify" }}>Servicios</div>
           </Row>
+         {/*  Ícono de la flecha que redirige a la sección inicial de la vista */}
           <div ref={btn} className='btn-arriba d-flex justify-content-end sticky-sm-top' style={{}}>
             <Link to='portada-principal' smooth={true} duration={0}>
-              <i className={`${up ? 'bi bi-arrow-up-circle animate__animated animate__fadeInUp' : null}  hvr-bob`} ></i>
+              <i className={`${up ? 'bi bi-arrow-up-circle animate__animated animate__fadeInUp' : null} `} ></i>
             </Link>
           </div>
-
           {/* Comienzan las cards de servicios */}
           <Row className='mx-5' >
             <Col className="d-flex align-items-center g-0 ">
