@@ -112,7 +112,7 @@
 
 /* Página Contacto */
 .graficos {
-  background-image: url("/src/images/graficosContacto.png");
+  background-image: url("/src/images/contacto.gif");
   background-repeat: no-repeat;
   background-size: clamp(350px, 40%, 900px);
   background-position: 56vw;
