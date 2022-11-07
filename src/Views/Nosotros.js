@@ -1,7 +1,8 @@
 /**
  * Vista de página Nosotros. 
  */
-import { Container, Row, Col} from 'react-bootstrap/';
+import { Container, Row, Col, Image} from 'react-bootstrap/';
+import nombre from '../images/nombre2.png';
 /* import imgMision from '../images/mision.jpg'; */
 /* import imgVision from '../images/vision.jpg'; */
 /* import imgNuestroEquipo from '../images/nuestroEquipo.jpg'; */
@@ -10,7 +11,9 @@ function Nosotros() {
   return (
     <>
       <Container fluid className='bg-dark p-4 animate__animated animate__fadeInDown' >
-        <div className='d-flex justify-content-center mb-4' style={{ fontSize: "clamp(43px, 4vw, 4px)", color: "#6BBBAE" }}>KAMINOITTECH</div>
+        <div className='d-flex justify-content-center mb-4'>
+        <Image fluid src={nombre} alt='logo' style={{ width: "400px" }} />
+        </div>
         <p className='d-flex justify-content-center text-white' style={{ fontSize: "20px" }}>Somos una empresa dedicada a proveer servicios de consultoría y el desarrollo de soluciones basadas en tecnologías de la información aplicadas en el manejo de datos y la inteligencia de negocios para maximizar el valor agregado de nuestros clientes.</p>
         {/* <p className='d-flex justify-content-center text-white' style={{ fontSize: "20px" }}>Realizamos vínculos a través de proyectos colaborativos con la academia para un mayor desarrollo científico en el país.</p> */}
       </Container>

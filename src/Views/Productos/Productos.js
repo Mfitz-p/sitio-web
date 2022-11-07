@@ -2,10 +2,6 @@ import { Container, Image, Card, Col, Row } from 'react-bootstrap';
 import { Link } from 'react-scroll';
 import CarruselImgs from '../../Components/CarruselImgs';
 
-/* Imagenes de Productos */
-import imgVisionComputadora from '../../images/img-VisionComputadora.png';
-import imgBigData from '../../images/img-BigData.png';
-
 // IMGS DE CARRUSEL SIGA 
 import aforosSIGA from '../../images/aforosSIGA.png';
 import hallazgozSIGA from '../../images/hallazgozSIGA.png';
@@ -21,6 +17,12 @@ import businessInt1 from '../../images/businessInt1.png';
 import businessInt2 from '../../images/businessInt2.png';
 import businessInt3 from '../../images/businessInt3.png';
 import businessInt4 from '../../images/businessInt4.png';
+
+import vCompu1 from '../../images/vCompu1.jpg';
+import vCompu2 from '../../images/vCompu2.jpg';
+import vCompu3 from '../../images/vCompu3.jpg';
+import vCompu4 from '../../images/vCompu4.jpg';
+import vCompu5 from '../../images/vCompu5.jpg';
 
 /* Iconos de productos en svg */
 import computerSvg from '../../icons/computer.svg';
@@ -98,6 +100,34 @@ const imgs = [
     id: 12,
     src: businessInt4,
     alt: "businessInt4"
+  }
+ ]
+
+ const imgs4 = [
+  {
+    id: 9,
+    src: vCompu1,
+    alt: "vCompu1"
+  },
+  {
+    id: 10,
+    src: vCompu2,
+    alt: "vCompu2"
+  },
+  {
+    id:11,
+    src: vCompu3,
+    alt: "vCompu3"
+  },
+  {
+    id: 12,
+    src: vCompu4,
+    alt: "vCompu4"
+  },
+  {
+    id: 12,
+    src: vCompu5,
+    alt: "vCompu5"
   }
  ]
 
@@ -279,9 +309,10 @@ const Productos = () => {
         <Row className='align-items-center container-product' style={{  backgroundColor: 'rgb(33,37,41)'  }}>
           <Col sm={12} md={6}>
             <Card style={{ border: 'none', backgroundColor: 'transparent'  }}>
-              <Card.Body ref={effectRef7} className={`${effectScroll7 ? 'animate__animated animate__fadeInLeft': 'reverseObserver'}`} >
+            <CarruselImgs imgs={imgs4} />
+              {/* <Card.Body ref={effectRef7} className={`${effectScroll7 ? 'animate__animated animate__fadeInLeft': 'reverseObserver'}`} >
                 <Image className='box' fluid src={imgVisionComputadora} alt='imgVisionComputadora' />
-              </Card.Body>
+              </Card.Body> */}
             </Card>
           </Col>
           <Col sm={12} md={6}>
@@ -303,35 +334,6 @@ const Productos = () => {
           </Col>
         </Row>
         </section>
-
-        {/* <section id='card-bigData' className='container-product'>
-        <Row className='align-items-center container-product' >
-          <Col sm={12} md={6}> 
-            <Card style={{ border: 'none' }}>
-              <Card.Body ref={effectRef9} className={`${effectScroll9 ? 'animate__animated animate__fadeInLeft': 'reverseObserver'}`}>
-                <Card.Title style={{ fontSize: '28px', border: 'none' }}>
-                <Image height={70} className='m-3 hvr-float' src={vBigData} alt='vBigData'/>
-                  Análisis y visualización de Big Data
-                </Card.Title>
-                <Card.Text style={{ fontSize: '21px', textAlign: 'justify' }}>
-                  <ul>
-                  <li className='mb-0'>Soluciones analíticas basadas en grafos</li>
-                  <li className='mb-0'>Analítica predictiva</li>
-                  <li className='mb-0'>Ingeniería de datos</li>
-                  </ul>
-                </Card.Text>
-              </Card.Body >
-            </Card>
-          </Col>
-          <Col sm={12} md={6}>
-            <Card className="p-5" style={{ border: 'none' }}>
-              <Card.Body ref={effectRef10} className={`${effectScroll10 ? 'animate__animated animate__fadeInRight': 'reverseObserver'}`}>
-                <Image className='box' fluid src={imgBigData} alt='imgBigData' />
-              </Card.Body>
-            </Card>
-          </Col>
-        </Row>
-        </section> */}
       </Container>
     </>
   );
