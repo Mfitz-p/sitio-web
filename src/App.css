@@ -1,4 +1,3 @@
-/* Estilos globales para la pag */
 * {
   margin: 0;
   padding: 0;
@@ -6,12 +5,11 @@
   box-sizing: border-box;
 }
 
+/* Página de App */
 #body-wrapper {
     width: 100%;
     min-height: 83.1vh;
 }
-
-
 .footer{
   position: relative;
   bottom: 0;
@@ -19,22 +17,27 @@
   width: 100%;
 }
 
-.fondo {
-  background-image: url("/src/images/lupa404.png");
-  background-repeat: no-repeat;
-  background-size: clamp(270px, 27vw, 800px);
-  background-position: 60vw 2vw;
+/* Página de Inicio */
+.btn-arriba{
+  font-size: 45px; 
+  top: 50%; 
+  opacity: .5; 
+  cursor: pointer; 
+  transform:translate(0px, 450%)
 }
 
-.graficos {
-  background-image: url("/src/images/graficosContacto.png");
-  background-repeat: no-repeat;
-  background-size: clamp(350px, 40%, 900px);
-  background-position: 56vw;
+.change-Color {
+  transition: 0.8s;
 }
 
-.vision{
-  background-image: linear-gradient(to bottom, rgba(45, 75, 100, .7), rgba(38, 63, 84, 0.5)), url("/src/images/vision.jpg");
+.change-Color:hover {
+  color: rgb(225, 243, 28);
+  opacity: 0.6;
+}
+
+/* Página Nosotros */
+.vision {
+  background-image: linear-gradient(to bottom, rgba(36, 38, 40, 0.8), rgba(36, 38, 40, 0.8)), url("/src/images/vision.jpg");
   display: flex;
   flex-direction: column;
   background-size: cover;  
@@ -58,7 +61,7 @@
 }
 
 .mision{
-  background-image: linear-gradient(to bottom, rgba(57, 95, 126, 0.8), rgba(38, 63, 84,  0.6)), url("/src/images/mision.jpg");
+  background-image: linear-gradient(to bottom, rgba(36, 38, 40, 0.8), rgba(36, 38, 40, 0.8)), url("/src/images/mision.jpg");
   display: flex;
   flex-direction: column;
   background-size: cover;  
@@ -81,7 +84,7 @@
 }
 
 .nuestroEquipo {
-  background-image: linear-gradient(to bottom, rgba(57, 95, 126, 0.7), rgba(38, 63, 84, 0.3)), url("/src/images/nuestroEquipo.jpg");
+  background-image: linear-gradient(to bottom, rgba(36, 38, 40, 0.5), rgba(33,37,41, 1)), url("/src/images/nuestroEquipo.jpg");
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -103,12 +106,16 @@
   font-size: 56px;
 } 
 
-.btn-arriba{
-  font-size: 45px; 
-  top: 50%; 
-  opacity: .5; 
-  cursor: pointer; 
-  transform:translate(0px, 450%)
+.reverseObserver {
+  visibility: hidden
+}
+
+/* Página Contacto */
+.graficos {
+  background-image: url("/src/images/graficosContacto.png");
+  background-repeat: no-repeat;
+  background-size: clamp(350px, 40%, 900px);
+  background-position: 56vw;
 }
 
 #Mensaje {
@@ -116,8 +123,22 @@
   height: 100px
 }
 
+
+/* Página Productos */
+.box {
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+}
+
+/* Página 404 */
+.fondo {
+  background-image: url("/src/images/lupa404.png");
+  background-repeat: no-repeat;
+  background-size: clamp(270px, 27vw, 800px);
+  background-position: 60vw 2vw;
+}
+
 /* Este mediaQuery de 767px es debido a que el renderizado no se actualiza exactamente en los 768px
-    por ende se queda un pixel adicional (que es el tamaño de algunos dispositivos como Ipad-Mini) antes de desapacerer */
+    por ende se queda un pixel adicional (que es el tamaño de algunos dispositivos como el Ipad-Mini) antes de desapacerer */
 @media all and (max-width: 767px) {
   .graficos {
     background-image: none
@@ -135,16 +156,15 @@
     display: none
   }
 
-  #Mensaje {
-    width: 100% !important
-  }
-
   .btn-arriba{
     visibility: hidden
   }
+  #Mensaje {
+    width: 100% !important
+  }
 }
 
-/* MediaQuerys que indican el max-height de las pantallas del body de forma responsiva */
+/* MediaQuerys de las pantallas del body en página Productos */
 @media screen and (max-height: 480px) {
   .container-product{
     height: auto;
@@ -163,10 +183,7 @@
   }  
 }
 
-.reverseObserver {
-  visibility: hidden
-}
-
+/* Media Query que la activación de efectos para pantallas que no posean un mouse*/
 @media (hover: hover)and (pointer: fine) {
   .subrayado {
     text-decoration: none;
@@ -223,37 +240,16 @@
 
 }
 
-/* Estilo hover cuando pasa el cursor */
-.change-Color {
-  /* background-color: rgb(175, 72, 72); */
-  /* border: none; */
-  /* color: rgb(82, 33, 135); */
-  /* text-align: center; */
-  /* font-size: 16px; */
-  /* margin: 4px 2px; */
-  transition: 0.8s;
-}
-
-/* Estilo hover cuando pasa el cursor */
-.change-Color:hover {
-  color: rgb(225, 243, 28);
-  opacity: 0.6;
-}
-.change-Color:hover {
-  opacity: .80;
-}
-
-/* Estilo de sombras se añadio para las images de productos */
-.box {
-  /* box-shadow: 2px 2px 10px; */
-  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
-}
-
+/* Efecto especial modificado de la librería Animate.css, los efectos visuales se pueden ver en https://animate.style/ */
 .animate__animated.animate__fadeIn {
   --animate-duration: 2.7s;
 }
 
-/* Hover efectos de Hover.css*/
+/* Efectos especiales obtenidos directamente de Hover.css, estos se pueden ver en https://ianlunn.github.io/Hover/*/
+/* Es necesario dver los efectos de esta página https://github.com/IanLunn/Hover/tree/master/css 
+/* Se puede descargar y ver la documentación aquí https://github.com/IanLunn/Hover#downloadinstall */
+
+/* Efecto empleado en el footer para presionar íconos pequeños */
 @-webkit-keyframes hvr-push {
   50% {
     -webkit-transform: scale(0.8);
@@ -298,7 +294,7 @@
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
 }
-
+ /*Efecto usado en botones verdes grandes de Inicio y Footer para simular pulsaciones como las del corazón*/
 @-webkit-keyframes hvr-pulse {
   25% {
     -webkit-transform: scale(1.1);
@@ -368,7 +364,7 @@
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
-
+/*Efecto usado íconos de productos e inicio para simular que el elemento se mantiene flotando ligeramente al pasar el mouse*/
 .hvr-float {
   display: inline-block;
   vertical-align: middle;
@@ -389,7 +385,7 @@
   -webkit-transform: translateY(-8px);
   transform: translateY(-8px);
 }
-
+/* Efecto básico usado en ícono de Inicio para aumentar ligeramente el tamaño del elemento al pasar el mouse */ 
 .hvr-grow {
   display: inline-block;
   vertical-align: middle;
@@ -408,169 +404,9 @@
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
+ 
 
-@-webkit-keyframes hvr-ripple-out {
-  100% {
-    top: -12px;
-    right: -12px;
-    bottom: -12px;
-    left: -12px;
-    opacity: 0;
-  }
-}
-
-@keyframes hvr-ripple-out {
-  100% {
-    top: -12px;
-    right: -12px;
-    bottom: -12px;
-    left: -12px;
-    opacity: 0;
-  }
-}
-
-.hvr-ripple-out {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  position: relative;
-}
-
-.hvr-ripple-out:before {
-  content: '';
-  position: absolute;
-  border: #e1e1e1 solid 6px;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-}
-
-.hvr-ripple-out:hover:before,
-.hvr-ripple-out:focus:before,
-.hvr-ripple-out:active:before {
-  -webkit-animation-name: hvr-ripple-out;
-  animation-name: hvr-ripple-out;
-}
-
-.hvr-outline-out:before {
-  content: '';
-  position: absolute;
-  border: #e1e1e1 solid 4px;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: top, right, bottom, left;
-  transition-property: top, right, bottom, left;
-}
-
-.hvr-outline-out:hover:before,
-.hvr-outline-out:focus:before,
-.hvr-outline-out:active:before {
-  top: -8px;
-  right: -8px;
-  bottom: -8px;
-  left: -8px;
-}
-
-.hvr-fade {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  overflow: hidden;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: color, background-color;
-  transition-property: color, background-color;
-}
-
-.hvr-fade:hover,
-.hvr-fade:focus,
-.hvr-fade:active {
-  background-color: #000000;
-  color: white;
-}
-
-@-webkit-keyframes hvr-bob {
-  0% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-  }
-
-  50% {
-    -webkit-transform: translateY(-4px);
-    transform: translateY(-4px);
-  }
-
-  100% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-  }
-}
-
-@keyframes hvr-bob {
-  0% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-  }
-
-  50% {
-    -webkit-transform: translateY(-4px);
-    transform: translateY(-4px);
-  }
-
-  100% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-  }
-}
-
-@-webkit-keyframes hvr-bob-float {
-  100% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-  }
-}
-
-@keyframes hvr-bob-float {
-  100% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-  }
-}
-
-.hvr-bob {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  /* }
-.hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active { */
-  -webkit-animation-name: hvr-bob-float, hvr-bob;
-  animation-name: hvr-bob-float, hvr-bob;
-  -webkit-animation-duration: .3s, .5s;
-  animation-duration: .3s, .5s;
-  -webkit-animation-delay: 0s, .3s;
-  animation-delay: 0s, .3s;
-  -webkit-animation-timing-function: ease-out, ease-in-out;
-  animation-timing-function: ease-out, ease-in-out;
-  -webkit-animation-iteration-count: 1, infinite;
-  animation-iteration-count: 1, infinite;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-direction: normal, alternate;
-  animation-direction: normal, alternate;
-}
-
+/*Efecto empleado en los íconos con flecha apuntando hacia abajo que sube y baja, simulando la mismna funcionalidad del botón*/
 @-webkit-keyframes hvr-hang {
   0% {
     -webkit-transform: translateY(8px);
@@ -605,28 +441,13 @@
   }
 }
 
-@-webkit-keyframes hvr-hang-sink {
-  100% {
-    -webkit-transform: translateY(8px);
-    transform: translateY(8px);
-  }
-}
-
-@keyframes hvr-hang-sink {
-  100% {
-    -webkit-transform: translateY(8px);
-    transform: translateY(8px);
-  }
-}
-
 .hvr-hang {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  /* }
-.hvr-hang:hover, .hvr-hang:focus, .hvr-hang:active { */
+
   -webkit-animation-name: hvr-hang-sink, hvr-hang;
   animation-name: hvr-hang-sink, hvr-hang;
   -webkit-animation-duration: .1s, .5s;

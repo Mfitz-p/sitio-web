@@ -16,8 +16,8 @@ function Nosotros() {
         <p className='d-flex justify-content-center text-white' style={{ fontSize: "20px" }}>Realizamos vínculos a través de proyectos colaborativos con la academia para un mayor desarrollo científico en el país.</p>
       </Container>
       <Container fluid >
-        <Row>
-          <Col md={{ span: 4, offset: 1 }} className='change-Size'>
+        <Row >
+          <Col lg={{ span: 4, offset: 1 }} className='change-Size'>
           <div className='mision mx-auto animate__animated animate__fadeInLeft mt-5 p-3'>
                 <h1 className='tituloMision m-4 text-white'>Misión </h1>
                 <h4 className='textMision m-2 text-white'>  Construir soluciones para la automatización de procesos
@@ -25,10 +25,10 @@ function Nosotros() {
                   clientes. </h4>
             </div>
           </Col>
-          <Col md={{ span: 4, offset: 2 }} className='change-Size'>
+          <Col lg={{ span: 4, offset: 2 }} className='change-Size'>
             <div className='vision mx-auto animate__animated animate__fadeInRight mt-5 p-3' >
                 <h1 className='tituloVision m-4 text-white'>Visión </h1>
-                <h4 className='textVision m-2 text-white'> Buscamos dotar a nuestros socios un panorama más
+                <h4 className='textVision m-2 text-white'> Buscamos dotar a nuestros socios de un panorama más
                       amplio sobre las ventajas del uso de las tecnologías de la
                       información en proyectos de infraestructura. </h4>
             </div>
