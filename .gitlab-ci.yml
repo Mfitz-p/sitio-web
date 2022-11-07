@@ -8,7 +8,7 @@ workflow:
     - if: '$CI_COMMIT_BRANCH == "main"'
       variables:
         REPOSITORY_URL: 662670350062.dkr.ecr.us-west-2.amazonaws.com/kaminoittech-web
-        CLUSTER_NAME: kaminoittech-prod-web
+        CLUSTER_NAME: kaminoitech-prod-web
         SERVICE_NAME: service-kaminoittech-prod-web
         TASK_DEFINITION_NAME: task-kaminoittech-web
 before_script:
