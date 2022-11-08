@@ -137,6 +137,13 @@
   background-position: 60vw 2vw;
 }
 
+/* MediaQuery de logotipo del navbar */
+@media all and (max-height: 390px){
+  .logo {
+    width: 100px;
+  }
+}
+
 /* Este mediaQuery de 767px es debido a que el renderizado no se actualiza exactamente en los 768px
     por ende se queda un pixel adicional (que es el tamaño de algunos dispositivos como el Ipad-Mini) antes de desapacerer */
 @media all and (max-width: 767px) {

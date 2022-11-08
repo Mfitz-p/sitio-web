@@ -13,11 +13,10 @@ function Footer() {
             <Container fluid  className='bg-dark text-white pt-3 mt-auto' style={{ fontSize: "13px", cursor: "pointer"}} >
                 {/* Este Row contiene todos los elementos del footer, sin los derechos reservados */}
                 <Row className='align-items-center'>
-                    <Col xs={12} md={3} className="d-flex aligns-items-center justify-content-center">
+                    <Col xs={12} md={3} className="d-flex aligns-items-center justify-content-center mb-3">
                         <Nav.Link as={NavLink} to="/Inicio">
                             <Image fluid src={logo} alt='logo' style={{ width: "200px" }} />
-                        </Nav.Link>
-                        
+                        </Nav.Link>  
                     </Col>
                     <Col xs={6} md={3}>
                         <div>Oficinas</div>
@@ -39,10 +38,10 @@ function Footer() {
                             </Col>
                         </Row> 
                     </Col>
-                    <Col xs={12} md={2} className="d-flex aligns-items-center justify-content-center"> 
-                    <Nav.Link as={NavLink} to="/Contacto">
-                        <Button className='mx-auto hvr-pulse' variant="success">Contáctanos</Button>
-                    </Nav.Link>
+                    <Col xs={12} md={2} className="d-flex aligns-items-center justify-content-center mt-3"> 
+                        <Nav.Link as={NavLink} to="/Contacto">
+                            <Button className='mx-auto hvr-pulse' variant="success">Contáctanos</Button>
+                        </Nav.Link>
                     </Col>
                 </Row>
                 {/* Row que contiene los derechos reservados */}

@@ -16,8 +16,8 @@ const Navbar = () => {
         <Container className='p-0'> 
           <NavbarRB.Brand className='mr-auto' to="/Inicio">
             {/* Se le coloco un Nav.Link junto con una etiqueta image para colocar el logotipo y es redirijido a la pagina de Inicio  */}
-            <Nav.Link className='p-3' as={NavLink} to="/Inicio">
-              <Image fluid src={logo} alt='logo' style={{ width: "250px" }} />
+            <Nav.Link className='p-3 logo' as={NavLink} to="/Inicio">
+              <Image fluid src={logo} alt='logo' style={{ width: "35vh" }} />
             </Nav.Link>
           </NavbarRB.Brand>
           {/* Esta parte del código del navbar es cuando se usa en version movil, se colapsa el menu y se convierte en el menú de burger famoso para moviles */}
