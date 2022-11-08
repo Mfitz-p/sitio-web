@@ -26,13 +26,12 @@
   transform:translate(0px, 450%)
 }
 
+
 .change-Color {
   transition: 0.8s;
 }
-
-.change-Color:hover {
-  color: rgb(225, 243, 28);
-  opacity: 0.6;
+.boton-principal{
+  background-color: #6BBBAE !important;
 }
 
 /* Página Nosotros */

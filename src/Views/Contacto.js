@@ -137,12 +137,12 @@ function Contacto() {
           </Form.Group>
 
           {mensajeError === '' ?
-            <Button variant="success" type="submit" disabled={state.submitting}>
+            <Button variant="success" className="boton-principal" type="submit" disabled={state.submitting}>
               Enviar
             </Button> :
             <OverlayTrigger overlay={<Tooltip id="tooltip-disabled"> Llena correctamente cada apartado!</Tooltip>}>
               <span className="d-inline-block">
-                <Button variant="success" type="submit" disabled style={{ pointerEvents: 'none' }}>
+                <Button variant="success" className="boton-principal" type="submit" disabled style={{ pointerEvents: 'none' }}>
                   Enviar
                 </Button>
               </span>
