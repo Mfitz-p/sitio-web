@@ -94,8 +94,7 @@ const Inicio = () => {
                     manejo de datos para optimizar el proceso de la toma de
                     decisiones mediante la obtención de información,
                     identificación de problemas y detección de tendencias para
-                    encontrar nuevas oportunidades en el modelo de negocio de
-                    sus clientes.
+                    encontrar nuevas oportunidades en tu modelo de negocios.
                   </Card.Text>
                 </Card.Body>
               </Card>

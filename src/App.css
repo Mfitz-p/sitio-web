@@ -111,7 +111,7 @@
 
 /* Página Contacto */
 .graficos {
-  background-image: url("/src/images/graficosContacto.png");
+  background-image: url("/src/images/contacto.gif");
   background-repeat: no-repeat;
   background-size: clamp(350px, 40%, 900px);
   background-position: 56vw;
@@ -134,6 +134,13 @@
   background-repeat: no-repeat;
   background-size: clamp(270px, 27vw, 800px);
   background-position: 60vw 2vw;
+}
+
+/* MediaQuery de logotipo del navbar */
+@media all and (max-height: 390px){
+  .logo {
+    width: 100px;
+  }
 }
 
 /* Este mediaQuery de 767px es debido a que el renderizado no se actualiza exactamente en los 768px

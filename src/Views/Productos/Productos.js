@@ -2,10 +2,6 @@ import { Container, Image, Card, Col, Row } from 'react-bootstrap';
 import { Link } from 'react-scroll';
 import CarruselImgs from '../../Components/CarruselImgs';
 
-/* Imagenes de Productos */
-import imgVisionComputadora from '../../images/img-VisionComputadora.png';
-import imgBigData from '../../images/img-BigData.png';
-
 // IMGS DE CARRUSEL SIGA 
 import aforosSIGA from '../../images/aforosSIGA.png';
 import hallazgozSIGA from '../../images/hallazgozSIGA.png';
@@ -22,6 +18,12 @@ import businessInt2 from '../../images/businessInt2.png';
 import businessInt3 from '../../images/businessInt3.png';
 import businessInt4 from '../../images/businessInt4.png';
 
+import vCompu1 from '../../images/vCompu1.jpg';
+import vCompu2 from '../../images/vCompu2.jpg';
+import vCompu3 from '../../images/vCompu3.jpg';
+import vCompu4 from '../../images/vCompu4.jpg';
+import vCompu5 from '../../images/vCompu5.jpg';
+
 /* Iconos de productos en svg */
 import computerSvg from '../../icons/computer.svg';
 import modelosML from '../../icons/modelosML.svg';
@@ -32,6 +34,7 @@ import vBigData from '../../icons/vBigData.svg';
 import { useInView } from 'react-intersection-observer';
 import "../../App.css";
 
+// Arreglos de objetos donde se obtienen las imagenes para los carrusel
 const imgs = [
   {
     id: 1,
@@ -97,6 +100,34 @@ const imgs = [
     id: 12,
     src: businessInt4,
     alt: "businessInt4"
+  }
+ ]
+
+ const imgs4 = [
+  {
+    id: 9,
+    src: vCompu1,
+    alt: "vCompu1"
+  },
+  {
+    id: 10,
+    src: vCompu2,
+    alt: "vCompu2"
+  },
+  {
+    id:11,
+    src: vCompu3,
+    alt: "vCompu3"
+  },
+  {
+    id: 12,
+    src: vCompu4,
+    alt: "vCompu4"
+  },
+  {
+    id: 12,
+    src: vCompu5,
+    alt: "vCompu5"
   }
  ]
 
@@ -190,9 +221,9 @@ const Productos = () => {
                 </Card.Title>
                 <Card.Text style={{ fontSize: '21px', textAlign: 'justify' }}>
                   <ul>
-                  <li className='mb-0'>Solución conceptual del problema</li>
-                  <li className='mb-0'>Elaboración y creación de módulos</li>
-                  <li className='mb-0'>Implementación y seguimiento del sistema</li>
+                  <li className='mb-0'>Centralización, estructuración y organización de la información.</li>
+                  <li className='mb-0'>Construcción, mantenimiento y operación de sistemas de visualización de la información en tiempo real. </li>
+                  <li className='mb-0'>Estandarización de procesos de gestión de grandes bases de datos</li>
                   </ul>
                 </Card.Text>
               </Card.Body>
@@ -208,7 +239,7 @@ const Productos = () => {
       </section>
 
       <section id='card-modelosML' className='container-product'>
-        <Row className='align-items-center container-product' style={{  backgroundColor: 'rgba(5, 44, 101, 0.8)' }}>
+        <Row className='align-items-center container-product' style={{  backgroundColor: 'rgb(33,37,41)' }}>
           <Col sm={12} md={6}>
             <Card style={{ border: 'none', backgroundColor: 'transparent'  }}>
               {/* Comienza carrusel de imagenes */}
@@ -220,11 +251,11 @@ const Productos = () => {
               <Card.Body ref={effectRef4} className={`${effectScroll4 ? 'animate__animated animate__fadeInRight': 'reverseObserver'}`}>
                 <Card.Title style={{ fontSize: '28px', border: 'none', color: 'white' }}>
                 <Image height={70} className='m-3 hvr-float' src={modelosML} alt='modelosML'/>
-                  Modelos de Machine Learning
+                  Modelos de Inteligencía Artificial
                 </Card.Title>
                 <Card.Text style={{ fontSize: '21px', textAlign: 'justify', color: 'white' }}>
                   <ul>
-                  <li className='mb-0'>Redes Neuronales</li>
+                  <li className='mb-0'>Aprendizaje maquina y aprendizaje profundo</li>
                   <li className='mb-0'>Agrupación y clasificación</li>
                   <li className='mb-0'>Análisis y predicción del comportamiento</li>
                   </ul>
@@ -247,13 +278,13 @@ const Productos = () => {
               <Card.Body ref={effectRef5} className={`${effectScroll5 ? 'animate__animated animate__fadeInLeft': 'reverseObserver'}`}>
                 <Card.Title style={{ fontSize: '28px', border: 'none' }}>
                 <Image height={70} className='m-3 hvr-float' src={businessInt} alt='businessInt'/>
-                  Business Intelligence
+                  Business Intelligence y Análisis de Big Data
                 </Card.Title>
                 <Card.Text style={{ fontSize: '21px', textAlign: 'justify' }}>
                   <ul>
-                  <li className='mb-0'>Construcción, mantenimiento y operación de páginas web</li>
-                  <li className='mb-0'>Desarrollo de tableros analíticos y de visualización</li>
-                  <li className='mb-0'>Optimización SEO</li>
+                  <li className='mb-0'>Análisis estadístico de grandes bases de datos para la obtención de KPIs</li>
+                  <li className='mb-0'>Modelos de analítica predictiva para realizar proyecciones a futuro</li>
+                  <li className='mb-0'>Desarrollo de reportes y tableros interactivos para la visualización de la información</li> 
                   </ul>
                 </Card.Text>
               </Card.Body>
@@ -275,12 +306,13 @@ const Productos = () => {
       </div>
 
         <section id='card-visionComp' className='container-product'>
-        <Row className='align-items-center container-product' style={{  backgroundColor: 'rgba(5, 44, 101, 0.8)'  }}>
+        <Row className='align-items-center container-product' style={{  backgroundColor: 'rgb(33,37,41)'  }}>
           <Col sm={12} md={6}>
             <Card style={{ border: 'none', backgroundColor: 'transparent'  }}>
-              <Card.Body ref={effectRef7} className={`${effectScroll7 ? 'animate__animated animate__fadeInLeft': 'reverseObserver'}`} >
+            <CarruselImgs imgs={imgs4} />
+              {/* <Card.Body ref={effectRef7} className={`${effectScroll7 ? 'animate__animated animate__fadeInLeft': 'reverseObserver'}`} >
                 <Image className='box' fluid src={imgVisionComputadora} alt='imgVisionComputadora' />
-              </Card.Body>
+              </Card.Body> */}
             </Card>
           </Col>
           <Col sm={12} md={6}>
@@ -292,40 +324,11 @@ const Productos = () => {
                 </Card.Title>
                 <Card.Text style={{ fontSize: '21px', textAlign: 'justify', color: 'white' }}>
                   <ul>
-                  <li className='mb-0'>Base de datos de imágenes</li>
+                  <li className='mb-0'>Manejo de grandes bases de datos de imágenes</li>
                   <li className='mb-0'>Reconocimiento de objetos  en imágenes y videos</li>
-                  <li className='mb-0'>Análisis de diferentes canales del espectro electromagnético</li>
+                  <li className='mb-0'>Procesamiento digital de imágenes multiespectrales</li>
                   </ul>
                 </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-        </Row>
-        </section>
-
-        <section id='card-bigData' className='container-product'>
-        <Row className='align-items-center container-product' >
-          <Col sm={12} md={6}> 
-            <Card style={{ border: 'none' }}>
-              <Card.Body ref={effectRef9} className={`${effectScroll9 ? 'animate__animated animate__fadeInLeft': 'reverseObserver'}`}>
-                <Card.Title style={{ fontSize: '28px', border: 'none' }}>
-                <Image height={70} className='m-3 hvr-float' src={vBigData} alt='vBigData'/>
-                  Análisis y visualización de Big Data
-                </Card.Title>
-                <Card.Text style={{ fontSize: '21px', textAlign: 'justify' }}>
-                  <ul>
-                  <li className='mb-0'>Soluciones analíticas basadas en grafos</li>
-                  <li className='mb-0'>Analítica predictiva</li>
-                  <li className='mb-0'>Ingeniería de datos</li>
-                  </ul>
-                </Card.Text>
-              </Card.Body >
-            </Card>
-          </Col>
-          <Col sm={12} md={6}>
-            <Card className="p-5" style={{ border: 'none' }}>
-              <Card.Body ref={effectRef10} className={`${effectScroll10 ? 'animate__animated animate__fadeInRight': 'reverseObserver'}`}>
-                <Image className='box' fluid src={imgBigData} alt='imgBigData' />
               </Card.Body>
             </Card>
           </Col>
