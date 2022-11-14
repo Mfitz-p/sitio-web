@@ -49,7 +49,7 @@ function Nosotros() {
         </Row>
         {/* Comienza código de los perfiles destacados */}
         <Row>
-          <h2 className='p-4 d-flex justify-content-center' style={{fontSize: '45px'}}>Funciones Destacadas</h2>
+          {/* <h2 className='p-4 d-flex justify-content-center' style={{fontSize: '45px'}}>Funciones Destacadas</h2> */}
           <Col className="p-4 d-flex justify-content-center " sm={6}>
             <Card style={{ width: '35rem', border: 'none' }}>
               <Card.Body className='animate__animated animate__fadeInLeft'>

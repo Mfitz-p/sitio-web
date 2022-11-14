@@ -89,7 +89,7 @@
   flex-direction: column;
   background-size: cover;  
   background-position: center;
-  height: 450px;
+  height: 250px;
 }
 
 .nuestroEquipo > .textNuestroEquipo{
@@ -102,7 +102,7 @@
 
 .tituloNuestroEquipo{
   text-align: center;
-  font-size: 56px;
+  font-size: 43px;
 } 
 
 .reverseObserver {
