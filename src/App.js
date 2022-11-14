@@ -6,6 +6,7 @@ import Pagina404 from "./Views/Pagina404";
 import Contacto from "./Views/Contacto";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
+import Carreras from "./Views/Carreras";
 import "animate.css";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
             <Route path="/Nosotros" element={<Nosotros />} />
             <Route path="/Productos" element={<Productos />}/>
             <Route path="/Contacto" element={<Contacto />}/>
+            <Route path="/Carreras" element={<Carreras />}/>
             <Route path="*" element={<Pagina404 />}/>
           </Routes>
         </div>
