@@ -127,6 +127,7 @@ const Inicio = () => {
                     supervisión, monitoreo y diagnóstico de activos de
                     infraestructura pública y privada.
                   </Card.Text>
+                  <Card.Link as={NavLink} to="/Productos#card-desarrollo">Sistemas de gestión</Card.Link>
                 </Card.Body>
               </Card>
             </Col>
@@ -153,6 +154,7 @@ const Inicio = () => {
                     herramientas de análisis de canastos y prospectiva de
                     negocios.
                   </Card.Text>
+                  <Card.Link as={NavLink} to="/Productos#card-modelosML">Modelos de Inteligencia Artificial</Card.Link>
                 </Card.Body>
               </Card>
             </Col>
@@ -173,8 +175,9 @@ const Inicio = () => {
                     artificial (IA) para disminuir la variabilidad intraoperador al
                     procesar grandes cantidades de datos, sistematizar tareas
                     rutinarias y reducir costos en los sistemas hospitalarios y de
-                    proveedores de servicios.
+                    proveedores de servicios. card-businessInt
                   </Card.Text>
+                  <Card.Link as={NavLink} to="/Productos#card-businessInt">Business Intelligence y Análisis de Big Data</Card.Link>
                 </Card.Body>
               </Card>
             </Col>
