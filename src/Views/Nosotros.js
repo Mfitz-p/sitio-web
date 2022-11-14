@@ -1,7 +1,7 @@
 /**
  * Vista de página Nosotros. 
  */
-import { Container, Row, Col, Image} from 'react-bootstrap/';
+import { Container, Row, Col, Image, Card} from 'react-bootstrap/';
 import nombre from '../images/nombre2.png';
 /* import imgMision from '../images/mision.jpg'; */
 /* import imgVision from '../images/vision.jpg'; */
@@ -40,6 +40,49 @@ function Nosotros() {
             <h1 className='tituloNuestroEquipo m-4'>Nuestro Equipo </h1>
             <h4 className='textNuestroEquipo m-2'>En Kaminoittech contamos con un equipo interdisciplinario de expertos en ciencia de datos, analítica predictiva y de desarrollo de aplicaciones, que, junto con nuestro equipo técnico, socios comerciales y nuestras alianzas estratégicas nos permiten crear soluciones innovadoras y flexibles para cada proyecto.</h4>
           </div>
+          </Col>
+          </Row>
+          <Row>
+          <h2 className='p-4 d-flex justify-content-center'>Funciones destacadas</h2>
+          <Col className="p-4 d-flex justify-content-center " sm>
+          <Card style={{ width: '18rem', border: 'none' }}>
+            <Card.Body>
+              <Card.Title className="d-flex justify-content-center ">Perfil 1</Card.Title>
+              <Card.Text>
+              Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+          </Col>
+          <Col sm className="p-4 d-flex justify-content-center ">
+          <Card style={{ width: '18rem', border: 'none' }}>
+          <Card.Body>
+              <Card.Title className="d-flex justify-content-center ">Perfil 2</Card.Title>
+              <Card.Text>
+              Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+          </Col>
+          <Col className="d-flex justify-content-center " sm>
+          <Card style={{ width: '18rem', border: 'none' }}>
+            <Card.Body>
+              <Card.Title className="p-4 d-flex justify-content-center ">Perfil 3</Card.Title>
+              <Card.Text>
+              Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+          </Col>
+          <Col sm className="p-4 d-flex justify-content-center ">
+          <Card style={{ width: '18rem', border: 'none' }}>
+          <Card.Body>
+              <Card.Title className="d-flex justify-content-center ">Perfil 4</Card.Title>
+              <Card.Text>
+              Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </Card.Text>
+            </Card.Body>
+          </Card>
           </Col>
         </Row>
       </Container>
