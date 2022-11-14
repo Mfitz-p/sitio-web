@@ -40,7 +40,7 @@ function Footer() {
                     </Col>
                     <Col xs={12} md={2} className="d-flex aligns-items-center justify-content-center mt-3"> 
                         <Nav.Link as={NavLink} to="/Contacto">
-                            <Button className='mx-auto hvr-pulse' variant="success">Contáctanos</Button>
+                            <Button className='mx-auto hvr-pulse boton-principal' variant="success">Contáctanos</Button>
                         </Nav.Link>
                     </Col>
                 </Row>

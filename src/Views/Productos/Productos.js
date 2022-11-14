@@ -210,20 +210,21 @@ const Productos = () => {
           </Link>
         </Row>
         {/* Inician las cards de productos con su respectiva imagen */}
-        <section id='card-desarrollo' className='container-product'>
+        <section id='infraestructura' className='container-product'>
         <Row className='align-items-center container-product' >
           <Col sm={12} md={6} ref={effectRef} className={`${effectScroll ? 'animate__animated animate__fadeInLeft': 'reverseObserver'}`}>
             <Card style={{ border: 'none' }}>
               <Card.Body className='animate__animated animate__fadeInLeft'>
                 <Card.Title style={{ fontSize: '28px', border: 'none' }}>
                 <Image height={70} className='m-3 hvr-float' src={computerSvg} alt='computerSvg'/>
-                  Desarrollo de sistemas de gestión.
+                Infraestructura
                 </Card.Title>
                 <Card.Text style={{ fontSize: '21px', textAlign: 'justify' }}>
                   <ul>
-                  <li className='mb-0'>Centralización, estructuración y organización de la información.</li>
-                  <li className='mb-0'>Construcción, mantenimiento y operación de sistemas de visualización de la información en tiempo real. </li>
-                  <li className='mb-0'>Estandarización de procesos de gestión de grandes bases de datos</li>
+                  <li className='mb-0'> Sistema de gestión (Centralización, monitoreo y visualización de la información).</li>
+                  <li className='mb-0'> Visión computacional (Detección de incidencias). </li>
+                  <li className='mb-0'> Seguimiento de obra (Percepción remota) </li>
+                  <li className='mb-0'> Metodología BIM </li>
                   </ul>
                 </Card.Text>
               </Card.Body>
@@ -238,7 +239,7 @@ const Productos = () => {
         </Row>
       </section>
 
-      <section id='card-modelosML' className='container-product'>
+      <section id='retail' className='container-product'>
         <Row className='align-items-center container-product' style={{  backgroundColor: 'rgb(33,37,41)' }}>
           <Col sm={12} md={6}>
             <Card style={{ border: 'none', backgroundColor: 'transparent'  }}>
@@ -251,13 +252,15 @@ const Productos = () => {
               <Card.Body ref={effectRef4} className={`${effectScroll4 ? 'animate__animated animate__fadeInRight': 'reverseObserver'}`}>
                 <Card.Title style={{ fontSize: '28px', border: 'none', color: 'white' }}>
                 <Image height={70} className='m-3 hvr-float' src={modelosML} alt='modelosML'/>
-                  Modelos de Inteligencía Artificial
+                Retail & B2B
                 </Card.Title>
                 <Card.Text style={{ fontSize: '21px', textAlign: 'justify', color: 'white' }}>
                   <ul>
-                  <li className='mb-0'>Aprendizaje maquina y aprendizaje profundo</li>
-                  <li className='mb-0'>Agrupación y clasificación</li>
-                  <li className='mb-0'>Análisis y predicción del comportamiento</li>
+                  <li className='mb-0'>Predicción de comportamientos de consumidor</li>
+                  <li className='mb-0'>Simuladores de precios</li>
+                  <li className='mb-0'>Optimización de promociones</li>
+                  <li className='mb-0'>Análisis de canastos</li>
+                  <li className='mb-0'>Sistemas de recomendación</li>
                   </ul>
                 </Card.Text>
               </Card.Body>
@@ -265,26 +268,27 @@ const Productos = () => {
           </Col>
         </Row>
       </section>
-      <section id='card-businessInt' className='container-product'>
         {/* Ícono de flecha que despliega hacia abajo para cambiar a la siguientes secciones */}
         <Link className=' d-flex justify-content-end text-black' to='card-visionComp'
                   smooth={true}
                   duration={0}>
                   <i className="bi bi-arrow-down-circle hvr-hang " style={{ fontSize: '45px' }}></i>
         </Link>
+      <section id='salud' className='container-product'>
         <Row className='align-items-center container-product' >
           <Col sm={12} md={6}>
             <Card style={{ border: 'none' }}>
               <Card.Body ref={effectRef5} className={`${effectScroll5 ? 'animate__animated animate__fadeInLeft': 'reverseObserver'}`}>
                 <Card.Title style={{ fontSize: '28px', border: 'none' }}>
                 <Image height={70} className='m-3 hvr-float' src={businessInt} alt='businessInt'/>
-                  Business Intelligence y Análisis de Big Data
+                Salud
                 </Card.Title>
                 <Card.Text style={{ fontSize: '21px', textAlign: 'justify' }}>
                   <ul>
-                  <li className='mb-0'>Análisis estadístico de grandes bases de datos para la obtención de KPIs</li>
-                  <li className='mb-0'>Modelos de analítica predictiva para realizar proyecciones a futuro</li>
-                  <li className='mb-0'>Desarrollo de reportes y tableros interactivos para la visualización de la información</li> 
+                  <li className='mb-0'>Sistemas de diagnóstico y cirugía asistidos por computadora (CAD/CAS).</li>
+                  <li className='mb-0'>Observatorios de salud.</li>
+                  <li className='mb-0'>Pronóstico de la efectividad del tratamiento clínico.</li> 
+                  <li className='mb-0'>Obtención de biomarcadores de diagnóstico.</li> 
                   </ul>
                 </Card.Text>
               </Card.Body>
@@ -305,14 +309,11 @@ const Productos = () => {
         </Link>
       </div>
 
-        <section id='card-visionComp' className='container-product'>
+        <section id='movilidad' className='container-product'>
         <Row className='align-items-center container-product' style={{  backgroundColor: 'rgb(33,37,41)'  }}>
           <Col sm={12} md={6}>
             <Card style={{ border: 'none', backgroundColor: 'transparent'  }}>
             <CarruselImgs imgs={imgs4} />
-              {/* <Card.Body ref={effectRef7} className={`${effectScroll7 ? 'animate__animated animate__fadeInLeft': 'reverseObserver'}`} >
-                <Image className='box' fluid src={imgVisionComputadora} alt='imgVisionComputadora' />
-              </Card.Body> */}
             </Card>
           </Col>
           <Col sm={12} md={6}>
@@ -320,13 +321,14 @@ const Productos = () => {
               <Card.Body ref={effectRef8} className={`${effectScroll8 ? 'animate__animated animate__fadeInRight': 'reverseObserver'}`}>
                 <Card.Title style={{ fontSize: '28px', border: 'none', color: 'white' }}>
                 <Image height={70} className='m-3 hvr-float' src={visionCompu} alt='visionCompu'/>
-                   Visión de computadora y percepción remota 
+                   Movilidad y Transportes 
                 </Card.Title>
                 <Card.Text style={{ fontSize: '21px', textAlign: 'justify', color: 'white' }}>
                   <ul>
-                  <li className='mb-0'>Manejo de grandes bases de datos de imágenes</li>
-                  <li className='mb-0'>Reconocimiento de objetos  en imágenes y videos</li>
-                  <li className='mb-0'>Procesamiento digital de imágenes multiespectrales</li>
+                  <li className='mb-0'>Optimización de la eficiencia del uso de combustible</li>
+                  <li className='mb-0'>Generación de matrices Origen-Destino</li>
+                  <li className='mb-0'>Análisis y visualización de datos geoespaciales</li>
+                  <li className='mb-0'>Predicción de patrones de movilidad e incidencias de tráfico</li>
                   </ul>
                 </Card.Text>
               </Card.Body>
@@ -334,6 +336,35 @@ const Productos = () => {
           </Col>
         </Row>
         </section>
+
+        <section id='banca' className='container-product'>
+        <Row className='align-items-center container-product' >
+          <Col sm={12} md={6} ref={effectRef6} className={`${effectScroll6 ? 'animate__animated animate__fadeInLeft': 'reverseObserver'}`}>
+            <Card style={{ border: 'none' }}>
+              <Card.Body className='animate__animated animate__fadeInLeft'>
+                <Card.Title style={{ fontSize: '28px', border: 'none' }}>
+                <Image height={70} className='m-3 hvr-float' src={computerSvg} alt='computerSvg'/>
+                Banca
+                </Card.Title>
+                <Card.Text style={{ fontSize: '21px', textAlign: 'justify' }}>
+                  <ul>
+                    <li className='mb-0'>Detección de fraudes</li>
+                    <li className='mb-0'>Cálculo de riesgo </li>
+                    <li className='mb-0'>Predicción del valor de usuario por tiempo de vida</li>
+                    <li className='mb-0'>Herramientas para la elegibilidad e inclusión financiera</li>
+                  </ul>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col sm={12} md={6}>
+            <Card style={{ border: 'none' }}>
+              {/* Comienza carrucel de imagenes */}
+              <CarruselImgs imgs={imgs} />
+            </Card>
+          </Col>
+        </Row>
+      </section>
       </Container>
     </>
   );
