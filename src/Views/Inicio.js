@@ -113,7 +113,7 @@ const Inicio = () => {
           </div>
           {/* Comienzan las cards de servicios */}
           <Row className='mx-5' >
-            <Col className="d-flex align-items-center g-0" md={6}>
+            <Col className="d-flex align-items-center g-0" lg={6} md={12}>
               <Card className="p-1 g-0" style={{ border: 'none' }} >
                 <Card.Body ref={textcard1} className={`${effectScroll ? 'animate__animated animate__fadeInLeft' : 'reverseObserver'}`}>
                   <Card.Title className="mb-2" style={{ fontSize: '25px' }}>
@@ -131,15 +131,15 @@ const Inicio = () => {
                 </Card.Body>
               </Card>
             </Col>
-            <Col id="imagenInicio" md={6} >
+            <Col id="imagenInicio" lg={6} md={12}>
               <Image fluid src={infraestructura} ref={imgcard1}  className={`${effectImgScroll ? 'animate__animated animate__fadeInRight' : 'reverseObserver'}`} alt='img-page' style={{ objectFit: 'cover', height: '39.3rem' }} />
             </Col>
           </Row>
 
           <Row className='mx-5'>
-            <Col id="imagenInicio" md={6}>
+            <Col id="imagenInicio" md={{order:"last", span:12}} lg={{order:"first", span:6}}>
               <Image fluid src={retail} alt='img-page' ref={imgcard2} className={`${effectImgScroll2 ? 'animate__animated animate__fadeInLeft' : 'reverseObserver'}`} style={{ objectFit: 'cover', height: '39.3rem' }} /></Col>
-            <Col className="d-flex align-items-center g-0">
+            <Col className="d-flex align-items-center g-0" md={{order:"first", span:12}} lg={{order:"last", span:6}}>
               <Card className="p-1" style={{ border: 'none' }}>
                 <Card.Body ref={textcard2} className={`${effectScroll2 ? 'animate__animated animate__fadeInRight' : 'reverseObserver'}`}>
                   <Card.Title style={{ fontSize: '25px', border: 'none' }}>
@@ -161,7 +161,7 @@ const Inicio = () => {
           </Row>
 
           <Row className='mx-5 mb-5'>
-            <Col className="d-flex align-items-center g-0" md={6}>
+            <Col className="d-flex align-items-center g-0" lg={6} md={12}>
               <Card className="p-1" style={{ border: 'none' }}>
                 <Card.Body ref={textcard3} className={`${effectScroll3 ? 'animate__animated animate__fadeInLeft' : 'reverseObserver'}`}>
                   <Card.Title style={{ fontSize: '25px' }}>
@@ -181,7 +181,7 @@ const Inicio = () => {
                 </Card.Body>
               </Card>
             </Col>
-            <Col id="imagenInicio" md={6}>
+            <Col id="imagenInicio" lg={6} md={12}>
               <Image fluid src={medicaIA} ref={imgcard3} className={`${effectImgScroll3 ? 'animate__animated animate__fadeInRight' : 'reverseObserver'}`} alt='img-page' style={{ objectFit: 'cover', height: '39.3rem' }} /></Col>
           </Row>
         </section>
