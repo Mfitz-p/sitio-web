@@ -50,7 +50,7 @@ function Nosotros() {
         {/* Comienza código de los perfiles destacados */}
         <Row>
           {/* <h2 className='p-4 d-flex justify-content-center' style={{fontSize: '45px'}}>Funciones Destacadas</h2> */}
-          <Col className="p-4 d-flex justify-content-center " sm={6}>
+          <Col className="p-4 d-flex justify-content-center " lg={6} md={12}>
             <Card style={{ width: '35rem', border: 'none' }}>
               <Card.Body className='animate__animated animate__fadeInLeft'>
                 <Card.Title className="d-flex justify-content-center " style={{ fontSize: '30px', color: 'rgba(107, 187, 174, 1)'}}>Cofundador & CEO</Card.Title>
@@ -62,7 +62,7 @@ function Nosotros() {
               </Card.Body>
             </Card>
           </Col>
-          <Col sm={6} className="p-4 d-flex justify-content-center ">
+          <Col  className="p-4 d-flex justify-content-center " lg={6} md={12}>
             <Card style={{ width: '35rem', border: 'none' }}>
               <Card.Body className='animate__animated animate__fadeInRight'>
                 <Card.Title className="d-flex justify-content-center " style={{ fontSize: '30px', color: 'rgba(107, 187, 174, 1)'}}>Cofundador & CTO</Card.Title>
@@ -72,7 +72,7 @@ function Nosotros() {
               </Card.Body>
             </Card>
           </Col>
-          <Col className="p-4 d-flex justify-content-center " sm={6}>
+          <Col className="p-4 d-flex justify-content-center " lg={6} md={12}>
             <Card style={{ width: '35rem', border: 'none' }}>
               <Card.Body className='animate__animated animate__fadeInLeft'>
                 <Card.Title className="d-flex justify-content-center " style={{ fontSize: '30px', color: 'rgba(107, 187, 174, 1)'}}>Científico de datos</Card.Title>
@@ -82,7 +82,7 @@ function Nosotros() {
               </Card.Body>
             </Card>
           </Col>
-          <Col sm={6} className="p-4 d-flex justify-content-center ">
+          <Col className="p-4 d-flex justify-content-center " lg={6} md={12}>
             <Card style={{ width: '35rem', border: 'none' }}>
               <Card.Body className='animate__animated animate__fadeInRight'>
                 <Card.Title className="d-flex justify-content-center " style={{ fontSize: '30px', color: 'rgba(107, 187, 174, 1)'}}>Científico de datos</Card.Title>

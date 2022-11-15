@@ -3,15 +3,15 @@ import { Link } from 'react-scroll';
 import CarruselImgs from '../../Components/CarruselImgs';
 
 // IMGS DE CARRUSEL SIGA 
-import aforosSIGA from '../../images/aforosSIGA.png';
+import aforosSIGA from '../../images/aforosSIGA.jpg';
 import hallazgozSIGA from '../../images/hallazgozSIGA.png';
 import mapaSIGA from '../../images/mapaSIGA.png';
 import ingresoSIGA from '../../images/ingresoSIGA.png';
 
-import machineLearning1 from '../../images/machineLearning11.png';
+import machineLearning1 from '../../images/machineLearning11.PNG';
 import machineLearning2 from '../../images/machineLearning21.png';
 import machineLearning3 from '../../images/machineLearning3.png';
-import machineLearning4 from '../../images/machineLearning4.jpg';
+import machineLearning4 from '../../images/MachineLearning4.jpg';
 
 import businessInt1 from '../../images/businessInt1.png';
 import businessInt2 from '../../images/businessInt2.png';
@@ -244,7 +244,7 @@ const Productos = () => {
           <Col sm={12} md={6}>
             <Card style={{ border: 'none', backgroundColor: 'transparent'  }}>
               {/* Comienza carrusel de imagenes */}
-              <CarruselImgs imgs={imgs2} />
+              <CarruselImgs imgs={imgs3} />
             </Card>
           </Col>
           <Col sm={12} md={6}>
@@ -296,7 +296,7 @@ const Productos = () => {
           </Col>
           <Col sm={12} md={6}>
             <Card style={{ border: 'none' }}>
-            <CarruselImgs imgs={imgs3} />
+            <CarruselImgs imgs={imgs2} /> 
             </Card>
           </Col>
         </Row>
