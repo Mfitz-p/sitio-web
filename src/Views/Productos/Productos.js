@@ -3,20 +3,21 @@ import { Link } from "react-scroll";
 import CarruselImgs from "../../Components/CarruselImgs";
 
 // IMGS DE CARRUSEL SIGA
-import aforosSIGA from "../../images/aforosSIGA.jpg";
+import aforosSIGA from "../../images/imgSIGA.jpg";
 import hallazgozSIGA from "../../images/hallazgozSIGA.png";
-import mapaSIGA from "../../images/mapaSIGA.png";
-import ingresoSIGA from "../../images/ingresoSIGA.png";
+import mapaSIGA from "../../images/imgSIGA2.png";
+import ingresoSIGA from "../../images/imgSIGA3.png";
+import imgSIGA4 from "../../images/imgSIGA4.png";
 
-import machineLearning1 from "../../images/machineLearning11.png";
-import machineLearning2 from "../../images/machineLearning21.png";
+// import machineLearning1 from "../../images/machineLearning11.PNG";
+// import machineLearning2 from "../../images/machineLearning21.png";
 import machineLearning3 from "../../images/machineLearning3.png";
-import machineLearning4 from "../../images/machineLearning4.jpg";
+import machineLearning4 from "../../images/MachineLearning4.jpg";
 
-import businessInt1 from "../../images/businessInt1.png";
-import businessInt2 from "../../images/businessInt2.png";
-import businessInt3 from "../../images/businessInt3.png";
-import businessInt4 from "../../images/businessInt4.png";
+import businessInt1 from "../../images/imgRetail2.png";
+import businessInt2 from "../../images/imgRetail3.png";
+import businessInt3 from "../../images/imgRetail4.png";
+import businessInt4 from "../../images/imgRetail5.png";
 
 import vCompu1 from "../../images/vCompu1.jpg";
 import vCompu2 from "../../images/vCompu2.jpg";
@@ -56,18 +57,23 @@ const imgs = [
     src: ingresoSIGA,
     alt: "ingresos",
   },
-];
-const imgs2 = [
   {
     id: 5,
-    src: machineLearning1,
-    alt: "machineLearning1",
-  },
-  {
-    id: 6,
-    src: machineLearning2,
-    alt: "machineLearning2",
-  },
+    src: imgSIGA4,
+    alt: 'imgSIGA4',
+  }
+];
+const imgs2 = [
+  // {
+  //   id: 5,
+  //   src: machineLearning1,
+  //   alt: "machineLearning1",
+  // },
+  // {
+  //   id: 6,
+  //   src: machineLearning2,
+  //   alt: "machineLearning2",
+  // },
   {
     id: 7,
     src: machineLearning3,
@@ -275,7 +281,7 @@ const Productos = () => {
               lg={{ order: "first", span: 6 }}>
               <Card style={{ border: "none", backgroundColor: "transparent" }}>
                 {/* Comienza carrusel de imagenes */}
-                <CarruselImgs imgs={imgs2} />
+                <CarruselImgs imgs={imgs3} />
               </Card>
             </Col>
             <Col md={{ order: "first", span: 12 }}
@@ -375,7 +381,7 @@ const Productos = () => {
             </Col>
             <Col md={12} lg={6}>
               <Card style={{ border: "none" }}>
-                <CarruselImgs imgs={imgs3} />
+              <CarruselImgs imgs={imgs2} />
               </Card>
             </Col>
           </Row>

@@ -10,7 +10,7 @@ import infraestructura from '../images/infraestructura.jpg';
 import medicaIA from '../images/medicaIA.jpg';
 import retail from '../images/retail.jpg';
 import movilidad from '../images/movilidad.jpg';
-import banca from '../images/banca.jpg';
+// import banca from '../images/banca.jpg';
 
 const Inicio = () => {
 
