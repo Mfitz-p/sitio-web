@@ -147,7 +147,7 @@ const Inicio = () => {
               Servicios
             </div>
           </Row>
-          {/*  Ícono de la flecha que redirige a la sección inicial de la vista */}
+           {/* Ícono de la flecha que redirige a la sección inicial de la vista
           <div
             ref={btn}
             className="btn-arriba d-flex justify-content-end sticky-sm-top"
@@ -161,7 +161,7 @@ const Inicio = () => {
                 } `}
               ></i>
             </Link>
-          </div>
+          </div> */}
           {/* Comienzan las cards de servicios */}
           <Row >
             <Col className="d-flex align-items-center g-0" lg={6} md={12}>
