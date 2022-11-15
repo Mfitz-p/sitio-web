@@ -61,7 +61,7 @@ const Inicio = () => {
   const { ref: btn, inView: up } = useInView({
     threshold: 1,
     triggerOnce: true,
-    delay: 3000
+    delay: 0
   });
 
   return (
@@ -103,6 +103,7 @@ const Inicio = () => {
                   smooth={true}
                   duration={0}
                 >
+        
                   <i
                     className="bi bi-arrow-down-circle hvr-hang change-Color"
                     style={{ fontSize: "45px", cursor: "pointer" }}
@@ -115,9 +116,10 @@ const Inicio = () => {
       </Container>
 
       <Container fluid className="hideX">
-        <section id="cards-servicios">
+      
+        <section id="cards-servicios" >
           <Row>
-            <Col className="d-flex flex-row">
+            <Col >
               <Card className="p-3 " style={{ border: "none" }}>
                 <Card.Body className="animate__animated animate__pulse">
                   <Card.Title
@@ -138,7 +140,7 @@ const Inicio = () => {
               </Card>
             </Col>
           </Row>
-
+          
           <Row style={{ background: "#6BBBAE" }}>
             <div
               className=" d-flex justify-content-center"
@@ -146,22 +148,11 @@ const Inicio = () => {
             >
               Servicios
             </div>
+
           </Row>
-          {/*  Ícono de la flecha que redirige a la sección inicial de la vista */}
-          <div
-            ref={btn}
-            className="btn-arriba d-flex justify-content-end sticky-sm-top"
-          >
-            <Link to="portada-principal" smooth={true} duration={0}>
-              <i
-                className={`${
-                  up
-                    ? "bi bi-arrow-up-circle animate__animated animate__fadeInUp"
-                    : null
-                } `}
-              ></i>
-            </Link>
-          </div>
+
+           
+            
           {/* Comienzan las cards de servicios */}
           <Row >
             <Col className="d-flex align-items-center g-0" lg={6} md={12}>
@@ -212,7 +203,7 @@ const Inicio = () => {
                   effectImgScroll
                     ? "animate__animated animate__fadeInRight"
                     : "reverseObserver"
-                }`}
+                }` }
                 alt="img-page"
                 style={{ objectFit: "cover", height: "39.3rem" }}
               />
@@ -459,6 +450,21 @@ const Inicio = () => {
             </Col>
           </Row> */}
         </section>
+           {/* Boton de regreso */}
+           <div
+              ref={btn}
+              className="btn-arriba d-flex justify-content-end sticky-sm-top"
+            >
+              <Link to="portada-principal" smooth={true} duration={0}>
+                <i
+                  className={`${
+                    up
+                      ? "bi bi-arrow-up-circle animate__animated animate__fadeInUp"
+                      : null
+                  } `}
+                ></i>
+              </Link>
+            </div>
       </Container>
     </>
   );
