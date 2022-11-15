@@ -21,6 +21,7 @@ function App() {
             <Route path="/Productos" element={<Productos />}/>
             <Route path="/Contacto" element={<Contacto />}/>
             <Route path="/Carreras" element={<Carreras />}/>
+         {/*    <Route path="/Productos-movilidad" element={<Navigate to="/Productos#movilidad" />}/> */}
             <Route path="*" element={<Pagina404 />}/>
           </Routes>
         </div>
