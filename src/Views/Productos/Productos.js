@@ -271,14 +271,18 @@ const Productos = () => {
             className="align-items-center container-product"
             style={{ backgroundColor: "rgb(33,37,41)" }}
           >
-            <Col md={{ order: "last", span: 12 }}
+            <Col
+            xs={{ order: "last", span: 12 }}
+             md={{ order: "last", span: 12 }}
               lg={{ order: "first", span: 6 }}>
               <Card style={{ border: "none", backgroundColor: "transparent" }}>
                 {/* Comienza carrusel de imagenes */}
                 <CarruselImgs imgs={imgs2} />
               </Card>
             </Col>
-            <Col md={{ order: "first", span: 12 }}
+            <Col 
+            xs={{ order: "first", span: 12 }}
+            md={{ order: "first", span: 12 }}
               lg={{ order: "last", span: 6 }}>
               <Card style={{ border: "none", backgroundColor: "transparent" }}>
                 <Card.Body
@@ -408,13 +412,17 @@ const Productos = () => {
             className="align-items-center container-product"
             style={{ backgroundColor: "rgb(33,37,41)" }}
           >
-            <Col md={{ order: "last", span: 12 }}
+            <Col 
+            xs={{ order: "last", span: 12 }}
+            md={{ order: "last", span: 12 }}
               lg={{ order: "first", span: 6 }}>
               <Card style={{ border: "none", backgroundColor: "transparent" }}>
                 <CarruselImgs imgs={imgs4} />
               </Card>
             </Col>
-            <Col md={{ order: "first", span: 12 }}
+            <Col 
+            xs={{ order: "first", span: 12 }}
+            md={{ order: "first", span: 12 }}
               lg={{ order: "last", span: 6 }}>
               <Card style={{ border: "none", backgroundColor: "transparent" }}>
                 <Card.Body
