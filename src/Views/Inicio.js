@@ -2,7 +2,7 @@ import { Col, Container, Row, Card, Image, Button, Nav } from 'react-bootstrap';
 import { Link } from 'react-scroll';
 import { NavLink } from 'react-router-dom';
 import { useInView } from 'react-intersection-observer';
-import { HashLink, NavHashLink } from 'react-router-hash-link';
+import { NavHashLink } from 'react-router-hash-link';
 import "../App.css";
 //Imágenes
 import page from '../images/frontpage.jpg';
@@ -79,8 +79,10 @@ const Inicio = () => {
               <Card.ImgOverlay className="d-flex flex-column  m-4 animate__animated animate__fadeInUp">
                 <Col className="d-flex justify-content-center flex-column">
                   <Card.Title style={{ fontSize: "2.3rem", lineHeight: ".7" }}>
-                    <p> Analítica predictiva y soluciones inteligentes</p>
-                    <p> para la transformación de tu negocio.</p>
+                    <Row>
+                      <Col xs={7}>Analítica predictiva y soluciones inteligentes para la transformación de tu negocio.</Col>
+                      <Col></Col>
+                    </Row>
                   </Card.Title>
                   {/* Botón contáctanos que redirige al inicio de la página */}
                   <Col xs={12} md={2}>
@@ -173,7 +175,7 @@ const Inicio = () => {
                   }`}
                 >
                   <Card.Title
-                    className="m-5 mb-0"
+                    className="m-5 mb-0 mt-0"
                     style={{
                       fontSize: "50px",
                       fontWeight: "bold",
@@ -251,7 +253,7 @@ const Inicio = () => {
                   }`}
                 >
                   <Card.Title
-                    className="m-5 mb-0 ps-4"
+                    className="m-5 mb-0 ps-4 mt-3"
                     style={{
                       fontSize: "50px",
                       fontWeight: "bold",
@@ -292,7 +294,7 @@ const Inicio = () => {
                   }`}
                 >
                   <Card.Title
-                    className="m-5 mb-0"
+                    className="m-5 mb-0 mt-3"
                     style={{
                       fontSize: "50px",
                       fontWeight: "bold",
@@ -370,7 +372,7 @@ const Inicio = () => {
                   }`}
                 >
                   <Card.Title
-                    className="m-5 mb-0 ps-4"
+                    className="m-5 mb-0 ps-4 mt-0"
                     style={{
                       fontSize: "45px",
                       fontWeight: "bold",
@@ -412,7 +414,7 @@ const Inicio = () => {
                   }`}
                 >
                   <Card.Title
-                    className="m-5 mb-0 "
+                    className="m-5 mb-0 mt-3"
                     style={{
                       fontSize: "50px",
                       fontWeight: "bold",
