@@ -80,8 +80,8 @@ const Inicio = () => {
                 <Col className="d-flex justify-content-center flex-column">
                   <Card.Title style={{ fontSize: "2.3rem", lineHeight: ".7" }}>
                     <Row>
-                      <Col xs={7}>Analítica predictiva y soluciones inteligentes para la transformación de tu negocio.</Col>
-                      <Col></Col>
+                      <Col sm={7} className='gx-0'>Analítica predictiva y soluciones inteligentes para la transformación de tu negocio.</Col>
+                      <Col ></Col>
                     </Row>
                   </Card.Title>
                   {/* Botón contáctanos que redirige al inicio de la página */}
@@ -118,7 +118,7 @@ const Inicio = () => {
         <section id="cards-servicios">
           <Row>
             <Col className="d-flex flex-row">
-              <Card className="p-5 " style={{ border: "none" }}>
+              <Card className="p-3 " style={{ border: "none" }}>
                 <Card.Body className="animate__animated animate__pulse">
                   <Card.Title
                     className="subrayado d-flex justify-content-center px-5"
@@ -163,7 +163,7 @@ const Inicio = () => {
             </Link>
           </div>
           {/* Comienzan las cards de servicios */}
-          <Row className="mx-5">
+          <Row >
             <Col className="d-flex align-items-center g-0" lg={6} md={12}>
               <Card className="p-1 g-0" style={{ border: "none" }}>
                 <Card.Body
@@ -175,9 +175,9 @@ const Inicio = () => {
                   }`}
                 >
                   <Card.Title
-                    className="m-5 mb-0 mt-0"
+                    className=" mb-0"
                     style={{
-                      fontSize: "50px",
+                      fontSize: "46px",
                       fontWeight: "bold",
                       textDecoration: "underline",
                       textDecorationColor: "#6BBBAE",
@@ -186,7 +186,7 @@ const Inicio = () => {
                     Infraestructura
                   </Card.Title>
                   <Card.Text
-                    className="m-5 mt-2 mb-2 pe-4"
+                    className=" mt-2 mb-2 pe-2"
                     style={{ fontSize: "18px", textAlign: "justify" }}
                   >
                     Estandarizamos tus procesos de supervisión y evaluación de
@@ -195,7 +195,7 @@ const Inicio = () => {
                   </Card.Text>
               
                   <NavHashLink
-                  className="m-5 mb-2 "
+                  className=" mb-2 "
                   to="/Productos#infraestructura"
                   >
                   Ver más...
@@ -219,7 +219,7 @@ const Inicio = () => {
             </Col>
           </Row>
 
-          <Row className="mx-5">
+          <Row >
             <Col
               id="imagenInicio"
               md={{ order: "last", span: 12 }}
@@ -253,7 +253,7 @@ const Inicio = () => {
                   }`}
                 >
                   <Card.Title
-                    className="m-5 mb-0 ps-4 mt-3"
+                    className="mb-0 ps-2 mt-3"
                     style={{
                       fontSize: "50px",
                       fontWeight: "bold",
@@ -264,7 +264,7 @@ const Inicio = () => {
                     Retail & B2B
                   </Card.Title>
                   <Card.Text
-                    className="m-5 mt-2 mb-2 ps-4"
+                    className=" mt-2 mb-2 ps-2"
                     style={{ fontSize: "18px", textAlign: "justify" }}
                   >
                     Optimizamos tus estrategias de venta mediante la
@@ -272,7 +272,7 @@ const Inicio = () => {
                     comportamiento del consumidor en tu negocio.
                   </Card.Text>
                   <NavHashLink
-                  className="m-5 mb-0 ps-4"
+                  className=" mb-0 ps-2"
                   to="/Productos#retail"
                   >
                   Ver más...
@@ -282,7 +282,7 @@ const Inicio = () => {
             </Col>
           </Row>
 
-          <Row className="mx-5 mb-5">
+          <Row className="mb-5">
             <Col className="d-flex align-items-center g-0" lg={6} md={12}>
               <Card className="p-1" style={{ border: "none" }}>
                 <Card.Body
@@ -294,7 +294,7 @@ const Inicio = () => {
                   }`}
                 >
                   <Card.Title
-                    className="m-5 mb-0 mt-3"
+                    className=" mb-0 mt-3"
                     style={{
                       fontSize: "50px",
                       fontWeight: "bold",
@@ -305,7 +305,7 @@ const Inicio = () => {
                     Salud
                   </Card.Title>
                   <Card.Text
-                    className="m-5 mt-2 mb-2 pe-4"
+                    className=" mt-2 mb-2 pe-4"
                     style={{ fontSize: "18px", textAlign: "justify" }}
                   >
                     Desarrollamos soluciones basadas en aprendizaje por
@@ -314,7 +314,7 @@ const Inicio = () => {
                   </Card.Text>
                
                   <NavHashLink
-                   className="m-5 mb-0"
+                   className=" mb-0"
                    to="/Productos#salud"
                   >
                   Ver más...
@@ -338,7 +338,7 @@ const Inicio = () => {
             </Col>
           </Row>
 
-          <Row className="mx-5 mb-5">
+          <Row className="mb-5">
             <Col
               id="imagenInicio"
               md={{ order: "last", span: 12 }}
@@ -372,7 +372,7 @@ const Inicio = () => {
                   }`}
                 >
                   <Card.Title
-                    className="m-5 mb-0 ps-4 mt-0"
+                    className="mb-0 ps-2 mt-0"
                     style={{
                       fontSize: "45px",
                       fontWeight: "bold",
@@ -383,7 +383,7 @@ const Inicio = () => {
                     Movilidad y Transportes
                   </Card.Title>
                   <Card.Text
-                    className="m-5 mt-2 mb-2 ps-4"
+                    className=" mt-2 mb-2 ps-2"
                     style={{ fontSize: "18px", textAlign: "justify" }}
                   >
                     Optimizamos tus estrategias de venta mediante la
@@ -392,7 +392,7 @@ const Inicio = () => {
                   </Card.Text>
 
                   <NavHashLink
-                  className="m-5 mb-0 ps-4"
+                  className=" mb-0 ps-2"
                   to="/Productos#movilidad"
                   >
                   Ver más...
