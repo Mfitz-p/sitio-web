@@ -78,7 +78,7 @@ const Inicio = () => {
               />
               <Card.ImgOverlay className="d-flex flex-column  m-4 animate__animated animate__fadeInUp">
                 <Col className="d-flex justify-content-center flex-column">
-                  <Card.Title style={{ fontSize: "2.3rem", lineHeight: ".7" }}>
+                  <Card.Title style={{ fontSize: "2.3rem", lineHeight: "1.2" }}>
                     <Row>
                       <Col sm={7} className='gx-0'>Analítica predictiva y soluciones inteligentes para la transformación de tu negocio.</Col>
                       <Col ></Col>
