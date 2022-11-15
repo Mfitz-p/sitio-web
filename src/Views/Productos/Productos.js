@@ -9,10 +9,11 @@ import mapaSIGA from "../../images/imgSIGA2.png";
 import ingresoSIGA from "../../images/imgSIGA3.png";
 import imgSIGA4 from "../../images/imgSIGA4.png";
 
-// import machineLearning1 from "../../images/machineLearning11.PNG";
-// import machineLearning2 from "../../images/machineLearning21.png";
+import machineLearning1 from "../../images/imgSalud1.png";
+import machineLearning2 from "../../images/imgSalud2.png";
 import machineLearning3 from "../../images/machineLearning3.png";
 import machineLearning4 from "../../images/MachineLearning4.jpg";
+import machineLearning5 from "../../images/imgSalud3.jpg";
 
 import businessInt1 from "../../images/imgRetail2.png";
 import businessInt2 from "../../images/imgRetail3.png";
@@ -68,16 +69,16 @@ const imgs = [
   }
 ];
 const imgs2 = [
-  // {
-  //   id: 5,
-  //   src: machineLearning1,
-  //   alt: "machineLearning1",
-  // },
-  // {
-  //   id: 6,
-  //   src: machineLearning2,
-  //   alt: "machineLearning2",
-  // },
+  {
+    id: 5,
+    src: machineLearning1,
+    alt: "machineLearning1",
+  },
+  {
+    id: 6,
+    src: machineLearning2,
+    alt: "machineLearning2",
+  },
   {
     id: 7,
     src: machineLearning3,
@@ -87,6 +88,11 @@ const imgs2 = [
     id: 8,
     src: machineLearning4,
     alt: "machineLearning4",
+  },
+  {
+    id: 9,
+    src: machineLearning5,
+    alt: "machineLearning5",
   },
 ];
 const imgs3 = [
