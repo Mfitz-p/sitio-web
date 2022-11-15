@@ -253,7 +253,7 @@ const Inicio = () => {
                   }`}
                 >
                   <Card.Title
-                    className="mb-0 ps-2 mt-3"
+                    className="mb-0 ps-2 mt-3 infra"
                     style={{
                       fontSize: "50px",
                       fontWeight: "bold",
@@ -282,7 +282,7 @@ const Inicio = () => {
             </Col>
           </Row>
 
-          <Row className="mb-5">
+          <Row >
             <Col className="d-flex align-items-center g-0" lg={6} md={12}>
               <Card className="p-1" style={{ border: "none" }}>
                 <Card.Body
@@ -294,7 +294,7 @@ const Inicio = () => {
                   }`}
                 >
                   <Card.Title
-                    className=" mb-0 mt-3"
+                    className=" mb-0 mt-3 infra"
                     style={{
                       fontSize: "50px",
                       fontWeight: "bold",
@@ -338,7 +338,7 @@ const Inicio = () => {
             </Col>
           </Row>
 
-          <Row className="mb-5">
+          <Row >
             <Col
               id="imagenInicio"
               md={{ order: "last", span: 12 }}
@@ -372,7 +372,7 @@ const Inicio = () => {
                   }`}
                 >
                   <Card.Title
-                    className="mb-0 ps-2 mt-0"
+                    className="mb-0 ps-2 mt-0 infra"
                     style={{
                       fontSize: "45px",
                       fontWeight: "bold",
@@ -402,7 +402,7 @@ const Inicio = () => {
             </Col>
           </Row>
 
-          {/* <Row className="mx-5 mb-5">
+          <Row className="mb-5">
             <Col className="d-flex align-items-center g-0" lg={6} md={12}>
               <Card className="p-1" style={{ border: "none" }}>
                 <Card.Body
@@ -414,9 +414,9 @@ const Inicio = () => {
                   }`}
                 >
                   <Card.Title
-                    className="m-5 mb-0 mt-3"
+                    className="mb-0 ps-2 mt-0 infra"
                     style={{
-                      fontSize: "50px",
+                      fontSize: "45px",
                       fontWeight: "bold",
                       textDecoration: "underline",
                       textDecorationColor: "#6BBBAE",
@@ -425,7 +425,7 @@ const Inicio = () => {
                     Banca
                   </Card.Title>
                   <Card.Text
-                    className="m-5 mt-2 mb-2 pe-4"
+                    className=" mt-2 mb-2 ps-2"
                     style={{ fontSize: "18px", textAlign: "justify" }}
                   >
                     Asistimos en la toma de decisiones para la creación de una
@@ -434,7 +434,7 @@ const Inicio = () => {
                     inversiones.
                   </Card.Text>
                   <NavHashLink
-                  className="m-5 mb-0"
+                  className=" mb-0 ps-2"
                   to="/Productos#banca"
                   >
                   Ver más...
@@ -457,7 +457,7 @@ const Inicio = () => {
                 style={{ objectFit: "cover", height: "39.3rem" }}
               />
             </Col>
-          </Row> */}
+          </Row>
         </section>
       </Container>
     </>
