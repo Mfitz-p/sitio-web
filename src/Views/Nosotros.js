@@ -19,7 +19,7 @@ function Nosotros() {
         <div className='d-flex justify-content-center mb-4'>
           <Image fluid src={nombre} alt='logo' style={{ width: "400px" }} />
         </div>
-        <p className='d-flex justify-content-center text-white' style={{ fontSize: "20px" }}>En la última década diferentes sectores empresariales han comenzado su transformación digital incorporando múltiples soluciones tecnológicas con los objetivos de: maximizar el valor agregado de su información y eficientar el uso de recursos. Debido a esto, Kaminoittech se posiciona en el mercado como una empresa dedicada a proveer servicios de consultoría en ciencia de datos e inteligencia de negocios para maximizar el valor agregado de los datos, dotando de soluciones innovadoras y flexibles para cada proyecto.</p>
+        <p className='d-flex justify-content-center text-white' style={{ fontSize: "20px" }}>En la última década diferentes sectores empresariales han comenzado su transformación digital incorporando múltiples soluciones tecnológicas con los objetivos de: maximizar el valor agregado de su información y eficientar el uso de recursos. Debido a esto, Kaminoittech se posiciona en el mercado como una empresa dedicada a proveer servicios de consultoría en analítica avanza e inteligencia artificial para maximizar el valor agregado de los datos, dotando de soluciones innovadoras y flexibles para cada proyecto.</p>
       </Container>
       <Container fluid >
         <Row >
