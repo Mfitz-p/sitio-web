@@ -30,6 +30,10 @@ import modelosML from "../../icons/modelosML.svg";
 import businessInt from "../../icons/businessInt.svg";
 import visionCompu from "../../icons/visionCompu.svg";
 import vBigData from "../../icons/vBigData.svg";
+import health from "../../icons/health.svg";
+import city from "../../icons/city.svg";
+import basket from "../../icons/basket.svg";
+import car from "../../icons/car.svg";
 
 import { useInView } from "react-intersection-observer";
 import "../../App.css";
@@ -231,8 +235,8 @@ const Productos = () => {
                     <Image
                       height={70}
                       className="m-3 hvr-float"
-                      src={computerSvg}
-                      alt="computerSvg"
+                      src={city}
+                      alt="city"
                     />
                     Infraestructura
                   </Card.Title>
@@ -299,8 +303,8 @@ const Productos = () => {
                     <Image
                       height={70}
                       className="m-3 hvr-float"
-                      src={modelosML}
-                      alt="modelosML"
+                      src={basket}
+                      alt="basket"
                     />
                     Retail & B2B
                   </Card.Title>
@@ -354,8 +358,8 @@ const Productos = () => {
                     <Image
                       height={70}
                       className="m-3 hvr-float"
-                      src={businessInt}
-                      alt="businessInt"
+                      src={health}
+                      alt="health"
                     />
                     Salud
                   </Card.Title>
@@ -439,8 +443,8 @@ const Productos = () => {
                     <Image
                       height={70}
                       className="m-3 hvr-float"
-                      src={visionCompu}
-                      alt="visionCompu"
+                      src={car}
+                      alt="car"
                     />
                     Movilidad y Transportes
                   </Card.Title>
