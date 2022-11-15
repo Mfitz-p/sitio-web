@@ -477,7 +477,7 @@ const Productos = () => {
           </Row>
         </section>
 
-        {/* <section className="container-product" id="banca">
+        <section className="container-product" id="banca">
           <Row className="align-items-center container-product" >
             <Col
               md={12}
@@ -515,14 +515,14 @@ const Productos = () => {
                 </Card.Body>
               </Card>
             </Col>
-            <Col md={12} lg={6}>
+            {/*<Col md={12} lg={6}>
               <Card style={{ border: "none" }}>
                 {/* Comienza carrusel de imagenes *//*}
                 <CarruselImgs imgs={imgs} />
               </Card>
-            </Col>
+            </Col> */}
           </Row>
-        </section> */}
+        </section>
       </Container>
     </>
   );
