@@ -412,7 +412,7 @@ const Productos = () => {
             cursor: "pointer",
           }}
         >
-          <Link to="card-desarrollo" smooth={true} duration={0}>
+          <Link to="infraestructura" smooth={true} duration={0}>
             <i
               className={`${
                 up
