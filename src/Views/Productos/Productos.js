@@ -2,6 +2,7 @@ import { Container, Image, Card, Col, Row } from "react-bootstrap";
 import { Link } from "react-scroll";
 import CarruselImgs from "../../Components/CarruselImgs";
 
+<<<<<<< HEAD
 // IMGS DE CARRUSEL SIGA
 import aforosSIGA from "../../images/aforosSIGA.png";
 import hallazgozSIGA from "../../images/hallazgozSIGA.png";
@@ -12,6 +13,18 @@ import machineLearning1 from "../../images/machineLearning11.png";
 import machineLearning2 from "../../images/machineLearning21.png";
 import machineLearning3 from "../../images/machineLearning3.png";
 import machineLearning4 from "../../images/machineLearning4.jpg";
+=======
+// IMGS DE CARRUSEL SIGA 
+import aforosSIGA from '../../images/aforosSIGA.jpg';
+import hallazgozSIGA from '../../images/hallazgozSIGA.png';
+import mapaSIGA from '../../images/mapaSIGA.png';
+import ingresoSIGA from '../../images/ingresoSIGA.png';
+
+import machineLearning1 from '../../images/machineLearning11.PNG';
+import machineLearning2 from '../../images/machineLearning21.png';
+import machineLearning3 from '../../images/machineLearning3.png';
+import machineLearning4 from '../../images/MachineLearning4.jpg';
+>>>>>>> d960377f5a5dbfe39444a4a27c486139affc4a1a
 
 import businessInt1 from "../../images/businessInt1.png";
 import businessInt2 from "../../images/businessInt2.png";
@@ -266,6 +279,7 @@ const Productos = () => {
           </Row>
         </section>
 
+<<<<<<< HEAD
         <section id="retail" className="container-product">
           <Row
             className="align-items-center container-product"
@@ -320,6 +334,37 @@ const Productos = () => {
             </Col>
           </Row>
         </section>
+=======
+      <section id='retail' className='container-product'>
+        <Row className='align-items-center container-product' style={{  backgroundColor: 'rgb(33,37,41)' }}>
+          <Col sm={12} md={6}>
+            <Card style={{ border: 'none', backgroundColor: 'transparent'  }}>
+              {/* Comienza carrusel de imagenes */}
+              <CarruselImgs imgs={imgs3} />
+            </Card>
+          </Col>
+          <Col sm={12} md={6}>
+            <Card style={{ border: 'none', backgroundColor: 'transparent' }}>
+              <Card.Body ref={effectRef4} className={`${effectScroll4 ? 'animate__animated animate__fadeInRight': 'reverseObserver'}`}>
+                <Card.Title style={{ fontSize: '28px', border: 'none', color: 'white' }}>
+                <Image height={70} className='m-3 hvr-float' src={modelosML} alt='modelosML'/>
+                Retail & B2B
+                </Card.Title>
+                <Card.Text style={{ fontSize: '21px', textAlign: 'justify', color: 'white' }}>
+                  <ul>
+                  <li className='mb-0'>Predicción de comportamientos de consumidor</li>
+                  <li className='mb-0'>Simuladores de precios</li>
+                  <li className='mb-0'>Optimización de promociones</li>
+                  <li className='mb-0'>Análisis de canastos</li>
+                  <li className='mb-0'>Sistemas de recomendación</li>
+                  </ul>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+      </section>
+>>>>>>> d960377f5a5dbfe39444a4a27c486139affc4a1a
         {/* Ícono de flecha que despliega hacia abajo para cambiar a la siguientes secciones */}
         <Link
           className=" d-flex justify-content-end text-black"
@@ -332,6 +377,7 @@ const Productos = () => {
             style={{ fontSize: "45px" }}
           ></i>
         </Link>
+<<<<<<< HEAD
         <section id="salud" className="container-product">
           <Row className="align-items-center container-product">
             <Col sm={12} md={6}>
@@ -378,6 +424,35 @@ const Productos = () => {
             </Col>
           </Row>
         </section>
+=======
+      <section id='salud' className='container-product'>
+        <Row className='align-items-center container-product' >
+          <Col sm={12} md={6}>
+            <Card style={{ border: 'none' }}>
+              <Card.Body ref={effectRef5} className={`${effectScroll5 ? 'animate__animated animate__fadeInLeft': 'reverseObserver'}`}>
+                <Card.Title style={{ fontSize: '28px', border: 'none' }}>
+                <Image height={70} className='m-3 hvr-float' src={businessInt} alt='businessInt'/>
+                Salud
+                </Card.Title>
+                <Card.Text style={{ fontSize: '21px', textAlign: 'justify' }}>
+                  <ul>
+                  <li className='mb-0'>Sistemas de diagnóstico y cirugía asistidos por computadora (CAD/CAS).</li>
+                  <li className='mb-0'>Observatorios de salud.</li>
+                  <li className='mb-0'>Pronóstico de la efectividad del tratamiento clínico.</li> 
+                  <li className='mb-0'>Obtención de biomarcadores de diagnóstico.</li> 
+                  </ul>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col sm={12} md={6}>
+            <Card style={{ border: 'none' }}>
+            <CarruselImgs imgs={imgs2} /> 
+            </Card>
+          </Col>
+        </Row>
+      </section>
+>>>>>>> d960377f5a5dbfe39444a4a27c486139affc4a1a
 
         {/* Este div contiene la flecha que aparece a mitad de las secciones y te regresa a la primera seccion de productos donde esta el titulo */}
         <div
