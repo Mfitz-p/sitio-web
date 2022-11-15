@@ -29,7 +29,7 @@ const Navbar = () => {
               <Nav.Link as={NavLink} to="/Nosotros" className='text-white hvr-underline-from-left-modificado'>Nosotros</Nav.Link>
               <Nav.Link as={NavLink} to="/Productos" className='text-white hvr-underline-from-left-modificado'> Productos </Nav.Link>
               <Nav.Link as={NavLink} to="/Contacto" className='text-white hvr-underline-from-left-modificado'>Contacto</Nav.Link>
-              <Nav.Link as={NavLink} to="/Carreras" className='text-white hvr-underline-from-left-modificado'>Carreras</Nav.Link>
+              {/* <Nav.Link as={NavLink} to="/Carreras" className='text-white hvr-underline-from-left-modificado'>Carreras</Nav.Link> */}
             </Nav>
           </NavbarRB.Collapse>
         </Container>

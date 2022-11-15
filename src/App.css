@@ -37,9 +37,6 @@
   background-color: #6BBBAE !important;
 }
 
-/* .parrafo{
-
-} */
 /* Página Nosotros */
 .vision {
   background-image: linear-gradient(to bottom, rgba(36, 38, 40, 0.8), rgba(36, 38, 40, 0.8)), url("/src/images/vision.jpg");
@@ -95,7 +92,7 @@
   flex-direction: column;
   background-size: cover;  
   background-position: center;
-  height: 350px;
+  height: 250px;
 }
 
 .nuestroEquipo > .textNuestroEquipo{
@@ -132,6 +129,8 @@
 /* Página Productos */
 .box {
   filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 /* Página 404 */
@@ -175,6 +174,12 @@
     width: 100% !important
   }
 }
+@media all and (max-width: 428px) {
+  .infra{
+    font-size: 37px !important
+  }
+
+}
 
 /* MediaQuerys de las pantallas del body en página Productos */
 @media screen and (max-height: 480px) {
@@ -191,7 +196,7 @@
 
 @media screen and (max-height: 1280px) {
   .container-product{
-    height: 100vh;
+    height: auto;
   }  
 }
 

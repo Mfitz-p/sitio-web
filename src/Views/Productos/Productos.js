@@ -31,6 +31,10 @@ import modelosML from "../../icons/modelosML.svg";
 import businessInt from "../../icons/businessInt.svg";
 import visionCompu from "../../icons/visionCompu.svg";
 import vBigData from "../../icons/vBigData.svg";
+import health from "../../icons/health.svg";
+import city from "../../icons/city.svg";
+import basket from "../../icons/basket.svg";
+import car from "../../icons/car.svg";
 
 import { useInView } from "react-intersection-observer";
 import "../../App.css";
@@ -237,8 +241,8 @@ const Productos = () => {
                     <Image
                       height={70}
                       className="m-3 hvr-float"
-                      src={computerSvg}
-                      alt="computerSvg"
+                      src={city}
+                      alt="city"
                     />
                     Infraestructura
                   </Card.Title>
@@ -277,14 +281,18 @@ const Productos = () => {
             className="align-items-center container-product"
             style={{ backgroundColor: "rgb(33,37,41)" }}
           >
-            <Col md={{ order: "last", span: 12 }}
+            <Col
+            xs={{ order: "last", span: 12 }}
+             md={{ order: "last", span: 12 }}
               lg={{ order: "first", span: 6 }}>
               <Card style={{ border: "none", backgroundColor: "transparent" }}>
                 {/* Comienza carrusel de imagenes */}
                 <CarruselImgs imgs={imgs3} />
               </Card>
             </Col>
-            <Col md={{ order: "first", span: 12 }}
+            <Col 
+            xs={{ order: "first", span: 12 }}
+            md={{ order: "first", span: 12 }}
               lg={{ order: "last", span: 6 }}>
               <Card style={{ border: "none", backgroundColor: "transparent" }}>
                 <Card.Body
@@ -301,8 +309,8 @@ const Productos = () => {
                     <Image
                       height={70}
                       className="m-3 hvr-float"
-                      src={modelosML}
-                      alt="modelosML"
+                      src={basket}
+                      alt="basket"
                     />
                     Retail & B2B
                   </Card.Title>
@@ -356,8 +364,8 @@ const Productos = () => {
                     <Image
                       height={70}
                       className="m-3 hvr-float"
-                      src={businessInt}
-                      alt="businessInt"
+                      src={health}
+                      alt="health"
                     />
                     Salud
                   </Card.Title>
@@ -414,13 +422,17 @@ const Productos = () => {
             className="align-items-center container-product"
             style={{ backgroundColor: "rgb(33,37,41)" }}
           >
-            <Col md={{ order: "last", span: 12 }}
+            <Col 
+            xs={{ order: "last", span: 12 }}
+            md={{ order: "last", span: 12 }}
               lg={{ order: "first", span: 6 }}>
               <Card style={{ border: "none", backgroundColor: "transparent" }}>
                 <CarruselImgs imgs={imgs4} />
               </Card>
             </Col>
-            <Col md={{ order: "first", span: 12 }}
+            <Col 
+            xs={{ order: "first", span: 12 }}
+            md={{ order: "first", span: 12 }}
               lg={{ order: "last", span: 6 }}>
               <Card style={{ border: "none", backgroundColor: "transparent" }}>
                 <Card.Body
@@ -437,8 +449,8 @@ const Productos = () => {
                     <Image
                       height={70}
                       className="m-3 hvr-float"
-                      src={visionCompu}
-                      alt="visionCompu"
+                      src={car}
+                      alt="car"
                     />
                     Movilidad y Transportes
                   </Card.Title>
@@ -471,7 +483,7 @@ const Productos = () => {
           </Row>
         </section>
 
-        {/* <section className="container-product" id="banca">
+        <section className="container-product" id="banca">
           <Row className="align-items-center container-product" >
             <Col
               md={12}
@@ -509,14 +521,14 @@ const Productos = () => {
                 </Card.Body>
               </Card>
             </Col>
-            <Col md={12} lg={6}>
+            {/*<Col md={12} lg={6}>
               <Card style={{ border: "none" }}>
                 {/* Comienza carrusel de imagenes *//*}
                 <CarruselImgs imgs={imgs} />
               </Card>
-            </Col>
+            </Col> */}
           </Row>
-        </section> */}
+        </section>
       </Container>
     </>
   );

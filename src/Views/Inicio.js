@@ -2,7 +2,7 @@ import { Col, Container, Row, Card, Image, Button, Nav } from 'react-bootstrap';
 import { Link } from 'react-scroll';
 import { NavLink } from 'react-router-dom';
 import { useInView } from 'react-intersection-observer';
-import { HashLink, NavHashLink } from 'react-router-hash-link';
+import { NavHashLink } from 'react-router-hash-link';
 import "../App.css";
 //Imágenes
 import page from '../images/frontpage.jpg';
@@ -78,9 +78,11 @@ const Inicio = () => {
               />
               <Card.ImgOverlay className="d-flex flex-column  m-4 animate__animated animate__fadeInUp">
                 <Col className="d-flex justify-content-center flex-column">
-                  <Card.Title style={{ fontSize: "2.3rem", lineHeight: ".7" }}>
-                    <p> Analítica predictiva y soluciones inteligentes</p>
-                    <p> para la transformación de tu negocio.</p>
+                  <Card.Title style={{ fontSize: "2.3rem", lineHeight: "1.2" }}>
+                    <Row>
+                      <Col sm={7} className='gx-0'>Analítica predictiva y soluciones inteligentes para la transformación de tu negocio.</Col>
+                      <Col ></Col>
+                    </Row>
                   </Card.Title>
                   {/* Botón contáctanos que redirige al inicio de la página */}
                   <Col xs={12} md={2}>
@@ -116,7 +118,7 @@ const Inicio = () => {
         <section id="cards-servicios">
           <Row>
             <Col className="d-flex flex-row">
-              <Card className="p-5 " style={{ border: "none" }}>
+              <Card className="p-3 " style={{ border: "none" }}>
                 <Card.Body className="animate__animated animate__pulse">
                   <Card.Title
                     className="subrayado d-flex justify-content-center px-5"
@@ -145,7 +147,7 @@ const Inicio = () => {
               Servicios
             </div>
           </Row>
-          {/*  Ícono de la flecha que redirige a la sección inicial de la vista */}
+           {/* Ícono de la flecha que redirige a la sección inicial de la vista
           <div
             ref={btn}
             className="btn-arriba d-flex justify-content-end sticky-sm-top"
@@ -159,9 +161,9 @@ const Inicio = () => {
                 } `}
               ></i>
             </Link>
-          </div>
+          </div> */}
           {/* Comienzan las cards de servicios */}
-          <Row className="mx-5">
+          <Row >
             <Col className="d-flex align-items-center g-0" lg={6} md={12}>
               <Card className="p-1 g-0" style={{ border: "none" }}>
                 <Card.Body
@@ -173,9 +175,9 @@ const Inicio = () => {
                   }`}
                 >
                   <Card.Title
-                    className="m-5 mb-0"
+                    className="mb-0 infra"
                     style={{
-                      fontSize: "50px",
+                      fontSize: "46px",
                       fontWeight: "bold",
                       textDecoration: "underline",
                       textDecorationColor: "#6BBBAE",
@@ -184,7 +186,7 @@ const Inicio = () => {
                     Infraestructura
                   </Card.Title>
                   <Card.Text
-                    className="m-5 mt-2 mb-2 pe-4"
+                    className=" mt-2 mb-2 pe-2"
                     style={{ fontSize: "18px", textAlign: "justify" }}
                   >
                     Estandarizamos tus procesos de supervisión y evaluación de
@@ -193,7 +195,7 @@ const Inicio = () => {
                   </Card.Text>
               
                   <NavHashLink
-                  className="m-5 mb-2 "
+                  className=" mb-2 "
                   to="/Productos#infraestructura"
                   >
                   Ver más...
@@ -217,7 +219,7 @@ const Inicio = () => {
             </Col>
           </Row>
 
-          <Row className="mx-5">
+          <Row >
             <Col
               id="imagenInicio"
               md={{ order: "last", span: 12 }}
@@ -251,7 +253,7 @@ const Inicio = () => {
                   }`}
                 >
                   <Card.Title
-                    className="m-5 mb-0 ps-4"
+                    className="mb-0 ps-2 mt-3 infra"
                     style={{
                       fontSize: "50px",
                       fontWeight: "bold",
@@ -262,7 +264,7 @@ const Inicio = () => {
                     Retail & B2B
                   </Card.Title>
                   <Card.Text
-                    className="m-5 mt-2 mb-2 ps-4"
+                    className=" mt-2 mb-2 ps-2"
                     style={{ fontSize: "18px", textAlign: "justify" }}
                   >
                     Optimizamos tus estrategias de venta mediante la
@@ -270,7 +272,7 @@ const Inicio = () => {
                     comportamiento del consumidor en tu negocio.
                   </Card.Text>
                   <NavHashLink
-                  className="m-5 mb-0 ps-4"
+                  className=" mb-0 ps-2"
                   to="/Productos#retail"
                   >
                   Ver más...
@@ -280,7 +282,7 @@ const Inicio = () => {
             </Col>
           </Row>
 
-          <Row className="mx-5 mb-5">
+          <Row >
             <Col className="d-flex align-items-center g-0" lg={6} md={12}>
               <Card className="p-1" style={{ border: "none" }}>
                 <Card.Body
@@ -292,7 +294,7 @@ const Inicio = () => {
                   }`}
                 >
                   <Card.Title
-                    className="m-5 mb-0"
+                    className=" mb-0 mt-3 infra"
                     style={{
                       fontSize: "50px",
                       fontWeight: "bold",
@@ -303,7 +305,7 @@ const Inicio = () => {
                     Salud
                   </Card.Title>
                   <Card.Text
-                    className="m-5 mt-2 mb-2 pe-4"
+                    className=" mt-2 mb-2 pe-4"
                     style={{ fontSize: "18px", textAlign: "justify" }}
                   >
                     Desarrollamos soluciones basadas en aprendizaje por
@@ -312,7 +314,7 @@ const Inicio = () => {
                   </Card.Text>
                
                   <NavHashLink
-                   className="m-5 mb-0"
+                   className=" mb-0"
                    to="/Productos#salud"
                   >
                   Ver más...
@@ -336,7 +338,7 @@ const Inicio = () => {
             </Col>
           </Row>
 
-          <Row className="mx-5 mb-5">
+          <Row >
             <Col
               id="imagenInicio"
               md={{ order: "last", span: 12 }}
@@ -370,7 +372,7 @@ const Inicio = () => {
                   }`}
                 >
                   <Card.Title
-                    className="m-5 mb-0 ps-4"
+                    className="mb-0 ps-2 mt-0 infra"
                     style={{
                       fontSize: "45px",
                       fontWeight: "bold",
@@ -381,7 +383,7 @@ const Inicio = () => {
                     Movilidad y Transportes
                   </Card.Title>
                   <Card.Text
-                    className="m-5 mt-2 mb-2 ps-4"
+                    className=" mt-2 mb-2 ps-2"
                     style={{ fontSize: "18px", textAlign: "justify" }}
                   >
                     Optimizamos tus estrategias de venta mediante la
@@ -390,7 +392,7 @@ const Inicio = () => {
                   </Card.Text>
 
                   <NavHashLink
-                  className="m-5 mb-0 ps-4"
+                  className=" mb-0 ps-2"
                   to="/Productos#movilidad"
                   >
                   Ver más...
@@ -400,7 +402,7 @@ const Inicio = () => {
             </Col>
           </Row>
 
-          {/* <Row className="mx-5 mb-5">
+          <Row className="mb-5">
             <Col className="d-flex align-items-center g-0" lg={6} md={12}>
               <Card className="p-1" style={{ border: "none" }}>
                 <Card.Body
@@ -412,9 +414,9 @@ const Inicio = () => {
                   }`}
                 >
                   <Card.Title
-                    className="m-5 mb-0 "
+                    className="mb-0 ps-2 mt-0 infra"
                     style={{
-                      fontSize: "50px",
+                      fontSize: "45px",
                       fontWeight: "bold",
                       textDecoration: "underline",
                       textDecorationColor: "#6BBBAE",
@@ -423,7 +425,7 @@ const Inicio = () => {
                     Banca
                   </Card.Title>
                   <Card.Text
-                    className="m-5 mt-2 mb-2 pe-4"
+                    className=" mt-2 mb-2 ps-2"
                     style={{ fontSize: "18px", textAlign: "justify" }}
                   >
                     Asistimos en la toma de decisiones para la creación de una
@@ -432,7 +434,7 @@ const Inicio = () => {
                     inversiones.
                   </Card.Text>
                   <NavHashLink
-                  className="m-5 mb-0"
+                  className=" mb-0 ps-2"
                   to="/Productos#banca"
                   >
                   Ver más...
@@ -455,7 +457,7 @@ const Inicio = () => {
                 style={{ objectFit: "cover", height: "39.3rem" }}
               />
             </Col>
-          </Row> */}
+          </Row>
         </section>
       </Container>
     </>
