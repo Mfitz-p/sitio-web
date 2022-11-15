@@ -443,7 +443,7 @@ const Inicio = () => {
                 </Card.Body>
               </Card>
             </Col>
-            <Col id="imagenInicio" lg={6} md={12}>
+            {/* <Col id="imagenInicio" lg={6} md={12}>
               <Image
                 fluid
                 src={banca}
@@ -456,7 +456,7 @@ const Inicio = () => {
                 alt="img-page"
                 style={{ objectFit: "cover", height: "39.3rem" }}
               />
-            </Col>
+            </Col> */}
           </Row>
         </section>
       </Container>
