@@ -10,7 +10,7 @@ import infraestructura from '../images/infraestructura.jpg';
 import medicaIA from '../images/medicaIA.jpg';
 import retail from '../images/retail.jpg';
 import movilidad from '../images/movilidad.jpg';
-import banca from '../images/banca.jpg';
+// import banca from '../images/banca.jpg';
 
 const Inicio = () => {
 
@@ -244,7 +244,7 @@ const Inicio = () => {
                   }`}
                 >
                   <Card.Title
-                    className="mb-0 ps-2 mt-3"
+                    className="mb-0 ps-2 mt-3 infra"
                     style={{
                       fontSize: "50px",
                       fontWeight: "bold",
@@ -273,7 +273,7 @@ const Inicio = () => {
             </Col>
           </Row>
 
-          <Row className="mb-5">
+          <Row >
             <Col className="d-flex align-items-center g-0" lg={6} md={12}>
               <Card className="p-1" style={{ border: "none" }}>
                 <Card.Body
@@ -285,7 +285,7 @@ const Inicio = () => {
                   }`}
                 >
                   <Card.Title
-                    className=" mb-0 mt-3"
+                    className=" mb-0 mt-3 infra"
                     style={{
                       fontSize: "50px",
                       fontWeight: "bold",
@@ -329,7 +329,7 @@ const Inicio = () => {
             </Col>
           </Row>
 
-          <Row className="mb-5">
+          <Row >
             <Col
               id="imagenInicio"
               md={{ order: "last", span: 12 }}
@@ -363,7 +363,7 @@ const Inicio = () => {
                   }`}
                 >
                   <Card.Title
-                    className="mb-0 ps-2 mt-0"
+                    className="mb-0 ps-2 mt-0 infra"
                     style={{
                       fontSize: "45px",
                       fontWeight: "bold",
@@ -377,9 +377,7 @@ const Inicio = () => {
                     className=" mt-2 mb-2 ps-2"
                     style={{ fontSize: "18px", textAlign: "justify" }}
                   >
-                    Optimizamos tus estrategias de venta mediante la
-                    implementación de analítica descriptiva y predictiva del
-                    comportamiento del consumidor en tu negocio.
+                  Ofrecemos herramientas inteligentes para la planeación y ejecución sostenible de proyectos utilizando información multimodal y siempre actualizada.
                   </Card.Text>
 
                   <NavHashLink
@@ -393,7 +391,7 @@ const Inicio = () => {
             </Col>
           </Row>
 
-          {/* <Row className="mx-5 mb-5">
+          <Row className="mb-5">
             <Col className="d-flex align-items-center g-0" lg={6} md={12}>
               <Card className="p-1" style={{ border: "none" }}>
                 <Card.Body
@@ -405,9 +403,9 @@ const Inicio = () => {
                   }`}
                 >
                   <Card.Title
-                    className="m-5 mb-0 mt-3"
+                    className="mb-0 ps-2 mt-0 infra"
                     style={{
-                      fontSize: "50px",
+                      fontSize: "45px",
                       fontWeight: "bold",
                       textDecoration: "underline",
                       textDecorationColor: "#6BBBAE",
@@ -416,7 +414,7 @@ const Inicio = () => {
                     Banca
                   </Card.Title>
                   <Card.Text
-                    className="m-5 mt-2 mb-2 pe-4"
+                    className=" mt-2 mb-2 ps-2"
                     style={{ fontSize: "18px", textAlign: "justify" }}
                   >
                     Asistimos en la toma de decisiones para la creación de una
@@ -425,7 +423,7 @@ const Inicio = () => {
                     inversiones.
                   </Card.Text>
                   <NavHashLink
-                  className="m-5 mb-0"
+                  className=" mb-0 ps-2"
                   to="/Productos#banca"
                   >
                   Ver más...
@@ -434,7 +432,7 @@ const Inicio = () => {
                 </Card.Body>
               </Card>
             </Col>
-            <Col id="imagenInicio" lg={6} md={12}>
+            {/* <Col id="imagenInicio" lg={6} md={12}>
               <Image
                 fluid
                 src={banca}
@@ -447,19 +445,19 @@ const Inicio = () => {
                 alt="img-page"
                 style={{ objectFit: "cover", height: "39.3rem" }}
               />
-            </Col>
-          </Row> */}
+            </Col> */}
+          </Row>
         </section>
            {/* Boton de regreso */}
            <div
               ref={btn}
-              className="btn-arriba d-flex justify-content-end sticky-sm-top"
+              className="btn-arriba d-flex justify-content-end sticky-sm-top "
             >
               <Link to="portada-principal" smooth={true} duration={0}>
                 <i
                   className={`${
                     up
-                      ? "bi bi-arrow-up-circle animate__animated animate__fadeInUp"
+                      ? "bi bi-arrow-up-circle animate__animated animate__fadeInUp hvr-icon-up "
                       : null
                   } `}
                 ></i>
