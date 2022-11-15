@@ -426,9 +426,9 @@ const Productos = () => {
             xs={{ order: "last", span: 12 }}
             md={{ order: "last", span: 12 }}
               lg={{ order: "first", span: 6 }}>
-              <Card style={{ border: "none", backgroundColor: "transparent" }}>
+              {/* <Card style={{ border: "none", backgroundColor: "transparent" }}>
                 <CarruselImgs imgs={imgs4} />
-              </Card>
+              </Card> */}
             </Col>
             <Col 
             xs={{ order: "first", span: 12 }}
