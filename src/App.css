@@ -174,9 +174,9 @@
     width: 100% !important
   }
 }
-@media all and (max-width: 385px) {
+@media all and (max-width: 428px) {
   .infra{
-    font-size: 38px !important
+    font-size: 37px !important
   }
 
 }
