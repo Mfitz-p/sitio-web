@@ -336,7 +336,7 @@ const Inicio = () => {
             </Col>
           </Row>
 
-          <Row className="mx-5">
+          <Row className="mx-5 mb-5">
             <Col
               id="imagenInicio"
               md={{ order: "last", span: 12 }}
@@ -400,7 +400,7 @@ const Inicio = () => {
             </Col>
           </Row>
 
-          <Row className="mx-5 mb-5">
+          {/* <Row className="mx-5 mb-5">
             <Col className="d-flex align-items-center g-0" lg={6} md={12}>
               <Card className="p-1" style={{ border: "none" }}>
                 <Card.Body
@@ -455,7 +455,7 @@ const Inicio = () => {
                 style={{ objectFit: "cover", height: "39.3rem" }}
               />
             </Col>
-          </Row>
+          </Row> */}
         </section>
       </Container>
     </>

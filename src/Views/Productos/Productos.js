@@ -216,8 +216,8 @@ const Productos = () => {
         <section  className="container-product" id="infraestructura">
           <Row className="align-items-center container-product">
             <Col
-              sm={12}
-              md={6}
+              md={12}
+              lg={6}
               ref={effectRef}
               className={`${
                 effectScroll
@@ -257,7 +257,7 @@ const Productos = () => {
                 </Card.Body>
               </Card>
             </Col>
-            <Col sm={12} md={6}>
+            <Col md={12} lg={6}>
               <Card style={{ border: "none" }}>
                 {/* Comienza carrucel de imagenes */}
                 <CarruselImgs imgs={imgs} />
@@ -271,13 +271,15 @@ const Productos = () => {
             className="align-items-center container-product"
             style={{ backgroundColor: "rgb(33,37,41)" }}
           >
-            <Col sm={12} md={6}>
+            <Col md={{ order: "last", span: 12 }}
+              lg={{ order: "first", span: 6 }}>
               <Card style={{ border: "none", backgroundColor: "transparent" }}>
                 {/* Comienza carrusel de imagenes */}
                 <CarruselImgs imgs={imgs2} />
               </Card>
             </Col>
-            <Col sm={12} md={6}>
+            <Col md={{ order: "first", span: 12 }}
+              lg={{ order: "last", span: 6 }}>
               <Card style={{ border: "none", backgroundColor: "transparent" }}>
                 <Card.Body
                   ref={effectRef4}
@@ -334,7 +336,7 @@ const Productos = () => {
         </Link>
         <section id="salud" className="container-product">
           <Row className="align-items-center container-product">
-            <Col sm={12} md={6}>
+            <Col md={12} lg={6}>
               <Card style={{ border: "none" }} >
                 <Card.Body
                   ref={effectRef5}
@@ -371,7 +373,7 @@ const Productos = () => {
                 </Card.Body>
               </Card>
             </Col>
-            <Col sm={12} md={6}>
+            <Col md={12} lg={6}>
               <Card style={{ border: "none" }}>
                 <CarruselImgs imgs={imgs3} />
               </Card>
@@ -406,12 +408,14 @@ const Productos = () => {
             className="align-items-center container-product"
             style={{ backgroundColor: "rgb(33,37,41)" }}
           >
-            <Col sm={12} md={6}>
+            <Col md={{ order: "last", span: 12 }}
+              lg={{ order: "first", span: 6 }}>
               <Card style={{ border: "none", backgroundColor: "transparent" }}>
                 <CarruselImgs imgs={imgs4} />
               </Card>
             </Col>
-            <Col sm={12} md={6}>
+            <Col md={{ order: "first", span: 12 }}
+              lg={{ order: "last", span: 6 }}>
               <Card style={{ border: "none", backgroundColor: "transparent" }}>
                 <Card.Body
                   ref={effectRef8}
@@ -461,11 +465,11 @@ const Productos = () => {
           </Row>
         </section>
 
-        <section className="container-product" id="banca">
+        {/* <section className="container-product" id="banca">
           <Row className="align-items-center container-product" >
             <Col
-              sm={12}
-              md={6}
+              md={12}
+              lg={6}
               ref={effectRef6}
               className={`${
                 effectScroll6
@@ -499,14 +503,14 @@ const Productos = () => {
                 </Card.Body>
               </Card>
             </Col>
-            <Col sm={12} md={6}>
+            <Col md={12} lg={6}>
               <Card style={{ border: "none" }}>
-                {/* Comienza carrusel de imagenes */}
+                {/* Comienza carrusel de imagenes *//*}
                 <CarruselImgs imgs={imgs} />
               </Card>
             </Col>
           </Row>
-        </section>
+        </section> */}
       </Container>
     </>
   );
