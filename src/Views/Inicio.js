@@ -10,7 +10,7 @@ import infraestructura from '../images/infraestructura.jpg';
 import medicaIA from '../images/medicaIA.jpg';
 import retail from '../images/retail.jpg';
 import movilidad from '../images/movilidad.jpg';
-// import banca from '../images/banca.jpg';
+import banca from '../images/banca.jpg';
 
 const Inicio = () => {
 
@@ -432,7 +432,7 @@ const Inicio = () => {
                 </Card.Body>
               </Card>
             </Col>
-            {/* <Col id="imagenInicio" lg={6} md={12}>
+            <Col id="imagenInicio" lg={6} md={12}>
               <Image
                 fluid
                 src={banca}
@@ -445,7 +445,7 @@ const Inicio = () => {
                 alt="img-page"
                 style={{ objectFit: "cover", height: "39.3rem" }}
               />
-            </Col> */}
+            </Col>
           </Row>
         </section>
            {/* Boton de regreso */}

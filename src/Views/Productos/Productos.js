@@ -12,7 +12,7 @@ import imgSIGA4 from "../../images/imgSIGA4.png";
 import machineLearning1 from "../../images/imgSalud1.png";
 import machineLearning2 from "../../images/imgSalud2.png";
 import machineLearning3 from "../../images/machineLearning3.png";
-import machineLearning4 from "../../images/MachineLearning4.jpg";
+import machineLearning4 from "../../images/machineLearning4.jpg";
 import machineLearning5 from "../../images/imgSalud3.jpg";
 
 import businessInt1 from "../../images/imgRetail2.png";
