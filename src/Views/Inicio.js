@@ -175,7 +175,7 @@ const Inicio = () => {
                   }`}
                 >
                   <Card.Title
-                    className=" mb-0"
+                    className="mb-0 infra"
                     style={{
                       fontSize: "46px",
                       fontWeight: "bold",

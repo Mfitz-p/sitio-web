@@ -172,6 +172,12 @@
     width: 100% !important
   }
 }
+@media all and (max-width: 385px) {
+  .infra{
+    font-size: 38px !important
+  }
+
+}
 
 /* MediaQuerys de las pantallas del body en página Productos */
 @media screen and (max-height: 480px) {
