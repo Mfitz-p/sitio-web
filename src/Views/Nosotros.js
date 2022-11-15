@@ -42,8 +42,8 @@ function Nosotros() {
         <Row>
           <Col className='g-0'>
             <div className='nuestroEquipo mt-5 p-4 text-white'>
-              <h1 className='tituloNuestroEquipo m-4'>Nuestro Equipo </h1>
-              <h4 className='textNuestroEquipo m-2'>En Kaminoittech contamos con un equipo interdisciplinario de expertos en ciencia de datos, analítica predictiva y de desarrollo de aplicaciones, que, junto con nuestro equipo técnico, socios comerciales y nuestras alianzas estratégicas nos permiten crear soluciones innovadoras y flexibles para cada proyecto.</h4>
+              <h1 className='tituloNuestroEquipo '>Nuestro Equipo </h1>
+              <h5 className='textNuestroEquipo p-2'>En Kaminoittech contamos con un equipo interdisciplinario de expertos en ciencia de datos, analítica predictiva y de desarrollo de aplicaciones, que, junto con nuestro equipo técnico, socios comerciales y nuestras alianzas estratégicas nos permiten crear soluciones innovadoras y flexibles para cada proyecto.</h5>
             </div>
           </Col>
         </Row>
