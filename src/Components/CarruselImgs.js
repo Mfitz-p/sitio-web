@@ -14,6 +14,7 @@ const CarruselImgs = ({imgs}) => {
                   className="d-block w-100"
                   src={img.src}
                   alt={img.alt}
+                  loading='lazy'
                />
               </Carousel.Item>
              )

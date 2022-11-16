@@ -20,18 +20,8 @@ import businessInt2 from "../../images/imgRetail3.png";
 import businessInt3 from "../../images/imgRetail4.png";
 import businessInt4 from "../../images/imgRetail5.png";
 
-import vCompu1 from "../../images/vCompu1.jpg";
-import vCompu2 from "../../images/vCompu2.jpg";
-import vCompu3 from "../../images/vCompu3.jpg";
-import vCompu4 from "../../images/vCompu4.jpg";
-import vCompu5 from "../../images/vCompu5.jpg";
-
 /* Iconos de productos en svg */
 import computerSvg from "../../icons/computer.svg";
-import modelosML from "../../icons/modelosML.svg";
-import businessInt from "../../icons/businessInt.svg";
-import visionCompu from "../../icons/visionCompu.svg";
-import vBigData from "../../icons/vBigData.svg";
 import health from "../../icons/health.svg";
 import city from "../../icons/city.svg";
 import basket from "../../icons/basket.svg";
@@ -65,8 +55,8 @@ const imgs = [
   {
     id: 5,
     src: imgSIGA4,
-    alt: 'imgSIGA4',
-  }
+    alt: "imgSIGA4",
+  },
 ];
 const imgs2 = [
   {
@@ -118,34 +108,6 @@ const imgs3 = [
   },
 ];
 
-const imgs4 = [
-  {
-    id: 9,
-    src: vCompu1,
-    alt: "vCompu1",
-  },
-  {
-    id: 10,
-    src: vCompu2,
-    alt: "vCompu2",
-  },
-  {
-    id: 11,
-    src: vCompu3,
-    alt: "vCompu3",
-  },
-  {
-    id: 12,
-    src: vCompu4,
-    alt: "vCompu4",
-  },
-  {
-    id: 12,
-    src: vCompu5,
-    alt: "vCompu5",
-  },
-];
-
 const Productos = () => {
   /**
    * Uso de la librería react-intersection-observer con npm i react-intersection-observer.
@@ -182,16 +144,7 @@ const Productos = () => {
   const { ref: effectRef6, inView: effectScroll6 } = useInView({
     threshold: 0,
   });
-  const { ref: effectRef7, inView: effectScroll7 } = useInView({
-    threshold: 0,
-  });
   const { ref: effectRef8, inView: effectScroll8 } = useInView({
-    threshold: 0,
-  });
-  const { ref: effectRef9, inView: effectScroll9 } = useInView({
-    threshold: 0,
-  });
-  const { ref: effectRef10, inView: effectScroll10 } = useInView({
     threshold: 0,
   });
   const { ref: btn, inView: up } = useInView({
@@ -202,7 +155,7 @@ const Productos = () => {
 
   return (
     <>
-      <Container fluid className='hideX'>
+      <Container fluid className="hideX">
         <Row className="p-5">
           <Col>
             <h2
@@ -228,8 +181,8 @@ const Productos = () => {
           </Link>
         </Row>
         {/* Inician las cards de productos con su respectiva imagen */}
-       
-        <section  className="container-product" id="infraestructura">
+
+        <section className="container-product" id="infraestructura">
           <Row className="align-items-center container-product">
             <Col
               md={12}
@@ -288,18 +241,20 @@ const Productos = () => {
             style={{ backgroundColor: "rgb(33,37,41)" }}
           >
             <Col
-            xs={{ order: "last", span: 12 }}
-             md={{ order: "last", span: 12 }}
-              lg={{ order: "first", span: 6 }}>
+              xs={{ order: "last", span: 12 }}
+              md={{ order: "last", span: 12 }}
+              lg={{ order: "first", span: 6 }}
+            >
               <Card style={{ border: "none", backgroundColor: "transparent" }}>
                 {/* Comienza carrusel de imagenes */}
                 <CarruselImgs imgs={imgs3} />
               </Card>
             </Col>
-            <Col 
-            xs={{ order: "first", span: 12 }}
-            md={{ order: "first", span: 12 }}
-              lg={{ order: "last", span: 6 }}>
+            <Col
+              xs={{ order: "first", span: 12 }}
+              md={{ order: "first", span: 12 }}
+              lg={{ order: "last", span: 6 }}
+            >
               <Card style={{ border: "none", backgroundColor: "transparent" }}>
                 <Card.Body
                   ref={effectRef4}
@@ -357,7 +312,7 @@ const Productos = () => {
         <section id="salud" className="container-product">
           <Row className="align-items-center container-product">
             <Col md={12} lg={6}>
-              <Card style={{ border: "none" }} >
+              <Card style={{ border: "none" }}>
                 <Card.Body
                   ref={effectRef5}
                   className={`${
@@ -375,7 +330,7 @@ const Productos = () => {
                     />
                     Salud
                   </Card.Title>
-                  <Card.Text style={{ fontSize: "21px", textAlign: "justify" }} >
+                  <Card.Text style={{ fontSize: "21px", textAlign: "justify" }}>
                     <ul>
                       <li className="mb-0">
                         Sistemas de diagnóstico y cirugía asistidos por
@@ -395,7 +350,7 @@ const Productos = () => {
             </Col>
             <Col md={12} lg={6}>
               <Card style={{ border: "none" }}>
-              <CarruselImgs imgs={imgs2} />
+                <CarruselImgs imgs={imgs2} />
               </Card>
             </Col>
           </Row>
@@ -423,23 +378,25 @@ const Productos = () => {
           </Link>
         </div>
 
-        <section className="container-product" id="movilidad" >
-          <Row 
+        <section className="container-product" id="movilidad">
+          <Row
             className="align-items-center container-product"
             style={{ backgroundColor: "rgb(33,37,41)" }}
           >
-            <Col 
-            xs={{ order: "last", span: 12 }}
-            md={{ order: "last", span: 12 }}
-              lg={{ order: "first", span: 6 }}>
+            <Col
+              xs={{ order: "last", span: 12 }}
+              md={{ order: "last", span: 12 }}
+              lg={{ order: "first", span: 6 }}
+            >
               {/* <Card style={{ border: "none", backgroundColor: "transparent" }}>
                 <CarruselImgs imgs={imgs4} />
               </Card> */}
             </Col>
-            <Col 
-            xs={{ order: "first", span: 12 }}
-            md={{ order: "first", span: 12 }}
-              lg={{ order: "last", span: 6 }}>
+            <Col
+              xs={{ order: "first", span: 12 }}
+              md={{ order: "first", span: 12 }}
+              lg={{ order: "last", span: 6 }}
+            >
               <Card style={{ border: "none", backgroundColor: "transparent" }}>
                 <Card.Body
                   ref={effectRef8}
@@ -490,7 +447,7 @@ const Productos = () => {
         </section>
 
         <section className="container-product" id="banca">
-          <Row className="align-items-center container-product" >
+          <Row className="align-items-center container-product">
             <Col
               md={12}
               lg={6}
@@ -529,7 +486,8 @@ const Productos = () => {
             </Col>
             {/*<Col md={12} lg={6}>
               <Card style={{ border: "none" }}>
-                {/* Comienza carrusel de imagenes *//*}
+                {/* Comienza carrusel de imagenes */
+            /*}
                 <CarruselImgs imgs={imgs} />
               </Card>
             </Col> */}

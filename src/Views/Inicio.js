@@ -71,6 +71,7 @@ const Inicio = () => {
           <Row>
             <Card className="bg-dark text-white" style={{ borderRadius: "0" }}>
               <Image
+              loading="lazy"
                 fluid
                 src={page}
                 alt="img-page"
@@ -196,6 +197,7 @@ const Inicio = () => {
             </Col>
             <Col id="imagenInicio" lg={6} md={12}>
               <Image
+              loading="lazy"
                 fluid
                 src={infraestructura}
                 ref={imgcard1}
@@ -217,6 +219,7 @@ const Inicio = () => {
               lg={{ order: "first", span: 6 }}
             >
               <Image
+              loading="lazy"
                 fluid
                 src={retail}
                 alt="img-page"
@@ -315,6 +318,7 @@ const Inicio = () => {
             </Col>
             <Col id="imagenInicio" lg={6} md={12}>
               <Image
+              loading="lazy"
                 fluid
                 src={medicaIA}
                 ref={imgcard3}
@@ -336,6 +340,7 @@ const Inicio = () => {
               lg={{ order: "first", span: 6 }}
             >
               <Image
+              loading="lazy"
                 fluid
                 src={movilidad}
                 alt="img-page"
@@ -434,6 +439,7 @@ const Inicio = () => {
             </Col>
             <Col id="imagenInicio" lg={6} md={12}>
               <Image
+              loading="lazy"
                 fluid
                 src={banca}
                 ref={imgcard5}

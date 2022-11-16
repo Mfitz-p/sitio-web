@@ -17,7 +17,7 @@ function Nosotros() {
     <>
       <Container fluid className='bg-dark p-4 animate__animated animate__fadeInDown' >
         <div className='d-flex justify-content-center mb-4'>
-          <Image fluid src={nombre} alt='logo' style={{ width: "400px" }} />
+         <Image loading="lazy"fluid src={nombre} alt='logo' style={{ width: "400px" }} />
         </div>
         <p className='d-flex justify-content-center text-white' style={{ fontSize: "20px" }}>En la última década diferentes sectores empresariales han comenzado su transformación digital incorporando múltiples soluciones tecnológicas con los objetivos de: maximizar el valor agregado de su información y eficientar el uso de recursos. Debido a esto, Kaminoittech se posiciona en el mercado como una empresa dedicada a proveer servicios de consultoría en analítica avanza e inteligencia artificial para maximizar el valor agregado de los datos, dotando de soluciones innovadoras y flexibles para cada proyecto.</p>
       </Container>
@@ -98,27 +98,27 @@ function Nosotros() {
         <h2 className='p-4 d-flex justify-content-center' style={{fontSize: '45px'}}>Nuestras Alianzas</h2>
           <Col sm className="p-4 d-flex justify-content-center">
           <div className="d-flex justify-content-center">
-            <Image height={100} className='m-3 hvr-grow ' src={logoUNAM} alt='logoUNAM' />
+           <Image loading="lazy"height={100} className='m-3 hvr-grow ' src={logoUNAM} alt='logoUNAM' />
           </div>
           </Col>
           <Col sm className="p-4 d-flex justify-content-center">
           <div className="d-flex justify-content-center ">
-            <Image height={100} className='m-3 hvr-grow' src={logoHuawei} alt='logoHuawei' />
+           <Image loading="lazy"height={100} className='m-3 hvr-grow' src={logoHuawei} alt='logoHuawei' />
           </div>
           </Col>
           <Col sm className="p-4 d-flex justify-content-center">
           <div className="d-flex justify-content-center ">
-          <Image height={90} className='m-3 hvr-grow' src={logoSCT} alt='logoSCT' />
+         <Image loading="lazy"height={90} className='m-3 hvr-grow' src={logoSCT} alt='logoSCT' />
           </div>
           </Col>
           <Col sm className="p-4 d-flex justify-content-center">
           <div className="d-flex justify-content-center ">
-          <Image height={100} className='m-3 hvr-grow' src={logoChihuahua} alt='logoChihuahua' />
+         <Image loading="lazy"height={100} className='m-3 hvr-grow' src={logoChihuahua} alt='logoChihuahua' />
           </div>
           </Col>
           <Col sm className="p-4 d-flex justify-content-center">
           <div className="d-flex justify-content-center ">
-          <Image height={100} className='m-3 hvr-grow' src={logoNuevoLeon} alt='logoNuevoLeon' />
+         <Image loading="lazy"height={100} className='m-3 hvr-grow' src={logoNuevoLeon} alt='logoNuevoLeon'/>
           </div>
           </Col>
         </Row>
