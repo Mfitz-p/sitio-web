@@ -53,11 +53,11 @@ const Inicio = () => {
     threshold: 0,
 
   });
-  const { ref: imgcard5, inView: effectImgScroll5 } = useInView({
+ /*  const { ref: imgcard5, inView: effectImgScroll5 } = useInView({
     threshold: 0,
 
   });
-
+ */
   const { ref: btn, inView: up } = useInView({
     threshold: 1,
     triggerOnce: true,

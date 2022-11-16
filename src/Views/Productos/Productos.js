@@ -12,29 +12,30 @@ import imgSIGA4 from "../../images/imgSIGA4.png";
 // import machineLearning1 from "../../images/machineLearning11.PNG";
 // import machineLearning2 from "../../images/machineLearning21.png";
 import machineLearning3 from "../../images/machineLearning3.png";
-import machineLearning4 from "../../images/MachineLearning4.jpg";
+import machineLearning4 from "../../images/machineLearning4.jpg";
 
 import businessInt1 from "../../images/imgRetail2.png";
 import businessInt2 from "../../images/imgRetail3.png";
 import businessInt3 from "../../images/imgRetail4.png";
 import businessInt4 from "../../images/imgRetail5.png";
 
-import vCompu1 from "../../images/vCompu1.jpg";
+/* import vCompu1 from "../../images/vCompu1.jpg";
 import vCompu2 from "../../images/vCompu2.jpg";
 import vCompu3 from "../../images/vCompu3.jpg";
 import vCompu4 from "../../images/vCompu4.jpg";
-import vCompu5 from "../../images/vCompu5.jpg";
+import vCompu5 from "../../images/vCompu5.jpg"; */
 
 /* Iconos de productos en svg */
-import computerSvg from "../../icons/computer.svg";
+/* import computerSvg from "../../icons/computer.svg";
 import modelosML from "../../icons/modelosML.svg";
 import businessInt from "../../icons/businessInt.svg";
 import visionCompu from "../../icons/visionCompu.svg";
-import vBigData from "../../icons/vBigData.svg";
+import vBigData from "../../icons/vBigData.svg"; */
 import health from "../../icons/health.svg";
 import city from "../../icons/city.svg";
 import basket from "../../icons/basket.svg";
 import car from "../../icons/car.svg";
+import money from "../../icons/money.svg";
 
 import { useInView } from "react-intersection-observer";
 import "../../App.css";
@@ -112,7 +113,7 @@ const imgs3 = [
   },
 ];
 
-const imgs4 = [
+/* const imgs4 = [
   {
     id: 9,
     src: vCompu1,
@@ -138,7 +139,7 @@ const imgs4 = [
     src: vCompu5,
     alt: "vCompu5",
   },
-];
+]; */
 
 const Productos = () => {
   /**
@@ -176,18 +177,18 @@ const Productos = () => {
   const { ref: effectRef6, inView: effectScroll6 } = useInView({
     threshold: 0,
   });
-  const { ref: effectRef7, inView: effectScroll7 } = useInView({
+  /* const { ref: effectRef7, inView: effectScroll7 } = useInView({
     threshold: 0,
-  });
+  }); */
   const { ref: effectRef8, inView: effectScroll8 } = useInView({
     threshold: 0,
   });
-  const { ref: effectRef9, inView: effectScroll9 } = useInView({
+/*   const { ref: effectRef9, inView: effectScroll9 } = useInView({
     threshold: 0,
-  });
-  const { ref: effectRef10, inView: effectScroll10 } = useInView({
+  }); */
+/*   const { ref: effectRef10, inView: effectScroll10 } = useInView({
     threshold: 0,
-  });
+  }); */
   const { ref: btn, inView: up } = useInView({
     threshold: 1,
     triggerOnce: true,
@@ -501,8 +502,8 @@ const Productos = () => {
                     <Image
                       height={70}
                       className="m-3 hvr-float"
-                      src={computerSvg}
-                      alt="computerSvg"
+                      src={money}
+                      alt="money"
                     />
                     Banca
                   </Card.Title>
