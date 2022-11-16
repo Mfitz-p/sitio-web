@@ -134,7 +134,7 @@ const Inicio = () => {
                     identificación de problemas, obtención de información,
                     detección de tendencias y toma de decisiones, utilizando
                     herramientas avanzadas de analítica predictiva, inteligencia
-                    artificial y visión por computadora.
+                    artificial (IA) y visión por computadora.
                   </Card.Text>
                 </Card.Body>
               </Card>
