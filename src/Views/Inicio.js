@@ -5,12 +5,12 @@ import { useInView } from 'react-intersection-observer';
 import { NavHashLink } from 'react-router-hash-link';
 import "../App.css";
 //Imágenes
-import page from '../images/Inicio/frontpage.jpg';
-import infraestructura from '../images/Inicio/infraestructura.jpg';
-import medicaIA from '../images/Inicio/medicaIA.jpg';
-import retail from '../images/Inicio/retail.jpg';
-import movilidad from '../images/Inicio/movilidad.jpg';
-import banca from '../images/Inicio/banca.jpg';
+import page from '../images/Inicio/frontpage.webp';
+import infraestructura from '../images/Inicio/infraestructura.webp';
+import medicaIA from '../images/Inicio/medicaIA.webp';
+import retail from '../images/Inicio/retail.webp';
+import movilidad from '../images/Inicio/movilidad.webp';
+import banca from '../images/Inicio/banca.webp';
 
 const Inicio = () => {
 
@@ -71,7 +71,6 @@ const Inicio = () => {
           <Row>
             <Card className="bg-dark text-white" style={{ borderRadius: "0" }}>
               <Image
-              loading="lazy"
                 fluid
                 src={page}
                 alt="img-page"
