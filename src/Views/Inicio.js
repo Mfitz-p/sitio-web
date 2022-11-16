@@ -5,12 +5,12 @@ import { useInView } from 'react-intersection-observer';
 import { NavHashLink } from 'react-router-hash-link';
 import "../App.css";
 //Imágenes
-import page from '../images/frontpage.jpg';
-import infraestructura from '../images/infraestructura.jpg';
-import medicaIA from '../images/medicaIA.jpg';
-import retail from '../images/retail.jpg';
-import movilidad from '../images/movilidad.jpg';
-import banca from '../images/banca.jpg';
+import page from '../images/Inicio/frontpage.jpg';
+import infraestructura from '../images/Inicio/infraestructura.jpg';
+import medicaIA from '../images/Inicio/medicaIA.jpg';
+import retail from '../images/Inicio/retail.jpg';
+import movilidad from '../images/Inicio/movilidad.jpg';
+import banca from '../images/Inicio/banca.jpg';
 
 const Inicio = () => {
 
@@ -57,7 +57,7 @@ const Inicio = () => {
     threshold: 0,
 
   });
-
+ 
   const { ref: btn, inView: up } = useInView({
     threshold: 1,
     triggerOnce: true,
@@ -135,7 +135,7 @@ const Inicio = () => {
                     identificación de problemas, obtención de información,
                     detección de tendencias y toma de decisiones, utilizando
                     herramientas avanzadas de analítica predictiva, inteligencia
-                    artificial y visión por computadora.
+                    artificial (IA) y visión por computadora.
                   </Card.Text>
                 </Card.Body>
               </Card>

@@ -40,7 +40,7 @@
 
 /* Página Nosotros */
 .vision {
-  background-image: linear-gradient(to bottom, rgba(36, 38, 40, 0.8), rgba(36, 38, 40, 0.8)), url("/src/images/vision.jpg");
+  background-image: linear-gradient(to bottom, rgba(36, 38, 40, 0.8), rgba(36, 38, 40, 0.8)), url("/src/images/Nosotros/vision.jpg");
   display: flex;
   flex-direction: column;
   background-size: cover;  
@@ -64,7 +64,7 @@
 }
 
 .mision{
-  background-image: linear-gradient(to bottom, rgba(36, 38, 40, 0.8), rgba(36, 38, 40, 0.8)), url("/src/images/mision.jpg");
+  background-image: linear-gradient(to bottom, rgba(36, 38, 40, 0.8), rgba(36, 38, 40, 0.8)), url("/src/images/Nosotros/mision.jpg");
   display: flex;
   flex-direction: column;
   background-size: cover;  
@@ -87,7 +87,7 @@
 }
 
 .nuestroEquipo {
-  background-image: linear-gradient(to bottom, rgba(36, 38, 40, 0.5), rgba(33,37,41, 1)), url("/src/images/nuestroEquipo.jpg");
+  background-image: linear-gradient(to bottom, rgba(36, 38, 40, 0.5), rgba(33,37,41, 1)), url("/src/images/Nosotros/nuestroEquipo.jpg");
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -115,7 +115,7 @@
 
 /* Página Contacto */
 .graficos {
-  background-image: url("/src/images/contacto.gif");
+  background-image: url("/src/images/Contacto/contacto.gif");
   background-repeat: no-repeat;
   background-size: clamp(350px, 40%, 900px);
   background-position: 56vw;
@@ -136,7 +136,7 @@
 
 /* Página 404 */
 .fondo {
-  background-image: url("/src/images/lupa404.png");
+  background-image: url("/src/images/404/lupa404.png");
   background-repeat: no-repeat;
   background-size: clamp(270px, 27vw, 800px);
   background-position: 60vw 2vw;
@@ -249,7 +249,7 @@
 
   .change-Size:hover {
     transition: .8s;
-    transform: scale(1.35);
+    transform: scale(1.20);
   }
   #change-Size:hover {
     transition: .8s;

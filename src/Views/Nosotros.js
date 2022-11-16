@@ -8,8 +8,8 @@ import nombre from '../images/nombre2.png';
 import logoUNAM from '../logos/logoUNAM.png';
 import logoHuawei from '../logos/logoHuawei.png';
 import logoSCT from '../logos/logoSCT.png';
-import logoChihuahua from '../logos/logoChihuahua.png';
 import logoNuevoLeon from '../logos/logoNuevoLeon.png';
+import logoAguas from '../logos/logoAguas.png';
 
 
 function Nosotros() {
@@ -53,10 +53,9 @@ function Nosotros() {
           <Col className="p-4 d-flex justify-content-center " lg={6} md={12}>
             <Card style={{ width: '35rem', border: 'none' }}>
               <Card.Body className='animate__animated animate__fadeInLeft'>
-                <Card.Title className="d-flex justify-content-center " style={{ fontSize: '30px', color: 'rgba(107, 187, 174, 1)'}}>Cofundador & CEO</Card.Title>
+                <Card.Title className="d-flex justify-content-center " style={{ fontSize: '30px', color: 'rgba(107, 187, 174, 1)'}}>Cofundador & CEO (Chief Executive Officer)</Card.Title>
                 <Card.Text style={{textAlign: "justify"}}>
-                Ingeniero en Telecomunicaciones con especialidad en Procesamiento de Señales. Egresado de la Facultad de Ingeniería de la UNAM; cuenta con una Maestría en Ingeniería de Negocios por Duke University, en Estados Unidos.
-                Fungió como Director General Adjunto de infraestructura del Gabinete de Infraestructura y Turismo en la oficina de la Presidencia de la República y asesor de Planeación, Política de Precios y Análisis Financiero de la Dirección Corporativa de Fianzas en PEMEX. En la Secretaría de Comunicaciones y Transportes se desempeñó como Coordinador de Asesores del Subsecretario de Infraestructura y posteriormente fue designado por el Secretario de Comunicaciones como Coordinador General de Centros SCT. Se ha desempeñado como consultor en la empresa McKinsey and Company y actualmente es Director General y fundador de Moen Consultores.
+                Ingeniero en Telecomunicaciones con especialidad en Procesamiento de Señales. Egresado de la Facultad de Ingeniería de la UNAM; cuenta con una Maestría en Ingeniería de Negocios por Duke University, en Estados Unidos. Fungió como Director General Adjunto de infraestructura del Gabinete de Infraestructura y Turismo en la oficina de la Presidencia de la República y asesor de Planeación, Política de Precios y Análisis Financiero de la Dirección Corporativa de Fianzas en PEMEX. En la Secretaría de Comunicaciones y Transportes se desempeñó como Coordinador de Asesores del Subsecretario de Infraestructura y posteriormente fue designado por el Secretario de Comunicaciones como Coordinador General de Centros de la Secretaria de Comunicaciones y Transportes. Se ha desempeñado como consultor en la empresa McKinsey and Company y actualmente es Director General y fundador de Moen Consultores.
 
                 </Card.Text>
               </Card.Body>
@@ -65,9 +64,9 @@ function Nosotros() {
           <Col  className="p-4 d-flex justify-content-center " lg={6} md={12}>
             <Card style={{ width: '35rem', border: 'none' }}>
               <Card.Body className='animate__animated animate__fadeInRight'>
-                <Card.Title className="d-flex justify-content-center " style={{ fontSize: '30px', color: 'rgba(107, 187, 174, 1)'}}>Cofundador & CTO</Card.Title>
+                <Card.Title className="d-flex justify-content-center " style={{ fontSize: '30px', color: 'rgba(107, 187, 174, 1)'}}>Cofundador & CTO (Chief Technology Officer)</Card.Title>
                 <Card.Text style={{textAlign: "justify"}}>
-                Co-fundadora y directora de Tecnología y Ciencia de Datos en Kaminoittech. En Tycho Solutions fue gerente de proyecto en el área de Ciencia de Datos. Trabajó como investigadora postdoctoral en el High Altitude Water Cherenkov Observatory (HAWC) implementando algoritmos de Aprendizaje por Computadora. Es miembro del SNI nivel 1, ha publicado alrededor de 15 artículos en revistas internacionales arbitradas, dirigido tesis y dictado cursos en la UNAM. Maestra en Ciencia de Datos (ITAM), Doctora y Maestra en Ciencias de la Tierra (Instituto de Geofísica, UNAM), Ingeniera Geofísica (UNAM).
+                Co-fundadora y directora de Tecnología y Ciencia de Datos en Kaminoittech. En Tycho Solutions fue gerente de proyecto en el área de Ciencia de Datos. Trabajó como investigadora postdoctoral en el High Altitude Water Cherenkov Observatory (HAWC) implementando algoritmos de Aprendizaje por Computadora. Es miembro del Sistema Nacional de Investigadores de México nivel 1, ha publicado alrededor de 15 artículos en revistas internacionales arbitradas, dirigido tesis y dictado cursos en la UNAM. Maestra en Ciencia de Datos (ITAM), Doctora y Maestra en Ciencias de la Tierra (Instituto de Geofísica, UNAM), Ingeniera Geofísica (UNAM).
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -77,7 +76,7 @@ function Nosotros() {
               <Card.Body className='animate__animated animate__fadeInLeft'>
                 <Card.Title className="d-flex justify-content-center " style={{ fontSize: '30px', color: 'rgba(107, 187, 174, 1)'}}>Científico de datos</Card.Title>
                 <Card.Text style={{textAlign: "justify"}}>
-                Dr. en Ingeniería líder del área de investigación y desarrollo de sistemas CAD/CAS. Su área es la responsable de la creación del sistema de diagnóstico de cáncer de mama mediante la implementación de inteligencia artificial y aprendizaje máquina. Ha sido Investigador Postdoctoral del LaPI-UNAM y profesor de asignatura de la UNAM en las licenciaturas de Matemáticas Aplicadas y Computación, Ciencia de Datos, Ingeniería Electrónica y la Maestría de Ciencias de la Computación. Desde 2016 ha participado en el desarrollo y coordinación de diferentes proyectos PAPIIT y para la industria privada.
+                Dr. en Ingeniería líder del área de investigación y desarrollo de sistemas de diagnóstico y cirugía asistidos por computadora CAD/CAS. Su área es la responsable de la creación del sistema de diagnóstico de cáncer de mama mediante la implementación de inteligencia artificial y aprendizaje máquina. Ha sido Investigador Postdoctoral del Laboratorio de Procesamiento digital de Imágenes de la UNAM y profesor de asignatura en las licenciaturas de Matemáticas Aplicadas y Computación, Ciencia de Datos, Ingeniería Electrónica y la Maestría de Ciencias de la Computación. Desde 2016 ha participado en el desarrollo y coordinación de diferentes proyectos Programas de Apoyo a Proyectos de Investigación e Innovación Tecnológica (PAPIIT) y para la industria privada.
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -87,7 +86,7 @@ function Nosotros() {
               <Card.Body className='animate__animated animate__fadeInRight'>
                 <Card.Title className="d-flex justify-content-center " style={{ fontSize: '30px', color: 'rgba(107, 187, 174, 1)'}}>Científico de datos</Card.Title>
                 <Card.Text style={{textAlign: "justify"}}>
-                Dr. En Ingeniería encargado del equipo de Visión Computacional y Aprendizaje de Máquina. Profesor de asignatura en la Universidad Panamericana. Trabajó como investigador postdoctoral en la UNAM en el proyecto “Sistema inteligente para el diagnóstico médico asistido para enfermedades cardiovasculares” en colaboración con el Hospital 20 de Noviembre y la SECTEI. Obtuvo el 2° lugar en el Premio AFIRME-UNAM 2019. Ha publicado artículos en revistas y en congresos revisados por pares. Doctorado y Maestría en Procesamiento Digital de Señales (UNAM), Ingeniero Eléctrico-Electrónico (UNAM).
+                Dr. En Ingeniería encargado del equipo de Visión Computacional y Aprendizaje de Máquina. Profesor de asignatura en la Universidad Panamericana. Trabajó como investigador postdoctoral en la UNAM en el proyecto “Sistema inteligente para el diagnóstico médico asistido para enfermedades cardiovasculares” en colaboración con el Hospital 20 de Noviembre y la Secretaria de Educación, Ciencia Tecnología e Innovación (SECTEI). Obtuvo el 2° lugar en el Premio AFIRME-UNAM 2019. Ha publicado artículos en revistas y en congresos revisados por pares. Doctorado y Maestría en Procesamiento Digital de Señales (UNAM), Ingeniero Eléctrico-Electrónico (UNAM).
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -113,7 +112,7 @@ function Nosotros() {
           </Col>
           <Col sm className="p-4 d-flex justify-content-center">
           <div className="d-flex justify-content-center ">
-         <Image loading="lazy"height={100} className='m-3 hvr-grow' src={logoChihuahua} alt='logoChihuahua' />
+          <Image loading="lazy" height={110} className='m-3 hvr-grow' src={logoAguas} alt='logoAguas' />
           </div>
           </Col>
           <Col sm className="p-4 d-flex justify-content-center">

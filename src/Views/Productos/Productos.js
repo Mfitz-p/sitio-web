@@ -9,23 +9,23 @@ import mapaSIGA from "../../images/imgSIGA2.png";
 import ingresoSIGA from "../../images/imgSIGA3.png";
 import imgSIGA4 from "../../images/imgSIGA4.png";
 
-import machineLearning1 from "../../images/imgSalud1.png";
-import machineLearning2 from "../../images/imgSalud2.png";
-import machineLearning3 from "../../images/machineLearning3.png";
-import machineLearning4 from "../../images/machineLearning4.jpg";
-import machineLearning5 from "../../images/imgSalud3.jpg";
+import machineLearning1 from "../../images/Productos/imgSalud1.png";
+import machineLearning2 from "../../images/Productos/imgSalud2.png";
+import machineLearning3 from "../../images/Productos/machineLearning3.png";
+import machineLearning4 from "../../images/Productos/machineLearning4.jpg";
+import machineLearning5 from "../../images/Productos/imgSalud3.jpg";
 
-import businessInt1 from "../../images/imgRetail2.png";
-import businessInt2 from "../../images/imgRetail3.png";
-import businessInt3 from "../../images/imgRetail4.png";
-import businessInt4 from "../../images/imgRetail5.png";
+import businessInt1 from "../../images/Productos/imgRetail2.png";
+import businessInt2 from "../../images/Productos/imgRetail3.png";
+import businessInt3 from "../../images/Productos/imgRetail4.png";
+import businessInt4 from "../../images/Productos/imgRetail5.png";
 
 /* Iconos de productos en svg */
-import computerSvg from "../../icons/computer.svg";
 import health from "../../icons/health.svg";
 import city from "../../icons/city.svg";
 import basket from "../../icons/basket.svg";
 import car from "../../icons/car.svg";
+import money from "../../icons/money.svg";
 
 import { useInView } from "react-intersection-observer";
 import "../../App.css";
@@ -464,8 +464,8 @@ const Productos = () => {
                     <Image
                       height={70}
                       className="m-3 hvr-float"
-                      src={computerSvg}
-                      alt="computerSvg"
+                      src={money}
+                      alt="money"
                     />
                     Banca
                   </Card.Title>
