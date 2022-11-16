@@ -10,6 +10,7 @@ import logoHuawei from '../logos/logoHuawei.png';
 import logoSCT from '../logos/logoSCT.png';
 import logoChihuahua from '../logos/logoChihuahua.png';
 import logoNuevoLeon from '../logos/logoNuevoLeon.png';
+import logoAguas from '../logos/logoAguas.png';
 
 
 function Nosotros() {
@@ -112,7 +113,7 @@ function Nosotros() {
           </Col>
           <Col sm className="p-4 d-flex justify-content-center">
           <div className="d-flex justify-content-center ">
-          <Image height={100} className='m-3 hvr-grow' src={logoChihuahua} alt='logoChihuahua' />
+          <Image height={110} className='m-3 hvr-grow' src={logoAguas} alt='logoAguas' />
           </div>
           </Col>
           <Col sm className="p-4 d-flex justify-content-center">
