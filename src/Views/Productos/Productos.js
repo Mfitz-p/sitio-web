@@ -3,22 +3,22 @@ import { Link } from "react-scroll";
 import CarruselImgs from "../../Components/CarruselImgs";
 
 // IMGS DE CARRUSEL SIGA
-import aforosSIGA from "../../images/imgSIGA.jpg";
-import hallazgozSIGA from "../../images/hallazgozSIGA.png";
-import mapaSIGA from "../../images/imgSIGA2.png";
-import ingresoSIGA from "../../images/imgSIGA3.png";
-import imgSIGA4 from "../../images/imgSIGA4.png";
+import aforosSIGA from "../../images/imgSIGA.webp";
+import hallazgozSIGA from "../../images/hallazgozSIGA.webp";
+import mapaSIGA from "../../images/imgSIGA2.webp";
+import ingresoSIGA from "../../images/imgSIGA3.webp";
+import imgSIGA4 from "../../images/imgSIGA4.webp";
 
-import machineLearning1 from "../../images/Productos/imgSalud1.png";
-import machineLearning2 from "../../images/Productos/imgSalud2.png";
-import machineLearning3 from "../../images/Productos/machineLearning3.png";
-import machineLearning4 from "../../images/Productos/machineLearning4.jpg";
-import machineLearning5 from "../../images/Productos/imgSalud3.jpg";
+import machineLearning1 from "../../images/Productos/imgSalud1.webp";
+import machineLearning2 from "../../images/Productos/imgSalud2.webp";
+import machineLearning3 from "../../images/Productos/machineLearning3.webp";
+import machineLearning4 from "../../images/Productos/machineLearning4.webp";
+import machineLearning5 from "../../images/Productos/imgSalud3.webp";
 
-import businessInt1 from "../../images/Productos/imgRetail2.png";
-import businessInt2 from "../../images/Productos/imgRetail3.png";
-import businessInt3 from "../../images/Productos/imgRetail4.png";
-import businessInt4 from "../../images/Productos/imgRetail5.png";
+import businessInt1 from "../../images/Productos/imgRetail2.webp";
+import businessInt2 from "../../images/Productos/imgRetail3.webp";
+import businessInt3 from "../../images/Productos/imgRetail4.webp";
+import businessInt4 from "../../images/Productos/imgRetail5.webp";
 
 /* Iconos de productos en svg */
 import health from "../../icons/health.svg";

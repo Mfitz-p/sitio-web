@@ -1,5 +1,5 @@
 import { Col, Container, Row, Image, Card } from "react-bootstrap";
-import HiringIcon from "../images/Carrera/handshake_men_01.jpg";
+import HiringIcon from "../images/Carrera/handshake_men_01.webp";
 import "../App.css";
 
 function Carreras() {
