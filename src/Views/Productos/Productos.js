@@ -9,19 +9,16 @@ import mapaSIGA from "../../images/imgSIGA2.png";
 import ingresoSIGA from "../../images/imgSIGA3.png";
 import imgSIGA4 from "../../images/imgSIGA4.png";
 
-import machineLearning1 from "../../images/imgSalud1.png";
-import machineLearning2 from "../../images/imgSalud2.png";
-import machineLearning3 from "../../images/machineLearning3.png";
-import machineLearning4 from "../../images/machineLearning4.jpg";
-<<<<<<< HEAD
-=======
-import machineLearning5 from "../../images/imgSalud3.jpg";
->>>>>>> 138aab522106f292a2d6e92f428745ea32b40b21
+import machineLearning1 from "../../images/Productos/imgSalud1.png";
+import machineLearning2 from "../../images/Productos/imgSalud2.png";
+import machineLearning3 from "../../images/Productos/machineLearning3.png";
+import machineLearning4 from "../../images/Productos/machineLearning4.jpg";
+import machineLearning5 from "../../images/Productos/imgSalud3.jpg";
 
-import businessInt1 from "../../images/imgRetail2.png";
-import businessInt2 from "../../images/imgRetail3.png";
-import businessInt3 from "../../images/imgRetail4.png";
-import businessInt4 from "../../images/imgRetail5.png";
+import businessInt1 from "../../images/Productos/imgRetail2.png";
+import businessInt2 from "../../images/Productos/imgRetail3.png";
+import businessInt3 from "../../images/Productos/imgRetail4.png";
+import businessInt4 from "../../images/Productos/imgRetail5.png";
 
 /* import vCompu1 from "../../images/vCompu1.jpg";
 import vCompu2 from "../../images/vCompu2.jpg";
