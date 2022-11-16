@@ -1,14 +1,13 @@
-import React, {lazy} from 'react'
 import { Route, Routes, Navigate } from "react-router-dom";
 import Inicio from "./Views/Inicio";
+import Nosotros from "./Views/Nosotros";
+import Productos from "./Views/Productos/Productos";
 import Pagina404 from "./Views/Pagina404";
 import Contacto from "./Views/Contacto";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import Carreras from "./Views/Carreras";
 import "animate.css";
-const Nosotros = lazy(()=> import("./Views/Nosotros") )
-const Productos = lazy(()=> import("./Views/Productos/Productos") )
 
 function App() {
   return (

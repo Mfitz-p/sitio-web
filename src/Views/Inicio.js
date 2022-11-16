@@ -128,7 +128,7 @@ const Inicio = () => {
                   >
                     ¿Qué hacemos por ti?
                   </Card.Title>
-                  <Card.Text style={{ fontSize: "20px", textAlign: "justify" }}>
+                  <Card.Text className='mx-md-5' style={{ fontSize: "20px", textAlign: "justify"  }}>
                     Ofrecemos soluciones inteligentes enfocadas en el manejo de
                     big data para asistir y optimizar los procesos de
                     identificación de problemas, obtención de información,
