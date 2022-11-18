@@ -4,7 +4,7 @@
  */
 import { Col, Container, Row, Image, Button, Nav} from 'react-bootstrap/';
 import { NavLink } from  'react-router-dom';
-import logo from '../images/logoCompletoFooter.png';
+import logo from '../images/logoCompletoFooter.webp';
 
 function Footer() {
     
@@ -15,7 +15,7 @@ function Footer() {
                 <Row className='align-items-center'>
                     <Col xs={12} md={3} className="d-flex aligns-items-center justify-content-center mb-3">
                         <Nav.Link as={NavLink} to="/Inicio">
-                           <Image fluid src={logo} alt='logo' style={{ width: "200px" }} />
+                           <Image fluid src={logo} alt='logo' style={{ width: "200px", height:"65px" }} />
                         </Nav.Link>  
                     </Col>
                     <Col xs={6} md={3}>

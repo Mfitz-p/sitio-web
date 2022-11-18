@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
 import Nav from 'react-bootstrap/Nav';
 import NavbarRB from 'react-bootstrap/Navbar';
-import logo from '../images/logoVertical3.png';
+import logo from '../images/logoVertical3.webp';
 import { NavLink } from 'react-router-dom';
 import "../App.css";
 // Componente Navbar contiene la barra de navegacion de la pagina y el logotipo de Kaminoittech
@@ -17,7 +17,7 @@ const Navbar = () => {
           <NavbarRB.Brand className='mr-auto' to="/Inicio">
             {/* Se le coloco un Nav.Link junto con una etiqueta image para colocar el logotipo y es redirijido a la pagina de Inicio  */}
             <Nav.Link className='p-3 logo' as={NavLink} to="/Inicio">
-             <Image fluid src={logo} alt='logo' style={{ width: "35vh" }} />
+             <Image fluid src={logo} alt='logo' style={{ width: "35vh", height: "37.2px" }} />
             </Nav.Link>
           </NavbarRB.Brand>
           {/* Esta parte del código del navbar es cuando se usa en version movil, se colapsa el menu y se convierte en el menú de burger famoso para moviles */}

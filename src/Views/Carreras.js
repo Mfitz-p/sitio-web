@@ -60,15 +60,18 @@ function Carreras() {
           justifyContent: "center",
         }}
       >
-        <Row style={{
-              textAlign: "center",
-              display: "flex",
-              margin: "auto",
-              alignItem: "center",
-              justifyContent: "center",
-            }}>
+        <Row
+          style={{
+            textAlign: "center",
+            display: "flex",
+            margin: "auto",
+            alignItem: "center",
+            justifyContent: "center",
+          }}
+        >
           <Col>
-            <h2> Perfiles que andamos buscando</h2><br/>
+            <h2> Perfiles que andamos buscando</h2>
+            <br />
             <Row>
               <Col>
                 <Card className="cardVacante ">
@@ -114,8 +117,22 @@ function Carreras() {
           </Col>
         </Row>
       </section>
-      <section>
-        
+      <section
+        id="Razon"
+        style={{
+          height: "100vh",
+          textAlign: "center",
+          display: "flex",
+          alignItem: "center",
+          justifyContent: "center",
+        }}
+      >
+        <h4>Porque trabajar con nosotres</h4>
+        <p>
+          Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore
+          et dolore magna aliqua.
+        </p>
+        <button></button>
       </section>
     </Container>
   );
