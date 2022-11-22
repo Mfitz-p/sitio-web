@@ -6,9 +6,11 @@ import NavbarRB from 'react-bootstrap/Navbar';
 import logo from '../images/logoVertical3.webp';
 import { NavLink } from 'react-router-dom';
 import "../App.css";
+import { useTranslation } from 'react-i18next';
 // Componente Navbar contiene la barra de navegacion de la pagina y el logotipo de Kaminoittech
 
 const Navbar = () => {
+  const [t] = useTranslation("global")
   return (
     <>
     {/* NavbarRB tiene todo el contenido  de la barra de navegación este fue obtenido de react-bootstrap con un fondo de color negro y funcional responsive para version moviles */}
@@ -25,11 +27,11 @@ const Navbar = () => {
           <NavbarRB.Collapse className='flex-grow-0 ' id="responsive-navbar-nav">
             {/*  */}
             <Nav className='p-3'>
-              <Nav.Link as={NavLink} to="/Inicio" className='text-white hvr-underline-from-left-modificado'>Inicio </Nav.Link>
-              <Nav.Link as={NavLink} to="/Nosotros" className='text-white hvr-underline-from-left-modificado'>Nosotros</Nav.Link>
-              <Nav.Link as={NavLink} to="/Productos" className='text-white hvr-underline-from-left-modificado'> Productos </Nav.Link>
-              <Nav.Link as={NavLink} to="/Contacto" className='text-white hvr-underline-from-left-modificado'>Contacto</Nav.Link>
-              {/* <Nav.Link as={NavLink} to="/Carreras" className='text-white hvr-underline-from-left-modificado'>Carreras</Nav.Link> */}
+            <Nav.Link as={NavLink} to="/Inicio" className='text-white hvr-underline-from-left-modificado'>{t("Navbar.Home")}</Nav.Link>
+              <Nav.Link as={NavLink} to="/Nosotros" className='text-white hvr-underline-from-left-modificado'>{t("Navbar.Us")}</Nav.Link>
+              <Nav.Link as={NavLink} to="/Productos" className='text-white hvr-underline-from-left-modificado'>{t("Navbar.Products")}</Nav.Link>
+              <Nav.Link as={NavLink} to="/Contacto" className='text-white hvr-underline-from-left-modificado'>{t("Navbar.Contact")}</Nav.Link>
+              {/* <Nav.Link as={NavLink} to="/Carreras" className='text-white hvr-underline-from-left-modificado'>{t("Navbar.Carrers")}</Nav.Link> */}
             </Nav>
           </NavbarRB.Collapse>
         </Container>

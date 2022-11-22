@@ -1,8 +1,10 @@
 import { Col, Container, Row, Image, Card } from "react-bootstrap";
 import HiringIcon from "../images/Carrera/handshake_men_01.webp";
+import { useTranslation } from "react-i18next";
 import "../App.css";
 
 function Carreras() {
+  const [t] = useTranslation("global");
   return (
     <Container>
       <section
@@ -45,7 +47,7 @@ function Carreras() {
             }}
           >
             <div>
-              <h1>Encuentra tu camino profesional en Kaminoittech</h1>
+              <h1>{t("Carrers.Title1")}</h1>
             </div>
           </Col>
         </Row>
@@ -70,47 +72,31 @@ function Carreras() {
           }}
         >
           <Col>
-            <h2> Perfiles que andamos buscando</h2>
+            <h2>{t("Carrers.Profile")}</h2>
             <br />
             <Row>
               <Col>
                 <Card className="cardVacante ">
-                  <Card.Title>Tipo de rol/vacante</Card.Title>
-                  <Card.Text>
-                    {" "}
-                    Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt
-                    ut labore et dolore magna aliqua.
-                  </Card.Text>
+                  <Card.Title>{t("Carrers.Rol1")}</Card.Title>
+                  <Card.Text>{t("Carrers.RolDescription1")}</Card.Text>
                 </Card>
               </Col>
               <Col>
                 <Card className="cardVacante">
-                  <Card.Title>Tipo de rol/vacante</Card.Title>
-                  <Card.Text>
-                    {" "}
-                    Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt
-                    ut labore et dolore magna aliqua.
-                  </Card.Text>
+                  <Card.Title>{t("Carrers.Rol2")}</Card.Title>
+                  <Card.Text>{t("Carrers.RolDescription2")}</Card.Text>
                 </Card>
               </Col>
               <Col>
                 <Card className="cardVacante">
-                  <Card.Title>Tipo de rol/vacante</Card.Title>
-                  <Card.Text>
-                    {" "}
-                    Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt
-                    ut labore et dolore magna aliqua.
-                  </Card.Text>
+                  <Card.Title>{t("Carrers.Rol3")}</Card.Title>
+                  <Card.Text>{t("Carrers.RolDescription3")}</Card.Text>
                 </Card>
               </Col>
               <Col>
                 <Card className="cardVacante">
-                  <Card.Title>Tipo de rol/vacante</Card.Title>
-                  <Card.Text>
-                    {" "}
-                    Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt
-                    ut labore et dolore magna aliqua.
-                  </Card.Text>
+                  <Card.Title>{t("Carrers.Rol4")}</Card.Title>
+                  <Card.Text>{t("Carrers.RolDescription4")}</Card.Text>
                 </Card>
               </Col>
             </Row>
@@ -127,11 +113,8 @@ function Carreras() {
           justifyContent: "center",
         }}
       >
-        <h4>Porque trabajar con nosotres</h4>
-        <p>
-          Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore
-          et dolore magna aliqua.
-        </p>
+        <h4>{t("Carrers.Why")}</h4>
+        <p>{t("Carrers.WhyDescription")}</p>
         <button></button>
       </section>
     </Container>
