@@ -1,6 +1,7 @@
 import { Container, Image, Card, Col, Row } from "react-bootstrap";
 import { Link } from "react-scroll";
 import CarruselImgs from "../../Components/CarruselImgs";
+import { useTranslation } from "react-i18next";
 
 // IMGS DE CARRUSEL SIGA
 import aforosSIGA from "../../images/imgSIGA.webp";
@@ -123,7 +124,7 @@ const Productos = () => {
    * Dentro de los elementos JSX debe existir un llamado a useRef ej. <h1 ref={ref}></h1> y un renderizado condicional en los elementos que se deseen modificar ,
    * el valor de inView el cuál resultará true una vez que se detecte la aparición del elemento a modificar en pantalla. Ej.  <p> {inView ? 'Elemento Presente' : 'Vacío'}</p>
    */
-
+  const [t] = useTranslation("global");
   const { ref: effectRef, inView: effectScroll } = useInView({
     threshold: 0,
   });
@@ -163,8 +164,7 @@ const Productos = () => {
               className="animate__animated animate__fadeInUp"
               style={{ fontWeight: "bold" }}
             >
-              Nuestro modelo de negocios nos permite facilitarte los siguientes
-              productos
+              {t("Products.TitleGeneral")}
             </h2>
             <hr />
           </Col>
@@ -204,24 +204,14 @@ const Productos = () => {
                       src={city}
                       alt="city"
                     />
-                    Infraestructura
+                    {t("General.Title1")}
                   </Card.Title>
                   <Card.Text style={{ fontSize: "21px", textAlign: "justify" }}>
                     <ul>
-                      <li className="mb-0">
-                        {" "}
-                        Sistema de gestión (Centralización, monitoreo y
-                        visualización de la información).
-                      </li>
-                      <li className="mb-0">
-                        {" "}
-                        Visión computacional (Detección de incidencias).{" "}
-                      </li>
-                      <li className="mb-0">
-                        {" "}
-                        Seguimiento de obra (Percepción remota){" "}
-                      </li>
-                      <li className="mb-0"> Metodología BIM </li>
+                      <li className="mb-0">{t("Products.1Bullet1")}</li>
+                      <li className="mb-0">{t("Products.1Bullet2")}</li>
+                      <li className="mb-0">{t("Products.1Bullet3")}</li>
+                      <li className="mb-0">{t("Products.1Bullet4")}</li>
                     </ul>
                   </Card.Text>
                 </Card.Body>
@@ -274,7 +264,7 @@ const Productos = () => {
                       src={basket}
                       alt="basket"
                     />
-                    Retail & B2B
+                    {t("General.Title2")}
                   </Card.Title>
                   <Card.Text
                     style={{
@@ -284,13 +274,11 @@ const Productos = () => {
                     }}
                   >
                     <ul>
-                      <li className="mb-0">
-                        Predicción de comportamientos de consumidor
-                      </li>
-                      <li className="mb-0">Simuladores de precios</li>
-                      <li className="mb-0">Optimización de promociones</li>
-                      <li className="mb-0">Análisis de canastos</li>
-                      <li className="mb-0">Sistemas de recomendación</li>
+                      <li className="mb-0">{t("Products.2Bullet1")}</li>
+                      <li className="mb-0">{t("Products.2Bullet2")}</li>
+                      <li className="mb-0">{t("Products.2Bullet3")}</li>
+                      <li className="mb-0">{t("Products.2Bullet4")}</li>
+                      <li className="mb-0">{t("Products.2Bullet5")}</li>
                     </ul>
                   </Card.Text>
                 </Card.Body>
@@ -329,21 +317,14 @@ const Productos = () => {
                       src={health}
                       alt="health"
                     />
-                    Salud
+                    {t("General.Title3")}
                   </Card.Title>
                   <Card.Text style={{ fontSize: "21px", textAlign: "justify" }}>
                     <ul>
-                      <li className="mb-0">
-                        Sistemas de diagnóstico y cirugía asistidos por
-                        computadora (CAD/CAS).
-                      </li>
-                      <li className="mb-0">Observatorios de salud.</li>
-                      <li className="mb-0">
-                        Pronóstico de la efectividad del tratamiento clínico.
-                      </li>
-                      <li className="mb-0">
-                        Obtención de biomarcadores de diagnóstico.
-                      </li>
+                      <li className="mb-0">{t("Products.3Bullet1")}</li>
+                      <li className="mb-0">{t("Products.3Bullet2")}</li>
+                      <li className="mb-0">{t("Products.3Bullet3")}</li>
+                      <li className="mb-0">{t("Products.3Bullet4")}</li>
                     </ul>
                   </Card.Text>
                 </Card.Body>
@@ -416,7 +397,7 @@ const Productos = () => {
                       src={car}
                       alt="car"
                     />
-                    Movilidad y Transportes
+                    {t("General.Title4")}
                   </Card.Title>
                   <Card.Text
                     style={{
@@ -426,19 +407,10 @@ const Productos = () => {
                     }}
                   >
                     <ul>
-                      <li className="mb-0">
-                        Optimización de la eficiencia del uso de combustible
-                      </li>
-                      <li className="mb-0">
-                        Generación de matrices Origen-Destino
-                      </li>
-                      <li className="mb-0">
-                        Análisis y visualización de datos geoespaciales
-                      </li>
-                      <li className="mb-0">
-                        Predicción de patrones de movilidad e incidencias de
-                        tráfico
-                      </li>
+                      <li className="mb-0">{t("Products.4Bullet1")}</li>
+                      <li className="mb-0">{t("Products.4Bullet2")}</li>
+                      <li className="mb-0">{t("Products.4Bullet3")}</li>
+                      <li className="mb-0">{t("Products.4Bullet4")}</li>
                     </ul>
                   </Card.Text>
                 </Card.Body>
@@ -468,18 +440,14 @@ const Productos = () => {
                       src={money}
                       alt="money"
                     />
-                    Banca
+                    {t("General.Title5")}
                   </Card.Title>
                   <Card.Text style={{ fontSize: "21px", textAlign: "justify" }}>
                     <ul>
-                      <li className="mb-0">Detección de fraudes</li>
-                      <li className="mb-0">Cálculo de riesgo </li>
-                      <li className="mb-0">
-                        Predicción del valor de usuario por tiempo de vida
-                      </li>
-                      <li className="mb-0">
-                        Herramientas para la elegibilidad e inclusión financiera
-                      </li>
+                      <li className="mb-0">{t("Products.5Bullet1")}</li>
+                      <li className="mb-0">{t("Products.5Bullet2")}</li>
+                      <li className="mb-0">{t("Products.5Bullet3")}</li>
+                      <li className="mb-0">{t("Products.5Bullet4")}</li>
                     </ul>
                   </Card.Text>
                 </Card.Body>

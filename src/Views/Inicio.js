@@ -12,9 +12,10 @@ import medicaIA from '../images/Inicio/medicaIA.webp';
 import retail from '../images/Inicio/retail.webp';
 import movilidad from '../images/Inicio/movilidad.webp';
 import banca from '../images/Inicio/banca.webp';
+import { useTranslation } from 'react-i18next';
 
 const Inicio = () => {
-
+  const [t] = useTranslation("global")
   //Hook que se recibe desde la librería react-intersection-observer para cada elemento a modificar con el efecto de intersection observer 
   //para más información de su uso consultar la página Productos o la documentación de la librería https://github.com/thebuilder/react-intersection-observer.
   const { ref: textcard1, inView: effectScroll } = useInView({
@@ -81,7 +82,7 @@ const Inicio = () => {
                 <Col className="d-flex justify-content-center flex-column">
                   <Card.Title style={{ fontSize: "2.3rem", lineHeight: "1.2" }}>
                     <Row>
-                      <Col sm={7} className='gx-0'>Analítica predictiva y soluciones inteligentes para la transformación de tu negocio.</Col>
+                      <Col sm={7} className='gx-0'>{t("Home.Section")}</Col>
                       <Col ></Col>
                     </Row>
                   </Card.Title>
@@ -92,7 +93,7 @@ const Inicio = () => {
                         className="mx-auto hvr-pulse boton-principal"
                         variant="success"
                       >
-                        Contáctanos
+                        {t("General.Contact")}
                       </Button>
                     </Nav.Link>
                   </Col>
@@ -104,7 +105,6 @@ const Inicio = () => {
                   smooth={true}
                   duration={0}
                 >
-        
                   <i
                     className="bi bi-arrow-down-circle hvr-hang change-Color"
                     style={{ fontSize: "45px", cursor: "pointer" }}
@@ -127,15 +127,10 @@ const Inicio = () => {
                     className="subrayado d-flex justify-content-center px-5"
                     style={{ fontSize: "3rem", textAlign: "justify" }}
                   >
-                    ¿Qué hacemos por ti?
+                    {t("Home.Title")}
                   </Card.Title>
                   <Card.Text className='mx-md-5' style={{ fontSize: "20px", textAlign: "justify"  }}>
-                    Ofrecemos soluciones inteligentes enfocadas en el manejo de
-                    big data para asistir y optimizar los procesos de
-                    identificación de problemas, obtención de información,
-                    detección de tendencias y toma de decisiones, utilizando
-                    herramientas avanzadas de analítica predictiva, inteligencia
-                    artificial (IA) y visión por computadora.
+                    {t("Home.Description1")}
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -147,7 +142,7 @@ const Inicio = () => {
               className=" d-flex justify-content-center"
               style={{ fontSize: "3rem", textAlign: "justify" }}
             >
-              Servicios
+              {t("Home.Services")}
             </div>
 
           </Row>
@@ -175,22 +170,20 @@ const Inicio = () => {
                       textDecorationColor: "#6BBBAE",
                     }}
                   >
-                    Infraestructura
+                    {t("General.Title1")}
                   </Card.Title>
                   <Card.Text
                     className=" mt-2 mb-2 pe-2"
                     style={{ fontSize: "18px", textAlign: "justify" }}
                   >
-                    Estandarizamos tus procesos de supervisión y evaluación de
-                    activos de infraestructura pública y privada mediante
-                    métodos de visión por computadora e IA.
+                    {t("Home.Description2")}
                   </Card.Text>
               
                   <NavHashLink
                   className=" mb-2 "
                   to="/Productos#infraestructura"
                   >
-                  Ver más...
+                  {t("General.More")}
                   </NavHashLink>
                 </Card.Body>
               </Card>
@@ -255,21 +248,19 @@ const Inicio = () => {
                       textDecorationColor: "#6BBBAE",
                     }}
                   >
-                    Retail & B2B
+                    {t("General.Title2")}
                   </Card.Title>
                   <Card.Text
                     className=" mt-2 mb-2 ps-2"
                     style={{ fontSize: "18px", textAlign: "justify" }}
                   >
-                    Optimizamos tus estrategias de venta mediante la
-                    implementación de analítica descriptiva y predictiva del
-                    comportamiento del consumidor en tu negocio.
+                    {t("Home.Description3")}
                   </Card.Text>
                   <NavHashLink
                   className=" mb-0 ps-2"
                   to="/Productos#retail"
                   >
-                  Ver más...
+                  {t("General.More")}
                   </NavHashLink>
                 </Card.Body>
               </Card>
@@ -296,22 +287,20 @@ const Inicio = () => {
                       textDecorationColor: "#6BBBAE",
                     }}
                   >
-                    Salud
+                    {t("General.Title3")}
                   </Card.Title>
                   <Card.Text
                     className=" mt-2 mb-2 pe-4"
                     style={{ fontSize: "18px", textAlign: "justify" }}
                   >
-                    Desarrollamos soluciones basadas en aprendizaje por
-                    computadora para la asistencia en procedimientos clínicos y
-                    tareas rutinarias dentro de los sistemas de salud.
+                    {t("Home.Description4")}
                   </Card.Text>
                
                   <NavHashLink
                    className=" mb-0"
                    to="/Productos#salud"
                   >
-                  Ver más...
+                  {t("General.More")}
                   </NavHashLink>
                 </Card.Body>
               </Card>
@@ -376,20 +365,20 @@ const Inicio = () => {
                       textDecorationColor: "#6BBBAE",
                     }}
                   >
-                    Movilidad y Transportes
+                    {t("General.Title4")}
                   </Card.Title>
                   <Card.Text
                     className=" mt-2 mb-2 ps-2"
                     style={{ fontSize: "18px", textAlign: "justify" }}
                   >
-                  Ofrecemos herramientas inteligentes para la planeación y ejecución sostenible de proyectos utilizando información multimodal y siempre actualizada.
+                  {t("Home.Description5")}
                   </Card.Text>
 
                   <NavHashLink
                   className=" mb-0 ps-2"
                   to="/Productos#movilidad"
                   >
-                  Ver más...
+                  {t("General.More")}
                   </NavHashLink>
                 </Card.Body>
               </Card>
@@ -416,22 +405,19 @@ const Inicio = () => {
                       textDecorationColor: "#6BBBAE",
                     }}
                   >
-                    Banca
+                    {t("General.Title5")}
                   </Card.Title>
                   <Card.Text
                     className=" mt-2 mb-2 ps-2"
                     style={{ fontSize: "18px", textAlign: "justify" }}
                   >
-                    Asistimos en la toma de decisiones para la creación de una
-                    visión estratégica de control y vigilancia, fomentando la
-                    inclusión financiera y garantizando la seguridad de tus
-                    inversiones.
+                    {t("Home.Description6")}
                   </Card.Text>
                   <NavHashLink
                   className=" mb-0 ps-2"
                   to="/Productos#banca"
                   >
-                  Ver más...
+                  {t("General.More")}
                   </NavHashLink>
              
                 </Card.Body>

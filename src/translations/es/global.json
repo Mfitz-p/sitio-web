@@ -1,0 +1,112 @@
+{
+  "Navbar": {
+    "Home": "Inicio",
+    "Us": "Nosotros",
+    "Products": "Productos",
+    "Contact": "Contacto",
+    "Carrers": "Carreras"
+  },
+  "Home": {
+    "Section": "Analítica predictiva y soluciones inteligentes para la transformación de tu negocio.",
+    "Title": "¿Qué hacemos por ti?",
+    "Description1": "Ofrecemos soluciones inteligentes enfocadas en el manejo de big data para asistir y optimizar los procesos de identificación de problemas, obtención de información, detección de tendencias y toma de decisiones, utilizando herramientas avanzadas de analítica predictiva, inteligencia artificial (IA) y visión por computadora.",
+    "Services": "Servicios",
+    "Description2": "Estandarizamos tus procesos de supervisión y evaluación de activos de infraestructura pública y privada mediante métodos de visión por computadora e IA.",
+    "Description3": "Optimizamos tus estrategias de venta mediante la implementación de analítica descriptiva y predictiva del comportamiento del consumidor en tu negocio.",
+    "Description4": "Desarrollamos soluciones basadas en aprendizaje por computadora para la asistencia en procedimientos clínicos y tareas rutinarias dentro de los sistemas de salud.",
+    "Description5": "Ofrecemos herramientas inteligentes para la planeación y ejecución sostenible de proyectos utilizando información multimodal y siempre actualizada.",
+    "Description6": "Asistimos en la toma de decisiones para la creación de una visión estratégica de control y vigilancia, fomentando la inclusión financiera y garantizando la seguridad de tus inversiones."
+  },
+  "Us": {
+    "Section": "En la última década diferentes sectores empresariales han comenzado su transformación digital incorporando múltiples soluciones tecnológicas con los objetivos de: maximizar el valor agregado de su información y eficientar el uso de recursos. Debido a esto, Kaminoittech se posiciona en el mercado como una empresa dedicada a proveer servicios de consultoría en analítica avanza e inteligencia artificial para maximizar el valor agregado de los datos, dotando de soluciones innovadoras y flexibles para cada proyecto.",
+    "Mission": "Misión",
+    "MissionDescription": "Dotar a nuestros clientes soluciones basadas en el manejo de datos y analítica predictiva para eficientar los procesos de toma decisiones en los negocios. ",
+    "Vision": "Visión",
+    "VisionDescription": "Ser la empresa referente de México en consultoría en ciencia de datos e inteligencia de negocios para competir con en el mercado latino americano y contar con presencia en EUA.",
+    "Team": "Nuestro Equipo",
+    "TeamDescription": "En Kaminoittech contamos con un equipo interdisciplinario de expertos en ciencia de datos, analítica predictiva y de desarrollo de aplicaciones, que, junto con nuestro equipo técnico, socios comerciales y nuestras alianzas estratégicas nos permiten crear soluciones innovadoras y flexibles para cada proyecto.",
+    "CEO": "Cofundador & CEO (Chief Executive Officer)",
+    "CEODescription": "Ingeniero en Telecomunicaciones con especialidad en Procesamiento de Señales. Egresado de la Facultad de Ingeniería de la UNAM; cuenta con una Maestría en Ingeniería de Negocios por Duke University, en Estados Unidos. Fungió como Director General Adjunto de infraestructura del Gabinete de Infraestructura y Turismo en la oficina de la Presidencia de la República y asesor de Planeación, Política de Precios y Análisis Financiero de la Dirección Corporativa de Fianzas en PEMEX. En la Secretaría de Comunicaciones y Transportes se desempeñó como Coordinador de Asesores del Subsecretario de Infraestructura y posteriormente fue designado por el Secretario de Comunicaciones como Coordinador General de Centros de la Secretaria de Comunicaciones y Transportes. Se ha desempeñado como consultor en la empresa McKinsey and Company y actualmente es Director General y fundador de Moen Consultores.",
+    "CTO": "Cofundador & CTO (Chief Technology Officer)",
+    "CTODescription": "Co-fundadora y directora de Tecnología y Ciencia de Datos en Kaminoittech. En Tycho Solutions fue gerente de proyecto en el área de Ciencia de Datos. Trabajó como investigadora postdoctoral en el High Altitude Water Cherenkov Observatory (HAWC) implementando algoritmos de Aprendizaje por Computadora. Es miembro del Sistema Nacional de Investigadores de México nivel 1, ha publicado alrededor de 15 artículos en revistas internacionales arbitradas, dirigido tesis y dictado cursos en la UNAM. Maestra en Ciencia de Datos (ITAM), Doctora y Maestra en Ciencias de la Tierra (Instituto de Geofísica, UNAM), Ingeniera Geofísica (UNAM).",
+    "Scientist": "Científico de datos",
+    "ScientistDescription1": "Dr. en Ingeniería líder del área de investigación y desarrollo de sistemas de diagnóstico y cirugía asistidos por computadora CAD/CAS. Su área es la responsable de la creación del sistema de diagnóstico de cáncer de mama mediante la implementación de inteligencia artificial y aprendizaje máquina. Ha sido Investigador Postdoctoral del Laboratorio de Procesamiento digital de Imágenes de la UNAM y profesor de asignatura en las licenciaturas de Matemáticas Aplicadas y Computación, Ciencia de Datos, Ingeniería Electrónica y la Maestría de Ciencias de la Computación. Desde 2016 ha participado en el desarrollo y coordinación de diferentes proyectos Programas de Apoyo a Proyectos de Investigación e Innovación Tecnológica (PAPIIT) y para la industria privada.",
+    "ScientistDescription2": "Dr. En Ingeniería encargado del equipo de Visión Computacional y Aprendizaje de Máquina. Profesor de asignatura en la Universidad Panamericana. Trabajó como investigador postdoctoral en la UNAM en el proyecto “Sistema inteligente para el diagnóstico médico asistido para enfermedades cardiovasculares” en colaboración con el Hospital 20 de Noviembre y la Secretaria de Educación, Ciencia Tecnología e Innovación (SECTEI). Obtuvo el 2° lugar en el Premio AFIRME-UNAM 2019. Ha publicado artículos en revistas y en congresos revisados por pares. Doctorado y Maestría en Procesamiento Digital de Señales (UNAM), Ingeniero Eléctrico-Electrónico (UNAM).",
+    "Financial": "",
+    "FinancialDescription": "",
+    "Aliances": "Nuestras Alianzas"
+  },
+  "Products": {
+    "TitleGeneral": "Nuestro modelo de negocios nos permite facilitarte los siguientes productos",
+    "1Bullet1": "Sistema de gestión (Centralización, monitoreo y visualización de la información).",
+    "1Bullet2": "Visión computacional (Detección de incidencias).",
+    "1Bullet3": "Seguimiento de obra (Percepción remota)",
+    "1Bullet4": "Metodología BIM ",
+    "2Bullet1": "Predicción de comportamientos de consumidor",
+    "2Bullet2": "Simuladores de precios",
+    "2Bullet3": "Optimización de promociones",
+    "2Bullet4": "Análisis de canastos",
+    "2Bullet5": "Sistemas de recomendación",
+    "3Bullet1": "Sistemas de diagnóstico y cirugía asistidos por computadora (CAD/CAS).",
+    "3Bullet2": "Observatorios de salud.",
+    "3Bullet3": "Pronóstico de la efectividad del tratamiento clínico.",
+    "3Bullet4": "Obtención de biomarcadores de diagnóstico.",
+    "4Bullet1": "Optimización de la eficiencia del uso de combustible",
+    "4Bullet2": "Generación de matrices Origen-Destino",
+    "4Bullet3": "Análisis y visualización de datos geoespaciales",
+    "4Bullet4": "Predicción de patrones de movilidad e incidencias de tráfico",
+    "5Bullet1": "Detección de fraudes",
+    "5Bullet2": "Cálculo de riesgo ",
+    "5Bullet3": "Predicción del valor de usuario por tiempo de vida",
+    "5Bullet4": "Herramientas para la elegibilidad e inclusión financiera"
+  },
+  "Contact": {
+    "Alert": "Tu teléfono solo puede tener entre 7 y 10 números",
+    "Questions": "Para dudas o preguntas",
+    "Please": "Por favor, usa el formulario o llámanos al 55 5335 1691",
+    "Name": "Nombre",
+    "Last": "Apellido",
+    "Email": "Correo",
+    "Phone": "Teléfono",
+    "Message": "Mensaje",
+    "Send": "Enviar",
+    "Part": "Llena correctamente cada apartado!",
+    "Thanks": "Gracias por contactarse con nosotros"
+  },
+  "404": {
+    "Not": "Página no encontrada",
+    "Found": "La página que solicitaste no pudo ser encontrada"
+  },
+  "Carrers": {
+    "Title1": "Encuentra tu camino profesional en Kaminoittech",
+    "Profile": "Perfiles que andamos buscando",
+    "Rol1": "Tipo de rol/vacante",
+    "Rol1Description": "Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "Rol2": "Tipo de rol/vacante",
+    "Rol2Description": "Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "Rol3": "Tipo de rol/vacante",
+    "Rol3Description": "Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "Rol4": "Tipo de rol/vacante",
+    "Rol4Description": "Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "Why": "Porque trabajar con nosotres",
+    "WhyDescription": "Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  },
+  "Footer": {
+    "Office": "Oficinas",
+    "Schedule": "Horario",
+    "Moday": "Lunes-Viernes 09:00 - 19:00 ",
+    "Email": "Correo",
+    "Info": "información",
+    "Language": "Lenguaje",
+    "Copyright": "© • Todos los derechos reservados • 2022"
+  },
+  "General": {
+    "Contact": "Contáctanos",
+    "Title1": "Infraestructura",
+    "Title2": "Retail & B2B",
+    "Title3": "Salud",
+    "Title4": "Movilidad y Transportes",
+    "Title5": "Banca",
+    "More": "Ver más..."
+  }
+}
