@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 import { useInView } from 'react-intersection-observer';
 import { NavHashLink } from 'react-router-hash-link';
 import "../App.css";
+import "../css/Inicio.css"
 //Imágenes
 import page from '../images/Inicio/frontpage.webp';
 import infraestructura from '../images/Inicio/infraestructura.webp';

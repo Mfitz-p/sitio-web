@@ -1,0 +1,8 @@
+/* Página 404 */
+.fondo {
+    background-image: url("/src/images/404/lupa404.webp");
+    background-repeat: no-repeat;
+    background-size: clamp(270px, 27vw, 800px);
+    background-position: 60vw 2vw;
+  }
+  

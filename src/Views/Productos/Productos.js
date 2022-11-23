@@ -29,6 +29,7 @@ import money from "../../icons/money.svg";
 
 import { useInView } from "react-intersection-observer";
 import "../../App.css";
+import "../../css/Productos.css"
 
 // Arreglos de objetos donde se obtienen las imagenes para los carrusel
 const imgs = [

@@ -7,6 +7,7 @@ import "../App.css";
 //@formspree/react es una libreria para mandar formularios sin necesidad de un bbackend
 import { useForm, ValidationError } from "@formspree/react";
 
+import "../css/Contacto.css"
 function Contacto() {
 
   // Se le asigna al hook el id del formulario, este sale desde la pagina de formspree.io

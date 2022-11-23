@@ -10,7 +10,7 @@ import logoHuawei from '../logos/logoHuawei.png';
 import logoSCT from '../logos/logoSCT.png';
 import logoNuevoLeon from '../logos/logoNuevoLeon.png';
 import logoAguas from '../logos/logoAguas.png';
-
+import "../css/Nosotros.css"
 
 function Nosotros() {
   return (

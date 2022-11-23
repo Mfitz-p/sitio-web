@@ -1,0 +1,19 @@
+/* Página de Inicio */
+.btn-arriba{
+    font-size: 50px; 
+   /*  top: 50%;  */
+     opacity: .7;  
+    cursor: pointer; 
+  /*   transform:translate(0px, 450%) */
+  }
+  
+  .hideX{
+    overflow-x:hidden
+  }
+  
+  .change-Color {
+    transition: 0.8s;
+  }
+  .boton-principal{
+    background-color: #6BBBAE !important;
+  }

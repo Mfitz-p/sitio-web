@@ -1,0 +1,13 @@
+/* Página Contacto */
+.graficos {
+    background-image: url("/src/images/Contacto/contacto.gif");
+    background-repeat: no-repeat;
+    background-size: clamp(350px, 40%, 900px);
+    background-position: 56vw;
+  }
+  
+  #Mensaje {
+    width: 50% !important;
+    height: 100px
+  }
+  
