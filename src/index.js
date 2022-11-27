@@ -12,8 +12,12 @@ import global_es from "./translations/es/global.json";
 import global_en from "./translations/en/global.json";
 import { setCookie, getCookie } from "./functions/cookie";
 const root = ReactDOM.createRoot(document.getElementById("root"));
+const urlSearch = window.location.search
+const urlParams = new URLSearchParams(urlSearch);
 let temp = getCookie("Language");
-console.log(temp);
+if (urlParams.get("leng")) {
+  temp = urlParams.get("leng");
+}
 if (temp === "") {
   temp = window.navigator.language.slice(0, 2);
 }
@@ -38,7 +42,7 @@ root.render(
   <React.StrictMode>
     <I18nextProvider i18n={i18next}>
       <BrowserRouter>
-        <App />
+        <App/>
       </BrowserRouter>
     </I18nextProvider>
   </React.StrictMode>
