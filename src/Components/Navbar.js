@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <>
     {/* NavbarRB tiene todo el contenido  de la barra de navegación este fue obtenido de react-bootstrap con un fondo de color negro y funcional responsive para version moviles */}
-      <NavbarRB collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <NavbarRB id="navbarStyle" collapseOnSelect expand="lg" >
         <Container className='p-0'> 
           <NavbarRB.Brand className='mr-auto' to="/Inicio">
             {/* Se le coloco un Nav.Link junto con una etiqueta image para colocar el logotipo y es redirijido a la pagina de Inicio  */}

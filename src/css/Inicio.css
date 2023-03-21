@@ -17,3 +17,63 @@
   .boton-principal{
     background-color: #6BBBAE !important;
   }
+
+/* Navbar */
+
+#navbarStyle {
+  /*position: fixed;
+  top: 0;*/
+  position: relative;
+  z-index: 9;
+  width: 100%;
+  background-color: #111
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 8px;
+  background-color: #e7e7e7;
+  border: 1px solid #cacaca;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: #6BBBAE;
+}
+
+/* Banner */
+
+#portada-principal {
+  width: 100%;
+  display: flex;
+  margin-top: 0px;
+  height: 90vh;
+}
+
+.banner {
+  height: 90%;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 2;
+}
+
+#particles {
+  position: absolute;
+  width: 100%;
+  object-fit: cover;
+}
+
+.wrapper {
+  padding: 20px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

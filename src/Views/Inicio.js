@@ -13,6 +13,8 @@ import retail from '../images/Inicio/retail.webp';
 import movilidad from '../images/Inicio/movilidad.webp';
 import banca from '../images/Inicio/banca.webp';
 import { useTranslation } from 'react-i18next';
+//Componentes
+import Particle from '../Components/Particles';
 
 const Inicio = () => {
   const [t] = useTranslation("global")
@@ -68,26 +70,22 @@ const Inicio = () => {
 
   return (
     <>
-      <Container fluid>
         <section id="portada-principal">
-          <Row>
-            <Card className="bg-dark text-white" style={{ borderRadius: "0" }}>
-              <Image
-                fluid
-                src={page}
-                alt="img-page"
-                style={{ objectFit: "cover", height: "39.3rem" }}
-              />
+          <div className='banner'>
+            <div id="particles">
+              <Particle />
+            </div>
+            <div className='wrapper'>
               <Card.ImgOverlay className="d-flex flex-column  m-4 animate__animated animate__fadeInUp">
                 <Col className="d-flex justify-content-center flex-column">
                   <Card.Title style={{ fontSize: "2.3rem", lineHeight: "1.2" }}>
                     <Row>
-                      <Col sm={7} className='gx-0'>{t("Home.Section")}</Col>
+                      <Col sm={7} className='gx-0' style={{color: 'white'}}>{t("Home.Section")}</Col>
                       <Col ></Col>
                     </Row>
                   </Card.Title>
                   {/* Botón contáctanos que redirige al inicio de la página */}
-                  <Col xs={12} md={2}>
+                  <Col xs={12} md={1}>
                     <Nav.Link as={NavLink} to="/Contacto">
                       <Button
                         className="mx-auto hvr-pulse boton-principal"
@@ -111,10 +109,50 @@ const Inicio = () => {
                   ></i>
                 </Link>
               </Card.ImgOverlay>
-            </Card>
-          </Row>
+            </div> 
+          </div>
+          {/*<Card className="bg-dark text-white" style={{ borderRadius: "0" }}>
+            <Image
+              fluid
+              src={page}
+              alt="img-page"
+              style={{ objectFit: "cover", height: "39.3rem" }}
+            />
+            <Card.ImgOverlay className="d-flex flex-column  m-4 animate__animated animate__fadeInUp">
+              <Col className="d-flex justify-content-center flex-column">
+                <Card.Title style={{ fontSize: "2.3rem", lineHeight: "1.2" }}>
+                  <Row>
+                    <Col sm={7} className='gx-0'>{t("Home.Section")}</Col>
+                    <Col ></Col>
+                  </Row>
+                </Card.Title>
+                {/* Botón contáctanos que redirige al inicio de la página */}
+                {/*<Col xs={12} md={2}>
+                  <Nav.Link as={NavLink} to="/Contacto">
+                    <Button
+                      className="mx-auto hvr-pulse boton-principal"
+                      variant="success"
+                    >
+                      {t("General.Contact")}
+                    </Button>
+                  </Nav.Link>
+                </Col>
+              </Col>
+              {/* Ícono de flecha que despliega hacia abajo para cambiar a la siguientes secciones */}
+              {/*<Link
+                className=" d-flex justify-content-center text-white"
+                to="cards-servicios"
+                smooth={true}
+                duration={0}
+              >
+                <i
+                  className="bi bi-arrow-down-circle hvr-hang change-Color"
+                  style={{ fontSize: "45px", cursor: "pointer" }}
+                ></i>
+              </Link>
+            </Card.ImgOverlay>
+          </Card>*/}
         </section>
-      </Container>
 
       <Container fluid className="hideX">
       
