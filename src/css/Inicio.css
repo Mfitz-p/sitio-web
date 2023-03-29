@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lusitana&family=Nunito&family=Roboto:wght@100&display=swap');
+
+* {
+  font-family: 'Nunito', sans-serif;
+}
+
 /* Página de Inicio */
 .btn-arriba{
     font-size: 50px; 
@@ -76,4 +82,244 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+/* Main Title */
+
+.title {
+  font-family: 'Lusitana', serif;
+  font-size: 5rem;
+  text-align: center;
+  color: #6BBBAE
+}
+
+/* Services Section */
+
+.servicesTitle {
+  font-size: 5rem;
+  text-align: justify;
+  color: #6BBBAE;
+  font-family: 'Roboto', sans-serif;
+}
+
+.text {
+  font-family: 'Nunito', sans-serif;
+  font-size: 24px;
+  text-align: center;
+}
+
+/* Infraestructura */
+.divInfraImg {
+  background-color: #8C5E58;
+  height: 2rem;
+  width: 90%;
+  float: right;
+}
+
+.infraItem {
+  background-color: #F2D7A7;
+  border-radius: 15px;
+  padding: 0.5rem;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+/* Retail */
+.divRetailImg {
+  background-color: #F2D7A7;
+  height: 2rem;
+  float: right;
+  width: 95%;
+}
+
+.rigthContainer {
+  background-color: #F2D7A7;
+  height: 520px;
+  display: inline-block;
+  align-self: flex-end;
+  width: 2.5rem;
+  position: relative;
+  left: -17%;
+  z-index: -2;
+}
+
+.rightContainer2 {
+  background-color: #F2D7A7;
+  height: 32px;
+  width: 1.7rem;
+}
+
+.underline {
+  font-size: 50px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: #6BBBAE;
+  text-underline-offset: 15px;
+  color: #6BBBAE;
+  text-align: center;
+}
+
+/* Salud */
+
+.healthDescrp {
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  background-color: #434242;
+  padding: 1.5rem;
+  border-radius: 15px;
+}
+
+.healthText {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  color: #434242;
+  position: relative;
+  top: 45%;
+  transform: translateY(-50%);
+}
+
+.healthItems {
+  height: 150px;
+  width: fit-content;
+}
+
+.healthItem {
+  border-radius: 10px;
+}
+
+.healthImg {
+  height: 50rem;
+}
+
+/* Movilidad */
+.itemsCar {
+  position: relative;
+  top: -15px;
+}
+
+.itemCar {
+  font-size: 20px;
+  color: #FFFFFF;
+  background-color: #6BBBAE;
+  display: flex;
+  align-items: center;
+}
+
+/* Banca */
+.circle {
+  background: #F2D7A7;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}
+
+.bancaItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.description {
+  z-index: 9;
+}
+
+.brownBackgr {
+  background-color: rgb(140, 94, 88);
+}
+
+@media (min-width: 2000px) {
+  .rightContainer2 {
+    width: 1rem;
+  }
+}
+
+@media (min-width: 1000px){
+  /* Infraestructura */
+  .infraTitle {
+    position: relative;
+    right: -55%;
+  }
+  .infra {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .infraText {
+    position: relative;
+    right: -20%;
+  }
+
+  /* Retail */
+  .retail {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  /* Car */
+  .containerCar {
+    width: 80%;
+    margin: auto;
+  }
+
+  /* Movilidad */
+  .itemsCar {
+    height: 10rem;
+    background-color: #6BBBAE;
+  }
+
+}
+
+@media (min-width: 579px) {
+  /* Banca */
+  .brownBackgr {
+    position: absolute;
+    top: 20%;
+    height: 530px;
+    right: 0%;
+    width: 100vw;
+  }
+  .bancaText {
+    color: #FFFFFF;
+  }
+
+  /* Salud */
+  .healthItem {
+    margin-left: 1em;
+  }
+
+  /* Retail */
+  .rigthContainer {
+    left: -27%;
+  }
+}
+
+@media (max-width: 574px) {
+  /* Banca */
+  .brownBackgr {
+    height: 10px;
+  }
+
+  .itemsCar {
+    margin: auto;
+  }
+
+  .itemCar {
+    margin-bottom: 10px;
+  }
+
+  /* Salud */
+  .healthItem {
+    margin-bottom: 1em;
+  }
+
+  .healthDescrp {
+    width: 100%;
+  }
+
+  .healthImg {
+    height: 54rem;
+  }
+
 }
