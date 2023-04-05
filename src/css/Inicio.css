@@ -90,7 +90,7 @@
   font-family: 'Lusitana', serif;
   font-size: 5rem;
   text-align: center;
-  color: #6BBBAE
+  color: #6BBBAE;
 }
 
 /* Services Section */
@@ -100,12 +100,97 @@
   text-align: justify;
   color: #6BBBAE;
   font-family: 'Roboto', sans-serif;
+  font-weight: 600;
 }
 
-.text {
+.serviceTitle {
   font-family: 'Nunito', sans-serif;
-  font-size: 24px;
+  color: #8C5E58;
+}
+
+.serviceDescr {
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
   text-align: center;
+}
+
+.serviceItem {
+  font-size: 18px;
+  text-align: center;
+}
+
+.moreBtn {
+  position: absolute;
+  bottom: 5px;
+  right: 0px;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  background: transparent;
+  width: 13rem;
+  height: auto;
+}
+
+.moreBtn .circle {
+  transition: all 0.45s
+  cubic-bezier(0.65, 0, 0,076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #8C5E58;
+  border-radius: 1.625rem;
+}
+
+.moreBtn .arrow_icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+  transition: all 0.45s
+  cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+
+.moreBtn .arrow_icon::before {
+  position: absolute;
+  content: "";
+  top: -0.25rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+}
+
+.moreBtn .button_text {
+  transition: all 0.45s
+  cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  inset: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+.moreBtn:hover .circle {
+  width: 90%;
+}
+
+.moreBtn:hover .arrow_icon {
+  background: #fff;
+  transform: translate(1rem, 0);
 }
 
 /* Infraestructura */
@@ -121,6 +206,7 @@
   border-radius: 15px;
   padding: 0.5rem;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  width: fit-content;
 }
 
 /* Retail */
@@ -171,7 +257,6 @@
 
 .healthText {
   width: 80%;
-  text-align: center;
   margin: auto;
   color: #434242;
   position: relative;
@@ -199,7 +284,6 @@
 }
 
 .itemCar {
-  font-size: 20px;
   color: #FFFFFF;
   background-color: #6BBBAE;
   display: flex;

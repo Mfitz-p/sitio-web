@@ -1,7 +1,6 @@
 import { Col, Container, Row, Card, Image, Button, Nav } from 'react-bootstrap';
 import { Link } from 'react-scroll';
 import { NavLink } from 'react-router-dom';
-import { useInView } from 'react-intersection-observer';
 import { NavHashLink } from 'react-router-hash-link';
 import "../App.css";
 import "../css/Inicio.css"
@@ -25,57 +24,40 @@ import money from '../icons/money.svg';
 //Componentes
 import Particle from '../Components/Particles';
 
+// Animation
+import React, { useEffect } from "react";
+import { useAnimation, motion, Variants } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
 const Inicio = () => {
   const [t] = useTranslation("global")
   //Hook que se recibe desde la librería react-intersection-observer para cada elemento a modificar con el efecto de intersection observer 
   //para más información de su uso consultar la página Productos o la documentación de la librería https://github.com/thebuilder/react-intersection-observer.
-  const { ref: textcard1, inView: effectScroll } = useInView({
-    threshold: 0,
+  
+  const squareVariant = {
+    visible: { opacity: 1, scale: 1, transition: { duration: 1 } },
+    hidden: { opacity: 0, scale: 0 }
+  };
 
-  });
-  const { ref: textcard2, inView: effectScroll2 } = useInView({
-    threshold: 0,
+  const listItems = {
+    visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
+    hidden: { opacity: 0, scale: 0 }
+  }
 
-  });
-  const { ref: textcard3, inView: effectScroll3 } = useInView({
-    threshold: 0,
-
-  });
-  const { ref: textcard4, inView: effectScroll4 } = useInView({
-    threshold: 0,
-
-  });
-  const { ref: textcard5, inView: effectScroll5 } = useInView({
-    threshold: 0,
-
-  });
-  const { ref: imgcard1, inView: effectImgScroll } = useInView({
-    threshold: 0,
-
-  });
-  const { ref: imgcard2, inView: effectImgScroll2 } = useInView({
-    threshold: 0,
-
-  });
-  const { ref: imgcard3, inView: effectImgScroll3 } = useInView({
-    threshold: 0,
-
-  });
- 
-  const { ref: imgcard4, inView: effectImgScroll4 } = useInView({
-    threshold: 0,
-
-  });
-  const { ref: imgcard5, inView: effectImgScroll5 } = useInView({
-    threshold: 0,
-
-  });
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
  
   const { ref: btn, inView: up } = useInView({
     threshold: 1,
     triggerOnce: true,
     delay: 0
   });
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
 
   return (
     <>
@@ -125,32 +107,37 @@ const Inicio = () => {
       <Container fluid className="hideX">
       
         <section id="cards-servicios" >
-          <Row className='mt-2'>
-            <Col className="d-flex justify-content-center px-5">
-              <h1 className='title'>{t("Home.Title")}</h1>
-            </Col>
-            <Col className='mx-md-5'>
-              <p style={{ fontSize: "20px", textAlign: "justify"  }}>{t("Home.Description1")}</p>
-            </Col>
-          </Row>
+          <motion.div
+            variants={squareVariant}
+            className="square"
+            initial="hidden"
+            ref={ref}
+            animate={controls}
+          >
+            <Container className='mt-2'>
+              <Row className="d-flex justify-content-center px-5">
+                <h1 className='title'>{t("Home.Title")}</h1>
+              </Row>
+              <Row className='mx-md-5'>
+                <p style={{ fontSize: "20px", textAlign: "justify"  }}>{t("Home.Description1")}</p>
+              </Row>
+            </Container>
+          </motion.div>
           
           <Row>
             <div
               className=" d-flex justify-content-center"
             >
-             <h1 className='servicesTitle'> {t("Home.Services")}</h1>
+            <h1 className='servicesTitle'> {t("Home.Services")}</h1>
             </div>
 
           </Row>
-
            
-            
           {/* Comienzan las cards de servicios */}
           <Row className="mb-4">
             <Col className="d-flex g-0" lg={6} md={12}>
               <Card className="p-1 g-0" style={{ border: "none" }}>
                 <Card.Body
-                  ref={textcard1}
                 >
                   <div className='infraTitle' style={{width: "fit-content"}}>
                     <Image
@@ -160,18 +147,17 @@ const Inicio = () => {
                         alt="city"
                       />
                     <Card.Title
-                      className="mb-0 infra d-inline"
+                      className="mb-0 infra d-inline serviceTitle"
                       style={{
-                        fontSize: "46px",
-                        fontWeight: "bold",
-                        color: "#8C5E58"
+                        fontSize: "45px",
+                        fontWeight: "bold"
                       }}
                     >
                       {t("General.Title1")}
                     </Card.Title>
                   </div>
                   <Card.Text
-                    className=" mt-2 mb-2 pe-2 text infraText"
+                    className=" mt-2 mb-2 pe-2 serviceDescr infraText"
                     style={{ textAlign: "center" }}
                   >
                     {t("Home.Description2")}
@@ -184,18 +170,46 @@ const Inicio = () => {
                   {t("General.More")}
                   </NavHashLink>*/}
                   <Row className="d-flex flex-column mt-5">
-                    <Row className="infraItem" style={{width: "fit-content", margin: "auto", marginBottom: "1.5rem"}}>
-                      {t("Products.1Bullet1")}
-                    </Row>
-                    <Row className="infraItem" style={{width: "fit-content", margin: "auto", marginBottom: "1.5rem"}}>
-                      {t("Products.1Bullet2")}
-                    </Row>
-                    <Row className="infraItem" style={{width: "fit-content", margin: "auto", marginBottom: "1.5rem"}}>
-                      {t("Products.1Bullet3")}
-                    </Row>
-                    <Row className="infraItem" style={{width: "fit-content", margin: "auto", marginBottom: "1.5rem"}}>
-                      {t("Products.1Bullet4")}
-                    </Row>
+                    <motion.div
+                      variants={listItems}
+                      initial="hidden"
+                      ref={ref}
+                      animate={controls}
+                    >
+                      <Row className="infraItem serviceItem m-auto mb-4">
+                        {t("Products.1Bullet1")}
+                      </Row>
+                    </motion.div>
+                    <motion.div
+                      variants={listItems}
+                      initial="hidden"
+                      ref={ref}
+                      animate={controls}
+                    >
+                      <Row className="infraItem serviceItem m-auto mb-4">
+                        {t("Products.1Bullet2")}
+                      </Row>
+                    </motion.div>
+                    <motion.div
+                      variants={listItems}
+                      initial="hidden"
+                      ref={ref}
+                      animate={controls}
+                    >
+                      <Row className="infraItem serviceItem m-auto mb-4">
+                        {t("Products.1Bullet3")}
+                      </Row>
+                    </motion.div>
+                    <motion.div
+                      variants={listItems}
+                      initial="hidden"
+                      ref={ref}
+                      animate={controls}
+                    >
+                      <Row className="infraItem serviceItem m-auto mb-4">
+                        {t("Products.1Bullet4")}
+                      </Row>
+                    </motion.div>
                   </Row>
                 </Card.Body>
               </Card>
@@ -205,7 +219,6 @@ const Inicio = () => {
               loading="lazy"
                 fluid
                 src={infraestructura}
-                ref={imgcard1}
                 alt="img-page"
                 style={{ objectFit: "cover", position: "relative", zIndex: "-1"}}
               />
@@ -227,7 +240,6 @@ const Inicio = () => {
                     fluid
                     src={retail}
                     alt="img-page"
-                    ref={imgcard2}
                     style={{ objectFit: "cover", height: "39.3rem", width: "100%" }}/>
                 </Col>
                 <Col className='d-flex .d-md-none .d-lg-block' style={{padding: "0px"}}>
@@ -250,7 +262,6 @@ const Inicio = () => {
             >
               <Card className="p-1" style={{ border: "none" }}>
                 <Card.Body
-                  ref={textcard2}
                 >
                   <div className='d-flex' style={{width: "fit-content"}}>
                     <Image
@@ -262,9 +273,8 @@ const Inicio = () => {
                     <Card.Title
                       className="mb-4 ps-2 mt-5 d-inline serviceTitle"
                       style={{
-                        fontSize: "50px",
-                        fontWeight: "bold",
-                        color: "#8C5E58"
+                        fontSize: "45px",
+                        fontWeight: "bold"
                       }}
                     >
                       {t("General.Title2")}
@@ -272,7 +282,7 @@ const Inicio = () => {
                   </div>
                  
                   <Card.Text
-                    className=" mt-5 ps-2 text"
+                    className=" mt-5 ps-2 serviceDescr"
                     style={{ textAlign: "center" }}
                   >
                     {t("Home.Description3")}
@@ -280,22 +290,22 @@ const Inicio = () => {
                   <Row className="mt-5">
                     <Col>
                       <p className='underline'>01</p>
-                      <p className='text-center' style={{fontSize: "20px"}}>{t("Products.2Bullet1")}</p>
+                      <p className='serviceItem'>{t("Products.2Bullet1")}</p>
                     </Col>
                     <Col style={{display: "inline-block", alignSelf: "flex-end"}}>
                       <p className='underline'>02</p>
-                      <p className='text-center' style={{fontSize: "20px"}}>{t("Products.2Bullet2")}</p></Col>
+                      <p className='serviceItem'>{t("Products.2Bullet2")}</p></Col>
                     <Col>
                       <p className='underline'>03</p>
-                      <p className='text-center' style={{fontSize: "20px"}}>{t("Products.2Bullet3")}</p>
+                      <p className='serviceItem'>{t("Products.2Bullet3")}</p>
                     </Col>
                     <Col style={{display: "inline-block", alignSelf: "flex-end"}}>
                       <p className='underline'>04</p>
-                      <p className='text-center' style={{fontSize: "20px"}}>{t("Products.2Bullet4")}</p>
+                      <p className='serviceItem'>{t("Products.2Bullet4")}</p>
                     </Col>
                     <Col>
                       <p className='underline'>05</p>
-                      <p className='text-center' style={{fontSize: "20px"}}>{t("Products.2Bullet5")}</p>
+                      <p className='serviceItem'>{t("Products.2Bullet5")}</p>
                     </Col>
                   </Row>
                   {/*<NavHashLink
@@ -326,21 +336,18 @@ const Inicio = () => {
                 alt="health"
               />
               <Card.Body
-                ref={textcard3}
               >
                 <Card.Title
-                  className=" mb-5"
+                  className="mb-5 text-center serviceTitle"
                   style={{
-                    fontSize: "50px",
-                    fontWeight: "bold",
-                    color: "#8C5E58",
-                    textAlign: "center"
+                    fontSize: "45px",
+                    fontWeight: "bold"
                   }}
                 >
                   {t("General.Title3")}
                 </Card.Title>
                 <Card.Text
-                  className="mt-2 mb-2 pe-4 text text-white healthDescrp"
+                  className="mt-2 mb-2 pe-4 serviceDescr text-white healthDescrp"
                 >
                   {t("Home.Description4")}
                 </Card.Text>
@@ -354,24 +361,32 @@ const Inicio = () => {
                 <Row className="healthItems m-auto mt-5 mb-3">
                   <Col sm className="healthItem" style={{backgroundColor: "#F2D7A7", padding: "0px"}}>
                     <div style={{backgroundColor: "#434242", height: "10px", borderRadius: "10px"}}></div>
-                    <p className="healthText">{t("Products.3Bullet1")}</p>
+                    <p className="healthText serviceItem">{t("Products.3Bullet1")}</p>
                   </Col>
                   <Col sm className="healthItem" style={{backgroundColor: "#F2D7A7", padding: "0px"}}>
                     <div style={{backgroundColor: "#434242", height: "10px", borderRadius: "10px"}}></div>
-                    <p className="healthText">{t("Products.3Bullet2")}</p>
+                    <p className="healthText serviceItem">{t("Products.3Bullet2")}</p>
                   </Col>
                 </Row>
                 <Row className="healthItems m-auto">
                   <Col sm className="healthItem" style={{backgroundColor: "#F2D7A7", padding: "0px"}}>
                     <div style={{backgroundColor: "#434242", height: "10px", borderRadius: "10px"}}></div>
-                    <p className="healthText">{t("Products.3Bullet3")}</p>
+                    <p className="healthText serviceItem">{t("Products.3Bullet3")}</p>
                   </Col>
                   <Col sm className="healthItem" style={{backgroundColor: "#F2D7A7", padding: "0px"}}>
                     <div style={{backgroundColor: "#434242", height: "10px", borderRadius: "10px"}}></div>
-                    <p className="healthText">{t("Products.3Bullet4")}</p>
+                    <p className="healthText serviceItem">{t("Products.3Bullet4")}</p>
                   </Col>
                 </Row>
               </Card.Body>
+              <NavHashLink to="/Productos#salud">
+                <button className='moreBtn'>
+                  <span className='circle' aria-hidden='true'>
+                    <span className='arrow_icon'></span>
+                  </span>
+                  <span className='button_text'>{t("General.More")}</span>
+                </button>
+              </NavHashLink>
               </Card.ImgOverlay>
             </Card>
           </Row>
@@ -380,17 +395,14 @@ const Inicio = () => {
             <Col className="d-flex g-0" lg={6} md={12}>
               <Card className="p-1 g-0" style={{ border: "none"}}>
                 <Card.Body
-                  ref={textcard1}
                   style={{display: "flex", flexDirection: "column" }}
                 >
                   <div className="d-flex justify-content-center align-items-center">
                     <Card.Title
-                      className="mb-0"
+                      className="mb-0 serviceTitle text-center"
                       style={{
-                        fontSize: "50px",
-                        fontWeight: "bold",
-                        color: "#8C5E58",
-                        textAlign: "center"
+                        fontSize: "45px",
+                        fontWeight: "bold"
                       }}
                     >
                       {t("General.Title4")}
@@ -404,7 +416,7 @@ const Inicio = () => {
                   </div>
                   <div className='containerCar'>
                     <Card.Text
-                      className=" mt-2 mb-2 pe-2 text"
+                      className=" mt-2 mb-2 pe-2 serviceDescr"
                     >
                       {t("Home.Description5")}
                     </Card.Text>
@@ -425,15 +437,14 @@ const Inicio = () => {
                   fluid
                   src={movilidad}
                   alt="img-page"
-                  ref={imgcard4}
                   style={{ objectFit: "cover", height: "39.3rem", width: "100%" }}
                 />
             </Col>
             <Row className="itemsCar m-auto">
-              <Col sm className="text-center itemCar align-middle">{t("Products.4Bullet1")}</Col>
-              <Col sm className="text-center itemCar"  style={{fontSize: "20px", color: "#FFFFFF", backgroundColor: "#6BBBAE" }}>{t("Products.4Bullet2")}</Col>
-              <Col sm className="text-center itemCar"  style={{fontSize: "20px", color: "#FFFFFF"}}>{t("Products.4Bullet3")}</Col>
-              <Col sm className="text-center itemCar"  style={{fontSize: "20px", color: "#FFFFFF"}}>{t("Products.4Bullet4")}</Col>
+              <Col sm className="text-center itemCar align-middle serviceItem">{t("Products.4Bullet1")}</Col>
+              <Col sm className="text-center itemCar serviceItem">{t("Products.4Bullet2")}</Col>
+              <Col sm className="text-center itemCar serviceItem">{t("Products.4Bullet3")}</Col>
+              <Col sm className="text-center itemCar serviceItem">{t("Products.4Bullet4")}</Col>
             </Row>
           </Row>
 
@@ -449,7 +460,6 @@ const Inicio = () => {
                 fluid
                 src={banca}
                 alt="img-page"
-                ref={imgcard2}
                 style={{ objectFit: "cover", height: "39.3rem", width: "100%" }}
               />
             </Col>
@@ -460,16 +470,14 @@ const Inicio = () => {
             >
               <Card className="p-1" style={{ border: "none" }}>
                 <Card.Body
-                  ref={textcard2}
                   style={{display: "flex", flexDirection: "column"}}
                 >
                   <div className="d-flex ">
                     <Card.Title
-                      className="mb-0 ps-2 mt-3"
+                      className="mb-0 ps-2 mt-3 serviceTitle"
                       style={{
-                        fontSize: "50px",
-                        fontWeight: "bold",
-                        color: "#8C5E58",
+                        fontSize: "45px",
+                        fontWeight: "bold"
                       }}
                     >
                       {t("General.Title5")}
@@ -484,27 +492,27 @@ const Inicio = () => {
                   <Row className="brownBackgr"></Row>
                   <div className='description mt-5 mb-5 ps-3'>
                     <Card.Text
-                      className=" mt-2 mb-2 ps-2 text bancaText"
+                      className=" mt-2 mb-2 ps-2 serviceDescr bancaText"
                     >
                       {t("Home.Description6")}
                     </Card.Text>
                   </div>
-                  <Row className='mt-2 mb-5' style={{zIndex: "9"}}>
+                  <Row className='mt-5 mb-5' style={{zIndex: "9"}}>
                     <Col sm className="bancaItem mb-5">
                       <div className='circle mb-2'></div>
-                      <p className= "bancaText text">{t("Products.5Bullet1")}</p>
+                      <p className= "bancaText serviceItem">{t("Products.5Bullet1")}</p>
                     </Col>
                     <Col sm className="bancaItem mb-5">
                       <div className='circle mb-2'></div>
-                      <p className= "bancaText text">{t("Products.5Bullet3")}</p>
+                      <p className= "bancaText serviceItem">{t("Products.5Bullet3")}</p>
                     </Col>
                     <Col sm className="bancaItem mb-5">
                       <div className='circle mb-2'></div>
-                      <p className= "bancaText text">{t("Products.5Bullet2")}</p>
+                      <p className= "bancaText serviceItem">{t("Products.5Bullet2")}</p>
                     </Col>
                     <Col sm className="bancaItem mb-5">
                       <div className='circle mb-2'></div>
-                      <p className= "bancaText text">{t("Products.5Bullet4")}</p>
+                      <p className= "bancaText serviceItem">{t("Products.5Bullet4")}</p>
                     </Col>
                   </Row>
                   {/*<NavHashLink

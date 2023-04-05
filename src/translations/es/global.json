@@ -60,6 +60,21 @@
     "5Bullet3": "Predicción del valor de usuario por tiempo de vida",
     "5Bullet4": "Herramientas para la elegibilidad e inclusión financiera"
   },
+  "Salud": {
+    "Title": "Desarrollamos soluciones basadas en inteligencia artificial y analítica predictiva para la asistencia en procedimientos clínicos y tareas rutinarias en los sistemas de salud",
+    "Team": "Contamos con expertos líderes en el área de desarrollo de sistemas para la asistencia en la práctica clínica y de administración de sistemas hospitalarios públicos y privados",
+    "Service": "Nuestros Servicios",
+    "Service1": "Implementación de sistemas de diagnóstico y cirugía asistidos por computadora (CAD/ basados en visión por computadora procesamiento de señales ( EEG, RF, etc aprendizaje máquina y realidad aumentada para optimizar la precisión en los procedimientos de diagnóstico y quirúrgicos",
+    "Service2": "Observatorios de salud para el monitoreo y supervisión de parámetros e índices descriptivos de la evolución epidémica de diferentes patologías, mediante la integración de sistemas de gestión y procesamiento de grandes cantidades de datos y de información sistematizada y periódicamente actualizada",
+    "Service3": "Desarrollo de sistemas de pronóstico de la efectividad del tratamiento clínico mediante métodos de analítica predictiva para la identificación de patrones de respuesta a diversos tratamientos para asistir a los médicos en la toma de decisiones del tratamiento informadas y personalizadas",
+    "Service4": "Obtención y selección de biomarcadores de diagnóstico a través del procesamiento de grandes bases de datos y la implementación de métodos de estadística descriptiva avanzada para la identificación de la relación entre estos y diferentes patologías",
+    "Advantage": "Ventajas",
+    "Advantage1": "Reducción de la variabilidades intraoperador.",
+    "Advantage2": "Estandarización de procesos clínicos.",
+    "Advantage3": "Personalización de los servicios de salud.",
+    "Advantage4": "Reducción de costos de operación.",
+    "Advantage5": "Centralización y democratización de la información hospitalaria."
+  },
   "Contact": {
     "Alert": "Tu teléfono solo puede tener entre 7 y 10 números",
     "Questions": "Para dudas o preguntas",

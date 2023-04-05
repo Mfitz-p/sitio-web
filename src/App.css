@@ -18,6 +18,20 @@
   width: 100%;
 }
 
+/* Navbar */
+#navTitle {
+  color: #FFFF;
+}
+
+.dropdown-item.active, .dropdown-item:active{
+  color: white;
+  background-color: #6BBBAE;
+  text-decoration: none;
+}
+#prueba:active {
+  background-color: #6BBBAE;
+}
+
 /* MediaQuery de logotipo del navbar */
 @media all and (max-height: 390px){
   .logo {

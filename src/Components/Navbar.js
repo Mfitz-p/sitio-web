@@ -3,9 +3,11 @@ import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
 import Nav from 'react-bootstrap/Nav';
 import NavbarRB from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 import logo from '../images/logoVertical3.webp';
 import { NavLink } from 'react-router-dom';
 import "../App.css";
+import "../css/Salud.css"
 import { useTranslation } from 'react-i18next';
 // Componente Navbar contiene la barra de navegacion de la pagina y el logotipo de Kaminoittech
 
@@ -27,9 +29,16 @@ const Navbar = () => {
           <NavbarRB.Collapse className='flex-grow-0 ' id="responsive-navbar-nav">
             {/*  */}
             <Nav className='p-3'>
-            <Nav.Link as={NavLink} to="/Inicio" className='text-white hvr-underline-from-left-modificado'>{t("Navbar.Home")}</Nav.Link>
+              <Nav.Link as={NavLink} to="/Inicio" className='text-white hvr-underline-from-left-modificado'>{t("Navbar.Home")}</Nav.Link>
               <Nav.Link as={NavLink} to="/Nosotros" className='text-white hvr-underline-from-left-modificado'>{t("Navbar.Us")}</Nav.Link>
-              <Nav.Link as={NavLink} to="/Productos" className='text-white hvr-underline-from-left-modificado'>{t("Navbar.Products")}</Nav.Link>
+              {/*<Nav.Link as={NavLink} to="/Productos" className='text-white hvr-underline-from-left-modificado'>{t("Navbar.Products")}</Nav.Link>*/}
+              <NavDropdown title={t("Navbar.Products")} className='text-white' id='navTitle'>
+                <NavDropdown.Item href="#action/3.1">{t("General.Title1")}</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2">{t("General.Title2")}</NavDropdown.Item>
+                <NavDropdown.Item as={NavLink} to="/Salud" id='prueba'>{t("General.Title3")}</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.4">{t("General.Title4")}</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.5">{t("General.Title5")}</NavDropdown.Item>
+              </NavDropdown>
               <Nav.Link as={NavLink} to="/Contacto" className='text-white hvr-underline-from-left-modificado'>{t("Navbar.Contact")}</Nav.Link>
               {/* <Nav.Link as={NavLink} to="/Carreras" className='text-white hvr-underline-from-left-modificado'>{t("Navbar.Carrers")}</Nav.Link> */}
             </Nav>
