@@ -35,7 +35,7 @@ const Navbar = () => {
               <NavDropdown title={t("Navbar.Products")} className='text-white' id='navTitle'>
                 <NavDropdown.Item href="#action/3.1">{t("General.Title1")}</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">{t("General.Title2")}</NavDropdown.Item>
-                <NavDropdown.Item as={NavLink} to="/Salud" id='prueba'>{t("General.Title3")}</NavDropdown.Item>
+                <NavDropdown.Item as={NavLink} to="/Salud" id='product'>{t("General.Title3")}</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.4">{t("General.Title4")}</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.5">{t("General.Title5")}</NavDropdown.Item>
               </NavDropdown>

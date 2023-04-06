@@ -379,7 +379,7 @@ const Inicio = () => {
                   </Col>
                 </Row>
               </Card.Body>
-              <NavHashLink to="/Productos#salud">
+              <NavHashLink to="/Salud">
                 <button className='moreBtn'>
                   <span className='circle' aria-hidden='true'>
                     <span className='arrow_icon'></span>
