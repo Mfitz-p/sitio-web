@@ -1,15 +1,83 @@
-.subtitles {
-    background-color: #2d3637;
-    color: #FFFF;
-    text-align: center;
+body {
+    overflow-x: hidden;
 }
 
-h2 {
+/* Banner */
+.image_wrapper {
+    position: relative;
+}
+
+.overlay {
+    position: absolute; 
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+
+/* Asistencia */
+.descrp {
+    width: 25em;
+    height: 25em;
+    border-radius: 50%;
+    background-size: 110%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-flex;
     text-align: center;
-    margin: revert;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F2E1AC;
+}
+.doctorBackgr {
+    background-image: url('../images/Productos/healthDoctor.png');
+    position: relative;
+}
+
+.filter {
+    position: absolute;
+    opacity: 0.5;
+    width: 100%;
+}
+
+.descrpText {
+    z-index: 1;
+    font-weight: bold;
+    margin: auto;
+    width: 90%;
+    font-size: larger;
 }
 
 li {
-    text-align: justify;
+    font-weight: bold;
 }
 
+
+@media screen and (min-width: 1440px) {
+    .header {
+        text-align: center;
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .header {
+        width: 300px;
+    }
+}
+
+@media  screen and (max-width: 576px) {
+    .image_wrapper {
+        margin-top: 1em;
+    }
+
+    #imgBackgr {
+        height: 200px;
+    }
+    .header {
+        text-align: center;
+    }
+
+    .doctorBackgr {
+        margin-bottom: 2em;
+    }
+}
