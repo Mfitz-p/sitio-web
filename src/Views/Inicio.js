@@ -12,6 +12,7 @@ import medicaIA from '../images/Inicio/medicaIA.webp';
 import retail from '../images/Inicio/retail.webp';
 import movilidad from '../images/Inicio/movilidad.webp';
 import banca from '../images/Inicio/banca.webp';
+import metrics from '../images/Inicio/metrics.png'
 import { useTranslation } from 'react-i18next';
 
 //Iconos 
@@ -104,156 +105,130 @@ const Inicio = () => {
           </div>
         </section>
 
-      <Container fluid className="hideX">
+      <Container fluid className="hideX" style={{padding: "0px"}}>
       
         <section id="cards-servicios" >
-          <motion.div
-            variants={squareVariant}
-            className="square"
-            initial="hidden"
-            ref={ref}
-            animate={controls}
-          >
-            <Container className='mt-2'>
-              <Row className="d-flex justify-content-center px-5">
-                <h1 className='title'>{t("Home.Title")}</h1>
-              </Row>
-              <Row className='mx-md-5'>
-                <p style={{ fontSize: "20px", textAlign: "justify"  }}>{t("Home.Description1")}</p>
-              </Row>
-            </Container>
-          </motion.div>
-          
-          <Row>
+          <Container className='d-flex align-items-center' style={{minHeight: "100vh"}}>
+            {/*<Row className="d-flex justify-content-center px-5">
+              <h1 className='title'>{t("Home.Title")}</h1>
+            </Row>
+            <Row className='mx-md-5'>
+              <p style={{ fontSize: "20px", textAlign: "justify"  }}>{t("Home.Description1")}</p>
+            </Row>*/}
+            <Row>
+              <Col className='d-grid align-items-center'>
+                <div>
+                  <h1 className='title mb-5'>{t("Home.Title")}</h1>
+                  <p style={{ fontSize: "20px", textAlign: "justify"  }}>{t("Home.Description1")}</p>
+                </div>
+              </Col>
+              <Col className='d-none d-sm-block text-center'>
+                <Image fluid
+                  src={metrics}
+                  alt='metrics'
+                />
+              </Col>
+            </Row> 
+          </Container>
+           
+          {/* Comienzan las cards de servicios */}
+          {/* Infraestructura */}
+          <Container fluid style={{minHeight: "100vh", display: "grid"}}>
             <div
               className=" d-flex justify-content-center"
             >
             <h1 className='servicesTitle'> {t("Home.Services")}</h1>
             </div>
-
-          </Row>
-           
-          {/* Comienzan las cards de servicios */}
-          <Row className="mb-4">
-            <Col className="d-flex g-0" lg={6} md={12}>
-              <Card className="p-1 g-0" style={{ border: "none" }}>
-                <Card.Body
-                >
-                  <div className='infraTitle' style={{width: "fit-content"}}>
-                    <Image
-                        height={70}
-                        className="m-3 hvr-float d-inline"
-                        src={city}
-                        alt="city"
-                      />
-                    <Card.Title
-                      className="mb-0 infra d-inline serviceTitle"
-                      style={{
-                        fontSize: "45px",
-                        fontWeight: "bold"
-                      }}
-                    >
-                      {t("General.Title1")}
-                    </Card.Title>
-                  </div>
-                  <Card.Text
-                    className=" mt-2 mb-2 pe-2 serviceDescr infraText"
-                    style={{ textAlign: "center" }}
+            <Row className="p-0">
+              <Col className="d-flex g-0" lg={6} md={12}>
+                <Card className="p-1 g-0" style={{ border: "none" }}>
+                  <Card.Body
                   >
-                    {t("Home.Description2")}
-                  </Card.Text>
-              
-                  {/*<NavHashLink
-                  className=" mb-2 "
-                  to="/Productos#infraestructura"
-                  >
-                  {t("General.More")}
-                  </NavHashLink>*/}
-                  <Row className="d-flex flex-column mt-5">
-                    <motion.div
-                      variants={listItems}
-                      initial="hidden"
-                      ref={ref}
-                      animate={controls}
+                    <div className='d-flex align-items-center m-auto' style={{width: "fit-content"}}>
+                      <Image
+                          height={70}
+                          className="m-3 hvr-float d-inline"
+                          src={city}
+                          alt="city"
+                        />
+                      <Card.Title
+                        className="mb-0 infra d-inline serviceTitle"
+                        style={{
+                          fontSize: "45px",
+                          fontWeight: "bold"
+                        }}
+                      >
+                        {t("General.Title1")}
+                      </Card.Title>
+                    </div>
+                    <Card.Text
+                      className=" mt-2 mb-2 pe-2 serviceDescr infraText"
+                      style={{ textAlign: "center" }}
                     >
-                      <Row className="infraItem serviceItem m-auto mb-4">
+                      {t("Home.Description2")}
+                    </Card.Text>
+                
+                    {/*<NavHashLink
+                    className=" mb-2 "
+                    to="/Productos#infraestructura"
+                    >
+                    {t("General.More")}
+                    </NavHashLink>*/}
+                    <Row className="d-flex flex-column mt-5">
+                      <Row className="infraItem serviceItem m-auto mb-4" style={{width: 'fit-content'}}>
                         {t("Products.1Bullet1")}
                       </Row>
-                    </motion.div>
-                    <motion.div
-                      variants={listItems}
-                      initial="hidden"
-                      ref={ref}
-                      animate={controls}
-                    >
-                      <Row className="infraItem serviceItem m-auto mb-4">
+                      <Row className="infraItem serviceItem m-auto mb-4" style={{width: 'fit-content'}}>
                         {t("Products.1Bullet2")}
                       </Row>
-                    </motion.div>
-                    <motion.div
-                      variants={listItems}
-                      initial="hidden"
-                      ref={ref}
-                      animate={controls}
-                    >
-                      <Row className="infraItem serviceItem m-auto mb-4">
+                      <Row className="infraItem serviceItem m-auto mb-4" style={{width: 'fit-content'}}>
                         {t("Products.1Bullet3")}
                       </Row>
-                    </motion.div>
-                    <motion.div
-                      variants={listItems}
-                      initial="hidden"
-                      ref={ref}
-                      animate={controls}
-                    >
-                      <Row className="infraItem serviceItem m-auto mb-4">
+                      <Row className="infraItem serviceItem m-auto mb-4" style={{width: 'fit-content'}}>
                         {t("Products.1Bullet4")}
                       </Row>
-                    </motion.div>
-                  </Row>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col id="imagenInicio" lg={6} md={12} style={{padding: "0px"}}>
-              <Image
-              loading="lazy"
-                fluid
-                src={infraestructura}
-                alt="img-page"
-                style={{ objectFit: "cover", position: "relative", zIndex: "-1"}}
-              />
-              <Row className="divInfraImg"></Row>  
-            </Col>
-          </Row>
+                    </Row>
+                  </Card.Body>
+                </Card>
+              </Col>
+              <Col id="imagenInicio" lg={6} md={12} style={{padding: "0px"}}>
+                <Image
+                loading="lazy"
+                  fluid
+                  src={infraestructura}
+                  alt="img-page"
+                  style={{ objectFit: "cover", position: "relative", zIndex: "-1"}}
+                />
+                <Row className="divInfraImg"></Row>  
+              </Col>
+            </Row>
+          </Container>
 
-          <Row className="mb-4">
+          {/* Retail */}
+          <Row style={{minHeight: "100vh"}}>
             <Col
               id="imagenInicio"
               md={{ order: "last", span: 12 }}
               lg={{ order: "first", span: 6 }}
-              style={{padding: "0px"}}
+              style={{padding: "0px", margin: "auto"}}
             >
-              <Row className="d-flex">
-                <Col xs={11}>
-                  <Image
-                  loading="lazy"
-                    fluid
-                    src={retail}
-                    alt="img-page"
-                    style={{ objectFit: "cover", height: "39.3rem", width: "100%" }}/>
+              <Row>
+                <Col lg={11} style={{padding: "0px"}}>
+                  <Row>
+                    <Image
+                    loading="lazy"
+                      fluid
+                      src={retail}
+                      alt="img-page"
+                      style={{ objectFit: "cover", height: "39.3rem", width: "100%" }}/>
+                  </Row>
+                  <Row style={{backgroundColor: "#F2D7A7", height: "2em", padding: "0px", width: "90%", float: "right"}}>
+                  </Row>
                 </Col>
-                <Col className='d-flex .d-md-none .d-lg-block' style={{padding: "0px"}}>
-                  <div className=' rigthContainer'></div>
+                <Col style={{position: "relative", padding: "0px"}}>
+                  <div style={{backgroundColor: "#F2D7A7", height: "80%", width: "50%", position: "absolute", bottom: '0'}}></div>
                 </Col>
               </Row>
-              <Row>
-                <Col xs={11}>
-                  <Row className="divRetailImg"></Row>
-                </Col>
-                <Col>
-                  <Row className="rightContainer2"></Row>
-                </Col>
-              </Row> 
             </Col>
             <Col
               className="d-flex g-0"
@@ -261,9 +236,8 @@ const Inicio = () => {
               lg={{ order: "last", span: 6 }}
             >
               <Card className="p-1" style={{ border: "none" }}>
-                <Card.Body
-                >
-                  <div className='d-flex' style={{width: "fit-content"}}>
+                <Card.Body className='d-grid'>
+                  <div className='d-flex align-items-center m-auto' style={{width: "fit-content"}}>
                     <Image
                       height={70}
                       className="m-3 hvr-float d-inline"
@@ -271,7 +245,7 @@ const Inicio = () => {
                       alt="basket"
                     />
                     <Card.Title
-                      className="mb-4 ps-2 mt-5 d-inline serviceTitle"
+                      className="d-inline serviceTitle"
                       style={{
                         fontSize: "45px",
                         fontWeight: "bold"
@@ -282,12 +256,12 @@ const Inicio = () => {
                   </div>
                  
                   <Card.Text
-                    className=" mt-5 ps-2 serviceDescr"
+                    className=" mt-2 ps-2 serviceDescr"
                     style={{ textAlign: "center" }}
                   >
                     {t("Home.Description3")}
                   </Card.Text>
-                  <Row className="mt-5">
+                  <Row className="serviceItemsContainer">
                     <Col>
                       <p className='underline'>01</p>
                       <p className='serviceItem'>{t("Products.2Bullet1")}</p>
@@ -308,74 +282,70 @@ const Inicio = () => {
                       <p className='serviceItem'>{t("Products.2Bullet5")}</p>
                     </Col>
                   </Row>
-                  {/*<NavHashLink
-                  className=" mb-0 ps-2"
-                  to="/Productos#retail"
-                  >
-                  {t("General.More")}
-                    </NavHashLink>*/}
                 </Card.Body>
               </Card>
             </Col>
           </Row>
 
-          <Row className='position-relative mb-5'>
+          {/* Salud */}
+          <Row className='position-relative' style={{minHeight: "100vh"}}>
             <Card className="d-flex" style={{border: "none"}}>
             <Card.Img
               fluid
               src={medicaIA}
               className='healthImg'
               alt="salud"
-              style={{ objectFit: "cover", opacity: "0.6"}}
+              style={{ objectFit: "cover", minHeight: "100vh"}}
                 />
-            <Card.ImgOverlay>
-              <Image
-                height={70}
-                className="m-3 hvr-float position-absolute top-0 end-0"
-                src={health}
-                alt="health"
-              />
-              <Card.Body
-              >
-                <Card.Title
-                  className="mb-5 text-center serviceTitle"
-                  style={{
-                    fontSize: "45px",
-                    fontWeight: "bold"
-                  }}
-                >
-                  {t("General.Title3")}
-                </Card.Title>
-                <Card.Text
-                  className="mt-2 mb-2 pe-4 serviceDescr text-white healthDescrp"
-                >
-                  {t("Home.Description4")}
-                </Card.Text>
-            
-                {/*<NavHashLink
-                className=" mb-0"
-                to="/Productos#salud"
-                >
-                {t("General.More")}
-                </NavHashLink>*/}
-                <Row className="healthItems m-auto mt-5 mb-3">
-                  <Col sm className="healthItem" style={{backgroundColor: "#F2D7A7", padding: "0px"}}>
-                    <div style={{backgroundColor: "#434242", height: "10px", borderRadius: "10px"}}></div>
-                    <p className="healthText serviceItem">{t("Products.3Bullet1")}</p>
-                  </Col>
-                  <Col sm className="healthItem" style={{backgroundColor: "#F2D7A7", padding: "0px"}}>
-                    <div style={{backgroundColor: "#434242", height: "10px", borderRadius: "10px"}}></div>
-                    <p className="healthText serviceItem">{t("Products.3Bullet2")}</p>
-                  </Col>
-                </Row>
-                <Row className="healthItems m-auto">
-                  <Col sm className="healthItem" style={{backgroundColor: "#F2D7A7", padding: "0px"}}>
-                    <div style={{backgroundColor: "#434242", height: "10px", borderRadius: "10px"}}></div>
-                    <p className="healthText serviceItem">{t("Products.3Bullet3")}</p>
-                  </Col>
-                  <Col sm className="healthItem" style={{backgroundColor: "#F2D7A7", padding: "0px"}}>
-                    <div style={{backgroundColor: "#434242", height: "10px", borderRadius: "10px"}}></div>
-                    <p className="healthText serviceItem">{t("Products.3Bullet4")}</p>
+            <Card.ImgOverlay className='d-flex align-items-center'>
+              <Card.Body>
+                <Row>
+                  <Col></Col>
+                  <Col lg={6}>
+                    <div className='d-flex align-items-center m-auto' style={{width: "fit-content"}}>
+                      <Image
+                          height={70}
+                          className="m-3 hvr-float d-inline"
+                          src={health}
+                          alt="health"
+                        />
+                      <Card.Title
+                        className="text-center serviceTitle d-inline"
+                        style={{
+                          fontSize: "45px",
+                          fontWeight: "bold"
+                        }}
+                      >
+                        {t("General.Title3")}
+                      </Card.Title>
+                    </div>
+                    <Card.Text
+                      className="mt-2 mb-2 pe-4 serviceDescr"
+                    >
+                      {t("Home.Description4")}
+                    </Card.Text>
+                    <Row className="mt-5">
+                      <Col lg={6} style={{display: "flex", flexDirection: "column", justifyContent: "space-between"}}>
+                        <Row className="healthItem" style={{margin: "auto", marginBottom: "1em"}}>
+                          <div style={{backgroundColor: "#434242", height: "10px", borderRadius: "10px"}}></div>
+                          <p className="healthText serviceItem">{t("Products.3Bullet1")}</p>
+                        </Row>
+                        <Row className="healthItem" style={{margin: "auto", marginBottom: "1em"}}>
+                          <div style={{backgroundColor: "#434242", height: "10px", borderRadius: "10px"}}></div>
+                          <p className="healthText serviceItem">{t("Products.3Bullet3")}</p>
+                        </Row>
+                      </Col>
+                      <Col lg={6} style={{display: "flex", flexDirection: "column", justifyContent: "space-between"}}>
+                        <Row className="healthItem" style={{margin: "auto", marginBottom: "1em"}}>
+                          <div style={{backgroundColor: "#434242", height: "10px", borderRadius: "10px"}}></div>
+                          <p className="healthText serviceItem">{t("Products.3Bullet2")}</p>
+                        </Row>
+                        <Row className="healthItem" style={{margin: "auto", marginBottom: "1em"}}>
+                          <div style={{backgroundColor: "#434242", height: "10px", borderRadius: "10px"}}></div>
+                          <p className="healthText serviceItem">{t("Products.3Bullet4")}</p>
+                        </Row>
+                      </Col>
+                    </Row>
                   </Col>
                 </Row>
               </Card.Body>
@@ -390,14 +360,21 @@ const Inicio = () => {
               </Card.ImgOverlay>
             </Card>
           </Row>
-
-          <Row className="mb-5">
+          
+          {/* Movilidad */}
+          <Row className='mainContainerHealth' style={{minHeight: "100vh", display: "flex", alignItems: "center"}}>
             <Col className="d-flex g-0" lg={6} md={12}>
               <Card className="p-1 g-0" style={{ border: "none"}}>
                 <Card.Body
                   style={{display: "flex", flexDirection: "column" }}
                 >
                   <div className="d-flex justify-content-center align-items-center">
+                    <Image
+                      height={70}
+                      className="m-3 hvr-float"
+                      src={car}
+                      alt="car"
+                    />
                     <Card.Title
                       className="mb-0 serviceTitle text-center"
                       style={{
@@ -407,12 +384,6 @@ const Inicio = () => {
                     >
                       {t("General.Title4")}
                     </Card.Title>
-                    <Image
-                      height={70}
-                      className="m-3 hvr-float"
-                      src={car}
-                      alt="car"
-                    />
                   </div>
                   <div className='containerCar'>
                     <Card.Text
@@ -421,13 +392,6 @@ const Inicio = () => {
                       {t("Home.Description5")}
                     </Card.Text>
                   </div>
-              
-                  {/*<NavHashLink
-                  className=" mb-2 "
-                  to="/Productos#infraestructura"
-                  >
-                  {t("General.More")}
-                  </NavHashLink>*/}
                 </Card.Body>
               </Card>
             </Col>
@@ -448,7 +412,8 @@ const Inicio = () => {
             </Row>
           </Row>
 
-          <Row className="mb-5">
+          {/* Banca */}
+          <Row style={{minHeight: "100vh"}}>
           <Col
               id="imagenInicio"
               md={{ order: "last", span: 12 }}
@@ -464,7 +429,7 @@ const Inicio = () => {
               />
             </Col>
             <Col
-              className="d-flex g-0"
+              className="d-flex g-0 align-items-center"
               md={{ order: "first", span: 12 }}
               lg={{ order: "last", span: 6 }}
             >
@@ -472,9 +437,15 @@ const Inicio = () => {
                 <Card.Body
                   style={{display: "flex", flexDirection: "column"}}
                 >
-                  <div className="d-flex ">
+                  <div className='d-flex align-items-center' style={{width: "fit-content", margin: "0 auto"}}>
+                    <Image
+                      height={70}
+                      className="m-3 hvr-float"
+                      src={money}
+                      alt="money"
+                    />
                     <Card.Title
-                      className="mb-0 ps-2 mt-3 serviceTitle"
+                      className="serviceTitle"
                       style={{
                         fontSize: "45px",
                         fontWeight: "bold"
@@ -482,38 +453,34 @@ const Inicio = () => {
                     >
                       {t("General.Title5")}
                     </Card.Title>
-                    <Image
-                      height={70}
-                      className="m-3 hvr-float"
-                      src={money}
-                      alt="money"
-                    />
                   </div>
                   <Row className="brownBackgr"></Row>
-                  <div className='description mt-5 mb-5 ps-3'>
-                    <Card.Text
-                      className=" mt-2 mb-2 ps-2 serviceDescr bancaText"
-                    >
-                      {t("Home.Description6")}
-                    </Card.Text>
-                  </div>
-                  <Row className='mt-5 mb-5' style={{zIndex: "9"}}>
-                    <Col sm className="bancaItem mb-5">
-                      <div className='circle mb-2'></div>
-                      <p className= "bancaText serviceItem">{t("Products.5Bullet1")}</p>
-                    </Col>
-                    <Col sm className="bancaItem mb-5">
-                      <div className='circle mb-2'></div>
-                      <p className= "bancaText serviceItem">{t("Products.5Bullet3")}</p>
-                    </Col>
-                    <Col sm className="bancaItem mb-5">
-                      <div className='circle mb-2'></div>
-                      <p className= "bancaText serviceItem">{t("Products.5Bullet2")}</p>
-                    </Col>
-                    <Col sm className="bancaItem mb-5">
-                      <div className='circle mb-2'></div>
-                      <p className= "bancaText serviceItem">{t("Products.5Bullet4")}</p>
-                    </Col>
+                  <Row className="mt-5">
+                    <div className='description mt-5 mb-5 ps-3'>
+                      <Card.Text
+                        className=" mt-2 mb-2 ps-2 serviceDescr bancaText"
+                      >
+                        {t("Home.Description6")}
+                      </Card.Text>
+                    </div>
+                    <Row className='mt-5 mb-5' style={{zIndex: "9", margin: "auto"}}>
+                      <Col sm className="bancaItem mb-5">
+                        <div className='circle mb-2'></div>
+                        <p className= "bancaText serviceItem">{t("Products.5Bullet1")}</p>
+                      </Col>
+                      <Col sm className="bancaItem mb-5">
+                        <div className='circle mb-2'></div>
+                        <p className= "bancaText serviceItem">{t("Products.5Bullet3")}</p>
+                      </Col>
+                      <Col sm className="bancaItem mb-5">
+                        <div className='circle mb-2'></div>
+                        <p className= "bancaText serviceItem">{t("Products.5Bullet2")}</p>
+                      </Col>
+                      <Col sm className="bancaItem mb-5">
+                        <div className='circle mb-2'></div>
+                        <p className= "bancaText serviceItem">{t("Products.5Bullet4")}</p>
+                      </Col>
+                    </Row>
                   </Row>
                   {/*<NavHashLink
                   className=" mb-0 ps-2"

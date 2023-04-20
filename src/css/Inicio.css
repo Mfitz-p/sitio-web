@@ -4,6 +4,10 @@
   font-family: 'Nunito', sans-serif;
 }
 
+body {
+  height: 100%;
+}
+
 /* Página de Inicio */
 .btn-arriba{
     font-size: 50px; 
@@ -14,7 +18,7 @@
   }
   
   .hideX{
-    overflow-x:hidden
+    overflow-x:hidden;
   }
   
   .change-Color {
@@ -87,8 +91,8 @@
 /* Main Title */
 
 .title {
+  font-size: 3rem;
   font-family: 'Lusitana', serif;
-  font-size: 5rem;
   text-align: center;
   color: #6BBBAE;
 }
@@ -96,7 +100,7 @@
 /* Services Section */
 
 .servicesTitle {
-  font-size: 5rem;
+  font-size: 4rem;
   text-align: justify;
   color: #6BBBAE;
   font-family: 'Roboto', sans-serif;
@@ -210,30 +214,6 @@
 }
 
 /* Retail */
-.divRetailImg {
-  background-color: #F2D7A7;
-  height: 2rem;
-  float: right;
-  width: 95%;
-}
-
-.rigthContainer {
-  background-color: #F2D7A7;
-  height: 520px;
-  display: inline-block;
-  align-self: flex-end;
-  width: 2.5rem;
-  position: relative;
-  left: -17%;
-  z-index: -2;
-}
-
-.rightContainer2 {
-  background-color: #F2D7A7;
-  height: 32px;
-  width: 1.7rem;
-}
-
 .underline {
   font-size: 50px;
   font-weight: bold;
@@ -246,22 +226,9 @@
 
 /* Salud */
 
-.healthDescrp {
-  text-align: center;
-  width: 60%;
-  margin: auto;
-  background-color: #434242;
-  padding: 1.5rem;
-  border-radius: 15px;
-}
-
 .healthText {
-  width: 80%;
   margin: auto;
   color: #434242;
-  position: relative;
-  top: 45%;
-  transform: translateY(-50%);
 }
 
 .healthItems {
@@ -271,6 +238,10 @@
 
 .healthItem {
   border-radius: 10px;
+  background-color: #F2D7A7;
+  padding: 0px;
+  height: 150px;
+  width: 90%;
 }
 
 .healthImg {
@@ -278,10 +249,6 @@
 }
 
 /* Movilidad */
-.itemsCar {
-  position: relative;
-  top: -15px;
-}
 
 .itemCar {
   color: #FFFFFF;
@@ -312,27 +279,8 @@
   background-color: rgb(140, 94, 88);
 }
 
-@media (min-width: 2000px) {
-  .rightContainer2 {
-    width: 1rem;
-  }
-}
-
 @media (min-width: 1000px){
   /* Infraestructura */
-  .infraTitle {
-    position: relative;
-    right: -55%;
-  }
-  .infra {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  .infraText {
-    position: relative;
-    right: -20%;
-  }
 
   /* Retail */
   .retail {
@@ -349,20 +297,22 @@
 
   /* Movilidad */
   .itemsCar {
-    height: 10rem;
+    height: 17rem;
     background-color: #6BBBAE;
+    position: relative;
+    top: -75px;
   }
 
 }
 
-@media (min-width: 579px) {
+@media (min-width: 576px) {
   /* Banca */
   .brownBackgr {
     position: absolute;
     top: 20%;
     height: 530px;
     right: 0%;
-    width: 100vw;
+    width: 95vw;
   }
   .bancaText {
     color: #FFFFFF;
@@ -372,14 +322,9 @@
   .healthItem {
     margin-left: 1em;
   }
-
-  /* Retail */
-  .rigthContainer {
-    left: -27%;
-  }
 }
 
-@media (max-width: 574px) {
+@media (max-width: 576px) {
   /* Banca */
   .brownBackgr {
     height: 10px;
@@ -398,12 +343,22 @@
     margin-bottom: 1em;
   }
 
+  .healthImg {
+    height: 70rem;
+  }
+
+  .mainContainerHealth {
+    height: fit-content;
+  }
+
   .healthDescrp {
     width: 100%;
   }
 
-  .healthImg {
-    height: 54rem;
+  /* Retail */
+  .serviceItemsContainer{
+    display: flex;
+    flex-direction: column;
   }
 
 }
