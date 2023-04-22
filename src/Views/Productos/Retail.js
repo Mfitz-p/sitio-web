@@ -1,48 +1,43 @@
 import { useTranslation } from "react-i18next";
 
 //Imágenes
+import untilted from "../../images/Untitled.png"
 import healthBackgr from "../../images/Productos/healthBackgr.png";
-import healthImg from "../../images/Productos/healthImg.png";
-import machineLearning1 from "../../images/Productos/imgSalud1.webp";
-import machineLearning2 from "../../images/Productos/imgSalud2.webp";
-import machineLearning3 from "../../images/Productos/machineLearning3.webp";
-import machineLearning4 from "../../images/Productos/machineLearning4.webp";
-import machineLearning5 from "../../images/Productos/imgSalud3.webp";
 import CarruselImgs from "../../Components/CarruselImgs";
+import businessInt1 from "../../images/Productos/imgRetail2.webp";
+import businessInt2 from "../../images/Productos/imgRetail3.webp";
+import businessInt3 from "../../images/Productos/imgRetail4.webp";
+import businessInt4 from "../../images/Productos/imgRetail5.webp";
 
 //Css
 import { Col, Container, Row, Image } from "react-bootstrap";
 import "../../css/Salud.css";
 
-const Salud = () => {
+const Retail = () => {
   const [t] = useTranslation("global");
-  const imgs2 = [
-    {
-      id: 5,
-      src: machineLearning1,
-      alt: "machineLearning1",
-    },
-    {
-      id: 6,
-      src: machineLearning2,
-      alt: "machineLearning2",
-    },
-    {
-      id: 7,
-      src: machineLearning3,
-      alt: "machineLearning3",
-    },
-    {
-      id: 8,
-      src: machineLearning4,
-      alt: "machineLearning4",
-    },
+  const imgs3 = [
     {
       id: 9,
-      src: machineLearning5,
-      alt: "machineLearning5",
+      src: businessInt1,
+      alt: "businessInt1",
+    },
+    {
+      id: 10,
+      src: businessInt2,
+      alt: "businessInt2",
+    },
+    {
+      id: 11,
+      src: businessInt3,
+      alt: "businessInt3",
+    },
+    {
+      id: 12,
+      src: businessInt4,
+      alt: "businessInt4",
     },
   ];
+
   return (
     <div>
       <Row className="image_wrapper">
@@ -55,12 +50,14 @@ const Salud = () => {
         <Row className="overlay" style={{ padding: "0px" }}>
           <Col className="m-auto">
             <div className="m-auto header">
-              <h1 className="text-white mb-4">{t("General.Title3")}</h1>
-              <h3 className="text-white">{t("Health.Subtitle")}</h3>
+              <h1 className="text-white mb-4">{t("General.Title2")}</h1>
+              <h3 className="text-white">
+              {t("Retail.Subtitle")}
+              </h3>
             </div>
           </Col>
           <Col className="p-0 text-end d-none d-sm-block">
-            <Image src={healthImg} alt="healthImg" height={500} />
+            <Image src={untilted} alt="healthImg" height={500} />
           </Col>
         </Row>
       </Row>
@@ -68,9 +65,11 @@ const Salud = () => {
         <Container>
           <Row>
             <Col className="d-flex justify-content-center">
-              <div className="descrp doctorBackgr">
+              <div className="descrp retailBackgr">
                 <div className="descrp filter"></div>
-                <p className="descrpText">{t("Health.Image")}</p>
+                <p className="descrpText">
+                {t("Retail.Image")}
+                </p>
               </div>
             </Col>
             <Col className="d-flex">
@@ -83,14 +82,14 @@ const Salud = () => {
                     textAlign: "justify",
                   }}
                 >
-                  {t("Health.ImageSub")}
+                  {t("Retail.ImageSub")}
                 </h3>
                 <ul>
-                  <li>{t("Health.Advantage1")}</li>
-                  <li>{t("Health.Advantage2")}</li>
-                  <li>{t("Health.Advantage3")}</li>
-                  <li>{t("Health.Advantage4")}</li>
-                  <li>{t("Health.Advantage5")}</li>
+                <li>{t("Retail.Advantage1")}</li>
+                  <li>{t("Retail.Advantage2")}</li>
+                  <li>{t("Retail.Advantage3")}</li>
+                  <li>{t("Retail.Advantage4")}</li>
+                  <li>{t("Retail.Advantage5")}</li>
                 </ul>
               </Row>
             </Col>
@@ -98,52 +97,53 @@ const Salud = () => {
         </Container>
         <Row className="mt-4 mb-4">
           <h1 style={{ textAlign: "center", color: "#6BBBAE" }}>
-            {t("General.Title6")}
+          {t("General.Title6")}
           </h1>
         </Row>
         <Container>
           <Row>
             <Col lg={4}>
-              <h3 className="text-start">{t("Health.Title1")}</h3>
+              <h3 className="text-start">{t("Retail.Title1")}</h3>
             </Col>
             <Col>
-              <p>{t("Health.SubTitle1")}</p>
+              <p>
+              {t("Retail.SubTitle1")}
+              </p>
             </Col>
           </Row>
           <hr style={{ borderTop: "2px solid #B86F8C" }} />
           <Row>
             <Col lg={4}>
-              <h3 className="text-start">{t("Health.Title2")}</h3>
+              <h3 className="text-start">{t("Retail.Title2")}</h3>
             </Col>
             <Col>
-              <p>{t("Health.SubTitle2")}</p>
+              <p>
+              {t("Retail.SubTitle2")}
+              </p>
             </Col>
           </Row>
           <hr style={{ borderTop: "2px solid #B86F8C" }} />
           <Row>
             <Col lg={4}>
-              <h3 className="text-start">{t("Health.Title3")}</h3>
+              <h3 className="text-start">
+              {t("Retail.Title3")}
+              </h3>
             </Col>
             <Col>
-              <p>{t("Health.SubTitle3")}</p>
+              <p>
+              {t("Retail.SubTitle3")}
+              </p>
             </Col>
           </Row>
           <hr style={{ borderTop: "2px solid #B86F8C" }} />
           <Row>
             <Col lg={4}>
-              <h3 className="text-start">{t("Health.Title4")}</h3>
+              <h3 className="text-start">{t("Retail.Title4")} </h3>
             </Col>
             <Col>
-              <p>{t("Health.SubTitle4")}</p>
-            </Col>
-          </Row>
-          <hr style={{ borderTop: "2px solid #B86F8C" }} />
-          <Row>
-            <Col lg={4}>
-              <h3 className="text-start">{t("Health.Title5")}</h3>
-            </Col>
-            <Col>
-              <p>{t("Health.SubTitle5")}</p>
+              <p>
+              {t("Retail.SubTitle4")}
+              </p>
             </Col>
           </Row>
         </Container>
@@ -151,14 +151,14 @@ const Salud = () => {
           <Row>
             <Col lg={7}>
               <Row className="m-auto mt-5 mb-5">
-                <CarruselImgs imgs={imgs2} />
+                <CarruselImgs imgs={imgs3} />
               </Row>
             </Col>
             <Col className="d-flex m-auto">
               <Row style={{ color: "#FFFF" }}>
                 <h1>{t("General.Title7")}</h1>
-                <p>{t("Health.Solution1")}</p>
-                <p>{t("Health.Solution2")}</p>
+                <p>{t("Retail.Solution1")}</p>
+                <p>{t("Retail.Solution2")}</p>
               </Row>
             </Col>
           </Row>
@@ -168,4 +168,4 @@ const Salud = () => {
   );
 };
 
-export default Salud;
+export default Retail;

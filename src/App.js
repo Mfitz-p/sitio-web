@@ -3,6 +3,10 @@ import Inicio from "./Views/Inicio";
 import Nosotros from "./Views/Nosotros";
 import Productos from "./Views/Productos/Productos";
 import Salud from "./Views/Productos/Salud"
+import Retail from "./Views/Productos/Retail";
+import Banca from "./Views/Productos/Banca";
+import Transporte from "./Views/Productos/Transporte";
+import Infraestructura from "./Views/Productos/Infraestructura";
 import Pagina404 from "./Views/Pagina404";
 import Contacto from "./Views/Contacto";
 import Navbar from "./Components/Navbar";
@@ -22,6 +26,10 @@ function App() {
             <Route path="/Productos" element={<Productos />}/>
             <Route path="/Contacto" element={<Contacto />}/>
             <Route path="/Salud" element={<Salud />}/>
+            <Route path="/Infraestructura" element={<Infraestructura />}/>
+            <Route path="/Movilidad" element={<Transporte />}/>
+            <Route path="/Retail" element={<Retail />}/>
+            <Route path="/Banca" element={<Banca />}/>
             <Route path="/Carreras" element={<Carreras />}/>
             <Route path="*" element={<Pagina404 />}/>
           </Routes>
