@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 
 //Imágenes
 import banca1 from "../../images/banca1.png";
+import trans from "../../images/adios.png"
 import healthBackgr from "../../images/Productos/healthBackgr.png";
 
 //Css
@@ -34,7 +35,7 @@ const Transporte = () => {
             </div>
           </Col>
           <Col sm={6} className="text-end ">
-            <Image src={banca1} alt="healthImg" style={{ height: "53%" }} />
+            <Image src={trans} alt="healthImg" style={{ height: "53%" }} />
           </Col>
         </Row>
       </Row>
@@ -42,7 +43,7 @@ const Transporte = () => {
         <Container>
           <Row>
             <Col className="d-flex justify-content-center">
-              <div className="descrp bancaBackgr">
+              <div className="descrp transBackgr">
                 <div className="descrp filter"></div>
                 <p className="descrpText">{t("Mobility.Image")}</p>
               </div>

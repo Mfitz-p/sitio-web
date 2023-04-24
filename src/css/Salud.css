@@ -44,6 +44,10 @@ body {
     background-image: url('../images/Infraestructura1.png');
     position: relative;
 }
+.transBackgr {
+    background-image: url('../images/hols.png');
+    position: relative;
+}
 .filter {
     position: absolute;
     opacity: 0.5;
