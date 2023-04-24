@@ -14,21 +14,23 @@ const Banca = () => {
   return (
     <div>
       <Row className="image_wrapper">
-        <Image
-          id="imgBackgr"
-          src={healthBackgr}
-          alt="healthBackgr"
-          height={500}
-        />
+        <Image id="imgBackgr" src={healthBackgr} alt="healthBackgr" />
         <Row className="overlay" style={{ padding: "0px" }}>
-          <Col className="m-auto">
-            <div className="m-auto header">
+          <Col sm={5} className="mx-auto">
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <div className="m-auto">
               <h1 className="text-white mb-4">{t("General.Title5")}</h1>
               <h3 className="text-white">{t("Banking.Subtitle")}</h3>
             </div>
           </Col>
-          <Col className="p-0 text-end d-none d-sm-block">
-            <Image src={banca1} alt="healthImg" height={500} />
+          <Col sm={6} className="text-end ">
+            <Image src={banca1} alt="healthImg" style={{ height: "53%" }} />
           </Col>
         </Row>
       </Row>
@@ -74,9 +76,7 @@ const Banca = () => {
               <h3 className="text-start">{t("Banking.Title1")}</h3>
             </Col>
             <Col>
-              <p>
-              {t("Banking.SubTitle1")}
-              </p>
+              <p>{t("Banking.SubTitle1")}</p>
             </Col>
           </Row>
           <hr style={{ borderTop: "2px solid #B86F8C" }} />
@@ -85,22 +85,16 @@ const Banca = () => {
               <h3 className="text-start">{t("Banking.Title2")}</h3>
             </Col>
             <Col>
-              <p>
-              {t("Banking.SubTitle2")}
-              </p>
+              <p>{t("Banking.SubTitle2")}</p>
             </Col>
           </Row>
           <hr style={{ borderTop: "2px solid #B86F8C" }} />
           <Row>
             <Col lg={4}>
-              <h3 className="text-start">
-              {t("Banking.Title3")}
-              </h3>
+              <h3 className="text-start">{t("Banking.Title3")}</h3>
             </Col>
             <Col>
-              <p>
-              {t("Banking.SubTitle3")}
-              </p>
+              <p>{t("Banking.SubTitle3")}</p>
             </Col>
           </Row>
           <hr style={{ borderTop: "2px solid #B86F8C" }} />
@@ -109,9 +103,7 @@ const Banca = () => {
               <h3 className="text-start">{t("Banking.Title4")}</h3>
             </Col>
             <Col>
-              <p>
-              {t("Banking.SubTitle4")}
-              </p>
+              <p>{t("Banking.SubTitle4")}</p>
             </Col>
           </Row>
           <hr style={{ borderTop: "2px solid #B86F8C" }} />
@@ -120,9 +112,7 @@ const Banca = () => {
               <h3 className="text-start">{t("Banking.Title5")}</h3>
             </Col>
             <Col>
-              <p>
-              {t("Banking.SubTitle5")}
-              </p>
+              <p>{t("Banking.SubTitle5")}</p>
             </Col>
           </Row>
         </Container>

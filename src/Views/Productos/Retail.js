@@ -45,19 +45,25 @@ const Retail = () => {
           id="imgBackgr"
           src={healthBackgr}
           alt="healthBackgr"
-          height={500}
         />
         <Row className="overlay" style={{ padding: "0px" }}>
-          <Col className="m-auto">
-            <div className="m-auto header">
+        <Col sm={5} className="mx-auto">
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <div className="m-auto">
               <h1 className="text-white mb-4">{t("General.Title2")}</h1>
               <h3 className="text-white">
               {t("Retail.Subtitle")}
               </h3>
             </div>
           </Col>
-          <Col className="p-0 text-end d-none d-sm-block">
-            <Image src={untilted} alt="healthImg" height={500} />
+          <Col sm={6} className="text-end ">
+            <Image src={untilted} alt="healthImg" style={{ height: "53%" }}  />
           </Col>
         </Row>
       </Row>

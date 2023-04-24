@@ -52,14 +52,21 @@ const Infraestructura = () => {
           alt="healthBackgr"
         />
         <Row className="overlay" style={{ padding: "0px" }}>
-          <Col className="m-auto">
-            <div className="m-auto header">
-              <h1 className="text-white mb-4">{t("General.Title1")}</h1>
-              <h3 className="text-white">{t("Infrastructure.Subtitle")}</h3>
+          <Col sm={6} className="mx-auto">
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <div className="my-auto">
+              <h1 className="text-white m-4">{t("General.Title1")}</h1>
+              <h3 className="text-white m-4">{t("Infrastructure.Subtitle")}</h3>
             </div>
           </Col>
-          <Col className="p-0 text-end d-none d-sm-block">
-            <Image src={infraimg} alt="healthImg" height={"700px"} />
+          <Col sm={6}className="text-end ">
+            <Image src={infraimg} alt="healthImg" style={{ height: "53%" }} />
           </Col>
         </Row>
       </Row>
