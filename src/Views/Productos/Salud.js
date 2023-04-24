@@ -59,8 +59,8 @@ const Salud = () => {
                     <Col className='m-auto'>
                         <div className='m-auto header'>
                             <OnScrollLeft>
-                                <h1 className='text-white mb-4'>Salud</h1>
-                                <h3 className='text-white'>Impulsando la atención médica con Inteligencia Artificial y analítica predictiva.</h3>
+                            <h1 className="text-white mb-4">{t("General.Title3")}</h1>
+                            <h3 className="text-white">{t("Health.Subtitle")}</h3>
                             </OnScrollLeft>
                         </div>
                     </Col>
@@ -82,15 +82,14 @@ const Salud = () => {
                             <OnScrollLeft>
                             <div className='descrp doctorBackgr'>
                                 <div className='descrp filter'></div>
-                                <p className='descrpText'>Asistencia en procedimientos clínicos y tareas rutinarias en los sistemas de salud.</p>
+                                <p className='descrpText'>{t("Health.Image")}</p>
                             </div>
                             </OnScrollLeft>
                         </Col>
                         <Col className='d-flex'>
                             <Row className='m-auto'>
                                 <OnScrollRight>
-                                    <h3 style={{fontSize: 'x-large', marginBottom: '1em', fontWeight: 'bold', textAlign: 'justify'}}>En Kaminiottech contamos con expertos líderes en el área de desarrollo de sistemas inteligentes para la asistencia en la práctica clínica
-                                    y de administración de diferentes instituciones encargadas de brindar servicios de salud públicas y privadas.</h3>
+                                    <h3 style={{fontSize: 'x-large', marginBottom: '1em', fontWeight: 'bold', textAlign: 'justify'}}>{t("Health.ImageSub")}</h3>
                                 </OnScrollRight>
                                 <ul>
                                     <OnScrollRight>
@@ -107,61 +106,61 @@ const Salud = () => {
                 </Container>
                 <Row className='mt-4 mb-4'>
                     <OnScrollItems>
-                        <h1 style={{textAlign: 'center', color: '#6BBBAE'}}>Productos y Servicios</h1>
+                        <h1 style={{textAlign: 'center', color: '#6BBBAE'}}>{t("General.Title6")}</h1>
                     </OnScrollItems>
                 </Row>
                 <Container>
                     <Row>
                         <Col lg={4}>
                             <OnScrollLeft>
-                                <h3 className='text-start'>Sistemas CADx</h3>
+                                <h3 className='text-start'>{t("Health.Title1")}</h3>
                             </OnScrollLeft>
                         </Col>
                         <Col>
                             <OnScrollRight>
-                                <p>Implementación de sistemas de diagnóstico y cirugía asistidos por computadora (CAD/CAS) basados en visión por computadora, procesamiento de señales (ECG, EEG, RF, etc) , aprendizaje máquina y realidad aumentada para optimizar la precisión en los procedimientos de diagnóstico y quirúrgicos.</p>
+                                <p>{t("Health.SubTitle1")}</p>
                             </OnScrollRight>
                         </Col>
                     </Row>
                     <hr style={{borderTop: '2px solid #B86F8C'}}/>
                     <Row>
                         <Col lg={4}>
-                            <OnScrollLeft><h3 className='text-start'>Observatorios de Salud</h3></OnScrollLeft>
+                            <OnScrollLeft><h3 className='text-start'>{t("Health.Title2")}</h3></OnScrollLeft>
                         </Col>
                         <Col>
-                            <OnScrollRight><p>Monitoreo y supervisión de parámetros e índices descriptivos de la evolución epidémica de diferentes patologías, mediante la integración de sistemas de gestión y procesamiento de grandes cantidades de datos y de información sistematizada y periódicamente actualizada.</p></OnScrollRight>
+                            <OnScrollRight><p>{t("Health.SubTitle2")}</p></OnScrollRight>
                         </Col>
                     </Row>
                     <hr style={{borderTop: '2px solid #B86F8C'}}/>
                     <Row>
                         <Col lg={4}>
-                            <OnScrollLeft><h3 className='text-start'>Pronóstico del tratamiento clínico</h3></OnScrollLeft>
+                            <OnScrollLeft><h3 className='text-start'>{t("Health.Title3")}</h3></OnScrollLeft>
                         </Col>
                         <Col>
                             <OnScrollRight>
-                                <p>Desarrollo de sistemas de pronóstico de la efectividad del tratamiento clínico mediante métodos de analítica predictiva para la identificación de patrones de respuesta a diversos tratamientos para asistir a los médicos en la toma de decisiones del tratamiento informadas y personalizadas.</p>
+                                <p>{t("Health.SubTitle3")}</p>
                             </OnScrollRight>
                         </Col>
                     </Row>
                     <hr style={{borderTop: '2px solid #B86F8C'}}/>
                     <Row>
                         <Col lg={4}>
-                            <OnScrollLeft><h3 className='text-start'>Sistemas de gestión </h3></OnScrollLeft>
+                            <OnScrollLeft><h3 className='text-start'>{t("Health.Title4")}</h3></OnScrollLeft>
                         </Col>
                         <Col>
                             <OnScrollRight>
-                                <p>HIS (Hospital Information System) para la asistencia en la administración de los recursos físicos, humanos, financieros y administrativos en los diferentes sistemas de salud, con el fin de agilizar la toma de decisiones en las actividades operativas que forman parte de la rutina en los servicios hospitalarios y clínicos mejorando el acceso a la información.</p>
+                                <p>{t("Health.SubTitle4")}</p>
                             </OnScrollRight>
                         </Col>
                     </Row>
                     <hr style={{borderTop: '2px solid #B86F8C'}}/>
                     <Row>
                         <Col lg={4}>
-                            <OnScrollLeft><h3 className='text-start'>Marcadores de diagnóstico</h3></OnScrollLeft>
+                            <OnScrollLeft><h3 className='text-start'>{t("Health.Title5")}</h3></OnScrollLeft>
                         </Col>
                         <Col>
                             <OnScrollRight>
-                                <p>Obtención y selección de marcadores de diagnóstico (clínicos, demográficos, genéticos, morfológicos y socioculturales) a través del procesamiento de grandes bases de datos y la implementación de métodos de estadística descriptiva avanzada.</p>
+                                {t("Health.SubTitle5")}
                             </OnScrollRight>
                         </Col>
                     </Row>
@@ -171,21 +170,16 @@ const Salud = () => {
                         <Col lg={7}>
                             <Row className='m-auto mt-5 mb-5'>
                                 <OnScrollItems>
-                                    <Image
-                                        fluid
-                                        src={machineLearning}
-                                        alt="machineLearning"
-                                        id='machineLearningImg'
-                                    />
+                                    <CarruselImgs imgs={imgs2} />
                                 </OnScrollItems>
                             </Row>
                         </Col>
                         <Col className='d-flex m-auto'>
                             <Row style={{color: '#FFFF'}}>
                                 <OnScrollRight>
-                                    <h1>Nuestras Soluciones</h1>
-                                    <p>BIRADS-AI: Herramienta para la asistencia en el tamizaje de cáncer de mama basada en métodos de Inteligencia Artificialy  Visión por Computadora.</p>
-                                    <p>SIGA-Care: Sistema de gestión hospitalaria (HIS) para agilizar y controlar los procesos administrativos y las tareas rutinarias necesarias para la toma de decisiones en las actividades operativas y la reducción de costos.</p>
+                                    <h1>{t("General.Title7")}</h1>
+                                    <p>{t("Health.Solution1")}</p>
+                                    <p>{t("Health.Solution2")}</p>
                                 </OnScrollRight>
                             </Row>
                         </Col>
