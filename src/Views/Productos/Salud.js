@@ -93,11 +93,11 @@ const Salud = () => {
                                 </OnScrollRight>
                                 <ul>
                                     <OnScrollRight>
-                                        <li>{t("Salud.Advantage1")}</li>
-                                        <li>{t("Salud.Advantage2")}</li>
-                                        <li>{t("Salud.Advantage3")}</li>
-                                        <li>{t("Salud.Advantage4")}</li>
-                                        <li>{t("Salud.Advantage5")}</li>
+                                        <li>{t("Health.Advantage1")}</li>
+                                        <li>{t("Health.Advantage2")}</li>
+                                        <li>{t("Health.Advantage3")}</li>
+                                        <li>{t("Health.Advantage4")}</li>
+                                        <li>{t("Health.Advantage5")}</li>
                                     </OnScrollRight>
                                 </ul>
                             </Row>
