@@ -32,7 +32,22 @@ body {
     background-image: url('../images/Productos/healthDoctor.png');
     position: relative;
 }
-
+.retailBackgr {
+    background-image: url('../images/prueba.png');
+    position: relative;
+}
+.bancaBackgr {
+    background-image: url('../images/banca.png');
+    position: relative;
+}
+.infraBackgr {
+    background-image: url('../images/Infraestructura1.png');
+    position: relative;
+}
+.transBackgr {
+    background-image: url('../images/hols.png');
+    position: relative;
+}
 .filter {
     position: absolute;
     opacity: 0.5;

@@ -33,11 +33,11 @@ const Navbar = () => {
               <Nav.Link as={NavLink} to="/Nosotros" className='text-white hvr-underline-from-left-modificado'>{t("Navbar.Us")}</Nav.Link>
               {/*<Nav.Link as={NavLink} to="/Productos" className='text-white hvr-underline-from-left-modificado'>{t("Navbar.Products")}</Nav.Link>*/}
               <NavDropdown title={t("Navbar.Products")} className='text-white' id='navTitle'>
-                <NavDropdown.Item href="#action/3.1">{t("General.Title1")}</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">{t("General.Title2")}</NavDropdown.Item>
+                <NavDropdown.Item  as={NavLink} to="/Infraestructura" id='product'>{t("General.Title1")}</NavDropdown.Item>
+                <NavDropdown.Item as={NavLink} to="/Retail" id='product'>{t("General.Title2")}</NavDropdown.Item>
                 <NavDropdown.Item as={NavLink} to="/Salud" id='product'>{t("General.Title3")}</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.4">{t("General.Title4")}</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.5">{t("General.Title5")}</NavDropdown.Item>
+                <NavDropdown.Item as={NavLink} to="/Movilidad" id='product'>{t("General.Title4")}</NavDropdown.Item>
+                <NavDropdown.Item as={NavLink} to="/Banca" id='product'>{t("General.Title5")}</NavDropdown.Item>
               </NavDropdown>
               <Nav.Link as={NavLink} to="/Contacto" className='text-white hvr-underline-from-left-modificado'>{t("Navbar.Contact")}</Nav.Link>
               {/* <Nav.Link as={NavLink} to="/Carreras" className='text-white hvr-underline-from-left-modificado'>{t("Navbar.Carrers")}</Nav.Link> */}

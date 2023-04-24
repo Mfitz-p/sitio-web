@@ -1,9 +1,14 @@
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
 
 //Imágenes
-import healthBackgr from '../../images/Productos/healthBackgr.png'
-import healthImg from '../../images/Productos/healthImg.png'
-import machineLearning from '../../images/Productos/machineLearning4.webp'
+import healthBackgr from "../../images/Productos/healthBackgr.png";
+import healthImg from "../../images/Productos/healthImg.png";
+import machineLearning1 from "../../images/Productos/imgSalud1.webp";
+import machineLearning2 from "../../images/Productos/imgSalud2.webp";
+import machineLearning3 from "../../images/Productos/machineLearning3.webp";
+import machineLearning4 from "../../images/Productos/machineLearning4.webp";
+import machineLearning5 from "../../images/Productos/imgSalud3.webp";
+import CarruselImgs from "../../Components/CarruselImgs";
 
 //Css
 import { Col, Container, Row, Image } from 'react-bootstrap';
@@ -13,8 +18,34 @@ import OnScrollRight from '../Animation/OnScrollRight';
 import OnScrollItems from '../Animation/OnScrollItems';
 
 const Salud = () => {
-    const [t] = useTranslation("global")
-
+  const [t] = useTranslation("global");
+  const imgs2 = [
+    {
+      id: 5,
+      src: machineLearning1,
+      alt: "machineLearning1",
+    },
+    {
+      id: 6,
+      src: machineLearning2,
+      alt: "machineLearning2",
+    },
+    {
+      id: 7,
+      src: machineLearning3,
+      alt: "machineLearning3",
+    },
+    {
+      id: 8,
+      src: machineLearning4,
+      alt: "machineLearning4",
+    },
+    {
+      id: 9,
+      src: machineLearning5,
+      alt: "machineLearning5",
+    },
+  ];
     return(
         <div>
             <Row className='image_wrapper'>
