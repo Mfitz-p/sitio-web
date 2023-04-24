@@ -26,39 +26,21 @@ import money from '../icons/money.svg';
 import Particle from '../Components/Particles';
 
 // Animation
-import React, { useEffect } from "react";
-import { useAnimation, motion, Variants } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import OnScrollItems from './Animation/OnScrollItems';
+import OnScrollRight from './Animation/OnScrollRight';
+import OnScrollLeft from './Animation/OnScrollLeft';
 
 const Inicio = () => {
   const [t] = useTranslation("global")
   //Hook que se recibe desde la librería react-intersection-observer para cada elemento a modificar con el efecto de intersection observer 
   //para más información de su uso consultar la página Productos o la documentación de la librería https://github.com/thebuilder/react-intersection-observer.
-  
-  const squareVariant = {
-    visible: { opacity: 1, scale: 1, transition: { duration: 1 } },
-    hidden: { opacity: 0, scale: 0 }
-  };
-
-  const listItems = {
-    visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
-    hidden: { opacity: 0, scale: 0 }
-  }
-
-  const controls = useAnimation();
-  const [ref, inView] = useInView();
  
   const { ref: btn, inView: up } = useInView({
     threshold: 1,
     triggerOnce: true,
     delay: 0
   });
-
-  useEffect(() => {
-    if (inView) {
-      controls.start("visible");
-    }
-  }, [controls, inView]);
 
   return (
     <>
@@ -108,98 +90,99 @@ const Inicio = () => {
       <Container fluid className="hideX" style={{padding: "0px"}}>
       
         <section id="cards-servicios" >
-          <Container className='d-flex align-items-center' style={{minHeight: "100vh"}}>
-            {/*<Row className="d-flex justify-content-center px-5">
-              <h1 className='title'>{t("Home.Title")}</h1>
-            </Row>
-            <Row className='mx-md-5'>
-              <p style={{ fontSize: "20px", textAlign: "justify"  }}>{t("Home.Description1")}</p>
-            </Row>*/}
-            <Row>
-              <Col className='d-grid align-items-center'>
-                <div>
-                  <h1 className='title mb-5'>{t("Home.Title")}</h1>
-                  <p style={{ fontSize: "20px", textAlign: "justify"  }}>{t("Home.Description1")}</p>
-                </div>
-              </Col>
-              <Col className='d-none d-sm-block text-center'>
-                <Image fluid
-                  src={metrics}
-                  alt='metrics'
-                />
-              </Col>
-            </Row> 
-          </Container>
-           
+          <OnScrollItems
+          >
+            <Container className='d-flex align-items-center' style={{minHeight: "100vh"}}>
+              <Row>
+                <Col className='d-grid align-items-center'>
+                  <div>
+                    <h1 className='title mb-5'>{t("Home.Title")}</h1>
+                    <p style={{ fontSize: "20px", textAlign: "justify"  }}>{t("Home.Description1")}</p>
+                  </div>
+                </Col>
+                <Col className='d-none d-sm-block text-center'>
+                  <Image fluid
+                    src={metrics}
+                    alt='metrics'
+                  />
+                </Col>
+              </Row> 
+            </Container>
+          </OnScrollItems>
           {/* Comienzan las cards de servicios */}
           {/* Infraestructura */}
           <Container fluid style={{minHeight: "100vh", display: "grid"}}>
             <div
               className=" d-flex justify-content-center"
             >
-            <h1 className='servicesTitle'> {t("Home.Services")}</h1>
+              <OnScrollItems><h1 className='servicesTitle'> {t("Home.Services")}</h1></OnScrollItems>
             </div>
             <Row className="p-0">
               <Col className="d-flex g-0" lg={6} md={12}>
                 <Card className="p-1 g-0" style={{ border: "none" }}>
                   <Card.Body
                   >
-                    <div className='d-flex align-items-center m-auto' style={{width: "fit-content"}}>
-                      <Image
-                          height={70}
-                          className="m-3 hvr-float d-inline"
-                          src={city}
-                          alt="city"
-                        />
-                      <Card.Title
-                        className="mb-0 infra d-inline serviceTitle"
-                        style={{
-                          fontSize: "45px",
-                          fontWeight: "bold"
-                        }}
+                    <OnScrollLeft>
+                      <div className='d-flex align-items-center m-auto' style={{width: "fit-content"}}>
+                          <Image
+                              height={70}
+                              className="m-3 hvr-float d-inline"
+                              src={city}
+                              alt="city"
+                            />
+                          <Card.Title
+                            className="mb-0 infra d-inline serviceTitle"
+                            style={{
+                              fontSize: "45px",
+                              fontWeight: "bold"
+                            }}
+                          >
+                            {t("General.Title1")}
+                          </Card.Title>
+                      </div>
+                      <Card.Text
+                        className=" mt-2 mb-2 pe-2 serviceDescr infraText"
+                        style={{ textAlign: "center" }}
                       >
-                        {t("General.Title1")}
-                      </Card.Title>
-                    </div>
-                    <Card.Text
-                      className=" mt-2 mb-2 pe-2 serviceDescr infraText"
-                      style={{ textAlign: "center" }}
-                    >
-                      {t("Home.Description2")}
-                    </Card.Text>
-                
-                    {/*<NavHashLink
-                    className=" mb-2 "
-                    to="/Productos#infraestructura"
-                    >
-                    {t("General.More")}
-                    </NavHashLink>*/}
+                        {t("Home.Description2")}
+                      </Card.Text>
+                    </OnScrollLeft>
                     <Row className="d-flex flex-column mt-5">
-                      <Row className="infraItem serviceItem m-auto mb-4" style={{width: 'fit-content'}}>
-                        {t("Products.1Bullet1")}
-                      </Row>
-                      <Row className="infraItem serviceItem m-auto mb-4" style={{width: 'fit-content'}}>
-                        {t("Products.1Bullet2")}
-                      </Row>
-                      <Row className="infraItem serviceItem m-auto mb-4" style={{width: 'fit-content'}}>
-                        {t("Products.1Bullet3")}
-                      </Row>
-                      <Row className="infraItem serviceItem m-auto mb-4" style={{width: 'fit-content'}}>
-                        {t("Products.1Bullet4")}
-                      </Row>
+                      <OnScrollItems>
+                        <Row className="infraItem serviceItem m-auto mb-4" style={{width: 'fit-content'}}>
+                          {t("Products.1Bullet1")}
+                        </Row>
+                      </OnScrollItems>
+                      <OnScrollItems>
+                        <Row className="infraItem serviceItem m-auto mb-4" style={{width: 'fit-content'}}>
+                          {t("Products.1Bullet2")}
+                        </Row>
+                      </OnScrollItems>
+                      <OnScrollItems>
+                        <Row className="infraItem serviceItem m-auto mb-4" style={{width: 'fit-content'}}>
+                          {t("Products.1Bullet3")}
+                        </Row>
+                      </OnScrollItems>
+                      <OnScrollItems>
+                        <Row className="infraItem serviceItem m-auto mb-4" style={{width: 'fit-content'}}>
+                          {t("Products.1Bullet4")}
+                        </Row>
+                      </OnScrollItems>
                     </Row>
                   </Card.Body>
                 </Card>
               </Col>
               <Col id="imagenInicio" lg={6} md={12} style={{padding: "0px"}}>
-                <Image
-                loading="lazy"
-                  fluid
-                  src={infraestructura}
-                  alt="img-page"
-                  style={{ objectFit: "cover", position: "relative", zIndex: "-1"}}
-                />
-                <Row className="divInfraImg"></Row>  
+                <OnScrollRight>
+                  <Image
+                  loading="lazy"
+                    fluid
+                    src={infraestructura}
+                    alt="img-page"
+                    style={{ objectFit: "cover", position: "relative", zIndex: "-1"}}
+                  />
+                </OnScrollRight>
+                <OnScrollRight><Row className="divInfraImg"></Row>  </OnScrollRight>
               </Col>
             </Row>
           </Container>
@@ -214,19 +197,24 @@ const Inicio = () => {
             >
               <Row>
                 <Col lg={11} style={{padding: "0px"}}>
+                <OnScrollLeft>
                   <Row>
                     <Image
-                    loading="lazy"
+                      loading="lazy"
                       fluid
                       src={retail}
                       alt="img-page"
                       style={{ objectFit: "cover", height: "39.3rem", width: "100%" }}/>
                   </Row>
+                </OnScrollLeft>
+                <OnScrollLeft>
                   <Row style={{backgroundColor: "#F2D7A7", height: "2em", padding: "0px", width: "90%", float: "right"}}>
                   </Row>
+                </OnScrollLeft>
                 </Col>
                 <Col style={{position: "relative", padding: "0px"}}>
-                  <div style={{backgroundColor: "#F2D7A7", height: "80%", width: "50%", position: "absolute", bottom: '0'}}></div>
+                  <div style={{backgroundColor: "#F2D7A7", height: "80%", width: "50%", position: "absolute", bottom: '0'}}>
+                  </div>
                 </Col>
               </Row>
             </Col>
@@ -237,51 +225,57 @@ const Inicio = () => {
             >
               <Card className="p-1" style={{ border: "none" }}>
                 <Card.Body className='d-grid'>
-                  <div className='d-flex align-items-center m-auto' style={{width: "fit-content"}}>
-                    <Image
-                      height={70}
-                      className="m-3 hvr-float d-inline"
-                      src={basket}
-                      alt="basket"
-                    />
-                    <Card.Title
-                      className="d-inline serviceTitle"
-                      style={{
-                        fontSize: "45px",
-                        fontWeight: "bold"
-                      }}
+                  <OnScrollRight>
+                    <div className='d-flex align-items-center m-auto' style={{width: "fit-content"}}>
+                      <Image
+                        height={70}
+                        className="m-3 hvr-float d-inline"
+                        src={basket}
+                        alt="basket"
+                      />
+                      <Card.Title
+                        className="d-inline serviceTitle"
+                        style={{
+                          fontSize: "45px",
+                          fontWeight: "bold"
+                        }}
+                      >
+                        {t("General.Title2")}
+                      </Card.Title>
+                    </div>
+                  </OnScrollRight>
+                  <OnScrollRight>
+                    <Card.Text
+                      className=" mt-2 ps-2 serviceDescr"
+                      style={{ textAlign: "center" }}
                     >
-                      {t("General.Title2")}
-                    </Card.Title>
-                  </div>
-                 
-                  <Card.Text
-                    className=" mt-2 ps-2 serviceDescr"
-                    style={{ textAlign: "center" }}
-                  >
-                    {t("Home.Description3")}
-                  </Card.Text>
-                  <Row className="serviceItemsContainer">
-                    <Col>
-                      <p className='underline'>01</p>
-                      <p className='serviceItem'>{t("Products.2Bullet1")}</p>
-                    </Col>
-                    <Col style={{display: "inline-block", alignSelf: "flex-end"}}>
-                      <p className='underline'>02</p>
-                      <p className='serviceItem'>{t("Products.2Bullet2")}</p></Col>
-                    <Col>
-                      <p className='underline'>03</p>
-                      <p className='serviceItem'>{t("Products.2Bullet3")}</p>
-                    </Col>
-                    <Col style={{display: "inline-block", alignSelf: "flex-end"}}>
-                      <p className='underline'>04</p>
-                      <p className='serviceItem'>{t("Products.2Bullet4")}</p>
-                    </Col>
-                    <Col>
-                      <p className='underline'>05</p>
-                      <p className='serviceItem'>{t("Products.2Bullet5")}</p>
-                    </Col>
-                  </Row>
+                      {t("Home.Description3")}
+                    </Card.Text>
+                  </OnScrollRight>
+                  <OnScrollRight>
+                    <Row className="serviceItemsContainer">
+                        <Col>
+                          <OnScrollItems><p className='underline'>01</p></OnScrollItems>
+                          <p className='serviceItem'>{t("Products.2Bullet1")}</p>
+                        </Col>
+                        <Col>
+                        <OnScrollItems><p className='underline'>02</p></OnScrollItems>
+                          <p className='serviceItem'>{t("Products.2Bullet2")}</p>
+                        </Col>
+                        <Col>
+                          <OnScrollItems><p className='underline'>03</p></OnScrollItems>
+                          <p className='serviceItem'>{t("Products.2Bullet3")}</p>
+                        </Col>
+                        <Col>
+                          <OnScrollItems><p className='underline'>04</p></OnScrollItems>
+                          <p className='serviceItem'>{t("Products.2Bullet4")}</p>
+                        </Col>
+                        <Col>
+                          <OnScrollItems><p className='underline'>05</p></OnScrollItems>
+                          <p className='serviceItem'>{t("Products.2Bullet5")}</p>
+                        </Col>
+                    </Row>
+                  </OnScrollRight>
                 </Card.Body>
               </Card>
             </Col>
@@ -302,48 +296,60 @@ const Inicio = () => {
                 <Row>
                   <Col></Col>
                   <Col lg={6}>
-                    <div className='d-flex align-items-center m-auto' style={{width: "fit-content"}}>
-                      <Image
-                          height={70}
-                          className="m-3 hvr-float d-inline"
-                          src={health}
-                          alt="health"
-                        />
-                      <Card.Title
-                        className="text-center serviceTitle d-inline"
-                        style={{
-                          fontSize: "45px",
-                          fontWeight: "bold"
-                        }}
+                    <OnScrollRight>
+                      <div className='d-flex align-items-center m-auto' style={{width: "fit-content"}}>
+                        <Image
+                            height={70}
+                            className="m-3 hvr-float d-inline"
+                            src={health}
+                            alt="health"
+                          />
+                        <Card.Title
+                          className="text-center serviceTitle d-inline"
+                          style={{
+                            fontSize: "45px",
+                            fontWeight: "bold"
+                          }}
+                        >
+                          {t("General.Title3")}
+                        </Card.Title>
+                      </div>
+                    </OnScrollRight>
+                    <OnScrollRight>
+                      <Card.Text
+                        className="mt-2 mb-2 pe-4 serviceDescr"
                       >
-                        {t("General.Title3")}
-                      </Card.Title>
-                    </div>
-                    <Card.Text
-                      className="mt-2 mb-2 pe-4 serviceDescr"
-                    >
-                      {t("Home.Description4")}
-                    </Card.Text>
+                        {t("Home.Description4")}
+                      </Card.Text>
+                    </OnScrollRight>
                     <Row className="mt-5">
                       <Col lg={6} style={{display: "flex", flexDirection: "column", justifyContent: "space-between"}}>
-                        <Row className="healthItem" style={{margin: "auto", marginBottom: "1em"}}>
-                          <div style={{backgroundColor: "#434242", height: "10px", borderRadius: "10px"}}></div>
-                          <p className="healthText serviceItem">{t("Products.3Bullet1")}</p>
-                        </Row>
-                        <Row className="healthItem" style={{margin: "auto", marginBottom: "1em"}}>
-                          <div style={{backgroundColor: "#434242", height: "10px", borderRadius: "10px"}}></div>
-                          <p className="healthText serviceItem">{t("Products.3Bullet3")}</p>
-                        </Row>
+                        <OnScrollItems>
+                          <Row className="healthItem" style={{margin: "auto", marginBottom: "1em"}}>
+                            <div style={{backgroundColor: "#434242", height: "10px", borderRadius: "10px"}}></div>
+                            <p className="healthText serviceItem">{t("Products.3Bullet1")}</p>
+                          </Row>
+                        </OnScrollItems>
+                        <OnScrollItems>
+                          <Row className="healthItem" style={{margin: "auto", marginBottom: "1em"}}>
+                            <div style={{backgroundColor: "#434242", height: "10px", borderRadius: "10px"}}></div>
+                            <p className="healthText serviceItem">{t("Products.3Bullet3")}</p>
+                          </Row>
+                        </OnScrollItems>
                       </Col>
                       <Col lg={6} style={{display: "flex", flexDirection: "column", justifyContent: "space-between"}}>
-                        <Row className="healthItem" style={{margin: "auto", marginBottom: "1em"}}>
-                          <div style={{backgroundColor: "#434242", height: "10px", borderRadius: "10px"}}></div>
-                          <p className="healthText serviceItem">{t("Products.3Bullet2")}</p>
-                        </Row>
-                        <Row className="healthItem" style={{margin: "auto", marginBottom: "1em"}}>
-                          <div style={{backgroundColor: "#434242", height: "10px", borderRadius: "10px"}}></div>
-                          <p className="healthText serviceItem">{t("Products.3Bullet4")}</p>
-                        </Row>
+                        <OnScrollItems>
+                          <Row className="healthItem" style={{margin: "auto", marginBottom: "1em"}}>
+                            <div style={{backgroundColor: "#434242", height: "10px", borderRadius: "10px"}}></div>
+                            <p className="healthText serviceItem">{t("Products.3Bullet2")}</p>
+                          </Row>
+                        </OnScrollItems>
+                        <OnScrollItems>
+                          <Row className="healthItem" style={{margin: "auto", marginBottom: "1em"}}>
+                            <div style={{backgroundColor: "#434242", height: "10px", borderRadius: "10px"}}></div>
+                            <p className="healthText serviceItem">{t("Products.3Bullet4")}</p>
+                          </Row>
+                        </OnScrollItems>
                       </Col>
                     </Row>
                   </Col>
@@ -368,47 +374,53 @@ const Inicio = () => {
                 <Card.Body
                   style={{display: "flex", flexDirection: "column" }}
                 >
-                  <div className="d-flex justify-content-center align-items-center">
-                    <Image
-                      height={70}
-                      className="m-3 hvr-float"
-                      src={car}
-                      alt="car"
-                    />
-                    <Card.Title
-                      className="mb-0 serviceTitle text-center"
-                      style={{
-                        fontSize: "45px",
-                        fontWeight: "bold"
-                      }}
-                    >
-                      {t("General.Title4")}
-                    </Card.Title>
-                  </div>
-                  <div className='containerCar'>
-                    <Card.Text
-                      className=" mt-2 mb-2 pe-2 serviceDescr"
-                    >
-                      {t("Home.Description5")}
-                    </Card.Text>
-                  </div>
+                  <OnScrollLeft>
+                    <div className="d-flex justify-content-center align-items-center">
+                      <Image
+                        height={70}
+                        className="m-3 hvr-float"
+                        src={car}
+                        alt="car"
+                      />
+                      <Card.Title
+                        className="mb-0 serviceTitle text-center"
+                        style={{
+                          fontSize: "45px",
+                          fontWeight: "bold"
+                        }}
+                      >
+                        {t("General.Title4")}
+                      </Card.Title>
+                    </div>
+                  </OnScrollLeft>
+                  <OnScrollLeft>
+                    <div className='containerCar'>
+                      <Card.Text
+                        className=" mt-2 mb-2 pe-2 serviceDescr"
+                      >
+                        {t("Home.Description5")}
+                      </Card.Text>
+                    </div>
+                  </OnScrollLeft>
                 </Card.Body>
               </Card>
             </Col>
             <Col id="imagenInicio" lg={6} md={12} style={{padding: "0px", zIndex: "9"}}>
-              <Image
-                loading="lazy"
-                  fluid
-                  src={movilidad}
-                  alt="img-page"
-                  style={{ objectFit: "cover", height: "39.3rem", width: "100%" }}
-                />
+              <OnScrollRight>
+                <Image
+                  loading="lazy"
+                    fluid
+                    src={movilidad}
+                    alt="img-page"
+                    style={{ objectFit: "cover", height: "39.3rem", width: "100%" }}
+                  />
+                </OnScrollRight>
             </Col>
             <Row className="itemsCar m-auto">
-              <Col sm className="text-center itemCar align-middle serviceItem">{t("Products.4Bullet1")}</Col>
-              <Col sm className="text-center itemCar serviceItem">{t("Products.4Bullet2")}</Col>
-              <Col sm className="text-center itemCar serviceItem">{t("Products.4Bullet3")}</Col>
-              <Col sm className="text-center itemCar serviceItem">{t("Products.4Bullet4")}</Col>
+              <Col sm className="text-center itemCar align-middle serviceItem"><OnScrollItems>{t("Products.4Bullet1")}</OnScrollItems></Col>
+              <Col sm className="text-center itemCar serviceItem"><OnScrollItems>{t("Products.4Bullet2")}</OnScrollItems></Col>
+              <Col sm className="text-center itemCar serviceItem"><OnScrollItems>{t("Products.4Bullet3")}</OnScrollItems></Col>
+              <Col sm className="text-center itemCar serviceItem"><OnScrollItems>{t("Products.4Bullet4")}</OnScrollItems></Col>
             </Row>
           </Row>
 
@@ -420,13 +432,15 @@ const Inicio = () => {
               lg={{ order: "first", span: 6 }}
               style={{ zIndex: "9" }}
             >
-              <Image
-              loading="lazy"
-                fluid
-                src={banca}
-                alt="img-page"
-                style={{ objectFit: "cover", height: "39.3rem", width: "100%" }}
-              />
+              <OnScrollLeft>
+                <Image
+                loading="lazy"
+                  fluid
+                  src={banca}
+                  alt="img-page"
+                  style={{ objectFit: "cover", height: "39.3rem", width: "100%" }}
+                />
+              </OnScrollLeft>
             </Col>
             <Col
               className="d-flex g-0 align-items-center"
@@ -438,47 +452,61 @@ const Inicio = () => {
                   style={{display: "flex", flexDirection: "column"}}
                 >
                   <div className='d-flex align-items-center' style={{width: "fit-content", margin: "0 auto"}}>
-                    <Image
-                      height={70}
-                      className="m-3 hvr-float"
-                      src={money}
-                      alt="money"
-                    />
-                    <Card.Title
-                      className="serviceTitle"
-                      style={{
-                        fontSize: "45px",
-                        fontWeight: "bold"
-                      }}
-                    >
-                      {t("General.Title5")}
-                    </Card.Title>
+                    <OnScrollRight>
+                      <Image
+                        height={70}
+                        className="m-3 hvr-float"
+                        src={money}
+                        alt="money"
+                      />
+                    </OnScrollRight>
+                    <OnScrollRight>
+                      <Card.Title
+                        className="serviceTitle"
+                        style={{
+                          fontSize: "45px",
+                          fontWeight: "bold"
+                        }}
+                      >
+                        {t("General.Title5")}
+                      </Card.Title>
+                    </OnScrollRight>
                   </div>
                   <Row className="brownBackgr"></Row>
                   <Row className="mt-5">
                     <div className='description mt-5 mb-5 ps-3'>
-                      <Card.Text
-                        className=" mt-2 mb-2 ps-2 serviceDescr bancaText"
-                      >
-                        {t("Home.Description6")}
-                      </Card.Text>
+                      <OnScrollRight>
+                        <Card.Text
+                          className=" mt-2 mb-2 ps-2 serviceDescr bancaText"
+                        >
+                          {t("Home.Description6")}
+                        </Card.Text>
+                      </OnScrollRight>
                     </div>
                     <Row className='mt-5 mb-5' style={{zIndex: "9", margin: "auto"}}>
                       <Col sm className="bancaItem mb-5">
                         <div className='circle mb-2'></div>
-                        <p className= "bancaText serviceItem">{t("Products.5Bullet1")}</p>
+                        <OnScrollItems>
+                          <p className= "bancaText serviceItem">{t("Products.5Bullet1")}</p>
+                        </OnScrollItems>
                       </Col>
                       <Col sm className="bancaItem mb-5">
                         <div className='circle mb-2'></div>
-                        <p className= "bancaText serviceItem">{t("Products.5Bullet3")}</p>
+                        <OnScrollItems>
+                          <p className= "bancaText serviceItem">{t("Products.5Bullet3")}</p>
+                        </OnScrollItems>
                       </Col>
                       <Col sm className="bancaItem mb-5">
                         <div className='circle mb-2'></div>
-                        <p className= "bancaText serviceItem">{t("Products.5Bullet2")}</p>
+                        <OnScrollItems>
+                          <p className= "bancaText serviceItem">{t("Products.5Bullet2")}</p>
+                        </OnScrollItems>
                       </Col>
                       <Col sm className="bancaItem mb-5">
                         <div className='circle mb-2'></div>
-                        <p className= "bancaText serviceItem">{t("Products.5Bullet4")}</p>
+                        <OnScrollItems>
+                          <p className= "bancaText serviceItem">{t("Products.5Bullet4")}</p>
+                        </OnScrollItems>
                       </Col>
                     </Row>
                   </Row>
