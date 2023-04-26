@@ -48,111 +48,109 @@ const Salud = () => {
     return(
         <div>
             <Row className='image_wrapper ms-0'>
-                <Col className='mx-auto'>
+                <Col md={5} className='mx-auto'>
                     <div className='h-75 d-flex flex-column justify-content-center'>
-                        <OnScrollLeft>
+                        {/* <OnScrollItems> */}
                         <h1 className="text-white m-5">{t("General.Title3")}</h1>
                         <h3 className="text-white mx-5">{t("Health.Subtitle")}</h3>
-                        </OnScrollLeft>
+                        {/* </OnScrollItems> */}
                     </div>
                 </Col>
-                <Col className='text-center text-md-end p-0'>
-                    <OnScrollRight>
+                <Col md={6} className='text-center text-md-end p-0 pb-4'>
+                    {/* <OnScrollRight> */}
                         <Image 
                             src={healthImg}
                             alt="healthImg"
                             className="products-img"
                         />
-                    </OnScrollRight>
+                    {/* </OnScrollRight> */}
                 </Col>
             </Row>
             <Container fluid className='mt-4'>
                 <Container>
                     <Row>
                         <Col className='d-flex justify-content-center'>
-                            <OnScrollLeft>
+                            {/* <OnScrollLeft> */}
                             <div className='descrp doctorBackgr'>
                                 <div className='descrp filter'></div>
                                 <p className='descrpText'>{t("Health.Image")}</p>
                             </div>
-                            </OnScrollLeft>
+                            {/* </OnScrollLeft> */}
                         </Col>
                         <Col className='d-flex'>
                             <Row className='m-auto'>
-                                <OnScrollRight>
+                                {/* <OnScrollRight> */}
                                     <h3 className="experts-text">{t("Health.ImageSub")}</h3>
-                                </OnScrollRight>
-                                <ul>
-                                    <OnScrollRight>
+                                    <ul>
                                         <li>{t("Health.Advantage1")}</li>
                                         <li>{t("Health.Advantage2")}</li>
                                         <li>{t("Health.Advantage3")}</li>
                                         <li>{t("Health.Advantage4")}</li>
                                         <li>{t("Health.Advantage5")}</li>
-                                    </OnScrollRight>
-                                </ul>
+                                    </ul>
+                                {/* </OnScrollRight> */}
                             </Row>
                         </Col>
                     </Row>
                 </Container>
                 <Row className='mt-4 mb-4'>
-                    <OnScrollItems>
+                    {/* <OnScrollItems> */}
                         <h1 style={{textAlign: 'center', color: '#6BBBAE'}}>{t("General.Title6")}</h1>
-                    </OnScrollItems>
+                    {/* </OnScrollItems> */}
                 </Row>
                 <Container>
                     <Row>
                         <Col lg={4}>
-                            <OnScrollLeft>
+                            {/* <OnScrollLeft> */}
                                 <h3 className='text-start'>{t("Health.Title1")}</h3>
-                            </OnScrollLeft>
+                            {/* </OnScrollLeft> */}
                         </Col>
                         <Col>
-                            <OnScrollRight>
+                            {/* <OnScrollRight> */}
                                 <p>{t("Health.SubTitle1")}</p>
-                            </OnScrollRight>
+                            {/* </OnScrollRight> */}
                         </Col>
                     </Row>
                     <hr style={{borderTop: '2px solid #B86F8C'}}/>
                     <Row>
                         <Col lg={4}>
-                            <OnScrollLeft><h3 className='text-start'>{t("Health.Title2")}</h3></OnScrollLeft>
+                            {/* <OnScrollLeft> */}<h3 className='text-start'>{t("Health.Title2")}</h3>{/* </OnScrollLeft> */}
                         </Col>
                         <Col>
-                            <OnScrollRight><p>{t("Health.SubTitle2")}</p></OnScrollRight>
+                            {/* <OnScrollRight> */}<p>{t("Health.SubTitle2")}</p>{/* </OnScrollRight> */}
                         </Col>
                     </Row>
                     <hr style={{borderTop: '2px solid #B86F8C'}}/>
                     <Row>
                         <Col lg={4}>
-                            <OnScrollLeft><h3 className='text-start'>{t("Health.Title3")}</h3></OnScrollLeft>
+                            {/* <OnScrollLeft> */}<h3 className='text-start'>{t("Health.Title3")}</h3>{/* </OnScrollLeft> */}
                         </Col>
                         <Col>
-                            <OnScrollRight>
+                            {/* <OnScrollRight> */}
                                 <p>{t("Health.SubTitle3")}</p>
-                            </OnScrollRight>
+                            {/* </OnScrollRight> */}
                         </Col>
                     </Row>
                     <hr style={{borderTop: '2px solid #B86F8C'}}/>
                     <Row>
                         <Col lg={4}>
-                            <OnScrollLeft><h3 className='text-start'>{t("Health.Title4")}</h3></OnScrollLeft>
+                            {/* <OnScrollLeft> */}<h3 className='text-start'>{t("Health.Title4")}</h3>{/* </OnScrollLeft> */}
                         </Col>
                         <Col>
-                            <OnScrollRight>
+                            {/* <OnScrollRight> */}
                                 <p>{t("Health.SubTitle4")}</p>
-                            </OnScrollRight>
+                            {/* </OnScrollRight> */}
                         </Col>
                     </Row>
                     <hr style={{borderTop: '2px solid #B86F8C'}}/>
                     <Row>
                         <Col lg={4}>
-                            <OnScrollLeft><h3 className='text-start'>{t("Health.Title5")}</h3></OnScrollLeft>
+                            {/* <OnScrollLeft> */}<h3 className='text-start'>{t("Health.Title5")}</h3>{/* </OnScrollLeft> */}
                         </Col>
                         <Col>
-                            <OnScrollRight>
+                            {/* <OnScrollRight> */}
                                 {t("Health.SubTitle5")}
-                            </OnScrollRight>
+                            {/* </OnScrollRight> */}
                         </Col>
                     </Row>
                 </Container>
@@ -160,18 +158,18 @@ const Salud = () => {
                     <Row>
                         <Col lg={7}>
                             <Row className='m-auto mt-5 mb-5'>
-                                <OnScrollItems>
+                                {/* <OnScrollItems> */}
                                     <CarruselImgs imgs={imgs2} />
-                                </OnScrollItems>
+                                {/* </OnScrollItems> */}
                             </Row>
                         </Col>
                         <Col className='d-flex m-auto'>
                             <Row style={{color: '#FFFF'}}>
-                                <OnScrollRight>
+                                {/* <OnScrollRight> */}
                                     <h1>{t("General.Title7")}</h1>
                                     <p>{t("Health.Solution1")}</p>
                                     <p>{t("Health.Solution2")}</p>
-                                </OnScrollRight>
+                                {/* </OnScrollRight> */}
                             </Row>
                         </Col>
                     </Row>
