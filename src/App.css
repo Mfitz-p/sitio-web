@@ -19,13 +19,17 @@
 }
 
 /* Navbar */
+.navbar-toggler{
+  background-color: white !important;
+}
+
 #navTitle {
   color: #FFFF;
 }
 
 .dropdown-item.active, .dropdown-item:active{
   color: white;
-  background-color: #6BBBAE;
+  background-color: #6BBBAE !important;
   text-decoration: none;
 }
 #product:active {

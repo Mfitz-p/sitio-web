@@ -34,6 +34,7 @@ body {
   /*position: fixed;
   top: 0;*/
   position: relative;
+  padding: 0;
   z-index: 9;
   width: 100%;
   background-color: #111

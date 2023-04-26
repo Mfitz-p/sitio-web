@@ -1,7 +1,6 @@
 import { useTranslation } from "react-i18next";
 
 //Imágenes
-import healthBackgr from "../../images/Productos/healthBackgr.png";
 import healthImg from "../../images/Productos/healthImg.png";
 import machineLearning1 from "../../images/Productos/imgSalud1.webp";
 import machineLearning2 from "../../images/Productos/imgSalud2.webp";
@@ -48,32 +47,24 @@ const Salud = () => {
   ];
     return(
         <div>
-            <Row className='image_wrapper'>
-                <Image
-                    id="imgBackgr" 
-                    src={healthBackgr}
-                    alt="healthBackgr"   
-                    height={500}           
-                />
-                <Row className='overlay' style={{padding: '0px'}}>
-                    <Col className='m-auto'>
-                        <div className='m-auto header'>
-                            <OnScrollLeft>
-                            <h1 className="text-white mb-4">{t("General.Title3")}</h1>
-                            <h3 className="text-white">{t("Health.Subtitle")}</h3>
-                            </OnScrollLeft>
-                        </div>
-                    </Col>
-                    <Col className='p-0 text-end d-none d-sm-block'>
-                        <OnScrollRight>
-                            <Image 
-                                src={healthImg}
-                                alt="healthImg"
-                                height={500}
-                            />
-                        </OnScrollRight>
-                    </Col>
-                </Row>
+            <Row className='image_wrapper ms-0'>
+                <Col className='mx-auto'>
+                    <div className='h-75 d-flex flex-column justify-content-center'>
+                        <OnScrollLeft>
+                        <h1 className="text-white m-5">{t("General.Title3")}</h1>
+                        <h3 className="text-white mx-5">{t("Health.Subtitle")}</h3>
+                        </OnScrollLeft>
+                    </div>
+                </Col>
+                <Col className='text-center text-md-end p-0'>
+                    <OnScrollRight>
+                        <Image 
+                            src={healthImg}
+                            alt="healthImg"
+                            className="products-img"
+                        />
+                    </OnScrollRight>
+                </Col>
             </Row>
             <Container fluid className='mt-4'>
                 <Container>
@@ -89,7 +80,7 @@ const Salud = () => {
                         <Col className='d-flex'>
                             <Row className='m-auto'>
                                 <OnScrollRight>
-                                    <h3 style={{fontSize: 'x-large', marginBottom: '1em', fontWeight: 'bold', textAlign: 'justify'}}>{t("Health.ImageSub")}</h3>
+                                    <h3 className="experts-text">{t("Health.ImageSub")}</h3>
                                 </OnScrollRight>
                                 <ul>
                                     <OnScrollRight>

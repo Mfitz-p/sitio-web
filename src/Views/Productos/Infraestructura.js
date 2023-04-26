@@ -1,7 +1,6 @@
 import { useTranslation } from "react-i18next";
 
 //Imágenes
-import healthBackgr from "../../images/Productos/healthBackgr.png";
 import infraimg from "../../images/Infraestructura.png";
 import aforosSIGA from "../../images/imgSIGA.webp";
 import hallazgozSIGA from "../../images/hallazgozSIGA.webp";
@@ -45,30 +44,16 @@ const Infraestructura = () => {
   ];
   return (
     <div>
-      <Row className="image_wrapper">
-        <Image
-          id="imgBackgr"
-          src={healthBackgr}
-          alt="healthBackgr"
-        />
-        <Row className="overlay" style={{ padding: "0px" }}>
-          <Col sm={6} className="mx-auto">
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <div className="my-auto">
-              <h1 className="text-white m-4">{t("General.Title1")}</h1>
-              <h3 className="text-white m-4">{t("Infrastructure.Subtitle")}</h3>
-            </div>
-          </Col>
-          <Col sm={6}className="text-end ">
-            <Image src={infraimg} alt="healthImg" style={{ height: "53%" }} />
-          </Col>
-        </Row>
+      <Row className="image_wrapper ms-0">
+        <Col md={5} className="mx-auto">
+          <div className="h-75 d-flex flex-column justify-content-center">
+            <h1 className="text-white m-5">{t("General.Title1")}</h1>
+            <h3 className="text-white mx-5">{t("Infrastructure.Subtitle")}</h3>
+          </div>
+        </Col>
+        <Col md={6} className="text-center text-md-end p-0">
+          <Image src={infraimg} alt="healthImg" className="products-img" />
+        </Col>
       </Row>
       <Container fluid className="mt-4">
         <Container>
@@ -81,14 +66,7 @@ const Infraestructura = () => {
             </Col>
             <Col className="d-flex">
               <Row className="m-auto">
-                <h3
-                  style={{
-                    fontSize: "x-large",
-                    marginBottom: "1em",
-                    fontWeight: "bold",
-                    textAlign: "justify",
-                  }}
-                >
+                <h3 className="experts-text">
                   {t("Infrastructure.ImageSub")}
                 </h3>
                 <ul>
