@@ -123,7 +123,7 @@ const Inicio = () => {
                   <Card.Body
                   >
                     <OnScrollLeft>
-                      <div className='d-flex align-items-center m-auto' style={{width: "fit-content"}}>
+                      <div className='service-header'>
                           <Image
                               height={70}
                               className="m-3 hvr-float d-inline"
@@ -226,7 +226,7 @@ const Inicio = () => {
               <Card className="p-1" style={{ border: "none" }}>
                 <Card.Body className='d-grid'>
                   <OnScrollRight>
-                    <div className='d-flex align-items-center m-auto' style={{width: "fit-content"}}>
+                    <div className="service-header">
                       <Image
                         height={70}
                         className="m-3 hvr-float d-inline"
@@ -234,7 +234,7 @@ const Inicio = () => {
                         alt="basket"
                       />
                       <Card.Title
-                        className="d-inline serviceTitle"
+                        className="d-inline infra serviceTitle"
                         style={{
                           fontSize: "45px",
                           fontWeight: "bold"
@@ -297,7 +297,7 @@ const Inicio = () => {
                   <Col></Col>
                   <Col lg={6}>
                     <OnScrollRight>
-                      <div className='d-flex align-items-center m-auto' style={{width: "fit-content"}}>
+                      <div className="service-header">
                         <Image
                             height={70}
                             className="m-3 hvr-float d-inline"
@@ -305,7 +305,7 @@ const Inicio = () => {
                             alt="health"
                           />
                         <Card.Title
-                          className="text-center serviceTitle d-inline"
+                          className="text-center infra serviceTitle d-inline"
                           style={{
                             fontSize: "45px",
                             fontWeight: "bold"
@@ -375,7 +375,7 @@ const Inicio = () => {
                   style={{display: "flex", flexDirection: "column" }}
                 >
                   <OnScrollLeft>
-                    <div className="d-flex justify-content-center align-items-center">
+                    <div className="service-header">
                       <Image
                         height={70}
                         className="m-3 hvr-float"
@@ -383,7 +383,7 @@ const Inicio = () => {
                         alt="car"
                       />
                       <Card.Title
-                        className="mb-0 serviceTitle text-center"
+                        className="mb-0 infra serviceTitle text-center"
                         style={{
                           fontSize: "45px",
                           fontWeight: "bold"
@@ -451,7 +451,7 @@ const Inicio = () => {
                 <Card.Body
                   style={{display: "flex", flexDirection: "column"}}
                 >
-                  <div className='d-flex align-items-center' style={{width: "fit-content", margin: "0 auto"}}>
+                  <div className="service-header">
                     <OnScrollRight>
                       <Image
                         height={70}
@@ -462,7 +462,7 @@ const Inicio = () => {
                     </OnScrollRight>
                     <OnScrollRight>
                       <Card.Title
-                        className="serviceTitle"
+                        className="serviceTitle infra"
                         style={{
                           fontSize: "45px",
                           fontWeight: "bold"

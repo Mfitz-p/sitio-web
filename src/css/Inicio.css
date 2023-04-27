@@ -99,6 +99,12 @@ body {
 
 /* Services Section */
 
+.service-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .servicesTitle {
   font-size: 4rem;
   text-align: justify;
@@ -361,4 +367,13 @@ body {
     flex-direction: column;
   }
 
+}
+
+@media screen and (max-width: 376px) {
+  .servicesTitle {
+    font-size: 3.3rem;
+  }
+  .service-header {
+    flex-direction: column;
+  }
 }
