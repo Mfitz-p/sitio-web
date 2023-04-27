@@ -6,6 +6,10 @@
   background-position: 56vw;
 }
 
+.form-control {
+  border: 1px solid #575b5e !important;
+}
+
 #Mensaje {
   width: 50%;
   height: 100px;

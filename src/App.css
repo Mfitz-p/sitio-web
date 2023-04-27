@@ -9,7 +9,7 @@
 /* Página de App */
 #body-wrapper {
     width: 100%;
-    min-height: 83.1vh;
+    min-height: 85vh;
 }
 .footer{
   position: relative;
@@ -139,10 +139,10 @@
 
   .change-Size {
     size: 20px;
+    transition: all .8s;
   }
 
   .change-Size:hover {
-    transition: .8s;
     transform: scale(1.20);
   }
   #change-Size:hover {

@@ -15,7 +15,7 @@ function Footer() {
       <Container
         fluid
         className="bg-dark text-white pt-3 mt-auto"
-        style={{ fontSize: "13px", cursor: "pointer" }}
+        style={{ fontSize: "13px"}}
       >
         {/* Este Row contiene todos los elementos del footer, sin los derechos reservados */}
         <Row className="align-items-center">
@@ -59,18 +59,20 @@ function Footer() {
           <Col xs={6} md={3}>
             <div>{t("Footer.Info")}</div>
             <div style={{ fontSize: "13px" }}>
-              <i className="bi bi-telephone hvr-push"></i> 55 9039 1301
+              <a href="tel:55 9039 1301" style={{textDecoration: "none", color: "white"}}>
+                <i className="bi bi-telephone hvr-push"></i>
+                {" "}55 9039 1301
+              </a>
             </div>
             <Row>
               <Col className="mt-3">
                 <div>{t("Footer.Email")}</div>
-                <Nav.Link as={NavLink} to="/Contacto">
-                  {" "}
                   <div style={{ fontSize: "13px" }}>
-                    <i className="bi bi-envelope-paper hvr-push"></i>{" "}
-                    contacto@kaminoit.tech
-                  </div>{" "}
-                </Nav.Link>
+                    <a href="mailto:contacto@kaminoit.tech" style={{textDecoration: "none", color: "white"}}>
+                      <i className="bi bi-envelope-paper hvr-push"></i>{" "}
+                      contacto@kaminoit.tech
+                    </a>
+                  </div>
               </Col>
             </Row>
           </Col>

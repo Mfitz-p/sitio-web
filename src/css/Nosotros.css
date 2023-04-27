@@ -1,15 +1,37 @@
 /* Página Nosotros */
-.vision {
-    background-image: linear-gradient(to bottom, rgba(36, 38, 40, 0.8), rgba(36, 38, 40, 0.8)), url("/src/images/Nosotros/vision.webp");
-    display: flex;
-    flex-direction: column;
-    background-size: cover;  
-    background-position: center;
-    height: 400px;
-    opacity: 1 !important
-  }
+.nosotros-circulo {
+  width: 25em;
+  height: 25em;
+  border-radius: 50%;
+  background-size: 180%;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f2e1ac;
+}
+
+.mision-fondo {
+  background-image: url("/src/images/Nosotros/mision.webp");
+  position: relative;
+}
+
+.vision-fondo {
+  background-image: url("/src/images/Nosotros/vision.webp");
+  position: relative;
+}
+
+.filtro {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  width: 100%;
+}
   
-  .vision > .textVision{
+.textVision{
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -17,33 +39,18 @@
     opacity: 1;
   }
   
-  .tituloVision{
-    font-size: 56px;
-    border-bottom: solid #6BBBAE 3px;
-    opacity: 1;
-  }
-  
-  .mision{
-    background-image: linear-gradient(to bottom, rgba(36, 38, 40, 0.8), rgba(36, 38, 40, 0.8)), url("/src/images/Nosotros/mision.webp");
-    display: flex;
-    flex-direction: column;
-    background-size: cover;  
-    background-position: center;
-    height: 400px;
-  }
-  
-  .mision > .textMision{
+  .textMision{
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    opacity: 1 !important;
+    z-index: 1;
   }
   
-  .tituloMision{
+  .titulo{
     font-size: 56px;
     border-bottom: solid #6BBBAE 3px;
-    opacity: 1;
+    z-index: 1;
   }
   
   .nuestroEquipo {

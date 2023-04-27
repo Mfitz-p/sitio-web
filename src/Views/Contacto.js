@@ -61,7 +61,7 @@ function Contacto() {
           <h1>{t("General.Contact")}</h1>
           <p>{t("Contact.Please")}</p>
         </div>
-        <Form className="m-4 animate__animated animate__fadeIn" onSubmit={handleSubmit}>
+        <Form className="m-4 my-5 animate__animated animate__fadeIn" onSubmit={handleSubmit}>
           <Row>
             <Form.Group className="mb-3" as={Col} md="3">
               <Form.Label>{t("Contact.Name")}</Form.Label>
@@ -85,8 +85,8 @@ function Contacto() {
             </Form.Group>
             <Col className="md-6"></Col>
           </Row>
-          <Row className="mb-4">
-            <Form.Group as={Col} md="3">
+          <Row>
+            <Form.Group className="mb-3" as={Col} md="3">
               <Form.Label>{t("Contact.Email")}</Form.Label>
               <Form.Control
                 type="email"
