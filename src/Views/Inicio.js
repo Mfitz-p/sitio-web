@@ -54,7 +54,7 @@ const Inicio = () => {
                 <Col className="d-flex justify-content-center flex-column">
                   <Card.Title style={{ fontSize: "2.3rem", lineHeight: "1.2" }}>
                     <Row>
-                      <Col sm={7} className='gx-0' style={{color: 'white'}}>{t("Home.Section")}</Col>
+                      <Col sm={7} className='pb-3' style={{color: 'white'}}>{t("Home.Section")}</Col>
                       <Col ></Col>
                     </Row>
                   </Card.Title>
@@ -405,7 +405,7 @@ const Inicio = () => {
                 </Card.Body>
               </Card>
             </Col>
-            <Col id="imagenInicio" lg={6} md={12} style={{padding: "0px", zIndex: "9"}}>
+            <Col id="imagenInicio" lg={6} md={12} style={{padding: "0px", zIndex: "2"}}>
               <OnScrollRight>
                 <Image
                   loading="lazy"
@@ -430,7 +430,7 @@ const Inicio = () => {
               id="imagenInicio"
               md={{ order: "last", span: 12 }}
               lg={{ order: "first", span: 6 }}
-              style={{ zIndex: "9" }}
+              style={{ zIndex: "2" }}
             >
               <OnScrollLeft>
                 <Image
@@ -483,7 +483,7 @@ const Inicio = () => {
                         </Card.Text>
                       </OnScrollRight>
                     </div>
-                    <Row className='mt-5 mb-5' style={{zIndex: "9", margin: "auto"}}>
+                    <Row className='mt-5 mb-5' style={{zIndex: "2", margin: "auto"}}>
                       <Col sm className="bancaItem mb-5">
                         <div className='circle mb-2'></div>
                         <OnScrollItems>
