@@ -15,4 +15,19 @@
   .graficos {
     background: none;
   }
+
+  .graficos::after {
+    content: "";
+    height: 100vh;
+    width: 100%;
+    background: url("/src/images/Contacto/contacto.gif");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    filter: opacity(35%);
+    -webkit-filter: opacity(35%);
+    position: fixed;
+    top: 18rem;
+    left: 1.6rem;
+    z-index: -1;
+}
 }
