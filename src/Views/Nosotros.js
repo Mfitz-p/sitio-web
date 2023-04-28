@@ -12,8 +12,6 @@
  import logoAguas from '../logos/logoAguas.png';
  import { useTranslation } from 'react-i18next';
  import "../css/Nosotros.css"
- import "../css/Salud.css"
-
  
  function Nosotros() {
    const [t] = useTranslation("global")
@@ -26,25 +24,27 @@
          <p className='d-flex justify-content-center text-white' style={{ fontSize: "20px" }}>{t("Us.Section")}</p>
        </Container>
        <Container fluid >
-         <Row >
-           <Col lg={{ span: 4, offset: 1 }} className='change-Size'>
-             <div className='nosotros-circulo mision-fondo animate__animated animate__fadeInLeft mt-5 p-3'>
+         <Row className="nosotros-gradiente py-5">
+           <Col className='change-Size text-center mb-5 '>
+            <h1 className='titulo titulo-peque'>{t("Us.Mission")}</h1>
+             <div className='nosotros-circulo mision-fondo animate__animated animate__fadeInLeft p-3'>
               <div className='nosotros-circulo filtro'></div>
                <h1 className='titulo'>{t("Us.Mission")}</h1>
-               <h5 className='text'>{t("Us.MissionDescription")}</h5>
+               <p className='text'>{t("Us.MissionDescription")}</p>
              </div>
            </Col>
-           <Col lg={{ span: 4, offset: 2 }} className='change-Size'>
-             <div className='nosotros-circulo vision-fondo animate__animated animate__fadeInRight mt-5 p-3' >
+           <Col className='change-Size text-center'>
+            <h1 className='titulo titulo-peque'>{t("Us.Vision")}</h1>
+             <div className='nosotros-circulo vision-fondo animate__animated animate__fadeInRight p-3'>
               <div className='nosotros-circulo filtro'></div>
                <h1 className='titulo'>{t("Us.Vision")}</h1>
-               <h5 className='text'>{t("Us.VisionDescription")}</h5>
+               <p className='text'>{t("Us.VisionDescription")}</p>
              </div>
            </Col>
          </Row>
          <Row>
            <Col className='g-0'>
-             <div className='nuestroEquipo mt-5 p-4 text-white'>
+             <div className='nuestroEquipo p-4 py-5 text-white'>
                <h1 className='tituloNuestroEquipo '>{t("Us.Team")}</h1>
                <h5 className='textNuestroEquipo p-2'>{t("Us.TeamDescription")}</h5>
              </div>
