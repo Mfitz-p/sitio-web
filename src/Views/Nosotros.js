@@ -30,15 +30,15 @@
            <Col lg={{ span: 4, offset: 1 }} className='change-Size'>
              <div className='nosotros-circulo mision-fondo animate__animated animate__fadeInLeft mt-5 p-3'>
               <div className='nosotros-circulo filtro'></div>
-               <h1 className='titulo m-4'>{t("Us.Mission")}</h1>
-               <h5 className='textMision'>{t("Us.MissionDescription")}</h5>
+               <h1 className='titulo'>{t("Us.Mission")}</h1>
+               <h5 className='text'>{t("Us.MissionDescription")}</h5>
              </div>
            </Col>
            <Col lg={{ span: 4, offset: 2 }} className='change-Size'>
-             <div className='nosotros-circulo animate__animated animate__fadeInRight mt-5 p-3' >
-              <div className='nosotros-circulo'></div>
-               <h1 className='titulo m-4'>{t("Us.Vision")}</h1>
-               <h5 className='textVision'>{t("Us.VisionDescription")}</h5>
+             <div className='nosotros-circulo vision-fondo animate__animated animate__fadeInRight mt-5 p-3' >
+              <div className='nosotros-circulo filtro'></div>
+               <h1 className='titulo'>{t("Us.Vision")}</h1>
+               <h5 className='text'>{t("Us.VisionDescription")}</h5>
              </div>
            </Col>
          </Row>
