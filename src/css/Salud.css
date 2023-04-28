@@ -33,6 +33,8 @@ li {
   flex-direction: column;
   justify-content: center;
   background-color: #f2e1ac;
+  /* background-image: linear-gradient(to bottom, rgba(32, 32, 32, 0.945), rgb(0, 0, 0));
+  color: white; */
 }
 .doctorBackgr {
   background-image: url("../images/Productos/healthDoctor.png");
@@ -56,7 +58,7 @@ li {
 }
 .filter {
   position: absolute;
-  opacity: 0.5;
+  opacity: 0.58;
   width: 100%;
 }
 
@@ -66,6 +68,7 @@ li {
   margin: auto;
   width: 90%;
   font-size: larger;
+  backdrop-filter: blur(2px);
 }
 
 .products-img {
@@ -118,5 +121,12 @@ li {
   
   #imgBackgr {
     height: 100%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .descrp {
+    width: 16em;
+    height: 16em;
   }
 }
