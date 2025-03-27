@@ -3,14 +3,13 @@ import Container from "react-bootstrap/Container";
 import Image from "react-bootstrap/Image";
 import Nav from "react-bootstrap/Nav";
 import NavbarRB from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
-import logo from "../images/logoVertical3.webp";
+import logo from "../images/logoMF.png";
 import { NavLink } from "react-router-dom";
 import "../App.css";
 import "../css/Salud.css";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
-// Componente Navbar contiene la barra de navegacion de la pagina y el logotipo de Kaminoittech
+// Componente Navbar contiene la barra de navegacion de la pagina y el logotipo.
 
 const Navbar = () => {
   const [t] = useTranslation("global");
@@ -48,7 +47,7 @@ const Navbar = () => {
           <NavbarRB.Brand className="mr-auto" to="/Inicio">
             {/* Se le coloco un Nav.Link junto con una etiqueta image para colocar el logotipo y es redirijido a la pagina de Inicio  */}
             <Nav.Link className="px-3" as={NavLink} to="/Inicio">
-              <Image fluid src={logo} alt="logo" style={{ maxWidth: "50vw" }} />
+              <Image fluid src={logo} alt="logo" style={{ maxWidth: "10vw" }} />
             </Nav.Link>
           </NavbarRB.Brand>
           {/* Esta parte del código del navbar es cuando se usa en version movil, se colapsa el menu y se convierte en el menú de burger famoso para moviles */}
@@ -67,23 +66,23 @@ const Navbar = () => {
                 eventKey={1} 
                 as={NavLink}
                 to="/Inicio"
-                className="text-white hvr-underline-from-left-modificado"
+                className="text-dark hvr-underline-from-left-modificado"
               >
                 {t("Navbar.Home")}
               </Nav.Link>
               <Nav.Link
                 eventKey={2} 
                 as={NavLink}
-                to="/Nosotros"
-                className="text-white hvr-underline-from-left-modificado"
+                to="/Habilidades"
+                className="text-dark hvr-underline-from-left-modificado"
               >
                 {t("Navbar.Us")}
               </Nav.Link>
-              {/*<Nav.Link as={NavLink} to="/Productos" className='text-white hvr-underline-from-left-modificado'>{t("Navbar.Products")}</Nav.Link>*/}
-              <NavDropdown
+              {/* <NavDropdown
                 eventKey={3} 
                 title={t("Navbar.Products")}
-                className="text-white"
+                to="/Productos"
+                className="text-dark"
                 id="navTitle"
               >
                 <NavDropdown.Item
@@ -106,16 +105,15 @@ const Navbar = () => {
                 <NavDropdown.Item eventKey={3.5} as={NavLink} to="/Banca" id="product">
                   {t("General.Title5")}
                 </NavDropdown.Item>
-              </NavDropdown>
-              <Nav.Link
+              </NavDropdown> */}
+              {/* <Nav.Link
                 eventKey={4}
                 as={NavLink}
                 to="/Contacto"
-                className="text-white hvr-underline-from-left-modificado"
+                className="text-dark hvr-underline-from-left-modificado"
               >
                 {t("Navbar.Contact")}
-              </Nav.Link>
-              {/* <Nav.Link as={NavLink} to="/Carreras" className='text-white hvr-underline-from-left-modificado'>{t("Navbar.Carrers")}</Nav.Link> */}
+              </Nav.Link> */}
             </Nav>
           </NavbarRB.Collapse>
         </Container>

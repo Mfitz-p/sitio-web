@@ -99,7 +99,7 @@
 @media (hover: hover)and (pointer: fine) {
   .subrayado {
     text-decoration: none;
-    background-image: linear-gradient(rgb(73, 163, 157), #6BBBAE);
+    background-image: linear-gradient(rgb(163, 143, 219), #D460F1);
     background-position: 50% 100%;
     background-repeat: no-repeat;
     background-size: 0% 2px;
@@ -122,7 +122,7 @@
     left: 0;
     right: 100%;
     bottom: 0;
-    background: #6BBBAE;
+    background: #D460F1;
     height: 4px;
     -webkit-transition-property: right;
     transition-property: right;

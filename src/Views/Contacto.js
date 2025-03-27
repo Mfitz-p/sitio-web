@@ -55,7 +55,7 @@ function Contacto() {
     <>
       <Container fluid className="graficos p-0 ">
         <div className="m-4 ">
-          <div className='animate__animated animate__fadeInUp' style={{ fontSize: "clamp(36px, 4vw, 48px)", color: "#6BBBAE" }}>
+          <div className='animate__animated animate__fadeInUp' style={{ fontSize: "clamp(36px, 4vw, 48px)", color: "#061357" }}>
             {t("Contact.Questions")}
           </div>
           <h1>{t("General.Contact")}</h1>
@@ -139,12 +139,12 @@ function Contacto() {
           </Form.Group>
 
           {mensajeError === '' ?
-            <Button variant="success" className="boton-principal" type="submit" disabled={state.submitting}>
+            <Button variant="dark" type="submit" disabled={state.submitting}>
               {t("Contact.Send")}
             </Button> :
             <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">{t("Contact.Part")}</Tooltip>}>
               <span className="d-inline-block">
-                <Button variant="success" className="boton-principal" type="submit" disabled style={{ pointerEvents: 'none' }}>
+                <Button variant="dark" type="submit" disabled style={{ pointerEvents: 'none' }}>
                 {t("Contact.Send")}
                 </Button>
               </span>

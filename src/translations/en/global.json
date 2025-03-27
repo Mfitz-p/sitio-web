@@ -1,40 +1,26 @@
 {
   "Navbar": {
     "Home": "Home",
-    "Us": "About us",
+    "Us": "Skills",
     "Products": "Products",
     "Contact": "Contact",
     "Carrers": "Carrers"
   },
   "Home": {
-    "Section": "Predictive analytics and intelligent solutions to transform your business",
-    "Title": "What can we do for you?",
-    "Description1": "We offer intelligent solutions focused on big data management to assist and optimize in the identification of problems, obtaining insightful information from data, detection of tendencies and in the decision-making process using advanced predictive analytics, artificial intelligence (AI) and computer vision.",
-    "Services": "Services",
-    "Description2": "We standardize the supervision and evaluation processes of public and private infrastructure assets using computer vision and AI methods.",
-    "Description3": "Through descriptive and predictive analytics of consumer behavior we can optimize the sales strategies in your business.",
-    "Description4": "We develop solutions based on machine learning to assist in tedious and difficult medical procedures for the public and private healthcare systems.",
+    "Section": "¡Welcome to my web portfolio!",
+    "Title": "About me.",
+    "Description1": "I am a web developer with three years of professional experience working on the front-end of responsive web applications. I use technologies and frameworks such as React, .NET Core, JavaScript, CSS, and HTML. I handle open-source tool libraries such as Bootstrap, Material UI, and DevExpress. I graduated in 2019 with a bachelor's degree in computer science from the Autonomous University of the State of Morelos.",
+    "Services": "Projects",
+    "Description2": "It is a web application that is focused on the administration of patients and consultations, ranging from the beginning of the session to the complete consultation with the generation of your medical prescription.",
+    "Description3": "This application is for the administration of vehicle folios that are assigned to different agencies, especially focused on the state of Guerrero and Oaxaca.",
+    "Description4":"This web questionnaire is a fundamental part of the requirements for a nutritional consultation, focused on a nutrition system.",
     "Description5": "Our intelligent tools can help you in planning and executing sustainable projects using multimodal and up-to-date information.",
     "Description6": "We can assist you in the decision-making process for the creation of a strategic vision of control and surveillance of your business, encouraging financial inclusion and guaranteeing the safety of your investments."
   },
   "Us": {
-    "Section": "In the last decade different industries started a digital transformation to maximize the added value of information coming from data, to have a more efficient use of the resources needed to have a successful business and to have presence in the market using different computational methods in the field of big data analytics, artificial intelligence, data mining, computer vision, etc. Because of these, Kaminoittech emerges as firm dedicated to provide consultancy services in the fields of data analytics and artificial intelligence to maximize the added value of data, incorporating high end and flexible technological solutions for each project.",
-    "Mission": "Mission",
-    "MissionDescription": "Provide solutions based on data management and predictive analytics to optimize the decision-making process of our clients.",
-    "Vision": "Vision",
-    "VisionDescription": "To be the benchmark company in Mexico that provides data science and business intelligence consulting in order to be competitive with the Latin American market and have presence in the U.S.A.",
-    "Team": "Our team",
-    "TeamDescription": "In Kaminoittech we have built an interdisciplinary team of experts in data science, predictive analytics and software development that, in conjunction with our technical team, partnerships and our strategic alliances allows us to create innovative and flexible solutions for each project.",
-    "CEO": "Cofounder & CEO (Chief Executive Officer)",
-    "CEODescription": "He is an UNAM graduate with a degree in Telecommunications Engineering with specialty in Signal Processing; He holds a master’s degree in business engineering from Duke University in the U.S.A. Has served as Deputy Director General of the Infrastructure and Tourism Cabinet of the Presidential Office of the Republic in Mexico and as planning assessor, price policies and financial analyst of PEMEX. In the Transports and Communications Ministry, he served as coordinator of the Infrastructure Subsecretary advisors and later was designated as general coordinator of Centros SCT (Secretary of Communications and Transport). He has served as a consultant with McKinsey and Co. And currently he is a cofounder and the General Director of Moen Consultancy.",
-    "CTO": "Cofounder & CTO (Chief Technology Officer)",
-    "CTODescription": "Cofounder and Chief of Technology and Data Science in Kaminoittech. In Tycho solutions she served as Project Manager. She worked as a Postdoctoral Researcher at the High-Altitude Water Cherenkov Observatory implementing machine learning algorithms. She is part of the National Researcher System in Mexico, and she has published several papers in international journals. She has also worked as a professor and a Thesis Director at UNAM. She holds a master’s degree in Data Science by the ITAM and a PhD in Earth Sciences.",
-    "Scientist": "Data scientist",
-    "ScientistDescription1": "PhD. in Engineering with specialty in Digital Signal Processing by UNAM. Leader of research teams in the development of CAD/CAS systems in the Institute of Applied Sciences and Technology, responsible of projects related with the automatic diagnostic of different pathologies using AI and Machine Learning. He has served as a Postdoctoral Researcher at the Image processing Lab at UNAM (LaPI-UNAM) and as a professor in different careers such as Applied Mathematics and Computing, Electronic Engineering and Computer Science Masters. Since 2016 he has participated in the development and coordination of diverse PAPIIT (Sponsorship Programs for Research and Technological innovation Projects) and private projects.",
-    "ScientistDescription2": "PhD. In Engineering responsible of the Computer Vision and Machine Learning teams. Professor at the Pan-American University in Mexico. He was a Postdoctoral Researcher at LaPI-UNAM working in a system for medical assistance in the analysis of cardiac ultrasound in collaboration with the Hospital 20 de Noviembre and the Ministry of Technology in CDMX. He obtained the 2nd place in the AFIRME-UNAM Price in 2019 and has published several papers in international symposiums and journals.",
-    "Financial": "Financial Advisor",
-    "FinancialDescription": "Civil Engineer by the Instituto Tecnológico y de Estudios Superiores de Monterrey with a master’s degree in Finance by the EGADE Business School in Monterrery Mexico. He has experience in programmatic analysis, site supervision and finance in public and private infrastructure projects.",
-    "Aliances": "Our Alliances"
+    "Title": "My Skills",
+    "Section": "In the two years I have of experience with front end web development, I have gained some skills with some tools, development technologies, frameworks, libraries and design tools which are:",
+   "Aliances": "My social networks"
   },
   "Products": {
     "TitleGeneral": "Our business model allows us to provide you with the following products",
@@ -172,7 +158,7 @@
   "Contact": {
     "Alert": "Your phone only can have between 7 y 10 numbers",
     "Questions": "For doubts or questions",
-    "Please": "Please, use the form or call us at +52 55 5335 1691",
+    "Please": "Please, use the form or call us at +52 56 1408 0780",
     "Name": "Name",
     "Last": "Last Name",
     "Email": "Email",
@@ -201,23 +187,20 @@
     "WhyDescription": "Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   },
   "Footer": {
-    "Office": "Location",
-    "Schedule": "Schedule",
-    "Moday": "Monday-Friday 09:00 - 19:00 ",
+   
     "Email": "Email",
-    "Info": "Information",
+    "Info": "Phone",
     "Language": "Language",
-    "Copyright": "© • All rights reserved • 2022"
+    "Copyright": "© • All rights reserved • 2024"
   },
   "General": {
-    "Contact": "Contact us",
-    "Title1": "Infrastructure",
-    "Title2": "Retail & B2B",
-    "Title3": "Health",
+    "Contact": "Contact me",
+    "Title1": "Clínica París Web App",
+    "Title2": "Grupo ZOM Web App",
+    "Title3": "Web questionnaire for nutrition system",
     "Title4": "Mobility and Transport",
     "Title5": "Banking",
     "Title6": "Products and Services",
-    "Title7": "Our Solutions",
-    "More": "See more..."
+    "Title7": "Our Solutions"
   }
 }

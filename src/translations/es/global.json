@@ -1,40 +1,31 @@
 {
   "Navbar": {
     "Home": "Inicio",
-    "Us": "Nosotros",
+    "Us": "Habilidades",
     "Products": "Productos",
     "Contact": "Contacto",
     "Carrers": "Carreras"
   },
   "Home": {
-    "Section": "Analítica predictiva y soluciones inteligentes para la transformación de tu negocio.",
-    "Title": "¿Qué hacemos por ti?",
-    "Description1": "Ofrecemos soluciones inteligentes enfocadas en el manejo de big data para asistir y optimizar los procesos de identificación de problemas, obtención de información, detección de tendencias y toma de decisiones, utilizando herramientas avanzadas de analítica predictiva, inteligencia artificial (IA) y visión por computadora.",
-    "Services": "SERVICIOS",
-    "Description2": "Estandarizamos tus procesos de supervisión y evaluación de activos de infraestructura pública y privada mediante métodos de visión por computadora e IA.",
-    "Description3": "Optimizamos tus estrategias de venta mediante la implementación de analítica descriptiva y predictiva del comportamiento del consumidor en tu negocio.",
-    "Description4": "Desarrollamos soluciones basadas en aprendizaje por computadora para la asistencia en procedimientos clínicos y tareas rutinarias dentro de los sistemas de salud.",
+    "Section": "¡Bienvenidos a mi portafolio web!",
+    "Title": "Acerca de mí",
+    "Description1": "Soy una desarrolladora web con 3 años de experiencia profesional, trabajando del lado del front end de aplicaciones web con diseño responsivo. Usando tecnologías y framework como React, .NET Core, Javascript, CSS y HTML. Manejo de bibliotecas de herramientas de código abierto como Bootstrap, Material UI, DevExpress. Graduada en el 2019 de la licenciatura en informática, en la universidad autónoma del estado de morelos.",
+    "Services": "Proyectos",
+    "Description2": "Es una aplicación web que esta enfocada en la administración de pacientes y consultas, va desde el inicio de sesíon hasta la consulta completa con la generación de su receta médica.",
+    "Description3": "Esta aplicación es para la administración de folios vehiculares que son asignados a diferentes gestorias, especialmente enfocada para el estado de Guerrero y Oaxaca.",
+    "Description4": "Este cuestionario web es parte fundamental de los requerimientos de una consulta nutricional, enfocado a un sistema de nutrición.",
     "Description5": "Ofrecemos herramientas inteligentes para la planeación y ejecución sostenible de proyectos utilizando información multimodal y siempre actualizada.",
     "Description6": "Asistimos en la toma de decisiones para la creación de una visión estratégica de control y vigilancia, fomentando la inclusión financiera y garantizando la seguridad de tus inversiones."
   },
   "Us": {
-    "Section": "En la última década diferentes sectores empresariales han comenzado su transformación digital incorporando múltiples soluciones tecnológicas con los objetivos de: maximizar el valor agregado de su información y eficientar el uso de recursos. Debido a esto, Kaminoittech se posiciona en el mercado como una empresa dedicada a proveer servicios de consultoría en analítica avanza e inteligencia artificial para maximizar el valor agregado de los datos, dotando de soluciones innovadoras y flexibles para cada proyecto.",
+    "Title": "Mis Habilidades",
+    "Section": "En los dos años que tengo de experiencia con el desarrollo front end web, he ganado algunas habilidades con algúnas herramientas, tecnologías de desarrollo, frameworks, bibliotecas y herramientas de diseño las cuales son: ",
     "Mission": "Misión",
     "MissionDescription": "Dotar a nuestros clientes soluciones basadas en el manejo de datos y analítica predictiva para eficientar los procesos de toma decisiones en los negocios. ",
     "Vision": "Visión",
     "VisionDescription": "Ser la empresa referente de México en consultoría en ciencia de datos e inteligencia de negocios para competir con en el mercado latino americano y contar con presencia en EUA.",
-    "Team": "Nuestro Equipo",
-    "TeamDescription": "En Kaminoittech contamos con un equipo interdisciplinario de expertos en ciencia de datos, analítica predictiva y de desarrollo de aplicaciones, que, junto con nuestro equipo técnico, socios comerciales y nuestras alianzas estratégicas nos permiten crear soluciones innovadoras y flexibles para cada proyecto.",
-    "CEO": "Cofundador & CEO (Chief Executive Officer)",
-    "CEODescription": "Ingeniero en Telecomunicaciones con especialidad en Procesamiento de Señales. Egresado de la Facultad de Ingeniería de la UNAM; cuenta con una Maestría en Ingeniería de Negocios por Duke University, en Estados Unidos. Fungió como Director General Adjunto de infraestructura del Gabinete de Infraestructura y Turismo en la oficina de la Presidencia de la República y asesor de Planeación, Política de Precios y Análisis Financiero de la Dirección Corporativa de Finanzas en PEMEX. En la Secretaría de Comunicaciones y Transportes se desempeñó como Coordinador de Asesores del Subsecretario de Infraestructura y posteriormente fue designado por el Secretario de Comunicaciones como Coordinador General de Centros de la Secretaria de Comunicaciones y Transportes. Se ha desempeñado como consultor en la empresa McKinsey and Company y actualmente es Director General y fundador de Moen Consultores.",
-    "CTO": "Cofundador & CTO (Chief Technology Officer)",
-    "CTODescription": "Co-fundadora y directora de Tecnología y Ciencia de Datos en Kaminoittech. En Tycho Solutions fue gerente de proyecto en el área de Ciencia de Datos. Trabajó como investigadora postdoctoral en el High Altitude Water Cherenkov Observatory (HAWC) implementando algoritmos de Aprendizaje por Computadora. Es miembro del Sistema Nacional de Investigadores de México nivel 1, ha publicado alrededor de 15 artículos en revistas internacionales arbitradas, dirigido tesis y dictado cursos en la UNAM. Maestra en Ciencia de Datos (ITAM), Doctora y Maestra en Ciencias de la Tierra (Instituto de Geofísica, UNAM), Ingeniera Geofísica (UNAM).",
-    "Scientist": "Científico de datos",
-    "ScientistDescription1": "Dr. en Ingeniería líder del área de investigación y desarrollo de sistemas de diagnóstico y cirugía asistidos por computadora CAD/CAS. Su área es la responsable de la creación del sistema de diagnóstico de cáncer de mama mediante la implementación de inteligencia artificial y aprendizaje máquina. Ha sido Investigador Postdoctoral del Laboratorio de Procesamiento digital de Imágenes de la UNAM y profesor de asignatura en las licenciaturas de Matemáticas Aplicadas y Computación, Ciencia de Datos, Ingeniería Electrónica y la Maestría de Ciencias de la Computación. Desde 2016 ha participado en el desarrollo y coordinación de diferentes proyectos Programas de Apoyo a Proyectos de Investigación e Innovación Tecnológica (PAPIIT) y para la industria privada.",
-    "ScientistDescription2": "Dr. En Ingeniería encargado del equipo de Visión Computacional y Aprendizaje de Máquina. Profesor de asignatura en la Universidad Panamericana. Trabajó como investigador postdoctoral en la UNAM en el proyecto “Sistema inteligente para el diagnóstico médico asistido para enfermedades cardiovasculares” en colaboración con el Hospital 20 de Noviembre y la Secretaria de Educación, Ciencia Tecnología e Innovación (SECTEI). Obtuvo el 2° lugar en el Premio AFIRME-UNAM 2019. Ha publicado artículos en revistas y en congresos revisados por pares. Doctorado y Maestría en Procesamiento Digital de Señales (UNAM), Ingeniero Eléctrico-Electrónico (UNAM).",
-    "Financial": "",
-    "FinancialDescription": "",
-    "Aliances": "Nuestras Alianzas"
+    
+    "Aliances": "Mis redes sociales"
   },
   "Products": {
     "TitleGeneral": "Nuestro modelo de negocios nos permite facilitarte los siguientes productos",
@@ -172,7 +163,7 @@
   "Contact": {
     "Alert": "Tu teléfono solo puede tener entre 7 y 10 números",
     "Questions": "Para dudas o preguntas",
-    "Please": "Por favor, usa el formulario o llámanos al 55 5335 1691",
+    "Please": "Por favor, usa el formulario o llámanos al 56 1408 0780",
     "Name": "Nombre",
     "Last": "Apellido",
     "Email": "Correo",
@@ -201,23 +192,20 @@
     "WhyDescription": "Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   },
   "Footer": {
-    "Office": "Oficinas",
-    "Schedule": "Horario",
-    "Moday": "Lunes-Viernes 09:00 - 19:00 ",
+    
     "Email": "Correo",
-    "Info": "información",
+    "Info": "Movil",
     "Language": "Lenguaje",
-    "Copyright": "© • Todos los derechos reservados • 2022"
+    "Copyright": "© • Todos los derechos reservados • 2024"
   },
   "General": {
-    "Contact": "Contáctanos",
-    "Title1": "Infraestructura",
-    "Title2": "Retail & B2B",
-    "Title3": "Salud",
+    "Contact": "Contactame",
+    "Title1": "App Web Clínica París",
+    "Title2": "App Web Grupo ZOM",
+    "Title3": "Cuestionario web para sistema de nutrición",
     "Title4": "Movilidad y Transportes",
     "Title5": "Banca",
     "Title6": "Productos y Servicios",
-    "Title7": "Nuestras Soluciones",
-    "More": "Ver más..."
+    "Title7": "Nuestras Soluciones"
   }
 }

@@ -1,26 +1,16 @@
-import { Col, Container, Row, Card, Image, Button, Nav } from 'react-bootstrap';
+import { Col, Container, Row, Card, Image, Button } from 'react-bootstrap';
 import { Link } from 'react-scroll';
-import { NavLink } from 'react-router-dom';
-import { NavHashLink } from 'react-router-hash-link';
 import "../App.css";
 import "../css/Inicio.css"
 
 //Imágenes
-import page from '../images/Inicio/frontpage.webp';
-import infraestructura from '../images/Inicio/infraestructura.webp';
-import medicaIA from '../images/Inicio/medicaIA.webp';
-import retail from '../images/Inicio/retail.webp';
-import movilidad from '../images/Inicio/movilidad.webp';
-import banca from '../images/Inicio/banca.webp';
-import metrics from '../images/Inicio/metrics.png'
+import fotoClinicaParis from '../images/Inicio/fotoClinicaParis.png';
+import fotoFormNutricion from '../images/Inicio/fotoFormNutricion.png';
+import fotoGrupoZOM from '../images/Inicio/fotoGrupoZOM.png';
+import foto from '../images/Inicio/foto_mf.jpg'
 import { useTranslation } from 'react-i18next';
 
-//Iconos 
-import city from '../icons/city.svg';
-import basket from '../icons/basket.svg';
-import health from '../icons/health.svg';
-import car from '../icons/car.svg';
-import money from '../icons/money.svg';
+
 
 //Componentes
 import Particle from '../Components/Particles';
@@ -42,37 +32,46 @@ const Inicio = () => {
     delay: 0
   });
 
+  const description = t("Home.Description1");
+  const resaltaText = description.replace(
+    "front end de aplicaciones web con diseño responsivo",
+    "<mark>front end de aplicaciones web con diseño responsivo</mark>"
+  );
+
   return (
     <>
+        {/* Sección de bienvenida */}
         <section id="portada-principal">
           <div className='banner'>
             <div id="particles">
-              <Particle />
+            <Particle />
             </div>
             <div className='wrapper'>
               <Card.ImgOverlay className="d-flex flex-column  m-4 animate__animated animate__fadeInUp">
-                <Col className="d-flex justify-content-center flex-column">
+              <Container>
+                <Col className="d-flex flex-column" style={{ justifyContent: 'center'}}>
                   <Card.Title style={{ fontSize: "2.3rem", lineHeight: "1.2" }}>
                     <Row>
-                      <Col sm={7} className='pb-3' style={{color: 'white'}}>{t("Home.Section")}</Col>
+                      <Col sm={7} className='pb-3' style={{ color: '#000' }}>{t("Home.Section")}</Col>
                       <Col ></Col>
                     </Row>
                   </Card.Title>
                   {/* Botón contáctanos que redirige al inicio de la página */}
-                  <Col xs={12} md={1}>
+                  {/* <Col xs={12} md={1}>
                     <Nav.Link as={NavLink} to="/Contacto">
                       <Button
-                        className="mx-auto hvr-pulse boton-principal"
-                        variant="success"
+                        className="mx-auto hvr-pulse "
+                        variant="outline-dark"
                       >
                         {t("General.Contact")}
                       </Button>
                     </Nav.Link>
-                  </Col>
+                  </Col> */}
                 </Col>
+              </Container>
                 {/* Ícono de flecha que despliega hacia abajo para cambiar a la siguientes secciones */}
                 <Link
-                  className=" d-flex justify-content-center text-white"
+                  className=" d-flex justify-content-center text-dark"
                   to="cards-servicios"
                   smooth={true}
                   duration={0}
@@ -90,27 +89,35 @@ const Inicio = () => {
       <Container fluid className="hideX" style={{padding: "0px"}}>
       
         <section id="cards-servicios" >
-          <OnScrollItems
-          >
+          <OnScrollItems>
+            {/* Acerca de mí  */}
             <Container className='d-flex align-items-center' style={{minHeight: "100vh"}}>
               <Row>
                 <Col className='d-grid align-items-center'>
-                  <div>
-                    <h1 className='title mb-5'>{t("Home.Title")}</h1>
-                    <p style={{ fontSize: "20px", textAlign: "justify"  }}>{t("Home.Description1")}</p>
-                  </div>
+                  <Card className='shadow p-3 mb-5 bg-body-tertiary rounded border-0'>
+                    <Card.Body>
+                      <Card.Title>
+                        <h1 className='title mb-5'>{t("Home.Title")}</h1>
+                      </Card.Title>
+                      <Card.Text>
+                        <p style={{ fontSize: "20px", textAlign: "justify" }} dangerouslySetInnerHTML={{ __html: resaltaText }}></p>
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
                 </Col>
                 <Col className='d-none d-sm-block text-center'>
-                  <Image fluid
-                    src={metrics}
-                    alt='metrics'
+                  <Image
+                    style={{ width: '430px', height: '430px' }}
+                    className='me-3 rounded-circle'
+                    src={foto}
+                    alt='Photo face'
                   />
                 </Col>
               </Row> 
             </Container>
           </OnScrollItems>
-          {/* Comienzan las cards de servicios */}
-          {/* Infraestructura */}
+          {/* Comienzan las cards de proyectos*/}
+          {/* App clínica parís */}
           <Container fluid style={{minHeight: "100vh", display: "grid"}}>
             <div
               className=" d-flex justify-content-center"
@@ -124,12 +131,6 @@ const Inicio = () => {
                   >
                     <OnScrollLeft>
                       <div className='service-header'>
-                          <Image
-                              height={70}
-                              className="m-3 hvr-float d-inline"
-                              src={city}
-                              alt="city"
-                            />
                           <Card.Title
                             className="mb-0 infra d-inline serviceTitle"
                             style={{
@@ -147,94 +148,69 @@ const Inicio = () => {
                         {t("Home.Description2")}
                       </Card.Text>
                     </OnScrollLeft>
-                    <Row className="d-flex flex-column mt-5">
-                      <OnScrollItems>
-                        <Row className="infraItem serviceItem m-auto mb-4" style={{width: 'fit-content'}}>
-                          {t("Products.1Bullet1")}
-                        </Row>
-                      </OnScrollItems>
-                      <OnScrollItems>
-                        <Row className="infraItem serviceItem m-auto mb-4" style={{width: 'fit-content'}}>
-                          {t("Products.1Bullet2")}
-                        </Row>
-                      </OnScrollItems>
-                      <OnScrollItems>
-                        <Row className="infraItem serviceItem m-auto mb-4" style={{width: 'fit-content'}}>
-                          {t("Products.1Bullet3")}
-                        </Row>
-                      </OnScrollItems>
-                      <OnScrollItems>
-                        <Row className="infraItem serviceItem m-auto mb-4" style={{width: 'fit-content'}}>
-                          {t("Products.1Bullet4")}
-                        </Row>
-                      </OnScrollItems>
-                    </Row>
+                    <div className='text-center mt-3'>
+                      <Button variant="link" href='https://dev.clinica-paris.com.mx/auth/login' className='text-danger' target='blank'>Ir al sitio web</Button>
+                    </div>
                   </Card.Body>
                 </Card>
               </Col>
               <Col id="imagenInicio" lg={6} md={12} style={{padding: "0px"}}>
                 <OnScrollRight>
                   <Image
-                  loading="lazy"
+                    loading="lazy"
                     fluid
-                    src={infraestructura}
+                    src={fotoClinicaParis}
                     alt="img-page"
                     style={{ objectFit: "cover", position: "relative", zIndex: "-1"}}
                   />
                 </OnScrollRight>
-                <OnScrollRight><Row className="divInfraImg"></Row>  </OnScrollRight>
+                <OnScrollRight><Row className="divClinicaImg"></Row>  </OnScrollRight>
               </Col>
             </Row>
           </Container>
 
-          {/* Retail */}
-          <Row style={{minHeight: "100vh"}}>
-            <Col
-              id="imagenInicio"
-              md={{ order: "last", span: 12 }}
-              lg={{ order: "first", span: 6 }}
-              style={{padding: "0px", margin: "auto"}}
-            >
-              <Row>
-                <Col lg={11} style={{padding: "0px"}}>
-                <OnScrollLeft>
-                  <Row>
-                    <Image
-                      loading="lazy"
-                      fluid
-                      src={retail}
-                      alt="img-page"
-                      style={{ objectFit: "cover", height: "39.3rem", width: "100%" }}/>
-                  </Row>
-                </OnScrollLeft>
-                <OnScrollLeft>
-                  <Row style={{backgroundColor: "#F2D7A7", height: "2em", padding: "0px", width: "90%", float: "right"}}>
-                  </Row>
-                </OnScrollLeft>
-                </Col>
-                <Col style={{position: "relative", padding: "0px"}}>
-                  <div style={{backgroundColor: "#F2D7A7", height: "80%", width: "50%", position: "absolute", bottom: '0'}}>
-                  </div>
-                </Col>
-              </Row>
-            </Col>
-            <Col
-              className="d-flex g-0"
-              md={{ order: "first", span: 12 }}
-              lg={{ order: "last", span: 6 }}
-            >
-              <Card className="p-1" style={{ border: "none" }}>
-                <Card.Body className='d-grid'>
-                  <OnScrollRight>
+          {/* App grupo ZOM */}
+          <Container>
+            <Row style={{ minHeight: "100vh" }}>
+              <Col
+                id="imagenInicio"
+                md={{ order: "last", span: 12 }}
+                lg={{ order: "first", span: 6 }}
+                style={{ padding: "0px", margin: "auto" }}
+              >
+                <Row>
+                  <Col lg={11} style={{ padding: "0px" }}>
+                    <OnScrollLeft>
+                      <Row className='mx-2'>
+                        <Image
+                          loading="lazy"
+                          fluid
+                          src={fotoGrupoZOM}
+                          alt="img-page"
+                          style={{ objectFit: "cover", position: "relative", zIndex: "-1" }} />
+                      </Row>
+                    </OnScrollLeft>
+                    <OnScrollLeft>
+                      <Row style={{ backgroundColor: "#706BD1", height: "2em", padding: "0px", width: "90%", float: "right" }}>
+                      </Row>
+                    </OnScrollLeft>
+                  </Col>
+                  <Col style={{ position: "relative", padding: "0px" }}>
+                    <div style={{ backgroundColor: "#706BD1", height: "80%", width: "50%", position: "absolute", bottom: '0' }}>
+                    </div>
+                  </Col>
+                </Row>
+              </Col>
+              <Col
+                className="d-flex g-0"
+                md={{ order: "first", span: 12 }}
+                lg={{ order: "last", span: 6 }}
+              >
+                <Card className="p-1" style={{ border: "none" }}>
+                  <Card.Body className='d-grid'>
                     <div className="service-header">
-                      <Image
-                        height={70}
-                        className="m-3 hvr-float d-inline"
-                        src={basket}
-                        alt="basket"
-                      />
                       <Card.Title
-                        className="d-inline infra serviceTitle"
+                        className="d-inline infra serviceTitle mb-3"
                         style={{
                           fontSize: "45px",
                           fontWeight: "bold"
@@ -243,69 +219,31 @@ const Inicio = () => {
                         {t("General.Title2")}
                       </Card.Title>
                     </div>
-                  </OnScrollRight>
-                  <OnScrollRight>
-                    <Card.Text
-                      className=" mt-2 ps-2 serviceDescr"
-                      style={{ textAlign: "center" }}
-                    >
-                      {t("Home.Description3")}
-                    </Card.Text>
-                  </OnScrollRight>
-                  <OnScrollRight>
-                    <Row className="serviceItemsContainer">
-                        <Col>
-                          <OnScrollItems><p className='underline'>01</p></OnScrollItems>
-                          <p className='serviceItem'>{t("Products.2Bullet1")}</p>
-                        </Col>
-                        <Col>
-                        <OnScrollItems><p className='underline'>02</p></OnScrollItems>
-                          <p className='serviceItem'>{t("Products.2Bullet2")}</p>
-                        </Col>
-                        <Col>
-                          <OnScrollItems><p className='underline'>03</p></OnScrollItems>
-                          <p className='serviceItem'>{t("Products.2Bullet3")}</p>
-                        </Col>
-                        <Col>
-                          <OnScrollItems><p className='underline'>04</p></OnScrollItems>
-                          <p className='serviceItem'>{t("Products.2Bullet4")}</p>
-                        </Col>
-                        <Col>
-                          <OnScrollItems><p className='underline'>05</p></OnScrollItems>
-                          <p className='serviceItem'>{t("Products.2Bullet5")}</p>
-                        </Col>
-                    </Row>
-                  </OnScrollRight>
-                </Card.Body>
-              </Card>
-            </Col>
-          </Row>
-
-          {/* Salud */}
-          <Row className='position-relative' style={{minHeight: "100vh"}}>
-            <Card className="d-flex" style={{border: "none"}}>
-            <Card.Img
-              fluid
-              src={medicaIA}
-              className='healthImg'
-              alt="salud"
-              style={{ objectFit: "cover", minHeight: "100vh"}}
-                />
-            <Card.ImgOverlay className='d-flex align-items-center'>
-              <Card.Body>
-                <Row>
-                  <Col></Col>
-                  <Col lg={6}>
                     <OnScrollRight>
-                      <div className="service-header">
-                        <Image
-                            height={70}
-                            className="m-3 hvr-float d-inline"
-                            src={health}
-                            alt="health"
-                          />
+                      <Card.Text
+                        className=" mt-2 ps-2 serviceDescr"
+                        style={{ textAlign: "center" }}
+                      >
+                        {t("Home.Description3")}
+                      </Card.Text>
+                    </OnScrollRight>
+                  </Card.Body>
+                </Card>
+              </Col>
+            </Row>
+          </Container>
+
+          {/* Cuestionario Nutrición */}
+          <Container>
+            <Row className="p-0">
+              <Col className="d-flex g-0" lg={6} md={12}>
+                <Card className="p-1 g-0" style={{ border: "none" }}>
+                  <Card.Body
+                  >
+                    <OnScrollLeft>
+                      <div className='service-header'>
                         <Card.Title
-                          className="text-center infra serviceTitle d-inline"
+                          className="mb-0 infra d-inline serviceTitle"
                           style={{
                             fontSize: "45px",
                             fontWeight: "bold"
@@ -314,214 +252,32 @@ const Inicio = () => {
                           {t("General.Title3")}
                         </Card.Title>
                       </div>
-                    </OnScrollRight>
-                    <OnScrollRight>
-                      <Card.Text
-                        className="mt-2 mb-2 pe-4 serviceDescr"
-                      >
-                        {t("Home.Description4")}
-                      </Card.Text>
-                    </OnScrollRight>
-                    <Row className="mt-5">
-                      <Col lg={6} style={{display: "flex", flexDirection: "column", justifyContent: "space-between"}}>
-                        <OnScrollItems>
-                          <Row className="healthItem" style={{margin: "auto", marginBottom: "1em"}}>
-                            <div style={{backgroundColor: "#434242", height: "10px", borderRadius: "10px"}}></div>
-                            <p className="healthText serviceItem">{t("Products.3Bullet1")}</p>
+                    </OnScrollLeft>
+                    <Col lg={12} className='mt-4'>
+                      <OnScrollItems>
+                        <Row className="nutriItem px-2" style={{ marginBottom: "1em" }}>
+                          <div style={{ backgroundColor: "#434242", height: "10px", borderRadius: "10px" }}></div>
+                          {t("Home.Description4")}
                           </Row>
                         </OnScrollItems>
-                        <OnScrollItems>
-                          <Row className="healthItem" style={{margin: "auto", marginBottom: "1em"}}>
-                            <div style={{backgroundColor: "#434242", height: "10px", borderRadius: "10px"}}></div>
-                            <p className="healthText serviceItem">{t("Products.3Bullet3")}</p>
-                          </Row>
-                        </OnScrollItems>
-                      </Col>
-                      <Col lg={6} style={{display: "flex", flexDirection: "column", justifyContent: "space-between"}}>
-                        <OnScrollItems>
-                          <Row className="healthItem" style={{margin: "auto", marginBottom: "1em"}}>
-                            <div style={{backgroundColor: "#434242", height: "10px", borderRadius: "10px"}}></div>
-                            <p className="healthText serviceItem">{t("Products.3Bullet2")}</p>
-                          </Row>
-                        </OnScrollItems>
-                        <OnScrollItems>
-                          <Row className="healthItem" style={{margin: "auto", marginBottom: "1em"}}>
-                            <div style={{backgroundColor: "#434242", height: "10px", borderRadius: "10px"}}></div>
-                            <p className="healthText serviceItem">{t("Products.3Bullet4")}</p>
-                          </Row>
-                        </OnScrollItems>
-                      </Col>
-                    </Row>
-                  </Col>
-                </Row>
-              </Card.Body>
-              <NavHashLink to="/Salud">
-                <button className='moreBtn'>
-                  <span className='circle' aria-hidden='true'>
-                    <span className='arrow_icon'></span>
-                  </span>
-                  <span className='button_text'>{t("General.More")}</span>
-                </button>
-              </NavHashLink>
-              </Card.ImgOverlay>
-            </Card>
-          </Row>
-          
-          {/* Movilidad */}
-          <Row className='mainContainerHealth' style={{minHeight: "100vh", display: "flex", alignItems: "center"}}>
-            <Col className="d-flex g-0" lg={6} md={12}>
-              <Card className="p-1 g-0" style={{ border: "none"}}>
-                <Card.Body
-                  style={{display: "flex", flexDirection: "column" }}
-                >
-                  <OnScrollLeft>
-                    <div className="service-header">
-                      <Image
-                        height={70}
-                        className="m-3 hvr-float"
-                        src={car}
-                        alt="car"
-                      />
-                      <Card.Title
-                        className="mb-0 infra serviceTitle text-center"
-                        style={{
-                          fontSize: "45px",
-                          fontWeight: "bold"
-                        }}
-                      >
-                        {t("General.Title4")}
-                      </Card.Title>
-                    </div>
-                  </OnScrollLeft>
-                  <OnScrollLeft>
-                    <div className='containerCar'>
-                      <Card.Text
-                        className=" mt-2 mb-2 pe-2 serviceDescr"
-                      >
-                        {t("Home.Description5")}
-                      </Card.Text>
-                    </div>
-                  </OnScrollLeft>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col id="imagenInicio" lg={6} md={12} style={{padding: "0px", zIndex: "2"}}>
-              <OnScrollRight>
-                <Image
-                  loading="lazy"
+                    </Col>
+                  </Card.Body>
+                </Card>
+              </Col>
+              <Col id="imagenInicio" lg={6} md={12} style={{ padding: "0px" }}>
+                <OnScrollRight>
+                  <Image
+                    loading="lazy"
                     fluid
-                    src={movilidad}
+                    src={fotoFormNutricion}
                     alt="img-page"
-                    style={{ objectFit: "cover", height: "39.3rem", width: "100%" }}
+                    style={{ objectFit: "cover", position: "relative", zIndex: "-1" }}
                   />
                 </OnScrollRight>
-            </Col>
-            <Row className="itemsCar m-auto">
-              <Col sm className="text-center itemCar align-middle serviceItem"><OnScrollItems>{t("Products.4Bullet1")}</OnScrollItems></Col>
-              <Col sm className="text-center itemCar serviceItem"><OnScrollItems>{t("Products.4Bullet2")}</OnScrollItems></Col>
-              <Col sm className="text-center itemCar serviceItem"><OnScrollItems>{t("Products.4Bullet3")}</OnScrollItems></Col>
-              <Col sm className="text-center itemCar serviceItem"><OnScrollItems>{t("Products.4Bullet4")}</OnScrollItems></Col>
+                <OnScrollRight><Row className="divNutriImg"></Row>  </OnScrollRight>
+              </Col>
             </Row>
-          </Row>
-
-          {/* Banca */}
-          <Row style={{minHeight: "100vh"}}>
-          <Col
-              id="imagenInicio"
-              md={{ order: "last", span: 12 }}
-              lg={{ order: "first", span: 6 }}
-              style={{ zIndex: "2" }}
-            >
-              <OnScrollLeft>
-                <Image
-                loading="lazy"
-                  fluid
-                  src={banca}
-                  alt="img-page"
-                  style={{ objectFit: "cover", height: "39.3rem", width: "100%" }}
-                />
-              </OnScrollLeft>
-            </Col>
-            <Col
-              className="d-flex g-0 align-items-center"
-              md={{ order: "first", span: 12 }}
-              lg={{ order: "last", span: 6 }}
-            >
-              <Card className="p-1" style={{ border: "none" }}>
-                <Card.Body
-                  style={{display: "flex", flexDirection: "column"}}
-                >
-                  <div className="service-header">
-                    <OnScrollRight>
-                      <Image
-                        height={70}
-                        className="m-3 hvr-float"
-                        src={money}
-                        alt="money"
-                      />
-                    </OnScrollRight>
-                    <OnScrollRight>
-                      <Card.Title
-                        className="serviceTitle infra"
-                        style={{
-                          fontSize: "45px",
-                          fontWeight: "bold"
-                        }}
-                      >
-                        {t("General.Title5")}
-                      </Card.Title>
-                    </OnScrollRight>
-                  </div>
-                  <Row className="brownBackgr"></Row>
-                  <Row className="mt-5">
-                    <div className='description mt-5 mb-5 ps-3'>
-                      <OnScrollRight>
-                        <Card.Text
-                          className=" mt-2 mb-2 ps-2 serviceDescr bancaText"
-                        >
-                          {t("Home.Description6")}
-                        </Card.Text>
-                      </OnScrollRight>
-                    </div>
-                    <Row className='mt-5 mb-5' style={{zIndex: "2", margin: "auto"}}>
-                      <Col sm className="bancaItem mb-5">
-                        <div className='circle mb-2'></div>
-                        <OnScrollItems>
-                          <p className= "bancaText serviceItem">{t("Products.5Bullet1")}</p>
-                        </OnScrollItems>
-                      </Col>
-                      <Col sm className="bancaItem mb-5">
-                        <div className='circle mb-2'></div>
-                        <OnScrollItems>
-                          <p className= "bancaText serviceItem">{t("Products.5Bullet3")}</p>
-                        </OnScrollItems>
-                      </Col>
-                      <Col sm className="bancaItem mb-5">
-                        <div className='circle mb-2'></div>
-                        <OnScrollItems>
-                          <p className= "bancaText serviceItem">{t("Products.5Bullet2")}</p>
-                        </OnScrollItems>
-                      </Col>
-                      <Col sm className="bancaItem mb-5">
-                        <div className='circle mb-2'></div>
-                        <OnScrollItems>
-                          <p className= "bancaText serviceItem">{t("Products.5Bullet4")}</p>
-                        </OnScrollItems>
-                      </Col>
-                    </Row>
-                  </Row>
-                  {/*<NavHashLink
-                  className=" mb-0 ps-2"
-                  to="/Productos#retail"
-                  >
-                  {t("General.More")}
-                  </NavHashLink>*/}
-                </Card.Body>
-              </Card>
-            </Col>
-          </Row>
-
-        </section>
+          </Container>
            {/* Boton de regreso */}
            <div
               ref={btn}
@@ -531,12 +287,13 @@ const Inicio = () => {
                 <i
                   className={`${
                     up
-                      ? "bi bi-arrow-up-circle animate__animated animate__fadeInUp hvr-icon-up "
+                  ? "bi bi-arrow-up-circle animate__animated animate__fadeInUp hvr-icon-up"
                       : null
                   } `}
                 ></i>
               </Link>
             </div>
+        </section>
       </Container>
     </>
   );

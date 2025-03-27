@@ -25,7 +25,7 @@ body {
     transition: 0.8s;
   }
   .boton-principal{
-    background-color: #6BBBAE !important;
+    background-color: #D460F1 !important;
   }
 
 /* Navbar */
@@ -36,7 +36,7 @@ body {
   padding: 0;
   z-index: 9;
   width: 100%;
-  background-color: #111
+  background-color: #fff
 }
 
 /* Scrollbar */
@@ -53,7 +53,7 @@ body {
 
 ::-webkit-scrollbar-thumb {
   border-radius: 8px;
-  background-color: #6BBBAE;
+  background-color: #000;
 }
 
 /* Banner */
@@ -94,28 +94,28 @@ body {
   font-size: 3rem;
   font-family: 'Lusitana', serif;
   text-align: center;
-  color: #6BBBAE;
+  color: #191b1a;
 }
 
 /* Services Section */
 
 .service-header {
   display: flex;
-  align-items: center;
+  align-items: end;
   justify-content: center;
 }
 
 .servicesTitle {
   font-size: 4rem;
   text-align: justify;
-  color: #6BBBAE;
+  color: #000;
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
 }
 
 .serviceTitle {
   font-family: 'Nunito', sans-serif;
-  color: #8C5E58;
+  color: #000;
 }
 
 .serviceDescr {
@@ -203,9 +203,15 @@ body {
   transform: translate(1rem, 0);
 }
 
-/* Infraestructura */
-.divInfraImg {
-  background-color: #8C5E58;
+/* Clínica París*/
+.divClinicaImg {
+  background-color: #DD4160;
+  height: 2rem;
+  width: 90%;
+  float: right;
+}
+.divNutriImg {
+  background-color: #FFDD8C;
   height: 2rem;
   width: 90%;
   float: right;
@@ -224,9 +230,9 @@ body {
   font-size: 50px;
   font-weight: bold;
   text-decoration: underline;
-  text-decoration-color: #6BBBAE;
+  text-decoration-color: #D460F1;
   text-underline-offset: 15px;
-  color: #6BBBAE;
+  color: #D460F1;
   text-align: center;
 }
 
@@ -242,23 +248,23 @@ body {
   width: fit-content;
 }
 
-.healthItem {
+.nutriItem {
   border-radius: 10px;
-  background-color: #F2D7A7;
+  background-color: #FFDD8C;
   padding: 0px;
   height: 150px;
   width: 90%;
 }
 
 .healthImg {
-  height: 50rem;
+  height: 62rem;
 }
 
 /* Movilidad */
 
 .itemCar {
   color: #FFFFFF;
-  background-color: #6BBBAE;
+  background-color: #D460F1;
   display: flex;
   align-items: center;
 }
