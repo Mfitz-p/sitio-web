@@ -6,7 +6,6 @@ import NavbarRB from "react-bootstrap/Navbar";
 import logo from "../images/logoMF.png";
 import { NavLink } from "react-router-dom";
 import "../App.css";
-import "../css/Salud.css";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
 // Componente Navbar contiene la barra de navegacion de la pagina y el logotipo.
@@ -78,42 +77,6 @@ const Navbar = () => {
               >
                 {t("Navbar.Us")}
               </Nav.Link>
-              {/* <NavDropdown
-                eventKey={3} 
-                title={t("Navbar.Products")}
-                to="/Productos"
-                className="text-dark"
-                id="navTitle"
-              >
-                <NavDropdown.Item
-                  eventKey={3.1} 
-                  as={NavLink}
-                  to="/Infraestructura"
-                  id="product"
-                >
-                  {t("General.Title1")}
-                </NavDropdown.Item>
-                <NavDropdown.Item eventKey={3.2} as={NavLink} to="/Retail" id="product">
-                  {t("General.Title2")}
-                </NavDropdown.Item>
-                <NavDropdown.Item eventKey={3.3} as={NavLink} to="/Salud" id="product">
-                  {t("General.Title3")}
-                </NavDropdown.Item>
-                <NavDropdown.Item eventKey={3.4} as={NavLink} to="/Movilidad" id="product">
-                  {t("General.Title4")}
-                </NavDropdown.Item>
-                <NavDropdown.Item eventKey={3.5} as={NavLink} to="/Banca" id="product">
-                  {t("General.Title5")}
-                </NavDropdown.Item>
-              </NavDropdown> */}
-              {/* <Nav.Link
-                eventKey={4}
-                as={NavLink}
-                to="/Contacto"
-                className="text-dark hvr-underline-from-left-modificado"
-              >
-                {t("Navbar.Contact")}
-              </Nav.Link> */}
             </Nav>
           </NavbarRB.Collapse>
         </Container>

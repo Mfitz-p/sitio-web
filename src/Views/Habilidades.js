@@ -1,5 +1,5 @@
 /**
- * Vista de página Nosotros. 
+ * Vista de página Habilidades. 
  */
  import { Container, Row, Col, Image } from 'react-bootstrap/';
  
@@ -8,17 +8,16 @@
  import logoInstagram from '../logos/logoInstagram.png';
  import logoX from '../logos/logoX.svg';
  import { useTranslation } from 'react-i18next';
- import "../css/Nosotros.css"
  
  function Habilidades() {
    const [t] = useTranslation("global")
    return (
      <>
-       <Container fluid className='bg-dark p-4 animate__animated animate__fadeInDown' >
+       <Container fluid className='p-4 animate__animated animate__fadeInDown' >
          <div className='d-flex justify-content-center mb-4'>
-          <h3 className='text-white'>{t("Us.Title")}</h3>
+          <h3 className='text-dark'>{t("Us.Title")}</h3>
          </div>
-         <p className='d-flex justify-content-center text-white' style={{ fontSize: "20px" }}>{t("Us.Section")}</p>
+         <p className='d-flex justify-content-center text-dark' style={{ fontSize: "20px" }}>{t("Us.Section")}</p>
        </Container>
        <Container fluid >
          

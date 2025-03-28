@@ -39,7 +39,7 @@
 /* MediaQuery de logotipo del navbar */
 @media all and (max-height: 390px){
   .logo {
-    width: 100px;
+    width: 200px;
   }
 }
 

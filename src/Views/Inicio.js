@@ -56,17 +56,6 @@ const Inicio = () => {
                       <Col ></Col>
                     </Row>
                   </Card.Title>
-                  {/* Botón contáctanos que redirige al inicio de la página */}
-                  {/* <Col xs={12} md={1}>
-                    <Nav.Link as={NavLink} to="/Contacto">
-                      <Button
-                        className="mx-auto hvr-pulse "
-                        variant="outline-dark"
-                      >
-                        {t("General.Contact")}
-                      </Button>
-                    </Nav.Link>
-                  </Col> */}
                 </Col>
               </Container>
                 {/* Ícono de flecha que despliega hacia abajo para cambiar a la siguientes secciones */}
